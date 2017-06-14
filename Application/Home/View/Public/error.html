@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Mosaddek">
+    <meta name="keyword" content="FlatLab, Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
+    <link rel="shortcut icon" href="img/favicon.png">
+    <title>抱歉，出错啦</title>
+    <include file="Public:css" />
+    <include file="Public:aside_js" />
+</head>
+
+<body>
+<div class="wrong">
+    <h1>404</h1>
+    <h2>{$error}</h2>
+    <p class="jump">
+    <h4><span id="wait">{$waitSecond}</span> 秒后页面将自动跳转</h4>
+    </p>
+    <p class="detail"></p>
+    <div class="jump-btn">
+        <a id="href" href="{$jumpUrl}">立即跳转</a>
+        <a id="btn-stop" type="button" onclick="stop()">停止跳转</a>
+        <a id="href" href="{:U('User/login')}">重新登录</a>
+    </div>
+</div>
+
+
+
+
+<!--footer start-->
+<footer>
+    <div class="container">
+        <div class="row">
+
+            <ul class="links list-inline">
+                <li><a href="#">前端网</a></li>
+                <li><a href="#">懒人图库</a></li>
+                <li><a href="#">煎蛋</a></li>
+                <li><a href="#">魔方网</a></li>
+                <li><a href="#">阿里图标库</a></li>
+
+            </ul>
+            <p class="text-muted text-center">©2016 Macyu 爬行中的博客</p>
+        </div>
+    </div>
+</footer>
+<!--footer end-->
+
+<script type="text/javascript">
+(function(){
+ var wait = document.getElementById('wait'),href = document.getElementById('href').href;
+ var interval = setInterval(function(){
+      var time = --wait.innerHTML;
+      if(time <= 0) {
+        location.href = href;
+        clearInterval(interval);
+      };
+     }, 1000);
+  window.stop = function (){
+         console.log(111);
+            clearInterval(interval);
+ }
+ })();
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,122 @@
+img {
+    vertical-align: middle;
+    max-width: 100%;
+}
+p img {
+  margin: 15px 0;
+}
+.header_barwrapper {
+    background-color: #ededed;
+    padding: 30px 0px 30px 0px;
+    position: relative;
+    background: url('../img/bg_header.png') repeat #FCFCFC;
+    border-top: 1px solid #ececec;
+    border-bottom: 1px solid #ececec;
+}
+.input-prepend input, .input-append input, .input-prepend select, .input-append select, .input-prepend .uneditable-input, .input-append .uneditable-input, textarea {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    background-color: white;
+    border-top: 1px solid silver;
+    border: 1px solid #D9D9D9;
+    box-sizing: border-box;
+    color: #afafaf;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    height: 29px;
+    margin: 0!important;
+    padding: 3px 0 3px 8px;
+    -o-transition: none;
+    -webkit-transition: none;
+    -moz-transition: none;
+    outline: none;
+}
+.input-append .btn {
+    background-color: transparent;
+    background-image: none;
+    height: 29px;
+    border: none;
+    border-left: none;
+    position: relative;
+    left: -55px;
+    top: 9px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+.wrapper-content {
+  padding: 50px 0px;
+}
+.blog {
+  padding-left: 0px;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.blog {
+  li {
+  list-style: none;
+  margin: 0;
+  padding: 1em 0em 1.5em 0em;
+  }
+
+  .read-btn {
+  margin-top: 30px;
+  }
+  
+  .focus img {
+  float: left;
+  margin-right: 20px;
+  width:30%;
+  }
+  
+  h4 a {
+   color: #666;
+   font-size: 18px;
+   font-family: "Microsoft Yahei";
+   transition: 0.5s all;
+   -webkit-transition: 0.5s all;
+   -moz-transition: 0.5s all;
+   -o-transition: 0.5s all;
+   -ms-transition: 0.5s all;
+  }
+  
+  h4 a:hover {
+  color: #333;
+  padding-left: 1em;
+  transition: 0.5s all;
+  }
+
+  .note {
+      color: #999;
+      line-height: 24px;
+  }
+
+  .read-btn {
+  margin-top: 30px;
+  }
+
+}
+.table_sign {
+  margin-top: 20px;
+}
+.meta .cat {
+  margin-right: 20px;
+  font-family: "Microsoft Yahei";
+}
+
+#topcontrol {
+  right: 25px!important;
+  bottom: 45px!important;
+     z-index: 104!important;
+  i {
+    color: #fff;
+    font-size: 2em;
+  }
+}
+
+
+@media(max-width: 768px) {
+  .wrapper-content {
+    padding: 20px 0px;
+}
+}

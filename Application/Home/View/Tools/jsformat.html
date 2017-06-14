@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="renderer" content="webkit">
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<title>{$title}_觅友</title>
+<meta name="keywords" content="常用工具，开发工具，觅友，觅友网，觅友博客，觅友小站，前端，miuu,IT开发，css，css3，js，js特效，php，jquery，ajax，java">
+<meta name="description" content="觅友_有朋自远方来，分享自己网站开发学习以及工作和生活中的点点滴滴，希望通过此网站，与大家一起交流、成长、进步！">
+<include file="Public:css" />
+<link rel="stylesheet" href="__PUBLIC__/Home/css/tools.css" >
+<include file="Public:aside_js" />
+</head>
+<body>
+<include file="Public:header" />
+<section class="focusbox">
+    <div class="container">
+        <h1 class="focusbox-title">工具箱</h1>
+        <div class="focusbox-text">常言道:工欲善其事必先利器。好工具是让编程更轻松更顺利的保障</div>
+    </div>
+</section>
+<div class="wrapper wrapper-content clearfix content">
+  	<div class="container space30 ">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="container archives">
+                    <ol class="breadcrumb tool-breadcrumb">
+                        <li><a href="{:U('Index/index')}">首页</a></li>
+                        <li><a href="{:U('Tools/tools')}">工具箱</a></li>
+                        <li class="active">JS/HTML格式化工具</li>
+                    </ol>
+                    <div class="toolcode text-left">
+                        <!-- /工具开始 -->
+                        <h3>
+                            JS/HTML格式化工具:
+                        </h3>
+                        <p class="sign_color">请在下框输入您要转换的内容:</p>
+                        <form role="form" class="form-field" >
+                    <textarea class="toolcode_text"  id="content" name="content">
+/* 粘贴你代码到这里并点击格式化按钮 */
+/*例如格式化以下这段代码 */
+if('this_is'==/an_example/){do_something();}else{var a=b?(c%d):e[f];}
+                    </textarea>
+                    <p class="btnbox">
+                        <select id="tabsize" name="tabsize" class="tabsize" >
+                            <option value="1">
+                                制表符缩进
+                            </option>
+                            <option value="2">
+                                2个空格缩进
+                            </option>
+                            <option selected="selected" value="4">
+                                4个空格缩进
+                            </option>
+                            <option value="8">
+                                8个空格缩进
+                            </option>
+                        </select>
+                        <input id="beautify" class="btn btn-success" onclick="return do_js_beautify()" value="格式化代码" type="button">
+                        <input class="btn btn-info" onclick="pack_js(0)" value="普通压缩" type="button">
+                        <input class="btn btn-small btn-success btn-format" id="copy_format" type="button" data-clipboard-action="copy" data-clipboard-target="#content"
+                                value="复制格式化代码" />
+                        <input class="btn btn-info" onclick="pack_js(1)" value="加密压缩" type="button">
+                        <input class="btn btn-default" onclick="Empty();" value="清空结果" type="button">
+                    </p>
+                </form>
+                        <!-- /工具结束 -->
+                    </div>
+                    <div class="relates">
+                        <h3>推荐工具箱</h3>
+                        <ul>
+                            <li>
+                                <a href="{:U('Tools/jsformat')}">JS/HTML格式化工具</a>
+                            </li>
+                            <li>
+                                <a href="{:U('Tools/cssformat')}">CSS代码格式化工具</a>
+                            </li>
+                            <li>
+                                <a href="{:U('Tools/mergely')}">代码对比工具</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<include file="Public:footer" />
+<include file="Public:js" />
+<script type="text/javascript" src="__JS__/format.js"></script>
+<script type="text/javascript" src="__JS__/jsformat.js"></script>
+<script type="text/javascript" src="__JS__/htmlformat.js"></script>
+<script type="text/javascript" src="__PLUGINS__/clipboard/clipboard.min.js"></script>
+<script type="text/javascript">
+    function do_js_beautify() {
+        document.getElementById('beautify').disabled = true;
+        js_source = document.getElementById('content').value.replace(/^\s+/, '');
+        tabsize = document.getElementById('tabsize').value;
+        tabchar = ' ';
+        if (tabsize == 1) {
+            tabchar = '\t';
+        }
+        if (js_source && js_source.charAt(0) === '<') {
+            document.getElementById('content').value = style_html(js_source, tabsize, tabchar, 80);
+        } else {
+            document.getElementById('content').value = js_beautify(js_source, tabsize, tabchar);
+        }
+        document.getElementById('beautify').disabled = false;
+        return false;
+    }
+    function pack_js(base64) {
+        var input = document.getElementById('content').value;
+        var packer = new Packer;
+        if (base64) {
+            var output = packer.pack(input, 1, 0);
+        } else {
+            var output = packer.pack(input, 0, 0);
+        }
+        document.getElementById('content').value = output;
+    }
+    function Empty() {
+        document.getElementById('content').value = '';
+        document.getElementById('content').select();
+    }
+    function GetFocus() {
+        document.getElementById('content').focus();
+    }
+
+    //复制格式化代码
+    var clipboard = new Clipboard('.btn-format');
+    clipboard.on('success', function(e) {
+        console.info('Action:', e.action);
+        console.info('Text:', e.text);
+        console.info('Trigger:', e.trigger);
+        layer.msg('成功复制格式化代码！');
+        e.clearSelection();
+    });
+
+    clipboard.on('error', function(e) {
+        console.error('Action:', e.action);
+        console.error('Trigger:', e.trigger);
+    });
+</script>
+<script> $("#Function_index").addClass("active"); </script>
+</body>
+</html>

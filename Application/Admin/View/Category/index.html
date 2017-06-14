@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--360浏览器优先以webkit内核解析-->
+    <title>文章添加-米鱼博客</title>
+
+    <link rel="shortcut icon" href="favicon.ico"> <link href="__PUBLIC__/admin/css/bootstrap.min14ed.css?v=3.3.6" rel="stylesheet">
+    <link href="__PUBLIC__/admin/css/font-awesome.min93e3.css?v=4.4.0" rel="stylesheet">
+
+    <link href="__PUBLIC__/admin/css/animate.min.css" rel="stylesheet">
+    <link href="__PUBLIC__/admin/css/style.min862f.css?v=4.1.0" rel="stylesheet">
+</head>
+
+<body class="gray-bg">
+    <div class="wrapper wrapper-content">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>商品分类</h5>
+                        <div class="ibox-tools">
+                        <a class="collapse-link">
+                            <i class="fa fa-chevron-up"></i>
+                        </a>
+                        <a class="close-link">
+                            <i class="fa fa-times"></i>
+                        </a>
+                    </div>
+                    </div>
+                    <div class="ibox-content">
+                    	相关操作：<a href="{:U('Category/add')}" class="light">添加分类</a>
+                        <table class="table">
+							<tr><th>分类名称</th><th>操作</th></tr>
+							<foreach name="category" item="v">
+								<tr><td>{:str_repeat('/ ',$v['level'])}{$v.name}</td>
+								<td><a href="{:U('Category/edit',array('id'=>$v['id']))}">修改</a>
+								<a href="#" class="act-del" data-id="{$v.id}" >删除</a></td></tr>
+							</foreach>
+						</table>
+						<form method="post" class="form-horizontal"  id="form">
+							<input type="hidden" name="id" id="target_id">
+						</form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="__PUBLIC__/Admin/js/jquery-1.11.0.min.js"></script>
+    <script src="__PUBLIC__/admin/js/jquery.min.js?v=2.1.4"></script>
+    <script src="__PUBLIC__/admin/js/bootstrap.min.js?v=3.3.6"></script>
+    <script src="__PUBLIC__/admin/js/plugins/layer/layer.min.js"></script>
+    <script src="__PUBLIC__/admin/js/content.min.js"></script>
+	<script>
+		//删除
+		$(".act-del").click(function(){
+			if(confirm('确定要删除吗？（该分类下的商品将归于未分类）')){
+				$("#target_id").val($(this).attr("data-id"));
+				$("#form").attr("action","{:U('Category/del')}").submit();
+			}
+		});
+	</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,459 @@
+[ 2017-06-02T09:28:53+08:00 ] ::1 /web/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001552s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000599s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000642s ]
+SQL: SHOW COLUMNS FROM `miuu_categoryart` [ RunTime:0.0045s ]
+SQL: SELECT `id`,`name`,`pid` FROM `miuu_categoryart`  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `miuu_articles` [ RunTime:0.0051s ]
+SQL: SHOW COLUMNS FROM `miuu_down` [ RunTime:0.0038s ]
+SQL: SHOW COLUMNS FROM `miuu_essay` [ RunTime:0.0041s ]
+SQL: SHOW COLUMNS FROM `miuu_notes` [ RunTime:0.0047s ]
+SQL: SHOW COLUMNS FROM `miuu_news` [ RunTime:0.0035s ]
+NOTIC: [8] Undefined variable: where /Users/miuu/object/miuu/web/Application/Home/Model/ArticlesModel.class.php 第 53 行.
+SQL: SELECT COUNT(*) AS tp_count FROM miuu_articles a LIMIT 1   [ RunTime:0.0021s ]
+NOTIC: [8] Undefined variable: where /Users/miuu/object/miuu/web/Application/Home/Model/ArticlesModel.class.php 第 57 行.
+SQL: SELECT c.name as category_name,a.category_id,a.id,a.name,a.desc,a.thumb,a.sn,a.add_time,a.author,a.content,a.keywords,a.source,a.url,a.click FROM miuu_articles a LEFT JOIN miuu_categoryart AS c ON c.id=a.category_id  ORDER BY a.id desc LIMIT 0,12   [ RunTime:0.0021s ]
+SQL: SELECT `id`,`name`,`thumb`,`author`,`add_time` FROM `miuu_articles` WHERE `recycle` = 'no' AND `on_sale` = 'yes' AND `recommend` = 'yes' ORDER BY click desc LIMIT 3   [ RunTime:0.0005s ]
+SQL: SELECT `id`,`name`,`thumb`,`author`,`add_time`,`click` FROM `miuu_down` WHERE `recycle` = 'no' AND `on_sale` = 'yes' AND `recommend` = 'yes' ORDER BY rand() LIMIT 4   [ RunTime:0.0011s ]
+SQL: SELECT c.name as categorynews_name,a.category_id,a.id,a.name,a.sn,a.add_time,a.content,a.click FROM miuu_news a LEFT JOIN miuu_categorynews AS c ON c.id=a.category_id  WHERE `recycle` = 'no' AND `on_sale` = 'yes' AND `recommend` = 'yes' ORDER BY a.id desc LIMIT 6   [ RunTime:0.0031s ]
+SQL: SELECT `id`,`name`,`add_time`,`thumb`,`click`,`source`,`author` FROM `miuu_essay` WHERE `recycle` = 'no' AND `on_sale` = 'yes' AND `recommend` = 'yes' ORDER BY id desc LIMIT 4   [ RunTime:0.0013s ]
+SQL: SELECT `id`,`name`,`add_time`,`thumb`,`click` FROM `miuu_notes` WHERE `recycle` = 'no' AND `on_sale` = 'yes' AND `recommend` = 'yes' ORDER BY id desc LIMIT 9   [ RunTime:0.0008s ]
+SQL: SELECT `id`,`name` FROM `miuu_articles` ORDER BY add_time asc LIMIT 4   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000312s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000378s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020865s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020911s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000401s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000519s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000987s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001069s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001143s ]
+
+[ 2017-06-02T09:31:12+08:00 ] ::1 /web/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000347s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000513s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000596s ]
+SQL: SHOW COLUMNS FROM `miuu_categoryart` [ RunTime:0.0023s ]
+SQL: SELECT `id`,`name`,`pid` FROM `miuu_categoryart`  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `miuu_articles` [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `miuu_down` [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `miuu_essay` [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `miuu_notes` [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `miuu_news` [ RunTime:0.0012s ]
+NOTIC: [8] Undefined variable: where /Users/miuu/object/miuu/web/Application/Home/Model/ArticlesModel.class.php 第 53 行.
+SQL: SELECT COUNT(*) AS tp_count FROM miuu_articles a LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: where /Users/miuu/object/miuu/web/Application/Home/Model/ArticlesModel.class.php 第 57 行.
+SQL: SELECT c.name as category_name,a.category_id,a.id,a.name,a.desc,a.thumb,a.sn,a.add_time,a.author,a.content,a.keywords,a.source,a.url,a.click FROM miuu_articles a LEFT JOIN miuu_categoryart AS c ON c.id=a.category_id  ORDER BY a.id desc LIMIT 0,12   [ RunTime:0.0009s ]
+SQL: SELECT `id`,`name`,`thumb`,`author`,`add_time` FROM `miuu_articles` WHERE `recycle` = 'no' AND `on_sale` = 'yes' AND `recommend` = 'yes' ORDER BY click desc LIMIT 3   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name`,`thumb`,`author`,`add_time`,`click` FROM `miuu_down` WHERE `recycle` = 'no' AND `on_sale` = 'yes' AND `recommend` = 'yes' ORDER BY rand() LIMIT 4   [ RunTime:0.0004s ]
+SQL: SELECT c.name as categorynews_name,a.category_id,a.id,a.name,a.sn,a.add_time,a.content,a.click FROM miuu_news a LEFT JOIN miuu_categorynews AS c ON c.id=a.category_id  WHERE `recycle` = 'no' AND `on_sale` = 'yes' AND `recommend` = 'yes' ORDER BY a.id desc LIMIT 6   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name`,`add_time`,`thumb`,`click`,`source`,`author` FROM `miuu_essay` WHERE `recycle` = 'no' AND `on_sale` = 'yes' AND `recommend` = 'yes' ORDER BY id desc LIMIT 4   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name`,`add_time`,`thumb`,`click` FROM `miuu_notes` WHERE `recycle` = 'no' AND `on_sale` = 'yes' AND `recommend` = 'yes' ORDER BY id desc LIMIT 9   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name` FROM `miuu_articles` ORDER BY add_time asc LIMIT 4   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000270s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000308s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012559s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012598s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000145s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000249s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000436s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000596s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000641s ]
+
+[ 2017-06-02T09:31:20+08:00 ] ::1 /web/Index/index/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000434s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000801s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000880s ]
+SQL: SHOW COLUMNS FROM `miuu_categoryart` [ RunTime:0.0047s ]
+SQL: SELECT `id`,`name`,`pid` FROM `miuu_categoryart`  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `miuu_articles` [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `miuu_down` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `miuu_essay` [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `miuu_notes` [ RunTime:0.0051s ]
+SQL: SHOW COLUMNS FROM `miuu_news` [ RunTime:0.0029s ]
+NOTIC: [8] Undefined variable: where /Users/miuu/object/miuu/web/Application/Home/Model/ArticlesModel.class.php 第 53 行.
+SQL: SELECT COUNT(*) AS tp_count FROM miuu_articles a LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: where /Users/miuu/object/miuu/web/Application/Home/Model/ArticlesModel.class.php 第 57 行.
+SQL: SELECT c.name as category_name,a.category_id,a.id,a.name,a.desc,a.thumb,a.sn,a.add_time,a.author,a.content,a.keywords,a.source,a.url,a.click FROM miuu_articles a LEFT JOIN miuu_categoryart AS c ON c.id=a.category_id  ORDER BY a.id desc LIMIT 12,12   [ RunTime:0.0035s ]
+SQL: SELECT `id`,`name`,`thumb`,`author`,`add_time` FROM `miuu_articles` WHERE `recycle` = 'no' AND `on_sale` = 'yes' AND `recommend` = 'yes' ORDER BY click desc LIMIT 3   [ RunTime:0.0022s ]
+SQL: SELECT `id`,`name`,`thumb`,`author`,`add_time`,`click` FROM `miuu_down` WHERE `recycle` = 'no' AND `on_sale` = 'yes' AND `recommend` = 'yes' ORDER BY rand() LIMIT 4   [ RunTime:0.0016s ]
+SQL: SELECT c.name as categorynews_name,a.category_id,a.id,a.name,a.sn,a.add_time,a.content,a.click FROM miuu_news a LEFT JOIN miuu_categorynews AS c ON c.id=a.category_id  WHERE `recycle` = 'no' AND `on_sale` = 'yes' AND `recommend` = 'yes' ORDER BY a.id desc LIMIT 6   [ RunTime:0.0007s ]
+SQL: SELECT `id`,`name`,`add_time`,`thumb`,`click`,`source`,`author` FROM `miuu_essay` WHERE `recycle` = 'no' AND `on_sale` = 'yes' AND `recommend` = 'yes' ORDER BY id desc LIMIT 4   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name`,`add_time`,`thumb`,`click` FROM `miuu_notes` WHERE `recycle` = 'no' AND `on_sale` = 'yes' AND `recommend` = 'yes' ORDER BY id desc LIMIT 9   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name` FROM `miuu_articles` ORDER BY add_time asc LIMIT 4   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000316s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000388s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021344s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021414s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000449s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000490s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001052s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001010s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001106s ]
+
+[ 2017-06-02T09:31:21+08:00 ] ::1 /web/Blog/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000258s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000355s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000387s ]
+SQL: SHOW COLUMNS FROM `miuu_categoryart` [ RunTime:0.0011s ]
+SQL: SELECT `id`,`name`,`pid` FROM `miuu_categoryart`  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `miuu_articles` [ RunTime:0.0013s ]
+NOTIC: [8] Undefined variable: where /Users/miuu/object/miuu/web/Application/Home/Model/ArticlesModel.class.php 第 79 行.
+SQL: SELECT COUNT(*) AS tp_count FROM miuu_articles a LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: where /Users/miuu/object/miuu/web/Application/Home/Model/ArticlesModel.class.php 第 83 行.
+SQL: SELECT c.name as category_name,a.category_id,a.id,a.name,a.desc,a.thumb,a.sn,a.add_time,a.author,a.content,a.keywords,a.source,a.url,a.click FROM miuu_articles a LEFT JOIN miuu_categoryart AS c ON c.id=a.category_id  ORDER BY a.click desc LIMIT 0,9   [ RunTime:0.0008s ]
+SQL: SELECT `id`,`name`,`thumb`,`author`,`add_time` FROM `miuu_articles` WHERE `recycle` = 'no' AND `on_sale` = 'yes' AND `recommend` = 'yes' ORDER BY rand() LIMIT 4   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000214s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000255s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015619s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015701s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000260s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000282s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000629s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000671s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000738s ]
+
+[ 2017-06-02T09:31:23+08:00 ] ::1 /web/Blog/articles/id/40.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000691s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000744s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000807s ]
+SQL: SHOW COLUMNS FROM `miuu_categoryart` [ RunTime:0.0025s ]
+SQL: SELECT `id`,`name`,`pid` FROM `miuu_categoryart`  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `miuu_articles` [ RunTime:0.0013s ]
+SQL: UPDATE `miuu_articles` SET `click`=click+1 WHERE `id` = 40 [ RunTime:0.0013s ]
+SQL: SELECT `id`,`category_id`,`sn`,`name`,`thumb`,`author`,`add_time`,`desc`,`content`,`keywords`,`source`,`url`,`code`,`click` FROM `miuu_articles` WHERE `id` = 40 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `id`,`name`,`thumb`,`author`,`add_time` FROM `miuu_articles` WHERE `recycle` = 'no' AND `on_sale` = 'yes' AND `recommend` = 'yes' ORDER BY rand() LIMIT 4   [ RunTime:0.0008s ]
+SQL: SELECT `id`,`name`,`thumb`,`add_time`,`click` FROM `miuu_articles` WHERE `recycle` = 'no' AND `on_sale` = 'yes' ORDER BY id desc LIMIT 4   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `miuu_articles` WHERE ( id<'40' ) ORDER BY id desc LIMIT 1   [ RunTime:0.0018s ]
+SQL: SELECT * FROM `miuu_articles` WHERE ( id>'40' ) ORDER BY id asc LIMIT 1   [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000368s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000429s ]
+NOTIC: [8] Undefined variable: vv /Users/miuu/object/miuu/web/Application/Runtime/Cache/Home/b983be07d7749e2a5320823af3c77e64.php 第 128 行.
+NOTIC: [8] Undefined variable: v /Users/miuu/object/miuu/web/Application/Runtime/Cache/Home/b983be07d7749e2a5320823af3c77e64.php 第 128 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019710s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019767s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000149s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000233s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000424s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000655s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000747s ]
+
+[ 2017-06-02T09:31:25+08:00 ] ::1 /web/Notes/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000362s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000608s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000680s ]
+SQL: SHOW COLUMNS FROM `miuu_categoryart` [ RunTime:0.0020s ]
+SQL: SELECT `id`,`name`,`pid` FROM `miuu_categoryart`  [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `miuu_notes` [ RunTime:0.0026s ]
+SQL: SHOW COLUMNS FROM `miuu_categorynote` [ RunTime:0.0033s ]
+NOTIC: [8] Undefined variable: where /Users/miuu/object/miuu/web/Application/Home/Model/NotesModel.class.php 第 67 行.
+SQL: SELECT COUNT(*) AS tp_count FROM miuu_notes a LIMIT 1   [ RunTime:0.0011s ]
+NOTIC: [8] Undefined variable: where /Users/miuu/object/miuu/web/Application/Home/Model/NotesModel.class.php 第 71 行.
+SQL: SELECT c.name as category_name,a.category_id,a.id,a.name,a.desc,a.thumb,a.add_time,a.content,a.click FROM miuu_notes a LEFT JOIN miuu_categorynote AS c ON c.id=a.category_id  ORDER BY a.id desc LIMIT 0,12   [ RunTime:0.0034s ]
+SQL: SELECT `id`,`name`,`add_time`,`thumb`,`click` FROM `miuu_notes` WHERE `recycle` = 'no' AND `on_sale` = 'yes' ORDER BY click desc LIMIT 4   [ RunTime:0.0009s ]
+SQL: SELECT `id`,`name`,`pid` FROM `miuu_categorynote`  [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000212s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000275s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014387s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014538s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000780s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000718s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001684s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000813s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000894s ]
+
+[ 2017-06-02T09:31:26+08:00 ] ::1 /web/Notes/notes/id/55.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000543s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000578s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000642s ]
+SQL: SHOW COLUMNS FROM `miuu_categoryart` [ RunTime:0.0015s ]
+SQL: SELECT `id`,`name`,`pid` FROM `miuu_categoryart`  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `miuu_notes` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `miuu_categorynote` [ RunTime:0.0013s ]
+SQL: UPDATE `miuu_notes` SET `click`=click+1 WHERE `id` = 55 [ RunTime:0.0006s ]
+SQL: SELECT `id`,`category_id`,`sn`,`name`,`thumb`,`add_time`,`desc`,`content`,`code`,`click` FROM `miuu_notes` WHERE `recycle` = 'no' AND `on_sale` = 'yes' AND `id` = 55 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name`,`pid` FROM `miuu_categorynote`  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name`,`add_time`,`thumb`,`click` FROM `miuu_notes` WHERE `recycle` = 'no' AND `on_sale` = 'yes' AND `recommend` = 'yes' ORDER BY id desc LIMIT 9   [ RunTime:0.0006s ]
+SQL: SELECT `id`,`name`,`thumb`,`add_time`,`click` FROM `miuu_notes` WHERE `recycle` = 'no' AND `on_sale` = 'yes' ORDER BY id desc LIMIT 4   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `miuu_notes` WHERE ( id<'55' ) ORDER BY id desc LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `miuu_notes` WHERE ( id>'55' ) ORDER BY id asc LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000234s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000273s ]
+NOTIC: [8] Undefined index: keywords /Users/miuu/object/miuu/web/Application/Runtime/Cache/Home/831e6181528be151be999e3f95076893.php 第 9 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015502s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015544s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000162s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000233s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000439s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000627s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000683s ]
+
+[ 2017-06-02T09:31:28+08:00 ] ::1 /web/Essay/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000783s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000840s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000952s ]
+SQL: SHOW COLUMNS FROM `miuu_categoryart` [ RunTime:0.0012s ]
+SQL: SELECT `id`,`name`,`pid` FROM `miuu_categoryart`  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `miuu_essay` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `miuu_categoryessay` [ RunTime:0.0037s ]
+NOTIC: [8] Undefined variable: where /Users/miuu/object/miuu/web/Application/Home/Model/EssayModel.class.php 第 67 行.
+SQL: SELECT COUNT(*) AS tp_count FROM miuu_essay a LIMIT 1   [ RunTime:0.0008s ]
+NOTIC: [8] Undefined variable: where /Users/miuu/object/miuu/web/Application/Home/Model/EssayModel.class.php 第 71 行.
+SQL: SELECT c.name as category_name,a.category_id,a.id,a.name,a.desc,a.thumb,a.add_time,a.content,a.click,a.source,a.author FROM miuu_essay a LEFT JOIN miuu_categoryessay AS c ON c.id=a.category_id  ORDER BY a.id desc LIMIT 0,12   [ RunTime:0.0037s ]
+SQL: SELECT `id`,`name`,`add_time`,`thumb`,`click`,`source`,`author` FROM `miuu_essay` WHERE `recycle` = 'no' AND `on_sale` = 'yes' ORDER BY click,source,author desc LIMIT 4   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name`,`pid` FROM `miuu_categoryessay`  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000208s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000253s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013721s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013768s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000156s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000231s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000429s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000490s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000564s ]
+
+[ 2017-06-02T09:31:40+08:00 ] ::1 /web/History/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000979s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001160s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001343s ]
+SQL: SHOW COLUMNS FROM `miuu_categoryart` [ RunTime:0.0023s ]
+SQL: SELECT `id`,`name`,`pid` FROM `miuu_categoryart`  [ RunTime:0.0012s ]
+NOTIC: [8] Use of undefined constant result - assumed 'result' /Users/miuu/object/miuu/web/Application/Home/Controller/HistoryController.class.php 第 23 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000212s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000259s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011045s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011100s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000146s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000235s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000423s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000551s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000604s ]
+
+[ 2017-06-02T09:31:40+08:00 ] ::1 /web/Tools/readers.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000296s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000427s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000466s ]
+SQL: SHOW COLUMNS FROM `miuu_categoryart` [ RunTime:0.0012s ]
+SQL: SELECT `id`,`name`,`pid` FROM `miuu_categoryart`  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000173s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000220s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009455s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009499s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000147s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000230s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000420s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000455s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000485s ]
+
+[ 2017-06-02T09:31:40+08:00 ] ::1 /web/About/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000350s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000550s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000608s ]
+SQL: SHOW COLUMNS FROM `miuu_categoryart` [ RunTime:0.0014s ]
+SQL: SELECT `id`,`name`,`pid` FROM `miuu_categoryart`  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `miuu_notes` [ RunTime:0.0018s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `miuu_notes` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `miuu_essay` [ RunTime:0.0015s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `miuu_essay` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `miuu_down` [ RunTime:0.0012s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `miuu_down` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `miuu_articles` [ RunTime:0.0013s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `miuu_articles` LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000427s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000472s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013788s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013832s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000147s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000248s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000438s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001160s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001234s ]
+
+[ 2017-06-02T16:24:20+08:00 ] ::1 /web/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000652s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000693s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000745s ]
+SQL: SHOW COLUMNS FROM `miuu_categoryart` [ RunTime:0.0028s ]
+SQL: SELECT `id`,`name`,`pid` FROM `miuu_categoryart`  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `miuu_articles` [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `miuu_down` [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `miuu_essay` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `miuu_notes` [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `miuu_news` [ RunTime:0.0035s ]
+NOTIC: [8] Undefined variable: where /Users/miuu/object/miuu/web/Application/Home/Model/ArticlesModel.class.php 第 53 行.
+SQL: SELECT COUNT(*) AS tp_count FROM miuu_articles a LIMIT 1   [ RunTime:0.0007s ]
+NOTIC: [8] Undefined variable: where /Users/miuu/object/miuu/web/Application/Home/Model/ArticlesModel.class.php 第 57 行.
+SQL: SELECT c.name as category_name,a.category_id,a.id,a.name,a.desc,a.thumb,a.sn,a.add_time,a.author,a.content,a.keywords,a.source,a.url,a.click FROM miuu_articles a LEFT JOIN miuu_categoryart AS c ON c.id=a.category_id  ORDER BY a.id desc LIMIT 0,12   [ RunTime:0.0013s ]
+SQL: SELECT `id`,`name`,`thumb`,`author`,`add_time` FROM `miuu_articles` WHERE `recycle` = 'no' AND `on_sale` = 'yes' AND `recommend` = 'yes' ORDER BY click desc LIMIT 3   [ RunTime:0.0005s ]
+SQL: SELECT `id`,`name`,`thumb`,`author`,`add_time`,`click` FROM `miuu_down` WHERE `recycle` = 'no' AND `on_sale` = 'yes' AND `recommend` = 'yes' ORDER BY rand() LIMIT 4   [ RunTime:0.0010s ]
+SQL: SELECT c.name as categorynews_name,a.category_id,a.id,a.name,a.sn,a.add_time,a.content,a.click FROM miuu_news a LEFT JOIN miuu_categorynews AS c ON c.id=a.category_id  WHERE `recycle` = 'no' AND `on_sale` = 'yes' AND `recommend` = 'yes' ORDER BY a.id desc LIMIT 6   [ RunTime:0.0007s ]
+SQL: SELECT `id`,`name`,`add_time`,`thumb`,`click`,`source`,`author` FROM `miuu_essay` WHERE `recycle` = 'no' AND `on_sale` = 'yes' AND `recommend` = 'yes' ORDER BY id desc LIMIT 4   [ RunTime:0.0005s ]
+SQL: SELECT `id`,`name`,`add_time`,`thumb`,`click` FROM `miuu_notes` WHERE `recycle` = 'no' AND `on_sale` = 'yes' AND `recommend` = 'yes' ORDER BY id desc LIMIT 9   [ RunTime:0.0005s ]
+SQL: SELECT `id`,`name` FROM `miuu_articles` ORDER BY add_time asc LIMIT 4   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000289s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000353s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018626s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018677s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000355s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000652s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001103s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001129s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001222s ]
+
+[ 2017-06-02T16:24:25+08:00 ] ::1 /web/Blog/articles/id/50.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000497s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000714s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000837s ]
+SQL: SHOW COLUMNS FROM `miuu_categoryart` [ RunTime:0.0038s ]
+SQL: SELECT `id`,`name`,`pid` FROM `miuu_categoryart`  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `miuu_articles` [ RunTime:0.0152s ]
+SQL: UPDATE `miuu_articles` SET `click`=click+1 WHERE `id` = 50 [ RunTime:0.0031s ]
+SQL: SELECT `id`,`category_id`,`sn`,`name`,`thumb`,`author`,`add_time`,`desc`,`content`,`keywords`,`source`,`url`,`code`,`click` FROM `miuu_articles` WHERE `id` = 50 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `id`,`name`,`thumb`,`author`,`add_time` FROM `miuu_articles` WHERE `recycle` = 'no' AND `on_sale` = 'yes' AND `recommend` = 'yes' ORDER BY rand() LIMIT 4   [ RunTime:0.0008s ]
+SQL: SELECT `id`,`name`,`thumb`,`add_time`,`click` FROM `miuu_articles` WHERE `recycle` = 'no' AND `on_sale` = 'yes' ORDER BY id desc LIMIT 4   [ RunTime:0.0014s ]
+SQL: SELECT * FROM `miuu_articles` WHERE ( id<'50' ) ORDER BY id desc LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `miuu_articles` WHERE ( id>'50' ) ORDER BY id asc LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000282s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000342s ]
+NOTIC: [8] Undefined variable: vv /Users/miuu/object/miuu/web/Application/Runtime/Cache/Home/b983be07d7749e2a5320823af3c77e64.php 第 128 行.
+NOTIC: [8] Undefined variable: v /Users/miuu/object/miuu/web/Application/Runtime/Cache/Home/b983be07d7749e2a5320823af3c77e64.php 第 128 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018236s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018300s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000247s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000291s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000604s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000568s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000623s ]
+
+[ 2017-06-02T16:25:01+08:00 ] ::1 /web/Blog/articles/id/49.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000130s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001713s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000490s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000542s ]
+SQL: SHOW COLUMNS FROM `miuu_categoryart` [ RunTime:0.0028s ]
+SQL: SELECT `id`,`name`,`pid` FROM `miuu_categoryart`  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `miuu_articles` [ RunTime:0.0019s ]
+SQL: UPDATE `miuu_articles` SET `click`=click+1 WHERE `id` = 49 [ RunTime:0.0010s ]
+SQL: SELECT `id`,`category_id`,`sn`,`name`,`thumb`,`author`,`add_time`,`desc`,`content`,`keywords`,`source`,`url`,`code`,`click` FROM `miuu_articles` WHERE `id` = 49 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `id`,`name`,`thumb`,`author`,`add_time` FROM `miuu_articles` WHERE `recycle` = 'no' AND `on_sale` = 'yes' AND `recommend` = 'yes' ORDER BY rand() LIMIT 4   [ RunTime:0.0008s ]
+SQL: SELECT `id`,`name`,`thumb`,`add_time`,`click` FROM `miuu_articles` WHERE `recycle` = 'no' AND `on_sale` = 'yes' ORDER BY id desc LIMIT 4   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `miuu_articles` WHERE ( id<'49' ) ORDER BY id desc LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `miuu_articles` WHERE ( id>'49' ) ORDER BY id asc LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000272s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000314s ]
+NOTIC: [8] Undefined variable: vv /Users/miuu/object/miuu/web/Application/Runtime/Cache/Home/b983be07d7749e2a5320823af3c77e64.php 第 128 行.
+NOTIC: [8] Undefined variable: v /Users/miuu/object/miuu/web/Application/Runtime/Cache/Home/b983be07d7749e2a5320823af3c77e64.php 第 128 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022906s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022947s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000216s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000258s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000522s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000703s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000768s ]
+
+[ 2017-06-02T16:25:50+08:00 ] ::1 /web/Public/Home/css/bootstrap.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000410s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000439s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000482s ]
+ERR: 无法加载控制器:Public
+

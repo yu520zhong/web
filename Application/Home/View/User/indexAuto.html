@@ -1,0 +1,26 @@
+<extend name="Base/common" />
+<block name="title"><title>会员中心主页</title></block>
+<block name="keywords"><meta name="keywords" content="觅友，技术学习分享"></block>
+<block name="description"><meta name="description" content="觅友_有朋自远方来，分享自己网站开发学习以及工作和生活中的点点滴滴，希望通过此网站，与大家一起交流、成长、进步！"></block>
+<block name="css"><include file="Public:css" /></block>
+<block name="web_css">
+    <link rel="stylesheet" href="__CSS__/index.css"/>
+</block>
+<block name="js"><include file="Public:js" /></block>
+<block name="web_js">
+    <script type="text/javascript" src="__JS__/index.js"></script>
+</block>
+<block name="header"><include file="Public:header" /></block>
+<block name="main">
+<div class="usercenter box">
+<include file="User/_menu" />
+<div class="content">
+		<div class="title">个人资料默认主页</div>
+		<div class="showinfo">
+			<p>您好，欢迎来到会员中心！</p>
+			<p>请从左侧选择一个操作。</p>
+		</div>
+</div>
+</div>
+</block>
+<block name="footer"><include file="Public:footer" /></block>

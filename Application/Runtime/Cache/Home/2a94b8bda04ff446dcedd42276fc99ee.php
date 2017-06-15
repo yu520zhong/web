@@ -15,14 +15,14 @@
 <link rel="stylesheet" href="/Public/Home/css/bootstrap.css" />
 <link rel="stylesheet" href="/Public/Home/css/bootstrap-reset.css" />
 
-<link rel="stylesheet" href="/Public/home/iconfont/iconfont.css" />
+<link rel="stylesheet" href="/Public/Home/iconfont/iconfont.css" />
 
 <!--external css-->
-<link rel="stylesheet" href="/Public/home/assets/font-awesome/css/font-awesome.css" />
-<link rel="stylesheet" href="/Public/home/assets/bxslider/jquery.bxslider.css" />
+<link rel="stylesheet" href="/Public/Home/assets/font-awesome/css/font-awesome.css" />
+<link rel="stylesheet" href="/Public/Home/assets/bxslider/jquery.bxslider.css" />
 
-<link rel="stylesheet" href="/Public/home/assets/revolution_slider/css/rs-style.css" media="screen" />
-<link rel="stylesheet" href="/Public/home/assets/revolution_slider/rs-plugin/css/settings.css" media="screen" />
+<link rel="stylesheet" href="/Public/Home/assets/revolution_slider/css/rs-style.css" media="screen" />
+<link rel="stylesheet" href="/Public/Home/assets/revolution_slider/rs-plugin/css/settings.css" media="screen" />
 
 <!-- Custom styles for this template -->
 <link rel="stylesheet" href="/Public/Home/css/style.css" />
@@ -48,15 +48,9 @@
 <script src="/Public/Home/js/respond.min.js"></script>
 <![endif]-->
 <?php
-<<<<<<< HEAD
 $IMG_URL = 'http://7xsqlc.com1.z0.glb.clouddn.com/'; $IMG_THUMB = '?imageView2/1/w/100/h/100'; $IMG_BIG_W = '?imageView2/2/w/840'; $IMG_BIG_H = '?imageView2/2/h/300'; $IMG_BIG_WI = '?imageView2/2/w/840/interlace/1'; $IMG_BIG_HI = '?imageView2/2/h/300/interlace/1'; $IMG_SMALL_165 = '?imageView2/2/w/165'; ?>
 </head>
 <body>
-=======
-$IMG_URL = 'http://7xsqlc.com1.z0.glb.clouddn.com/'; $IMG_THUMB = '?imageView2/1/w/100/h/100'; $IMG_BIG_W = '?imageView2/2/w/840'; $IMG_BIG_H = '?imageView2/2/h/300'; $IMG_BIG_WI = '?imageView2/2/w/840/interlace/1'; $IMG_BIG_HI = '?imageView2/2/h/300/interlace/1'; $IMG_SMALL_165 = '?imageView2/2/w/165'; ?>
-</head>
-<body>
->>>>>>> cbfb6d4226e038bfaf31904602e598a887bc1f33
 <!--header start-->
 <header class="header-frontend">
     <div class="navbar navbar-default navbar-static-top" id="J_m_nav">
@@ -110,7 +104,6 @@ $IMG_URL = 'http://7xsqlc.com1.z0.glb.clouddn.com/'; $IMG_THUMB = '?imageView2/1
 <!--header end-->
 
 
-<<<<<<< HEAD
 
 
 
@@ -282,179 +275,6 @@ $IMG_URL = 'http://7xsqlc.com1.z0.glb.clouddn.com/'; $IMG_THUMB = '?imageView2/1
 </div>
 </div>
 
-=======
-
-
-
-<!--container start-->
-<div class="content">
-<div class="container space30">
-    <div class="row">
-        <!--feature start-->
-        <div class="col-md-8">
-            <div class="flicker-banner">
-                <ul>
-                    
-                    <li data-background="http://7xsqlc.com1.z0.glb.clouddn.com/9.jpg">
-                        <a href="<?php echo U('Blog/index');?>" target="_blank">
-                            <div class="flick-title">在技术的海洋里遨游</div>
-                            <div class="flick-sub-text">学习是对自己最好的投资</div>
-                        </a>
-                    </li>
-                    <li data-background="http://7xsqlc.com1.z0.glb.clouddn.com/1484646719_1832088484.jpg">
-                        <a href="<?php echo U('Notes/index');?>" target="_blank">
-                            <div class="flick-title">有一些往事酒品茶香</div>
-                            <div class="flick-sub-text">聆听生活的美丽</div>
-                        </a>
-                    </li>
-                    <li data-background="http://7xsqlc.com1.z0.glb.clouddn.com/10.jpg">
-                        <a href="<?php echo U('Essay/index');?>" target="_blank">
-                            <div class="flick-title">生活之美源于发现</div>
-                            <div class="flick-sub-text">品味经典，感悟人生</div>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <ul class="beauty-list row">
-                <?php if(is_array($tops["data"])): foreach($tops["data"] as $key=>$v): ?><li class="top col-md-4" data-index="1">
-                    <div>
-                        <div class="img-cover">
-                            <a href="<?php echo U('Blog/articles',array('id'=>$v['id']));?>" target="_blank">
-                                <img src="<?php echo ($v["thumb"]); ?>" alt="<?php echo ($v["name"]); ?>">
-                                <div class="article-title">
-                                    <div class="article-wrapper"><?php echo ($v["name"]); ?></div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </li><?php endforeach; endif; ?>
-            </ul>
-            <section class="article">
-                    <h4 class="new-article-title">
-                        <span>最新文摘</span>
-                        <a href="<?php echo U('Blog/index');?>"><span class="more">浏览更多</span></a>
-                    </h4>
-                    <?php if(!empty($articles["data"])): if(is_array($articles["data"])): foreach($articles["data"] as $key=>$v): ?><article class="excerpt excerpt-text">
-                                <div class="row">
-                                    <?php if(!empty($v["thumb"])): ?><div class="col-md-4">
-                                            <a href="<?php echo U('Blog/articles',array('id'=>$v['id']));?>" class="nail">
-                                                <img src="<?php echo ($v["thumb"]); ?>" alt="<?php echo ($v["name"]); ?>"  class="thumb">
-                                                <?php if(!empty($v["category_name"])): ?><span class="cat"><?php echo ($v["category_name"]); ?></span>
-                                                    <?php else: ?><span class="cat">未分类</span><?php endif; ?>
-                                            </a>
-
-                                        </div>
-                                        <?php else: endif; ?>
-                                    <header class="col-md-8">
-                                        <div class="excerpt-content">
-                                            <h2 class="title">
-                                                <a href="<?php echo U('Blog/articles',array('id'=>$v['id']));?>" target="_blank" title="<?php echo ($v["name"]); ?>"><?php echo ($v["name"]); ?></a>
-                                            </h2>
-                                            <ul class="meta list-inline">
-                                                <li><i class="miuu u-rili"></i> <?php echo ($v["add_time"]); ?></li>
-                                                <li class="writer"><i class="miuu u-yonghu"></i> <?php echo ($v["author"]); ?></li>
-                                                <li class="pv"><i class="miuu u-eyes"></i> 阅读(<?php echo ($v["click"]); ?>)</li>
-                                            </ul>
-                                            <p class="note"><?php echo ($v["desc"]); ?></p>
-                                        </div>
-
-                                    </header>
-                                </div>
-                            </article><?php endforeach; endif; endif; ?>
-                </section>
-                <nav class="text-center">
-                    <div class="pagination"><?php echo ($articles["pagelist"]); ?></div>
-                </nav>
-        </div>
-        <div class="col-md-4 sidebar">
-            <div class="widget widget-posts clearfix">
-                <div id="calendar"></div>
-            </div>
-            <div class="widget widget-posts" >
-                <div class="widget-banner">
-                    <a href="#" target="_blank" rel="nofollow"><img src="http://7xsqlc.com1.z0.glb.clouddn.com/banner/small-4.jpg" class="full-img"></a>
-                </div>
-            </div>
-
-            
-           
-
-            <div class="widget widget-posts">
-                <h3>我在路上</h3>
-                <ul>
-                    <?php if(is_array($notes)): foreach($notes as $key=>$v): ?><li class="widget-post-item">
-                            <a target="_blank" href="<?php echo U('Notes/notes',array('id'=>$v['id']));?>">
-                                <div class="img-box">
-                                    <?php if(!empty($v["thumb"])): ?><img class="thumb" src="<?php echo ($v["thumb"]); ?>" alt="<?php echo ($v["name"]); ?>">
-                                        <?php else: endif; ?>
-                                </div>
-                                <div class="info-box">
-                                    <div class="info-box-inner">
-                                        <span class="text font15">
-                                            <?php echo ($v["name"]); ?>
-                                        </span>
-                                        <div class="tips">
-                                            <span class="muted left"><?php echo ($v["add_time"]); ?></span>
-                                            <span class="muted right">阅读(<?php echo ($v["click"]); ?>)</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </li><?php endforeach; endif; ?>
-                </ul>
-            </div>
-
-
-            <div class="widget widget-posts">
-                <h3>美文分享</h3>
-                <ul class="beauty-list">
-                    <?php if(is_array($essay)): foreach($essay as $key=>$v): ?><li class="top" data-index="1">
-                            <div>
-                                <div class="img-cover">
-                                    <a href="<?php echo U('Essay/essay',array('id'=>$v['id']));?>" target="_blank" >
-                                        <span class="">
-                                            <b>Hot</b>
-                                        </span>
-                                        <img src="<?php echo ($v["thumb"]); ?>" alt="<?php echo ($v["name"]); ?>"> 
-                                        <div class="article-title">
-                                            <div class="article-wrapper"><?php echo ($v["name"]); ?>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </li><?php endforeach; endif; ?>
-                </ul>
-            </div>
-
-            <div class="widget widget-posts">
-                <h3>热门软件</h3>
-                <ul class="beauty-list">
-                        <?php if(is_array($down["data"])): $i = 0; $__LIST__ = $down["data"];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i;?><li class="top">
-                            <div class="img-left-cover">
-                                <a href="<?php echo U('Down/down',array('id'=>$v['id']));?>" target="_blank" >
-                                    <span><?php echo ($i); ?></span>
-                                    <?php if(empty($v["thumb"])): ?><img src="http://7xsqlc.com1.z0.glb.clouddn.com/default.jpg" alt="">
-                                        <?php else: ?>
-                                        <img src="<?php echo ($v["thumb"]); ?>" class="img-responsive" alt="<?php echo ($v["name"]); ?>"><?php endif; ?>
-                                </a>
-                            </div>
-                            <div class="right-article">
-                                <h4><a href="<?php echo U('Down/down',array('id'=>$v['id']));?>" target="_blank"><?php echo ($v["name"]); ?></a></h4>
-                                <div class="time_about" title="2017-04-27 11:23">
-                                    <span>下载（<?php echo ($v["click"]); ?>）</span></div>
-                            </div>
-                        </li><?php endforeach; endif; else: echo "" ;endif; ?>
-                </ul>
-            </div>
-
-        </div>
-        <!--feature end-->
-    </div>
-</div>
-</div>
-
->>>>>>> cbfb6d4226e038bfaf31904602e598a887bc1f33
 <!--footer start-->
 <footer>
 <div class="footer-top clearfix">
@@ -645,7 +465,6 @@ document.getElementsByTagName('iframe')[0].width="500";
         });
     
     });
-<<<<<<< HEAD
 </script>
 
 
@@ -698,58 +517,4 @@ document.getElementsByTagName('iframe')[0].width="500";
 
 
 </body>
-=======
-</script>
-
-
-<script src="/web/Public/Home/plugins/Flickerbanner/js/modernizr-custom-v2.7.1.min.js"></script>
-<script src="/web/Public/Home/plugins/Flickerbanner/js/jquery-finger-v0.1.0.min.js"></script>
-<script src="/web/Public/Home/plugins/Flickerbanner/js/flickerplate.min.js"></script>
-
-
-<script src="/web/Public/Home/js/search.js"></script>
-
-<script>
-    $("#Index_index").addClass("active");
-    
-    $('.flicker-banner').flicker({
-         arrows: true,
-        arrows_constraint: false,
-        auto_flick: true,
-        auto_flick_delay: 10,
-        block_text: true,
-        dot_navigation: true,
-        dot_alignment: 'center',
-        flick_animation: 'transition-slide',
-        flick_position: 1,
-        inner_width: false,
-        theme: 'dark'
-    });
-
-    
-    {/* 
-    //微信端判断，提示使用浏览器打开
-    $(window).on("load",function(){
-        var winHeight = $(window).height();
-        function is_weixin() {
-            var ua = navigator.userAgent.toLowerCase();
-            if (ua.match(/MicroMessenger/i) == "micromessenger") {
-                return true;
-            } else {
-                return false;
-            }
-        }
-        var isWeixin = is_weixin();
-        if(isWeixin){
-            $(".weixin-tip").css("height",winHeight);
-            $(".weixin-tip").show();
-        }
-    })
-    */}
-</script>
-
-
-
-</body>
->>>>>>> cbfb6d4226e038bfaf31904602e598a887bc1f33
 </html>

@@ -1,0 +1,45 @@
+.CodeMirror {
+    font-size: 14px;
+    height: 470px!important;
+    font-family: "Courier New", Courier!important;
+}
+
+#textareaCode {
+    height: 470px;
+}
+
+#iframeResult {
+    border: 0!important;
+    min-width: 100px;
+    width: 100%;
+    height: 470px;
+    background-color: #fff;
+}
+
+@media screen and (max-width:
+            768px) {
+    #textareaCode {
+        height: 300px;
+    }
+
+    .CodeMirror {
+        font-size: 12px;
+        height: 300px;
+    }
+
+    #iframeResult {
+        height: 300px;
+    }
+
+    .form-inline {
+        padding: 6px 0 2px 0;
+    }
+}
+
+.ad {
+    text-align: center;
+}
+
+.code-submit {
+    margin-top: 10px;
+}

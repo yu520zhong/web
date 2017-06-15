@@ -1,0 +1,107 @@
+<extend name="Base/common" />
+<block name="title"><title>主页</title></block>
+<block name="keywords"><meta name="keywords" content="觅友，觅友网，觅友博客，觅友小站，前端，miuu,IT开发，css，css3，js，js特效，php，jquery，ajax，java"></block>
+<block name="description"><meta name="description" content="觅友_有朋自远方来，分享自己网站开发学习以及工作和生活中的点点滴滴，希望通过此网站，与大家一起交流、成长、进步！"></block>
+<block name="css"><include file="Public:css" /></block>
+<block name="web_css">
+    <link rel="stylesheet" href="__CSS__/cart.css"/>
+</block>
+<block name="js"><include file="Public:js" /></block>
+<block name="web_js">
+    <script type="text/javascript" src="__JS__/index.js"></script>
+</block>
+<block name="header"><include file="Public:header" /></block>
+<block name="main">
+<div class="usercenter wrapper wrapper-content">
+	<div class="container">
+		<div class="row">
+			<include file="User/_menu" />
+			<div class="col-sm-9">
+				<div class="title"><h4><strong>管理收货地址</strong></h4></div>
+				<hr>
+				<form method="post" >
+				<input id="address" type="hidden" name="address" />
+				<table class="addr table nth-child">
+					<tr><th width="95" class="control-label">收件人：</th><td><input type="text" value="{$addr.consignee}" class="form-control" name="consignee" /></td></tr>
+					<tr><th class="control-label">收件地区：</th><td>
+						<select id="province" class="control-select" ></select> <select id="city" class="control-select"></select> <select id="area" class="control-select"></select>
+						</td></tr>
+					<tr><th class="control-label">详细地址：</th><td><input id="addr" type="text" class="form-control" /></td></tr>
+					<tr><th class="control-label">手机：</th><td><input type="text" value="{$addr.phone}" name="phone" class="form-control" /></td></tr>
+					<tr><th class="control-label">邮箱：</th><td><input type="text" value="{$addr.email}" name="email" class="form-control" /></td></tr>
+					<tr><th></th><td class="act">
+						<input type="submit" value="保存" id="submit" class="btn btn-info" />
+						<input type="button" value="取消" onclick="location.href='{:U('user/addr')}'" class="btn btn-white" />
+					</td></tr>
+				</table>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="__PUBLIC__/common/js/chinaArea.js"></script>
+<script>
+//填充地区三级下拉菜单
+(function(){
+	var data = chinaArea(); //载入JSON地区数据
+	var $province = $("#province");
+	var $city = $("#city");
+	var $area = $("#area");
+	//1级下列菜单的change事件
+	$province.change(function(){
+		var id = $(this).val();
+		if(id==="0" || $(this).find('option:selected').text()==="其他"){
+			$city.hide();
+			$area.hide();
+		}else{
+			fillSelect($city,data[id].sub);
+			$city.show();
+			$area.hide();
+		}
+	});
+	//2级下列菜单的change事件
+	$city.change(function(){
+		var id = $(this).val();
+		var pid = $province.val();
+		if(id==="0" || $(this).find('option:selected').text()==="其他"){
+			$area.hide();
+		}else if(data[pid].sub[id].sub!==undefined){
+			fillSelect($area,data[pid].sub[id].sub);
+			$area.show();
+		}
+	});
+	fillSelect($province,data); //自动填充1级菜单
+	$province.change(); //自动载入第1个下拉菜单
+	//自动填充下拉菜单
+	function fillSelect($select,data){
+		$select.html(''); //清空原有的数据
+		for(var i in data){
+			$select.append('<option value="'+i+'">'+data[i].name+'</option>');
+		}
+	}
+})();
+//自动填写收货地址
+(function(){
+	var auto = {:json_encode($addr['area'])};
+	if(auto.length>3){
+		$("#province").find('option:contains("'+auto[0]+'")').attr("selected","selected").change();
+		$("#city").find('option:contains("'+auto[1]+'")').attr("selected","selected").change();
+		$("#area").find('option:contains("'+auto[2]+'")').attr("selected","selected");
+		$("#addr").val(auto[3]);
+	}
+})();
+//提交表单时检查并拼接完整地址
+$("#submit").click(function(){
+	var pro_val = $("#province:visible").find("option:selected").text();
+	var city_val = $("#city:visible").find("option:selected").text();
+	var area_val = $("#area:visible").find("option:selected").text();
+	var addr = $("#addr").val();
+	if(pro_val === '请选择' || city_val === '请选择' || area_val === '请选择' || $.trim(addr)===""){
+		$.showTip("请输入正确的地址");
+		return false;
+	}
+	$("#address").val(pro_val+','+city_val+','+area_val+','+addr);
+});
+</script>
+</block>
+<block name="footer"><include file="Public:footer" /></block>

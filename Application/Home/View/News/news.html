@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="renderer" content="webkit">
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<title>{$title}_觅友</title>
+<meta name="keywords" content="{$news.keywords}--小段子，觅友">
+<meta name="description" content="{$news.desc}">
+<include file="Public:css" />
+<link rel="stylesheet" href="__CSS__/index.css" />
+<include file="Public:aside_js" />
+</head>
+<body>
+<include file="Public:header" />
+<!-- revolution slider start -->
+<section class="focusbox">
+    <div class="container">
+        <h1 class="focusbox-title">小段子</h1>
+        <div class="focusbox-text">生活处处皆段子，人生百态，冷暖是非！</div>
+    </div>
+</section>
+<!--container start-->
+<div class="content">
+    <div class="container container-no-sidebar space30">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="content single">
+                    <header class="article-header">
+                       <h1 class="article-title"><a href="#">{$news.name}</a></h1>
+                       <div class="article-meta">
+                           <span class="item">{$news.add_time}</span>
+                           <span class="item">来源：<a href="{$news.url}" target="_blank">{$news.source}</a></span>
+                           <span class="item post-views">阅读({$news.click})</span>
+                       </div>
+                    </header>
+                    <article class="article-content">
+                    <notempty name="news.thumb">
+                        <p class="text-center">
+                            <img class="alignnone size-full wp-image-74" src="{$news.thumb}" />
+                        </p>
+                        <else/>
+                    </notempty>
+                       {$news.content}
+                    </article>
+                    <ul class="pager clearfix">
+                        <empty name="prev">
+                            <else/>
+                            <li class="previous">
+                                <a title="{$prev.name}" href="{:U('News/news',array('id'=>$prev['id']))}" data-toggle="tooltip" data-original-title="{$prev.name}">上一篇</a>
+                            </li>
+                        </empty>
+                        <empty name="next">
+                            <else/>
+                            <li class="next">
+                                <a title="{$next.name}" href="{:U('News/news',array('id'=>$next['id']))}" data-toggle="tooltip" data-original-title="{$next.name}">下一篇</a>
+                            </li>
+                        </empty>
+                    </ul>
+                    <div class="relates"><div class="title"><h3>相关推荐</h3></div>
+                        <ul>
+                            <foreach name="recommend" item="v">
+                                <li>
+                                    <a href="{:U('News/news',array('id'=>$v['id']))}">{$v.name}</a>
+                                </li>
+                            </foreach>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 sidebar">
+                <div class="widget widget-posts">
+                    <h3>最新推荐</h3>
+                    <ul>
+                        <foreach name="latest.data" item="v">
+                            <li class="widget-post-item">
+                                <a target="_blank" href="{:U('News/news',array('id'=>$v['id']))}">
+                                    <div class="img-box">
+                                        <notempty name="v.thumb">
+                                                <img class="thumb" src="{$v.thumb}" >
+                                            <else/>
+                                        </notempty>
+                                    </div>
+                                    <div class="info-box">
+                                        <div class="info-box-inner">
+                                            <span class="text font15">
+                                                {$v.name}
+                                            </span>
+                                            <div class="tips">
+                                                <span class="muted left">{$v.add_time}</span>
+                                                <span class="muted right">阅读（{$v.click}）</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </foreach>
+                    </ul>
+                </div>
+                <div class="widget widget-posts">
+                    <a href="#" target="_blank" rel="nofollow"><img src="http://7xsqlc.com1.z0.glb.clouddn.com/banner/small-2.png" class="full-img"></a>
+                </div>
+                <div class="widget widget-posts" >
+                    <a href="#" target="_blank" rel="nofollow"><img src="http://7xsqlc.com1.z0.glb.clouddn.com/banner/small-1.jpg" class="full-img"></a>
+                </div>
+           </div>
+        </div>
+    </div>
+</div>
+<include file="Public:footer" />
+<include file="Public:js" />
+<script>
+$("#News_index").addClass("active");
+</script>
+</body>
+</html>

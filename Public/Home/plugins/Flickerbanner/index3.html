@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>jQuery幻灯片插件Flickerplate演示-动画方式_dowebok</title>
+<link href="css/flickerplate.css" rel="stylesheet">
+<style>
+.flicker-example { width: 900px; height: 300px; margin-left: auto; margin-right: auto;}
+</style>
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/modernizr-custom-v2.7.1.min.js"></script>
+<script src="js/jquery-finger-v0.1.0.min.js"></script>
+<script src="js/flickerplate.min.js"></script>
+<script>
+$(function(){
+	$('.flicker-example').flicker({
+		flick_animation: 'jquery-slide',
+		block_text: false
+	});
+});
+</script>
+</head>
+
+<body>
+
+
+<div class="main">
+	<div class="mianc">
+		<h1>动画方式</h1>
+
+		<!-- Demo -->
+		<div class="flicker-example">
+			<ul>
+				<li data-background="img/field.jpg">
+					<div class="flick-title">Flickerplate</div>
+					<div class="flick-sub-text">——小巧的jQuery幻灯片插件</div>
+				</li>
+				<li data-background="img/forest.jpg">
+					<div class="flick-title">可修改 Javascript 或 CSS</div>
+					<div class="flick-sub-text">查看参数，看看如何修改成你需要的效果</div>
+				</li>
+				<li data-background="img/frozen-water.jpg">
+					<div class="flick-title">触摸事件</div>
+					<div class="flick-sub-text">引入 jQuery Finger 插件可支持移动设备触摸事件</div>
+				</li>
+			</ul>
+		</div>
+		<!-- Demo end -->
+
+		<p class="dowebok-explain">Flickerplate 的动画方式有 transition-slide、transform-slide、jquery-slide  和 scroller-slide 四种，主要是使用 CSS3 或 JavaScript 方式，视觉效果上并无太大差异。JavaScript 方式可兼容不支持 CSS3 的浏览器（如低版本 IE）。</p>
+
+		<p class="vad">
+			<a href="http://www.dowebok.com/" target="_blank">dowebok.com</a>
+			<a href="http://www.dowebok.com/101.html" target="_blank">说 明</a>
+			<a href="http://www.dowebok.com/101.html" target="_blank">下 载</a>
+		</p>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

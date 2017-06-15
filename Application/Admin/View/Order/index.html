@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <empty name="order">
+    您目前没有订单。
+<else/>
+    <foreach name="order" item="v">
+        <table>
+            <tr><th>订单号码：<span>ITCAST{$v.id}</span>
+            下单时间：{$v.add_time}</td>
+            <td>订单总价：￥{$v.price}
+            <a href="#">立即支付</a>
+            <a href="#" data-id="{$v.id}">取消订单</a></td></tr>
+        </table>
+        <table>
+            <foreach name="v.goods" item="vv">
+                <tr><td><a href="/?a=goods&id={$vv.id}" 
+                target="_blank">{$vv.name}</a></td>
+                <td>{$vv.num}件</td>
+                <td>￥{$vv.price}</td></tr>
+            </foreach>
+            <tr><td colspan="3">收件地址：{$v.address.address}，
+            收件人：{$v.address.consignee}，
+            联系电话：{$v.address.phone}</td></tr>
+        </table>
+    </foreach>
+</empty>
+    </body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="renderer" content="webkit">
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<title>历史的今天_觅友</title>
+<meta name="keywords" content="觅友，觅友网，觅友博客，觅友小站，前端，miuu,IT开发，css，css3，js，js特效，php，jquery，ajax，java">
+<meta name="description" content="觅友，分享自己网站开发学习以及工作和生活中的点点滴滴，希望通过此网站，与大家一起交流、成长、进步！">
+<include file="Public:css" />
+<include file="Public:aside_js" />
+<style>
+
+
+</style>
+</head>
+<body>
+<include file="Public:header" />
+<!-- revolution slider start -->
+<section class="focusbox">
+    <div class="container">
+        <h1 class="focusbox-title">历史的今天</h1>
+        <div class="focusbox-text">回顾历史的长河，历史是生活的一面镜子！</div>
+    </div>
+</section>
+<!--container start-->
+<div class="content">
+    <div class="container space30">
+        <div class="row">
+            <!--feature start-->
+            <div class="col-md-8">
+                <div class="excerpt excerpt-text">
+                    <div class="event">
+                        <ul class="timeline">
+
+                            <foreach name="history" item="v">
+                                <li>
+                                    <div class="event-time">{$v.year}年</div>
+                                    <div class="event-title">{$v.des}</div>
+                                </li>
+                            </foreach>
+                        </ul>
+                    </div>
+                </div>
+                <div class="blog-comments mtop15">
+                    <!-- 如果您配置过sourceid，建议在div标签中配置sourceid、cid(分类id)，没有请忽略  -->
+                    <div id="cyEmoji" role="cylabs" data-use="emoji" sid="006"></div>
+
+                    <script type="text/javascript" charset="utf-8" src="https://changyan.itc.cn/js/lib/jquery.js"></script>
+                    <script type="text/javascript" charset="utf-8" src="https://changyan.sohu.com/js/changyan.labs.https.js?appid=cysUkdzlR"></script>
+                    <!-- 畅言评论框 start -->
+                    <div id="SOHUCS" sid="006"></div>
+                    <!-- 畅言评论框 end -->
+                </div>
+            </div>
+           <div class="col-md-4 sidebar">
+                <div class="widget widget-posts clearfix">
+                    <div id="calendar"></div>
+                </div>
+                <div class="widget widget-posts">
+                    <a href="#" target="_blank" rel="nofollow"><img src="http://7xsqlc.com1.z0.glb.clouddn.com/banner/small-2.png" class="full-img"></a>
+                </div>
+                
+                <div class="widget widget-posts" >
+                    <a href="#" target="_blank" rel="nofollow"><img src="http://7xsqlc.com1.z0.glb.clouddn.com/banner/small-1.jpg" class="full-img"></a>
+                </div>
+
+           </div>
+            <!--feature end-->
+        </div>
+    </div>
+</div>
+
+<include file="Public:footer" />
+<include file="Public:js" />
+<include file="Public:calendar" />
+
+<!-- ajax方法暂时注释（！SEO）  -->
+<!-- <script type="text/javascript">
+    $(function(){
+        $.ajax({
+            type:"get",
+            contentType: "application/json; charset=utf-8",
+            url : ThinkPHP['MODULE'] + '/History/history',
+            success : function (data, response, status) {
+                var event = data.result, item;
+                var temp = "";
+                var ary = [];
+                for (var j in event) {
+                    ary.push(event[j]);
+                }
+                ary.sort(function(a,b){
+                        return b.year - a.year;
+                    });
+                for (var j in ary) {
+                    var item = ary[j];
+                    temp+= '<li>'
+                        + '<div class="event-time">'
+                        + item.year
+                        + "年"
+                        + '</div>'
+                        + '<div class="event-title">'
+                        + item.des
+                        + '</div>'
+                        + '</li>';
+                }
+                $(".timeline").html(temp);
+            },
+        })
+    });
+</script> -->
+
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"maceuu"};
+(function() {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';ds.async = true;
+        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0]
+         || document.getElementsByTagName('body')[0]).appendChild(ds);
+})();
+
+$("#history_index").addClass("active");
+</script>
+
+<!-- 畅言公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+    (function(){
+        var appid = 'cysUkdzlR';
+        var conf = 'prod_c9d3d122ccb6b50416fb79aa1d106c49';
+        var width = window.innerWidth || document.documentElement.clientWidth;
+        if (width < 960) {
+            window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" src="https://changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' + appid + '&conf=' + conf + '"><\/script>'); } else { var loadJs=function(d,a){var c=document.getElementsByTagName("head")[0]||document.head||document.documentElement;var b=document.createElement("script");b.setAttribute("type","text/javascript");b.setAttribute("charset","UTF-8");b.setAttribute("src",d);if(typeof a==="function"){if(window.attachEvent){b.onreadystatechange=function(){var e=b.readyState;if(e==="loaded"||e==="complete"){b.onreadystatechange=null;a()}}}else{b.onload=a}}c.appendChild(b)};loadJs("https://changyan.sohu.com/upload/changyan.js",function(){window.changyan.api.config({appid:appid,conf:conf})}); } })(); </script>
+<!-- 畅言公共JS代码 end -->
+</body>
+</html>

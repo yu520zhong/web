@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="renderer" content="webkit">
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta name="baidu-site-verification" content="UcNs3IHDX2" />
+<title>觅友_有朋自远方来-全站搜索</title>
+<meta name="keywords" content="觅友，觅友网，觅友博客，觅友小站，前端，miuu,IT开发，css，css3，js，js特效，php，jquery，ajax，java">
+<meta name="description" content="小鱼说，是小鱼的个人网站，致力于收集整理互联网前沿的开发技术，分享自己网站开发学习以及工作和生活中的点点滴滴，希望通过此网站，与大家一起交流、成长、进步！">
+<include file="Public:css" />
+<link rel="stylesheet" type="text/css" href="__PLUGINS__/IonCalendar/css/ion.calendar.css">
+<link rel="stylesheet" href="__CSS__/index.css" />
+<link rel="stylesheet" href="__PLUGINS__/slick/css/slick.css">
+<link rel="stylesheet" href="__PLUGINS__/slick/css/slick-set.css">
+<include file="Public:aside_js" />
+</head>
+<body>
+<include file="Public:header" />
+<div class="content">
+<div class="container space30">
+    <div class="row clearfix">
+        <div class="col-md-8">
+            <div class="demo">
+                <div class="mb10">
+                    <div class="row clearfix">
+                        <div class="col-md-10">
+                            <div class="search-pre" id="search">
+                                <input type="text" name="keyword" id="keyword" value="" class="search-ipt" placeholder="请输入关键词" autocomplete="off">
+                                <ul id="list"></ul>
+                                <div class="content" id="ajax_lists"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <input type="submit" id="home" value="全站搜索" class="search-btn-pre search-btn-blue">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content">
+                    <section class="article" id="biuuu_city_list">
+                    </section>
+                    <nav class="text-center" id="biuuu_city">
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 sidebar">
+            <div class="widget widget-posts">
+                <a href="#" target="_blank" rel="nofollow"><img src="http://7xsqlc.com1.z0.glb.clouddn.com/banner/small-5.jpg" class="full-img"></a>
+            </div>
+            <div class="widget widget-posts" >
+                <a href="#" target="_blank" rel="nofollow"><img src="http://7xsqlc.com1.z0.glb.clouddn.com/banner/small-1.jpg" class="full-img"></a>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<include file="Public:footer" />
+<include file="Public:js" />
+<script src="__PLUGINS__/laypage/laypage/laypage.js"></script>
+<script type="text/javascript">
+    var url_ajax = "__APP__/Other/orders";
+    var host = '__APP__/';
+    $(function() {
+        $("#home").on("click", function() {
+            var keyword = $("#keyword").val();
+
+            $.ajax({
+                type:"GET",
+                url:url_ajax,
+                data:{keyword: keyword},
+                beforeSend:loading,//执行ajax前执行loading函数.直到success
+                success:Response //成功时执行Response函数
+            });
+            function loading(){
+                index = layer.load(0, {shade: false});
+            };
+            function Response(data){
+                layer.close(index);  //销毁index loading
+                var event = data;
+                var data = [];
+                for (var j in event) {
+                    data.push(event[j]);
+                }
+                var nums = 5; //每页出现的数量
+                var pages = Math.ceil(data.length/nums); //得到总页数
+                var thisDate = function(curr){
+                    //此处只是演示，实际场景通常是返回已经当前页已经分组好的数据
+                    var str = '', last = curr*nums - 1;
+                    last = last >= data.length ? (data.length-1) : last;
+                    for(var i = (curr*nums - nums); i <= last; i++){
+                        str += '<article class="excerpt excerpt-text">'
+                            + '<div class="row">'
+                            +    '<div class="col-md-4">'
+                            +        '<a href="#" class="nail">'
+                            +            '<img src=' + data[i]['thumb'] + ' alt="" class="thumb">'
+                            +        '</a>'
+                            +    '</div>'
+                            +     '<header class="col-md-8">'
+                            +     '<div class="excerpt-content">'
+                            +             '<h2 class="title">'
+                            +         '<a href="' + host + data[i]['links'] + '">'
+                            +                 data[i]['name']
+                            +         '</a>'
+                            +             '</h2>'
+                            +         '<ul class="meta list-inline">'
+                            +             '<li>'
+                            +           '<i class="miuu u-rili"></i> '
+                            +                 data[i]['add_time']
+                            +             '</li>'
+                            +             '<li class="pv">'
+                            +               '<i class="miuu u-eyes"></i> '
+                            +                 '阅读'
+                            +               '('
+                            +               data[i]['click']
+                            +               ')'
+                            +             '</li>'
+                            +        '</ul>'
+                            +        '<div class="note">'
+                            +            data[i]['desc']
+                            +        '</div>'
+                            +       '</div>'
+                            +    '</header>'
+                            + '</div>'
+                            + '</article>';
+                    }
+                    return str;
+                };
+
+                //调用分页
+                laypage({
+                    cont: 'biuuu_city',
+                    pages: pages,
+                    skip: true,
+                    jump: function(obj){
+                        document.getElementById('biuuu_city_list').innerHTML = thisDate(obj.curr);
+                    }
+                });
+            };
+
+
+/*      此方法没有放loading,故注释，用上面AJAX方法
+        $.get(url_ajax, {keyword: keyword}, function(data) {
+                var event = data;
+                var data = [];
+                for (var j in event) {
+                    data.push(event[j]);
+                }
+                var nums = 5; //每页出现的数量
+                var pages = Math.ceil(data.length/nums); //得到总页数
+                var thisDate = function(curr){
+                    //此处只是演示，实际场景通常是返回已经当前页已经分组好的数据
+                    var str = '', last = curr*nums - 1;
+                    last = last >= data.length ? (data.length-1) : last;
+                    for(var i = (curr*nums - nums); i <= last; i++){
+                        str += '<article class="excerpt excerpt-text">'
+                            + '<div class="row">'
+                            +     '<header class="col-md-8">'
+                            +         '<a href="' + host + data[i]['links'] + '">'
+                            +             '<h2 class="blog-title">'
+                            +                 data[i]['name']
+                            +             '</h2>'
+                            +         '</a>'
+                            +         '<ul class="meta list-inline">'
+                            +             '<li>'
+                            +                 data[i]['add_time']
+                            +             '</li>'
+                            +             '<li class="pv">'
+                            +                 '阅读'
+                            +               (data[i]['click'])
+                            +             '</li>'
+                            +        '</ul>'
+                            +        '<div class="blog-desc">'
+                            +            data[i]['desc']
+                            +        '</div>'
+                            +    '</header>'
+                            +    '<div class="col-md-4">'
+                            +        '<a href="#" class="nail">'
+                            +            '<img src=' + data[i]['thumb'] + ' alt="" class="thumb">'
+                            +        '</a>'
+                            +    '</div>'
+                            + '</div>'
+                            + '</article>';
+                    }
+                    return str;
+                };
+
+                //调用分页
+                laypage({
+                    cont: 'biuuu_city',
+                    pages: pages,
+                skip: true,
+
+                    jump: function(obj){
+                        document.getElementById('biuuu_city_list').innerHTML = thisDate(obj.curr);
+                    }
+                })
+
+            });*/
+
+        })
+    });
+    $("#web_index").addClass("active");
+    $("#Function_index").addClass("active");
+</script>
+</body>
+</html>

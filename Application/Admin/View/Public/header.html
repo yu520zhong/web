@@ -1,0 +1,31 @@
+<div class="header">
+	<div class="box header_box">
+		<div>
+			<h2 class="logo">
+				<a class="left" href="__APP__/" >MACYU </a>
+			</h2>
+			<span>学海无涯，回头是岸。。。</span>
+		</div>
+		<ul class="userinfo">
+			<present name="userinfo.id">
+			<li>{$userinfo.name}，欢迎光临我的小窝！[<a href="{:U('User/logout')}">退出</a>]<li>
+			<else/>
+			<li>您好，欢迎光临我的小窝！[<a href="{:U('User/login')}">登录</a>][<a href="{:U('User/register')}">免费注册</a>]</li>
+			</present>
+		</ul>
+	</div>
+</div>
+<div class="nav">
+	<div class="box">
+		<ul>
+			<li id="Index_index" class="active"><a href="__APP__/">首页</a></li>
+			<li><a href="#">技术文档</a></li>
+			<li id="Topic_index"><a href="{:U('Topic/index')}">说说</a></li>
+			<li><a href="#">资讯分享</a></li>
+			<li><a href="#">生活点滴</a></li>
+			<li><a href="#">个人案例</a></li>
+			<li><a href="#">关于我</a></li>
+			<li id="Index_find"><a href="{:U('Index/find')}">杂货铺</a></li>
+		</ul>
+	</div>
+</div>

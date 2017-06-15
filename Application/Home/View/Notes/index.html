@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="renderer" content="webkit">
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<title>我在路上_觅友</title>
+<meta name="keywords" content="觅友，觅友网，觅友博客，觅友小站，前端，miuu,IT开发，css，css3，js，js特效，php，jquery，ajax，java">
+<meta name="description" content="觅友——有朋自远方来，分享自己网站开发学习以及工作和生活中的点点滴滴，希望通过此网站，与大家一起交流、成长、进步！">
+<include file="Public:css" />
+<include file="Public:aside_js" />
+</head>
+<body>
+<include file="Public:header" />
+
+<!-- revolution slider start -->
+<div class="focusbox">
+    <div class="container"><h1 class="focusbox-title">我在路上</h1>
+        <div class="focusbox-text">行在路上，品味生活，我的人生在路上！</div>
+    </div>
+</div>
+<!--container start-->
+<div class="content">
+<div class="container space30">
+    <div class="row">
+        <div class="col-md-8">
+            <section class="article">
+                <ul id="filters" class="list-unstyled news-filter clearfix">
+                    <notempty name="categorynote.parent">
+                        <volist name="categorynote.parent" id="v">
+                            <foreach name="v" item="vv">
+                                <li>
+                                <a href="{:notemkFilterURL('cid',$vv['id'])}" class="cid-{$vv.id}" >{$vv.name}</a>
+                                </li>
+                            </foreach>
+                        </volist>
+                    </notempty>
+                </ul>
+                <empty name="notes.data">
+                    <p class="no_find">很抱歉，没有找到您需要的文摘!</p><else/>
+                    <foreach name="notes.data" item="v">
+                        <article class="excerpt excerpt-text">
+                            <div class="row">
+                                <notempty name="v.thumb">
+                                    <div class="col-md-4">
+                                        <a href="{:U('Notes/notes',array('id'=>$v['id']))}" class="nail">
+                                            <img src="{$v.thumb}" alt="{$v.name}"  class="thumb">
+                                            <notempty name="v.category_name">
+                                                <span class="cat">{$v.category_name}</span>
+                                                <else/><span class="cat">未分类</span>
+                                            </notempty>
+                                        </a>
+                                    </div>
+                                    <else/>
+                                </notempty>
+                                <header class="col-md-8">
+                                    <div class="excerpt-content">
+                                        <h2 class="title">
+                                            <a href="{:U('Notes/notes',array('id'=>$v['id']))}" target="_blank" title="{$v.name}">{$v.name}</a>
+                                        </h2>
+                                        <ul class="meta list-inline">
+                                            <li><i class="miuu u-rili"></i> {$v.add_time}</li>
+                                            <li class="pv"><i class="miuu u-eyes"></i> 阅读({$v.click})</li>
+                                        </ul>
+                                        <p class="note">{$v.desc}</p>
+                                    </div>
+
+                                </header>
+                            </div>
+                        </article>
+                    </foreach>
+                </empty>
+            </section>
+            <nav class="text-center">
+                <div class="pagination">{$notes.pagelist}</div>
+            </nav>
+        </div>
+
+        <div class="col-md-4 sidebar">
+            <div class="widget widget-posts">
+                <h3>热门推荐</h3>
+                <ul>
+                    <foreach name="recommend" item="v">
+                        <li class="widget-post-item">
+                            <a target="_blank" href="{:U('Notes/notes',array('id'=>$v['id']))}">
+                                <div class="img-box">
+                                    <notempty name="v.thumb">
+                                            <img class="thumb" alt="{$v.name}" src="{$v.thumb}" >
+                                        <else/>
+                                    </notempty>
+                                </div>
+                                <div class="info-box">
+                                    <div class="info-box-inner">
+                                        <span class="text font15">
+                                            {$v.name}
+                                        </span>
+                                        <div class="tips">
+                                            <span class="muted left">{$v.add_time}</span>
+                                            <span class="muted right">阅读（{$v.click}）</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </foreach>
+                </ul>
+            </div>
+
+            <div class="widget widget-posts">
+                <a href="#" target="_blank" rel="nofollow"><img src="http://7xsqlc.com1.z0.glb.clouddn.com/banner/small-6.jpg" class="full-img"></a>
+            </div>
+            <div class="widget widget-posts clearfix">
+                <div id="calendar"></div>
+            </div>
+            <div class="widget widget-posts" >
+                <a href="#" target="_blank" rel="nofollow"><img src="http://7xsqlc.com1.z0.glb.clouddn.com/banner/small-3.jpg" class="full-img"></a>
+            </div>
+
+        </div>
+        <!--feature end-->
+    </div>
+</div>
+</div>
+<include file="Public:footer" />
+<include file="Public:js" />
+<include file="Public:calendar" />
+
+<script>
+    // js跳转到搜索结果页面
+    $('.search').blur(function() {
+        location.href = ThinkPHP['MODULE'] + '/other/search?keywords=' + $(this).text();
+    });
+    //导航条选中效果
+    //筛选列表，分类的当前选中效果
+    <foreach name="categorynote.pids" item="v">
+            $(".cid-{$v}").addClass("curr");
+    </foreach>
+//文章排序的选中效果
+    <present name="Think.get.order">
+            $(".order-{$Think.get.order}").addClass("curr");
+    <else/>
+    $(".order-0").addClass("curr");
+    </present>
+    $("#Notes_index").addClass("active");
+</script>
+</body>
+</html>

@@ -1,0 +1,190 @@
+<nav class="navbar-default navbar-static-side" role="navigation">
+            <div class="nav-close"><i class="fa fa-times-circle"></i>
+            </div>
+            <div class="sidebar-collapse">
+                <ul class="nav" id="side-menu">
+                    <li class="nav-header">
+                        <div class="dropdown profile-element">
+                            <span><img alt="image" class="img-circle" src="__IMG__/profile_small.jpg" /></span>
+                            <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                                <span class="clear">
+                               <span class="block m-t-xs"><strong class="font-bold">{$admin_name}</strong><b class="caret"></b></span>
+                                <span class="text-muted text-xs block">超级管理员</span>
+                                </span>
+                            </a>
+                            <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                                <li><a class="J_menuItem" href="form_avatar.html">修改头像</a>
+                                </li>
+                                <li><a class="J_menuItem" href="profile.html">个人资料</a>
+                                </li>
+                                <li><a class="J_menuItem" href="contacts.html">联系我们</a>
+                                </li>
+                                <li class="divider"></li>
+                                <li><a href="{:U('Login/logout')}">安全退出</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="logo-element">H+
+                        </div>
+                    </li>
+                    <li>
+                        <a href="{:U('Index/index')}">
+                            <i class="fa fa-home"></i>
+                            <span class="nav-label">主页</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-newspaper-o"></i>
+                            <span class="nav-label">技术文摘</span>
+                            <span class="fa arrow"></span>
+                        </a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a class="J_menuItem" href="{:U('Articles/add')}">文摘添加</a>
+                            </li>
+                            <li>
+                                <a class="J_menuItem" href="{:U('Articles/index')}">文摘列表</a>
+                            </li>
+                            <li>
+                                <a class="J_menuItem" href="{:U('Categoryart/add')}">文摘分类添加</a>
+                            </li>
+                            <li>
+                                <a class="J_menuItem" href="{:U('Categoryart/index')}">文摘分类列表</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-pencil"></i>
+                            <span class="nav-label">我的博客</span>
+                            <span class="fa arrow"></span>
+                        </a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a class="J_menuItem" href="{:U('Notes/add')}">博客添加</a>
+                            </li>
+                            <li>
+                                <a class="J_menuItem" href="{:U('Notes/index')}">博客列表</a>
+                            </li>
+                            <li>
+                                <a class="J_menuItem" href="{:U('Categorynote/add')}">博客分类添加</a>
+                            </li>
+                            <li>
+                                <a class="J_menuItem" href="{:U('Categorynote/index')}">博客分类列表</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-twitch"></i>
+                            <span class="nav-label">资源下载</span>
+                            <span class="fa arrow"></span>
+                        </a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a class="J_menuItem" href="{:U('Down/add')}">资源添加</a>
+                            </li>
+                            <li>
+                                <a class="J_menuItem" href="{:U('Down/index')}">资源列表</a>
+                            </li>
+                            <li>
+                                <a class="J_menuItem" href="{:U('Categorydown/add')}">资源分类添加</a>
+                            </li>
+                            <li>
+                                <a class="J_menuItem" href="{:U('Categorydown/index')}">资源分类列表</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-twitch"></i>
+                            <span class="nav-label">段子</span>
+                            <span class="fa arrow"></span>
+                        </a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a class="J_menuItem" href="{:U('News/add')}">段子添加</a>
+                            </li>
+                            <li>
+                                <a class="J_menuItem" href="{:U('News/index')}">段子列表</a>
+                            </li>
+                            <li>
+                                <a class="J_menuItem" href="{:U('Categorynews/add')}">段子分类添加</a>
+                            </li>
+                            <li>
+                                <a class="J_menuItem" href="{:U('Categorynews/index')}">段子分类列表</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-twitch"></i>
+                            <span class="nav-label">美文</span>
+                            <span class="fa arrow"></span>
+                        </a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a class="J_menuItem" href="{:U('Essay/add')}">美文添加</a>
+                            </li>
+                            <li>
+                                <a class="J_menuItem" href="{:U('Essay/index')}">美文列表</a>
+                            </li>
+                            <li>
+                                <a class="J_menuItem" href="{:U('Categoryessay/add')}">美文分类添加</a>
+                            </li>
+                            <li>
+                                <a class="J_menuItem" href="{:U('Categoryessay/index')}">美文分类列表</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-link"></i>
+                            <span class="nav-label">常用导航</span>
+                            <span class="fa arrow"></span>
+                        </a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a class="J_menuItem" href="{:U('Navs/add')}">导航添加</a>
+                            </li>
+                            <li>
+                                <a class="J_menuItem" href="{:U('Navs/index')}">导航列表</a>
+                            </li>
+                            <li>
+                                <a class="J_menuItem" href="{:U('Categorynavs/add')}">导航分类添加</a>
+                            </li>
+                            <li>
+                                <a class="J_menuItem" href="{:U('Categorynavs/index')}">导航分类列表</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="index.html#"><i class="fa fa-shopping-cart"></i> <span class="nav-label">商品管理</span><span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li><a href="graph_echarts.html">商品添加</a>
+                            </li>
+                            <li><a href="graph_flot.html">商品列表</a>
+                            </li>
+                            <li><a href="graph_morris.html">商品分类添加</a>
+                            </li>
+                            <li><a href="graph_rickshaw.html">商品分类列表</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="{:U('Recycle/index')}">
+                            <i class="fa fa-trash"></i>
+                            <span class="nav-label">回收站</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-group"></i>
+                            <span class="nav-label">会员管理</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>

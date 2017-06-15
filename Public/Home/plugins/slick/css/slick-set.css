@@ -1,0 +1,98 @@
+.slick {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.slick span {
+    position: absolute;
+    right: 0;
+    bottom: 45px;
+    padding: 10px 15px;
+    font: 20px "Microsoft Yahei";
+    color: #fff;
+    background-color: rgba(20, 156, 225, 0.8);
+
+}
+.slick span::before {
+    content: "";
+    position: absolute;
+    top: -16px;
+    left: 20px;
+    width: 0px;
+    height: 0px;
+    border: 8px solid transparent;
+    border-bottom-color: rgba(20, 156, 225, 0.8);
+}
+
+
+.slick-dots {
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    width: auto;
+    margin-left: -102px;
+}
+
+.slick-dots li {
+    display: inline-block;
+    width: auto;
+    height: 20px;
+    margin: 0 0 0 5px;
+}
+
+.slick-dots li button {
+    display: inline-block;
+    width: 20px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.slick-dots li button:before {
+    display: none;
+}
+
+.slick-dots .slick-active button {
+    width: 50px;
+    background-color: #48d8ff;
+}
+
+.slick-prev, .slick-next {
+    position: absolute;
+    top: 50%;
+    width: 55px;
+    height: 80px;
+    margin-top: -40px;
+    background-color: #000;
+    opacity: 0.5;
+}
+
+.slick-prev {
+    left: 0;
+}
+
+.slick-next {
+    right: 0;
+}
+
+.slick-prev:hover, .slick-next:hover {
+    background-color: #43cef2;
+}
+
+.slick-prev:before, .slick-next:before {
+    font: 60px/80px "SimSun";
+}
+
+.slick-prev:before {
+    content: "<";
+}
+
+.slick-next:before {
+    content: ">";
+}
+
+.slick img {
+    width: 100%;
+}

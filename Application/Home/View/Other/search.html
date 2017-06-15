@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="renderer" content="webkit">
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta name="baidu-site-verification" content="UcNs3IHDX2" />
+<title>全站搜索_觅友</title>
+<meta name="keywords" content="觅友，觅友网，觅友博客，觅友小站，前端，miuu,IT开发，css，css3，js，js特效，php，jquery，ajax，java">
+<meta name="description" content="觅友_有朋自远方来，分享自己网站开发学习以及工作和生活中的点点滴滴，希望通过此网站，与大家一起交流、成长、进步！">
+<include file="Public:css" />
+<link rel="stylesheet" type="text/css" href="__PLUGINS__/IonCalendar/css/ion.calendar.css">
+<link rel="stylesheet" href="__CSS__/index.css" />
+<link rel="stylesheet" href="__PLUGINS__/slick/css/slick.css">
+<link rel="stylesheet" href="__PLUGINS__/slick/css/slick-set.css">
+<include file="Public:aside_js" />
+</head>
+<body>
+<include file="Public:header" />
+<div class="content">
+<div class="container space30">
+    <div class="row clearfix">
+        <div class="col-md-8">
+            <div class="demo">
+                <div class="mb10">
+                    <div class="row clearfix">
+                        <div class="col-md-8">
+                            <div class="search-pre" id="search">
+                                <input type="text" name="keywords" id="word" value="" class="search-ipt" placeholder="请输入关键词" autocomplete="off">
+                                <ul id="list"></ul>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <input type="submit" id="home" value="技术文摘" class="search-btn-pre search-btn-blue">
+                                </div>
+                                <div class="col-md-6">
+                                    <a href="http://www.baidu.com/s?word=" target="_blank" >
+                                        <input type="submit" id="netWork" value="百度搜索" class="search-btn-pre search-btn-grey">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content">
+                    <section class="article">
+                        <notempty name="articles.data">
+                            <foreach name="articles.data" item="v">
+                                <article class="excerpt excerpt-text">
+                                    <div class="row">
+                                        <header class="col-md-8">
+                                            <a href="{:U('Blog/articles',array('id'=>$v['id']))}">
+                                                <h2 class="blog-title">
+                                                    {$v.name}
+                                                </h2>
+                                            </a>
+                                            <ul class="meta list-inline">
+                                                <li>
+                                                    {$v.add_time}
+                                                </li>
+                                                <li class="pv">
+                                                    阅读({$v.click})
+                                                </li>
+                                                <li class="pv">
+                                                    作者：{$v.author}
+                                                </li>
+                                            </ul>
+                                            <div class="blog-desc">
+                                                {$v.content|truncate_cn=160,'...',0}
+                                            </div>
+                                        </header>
+                                        <div class="col-md-4">
+                                            <a href="#" class="nail">
+                                                <img src="{$v.thumb}"
+                                                alt="" class="thumb">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </article>
+                            </foreach>
+                            <nav class="text-center">
+                                <div class="pagination">{$articles.pagelist}</div>
+                            </nav>
+                            <else/>
+                            对不起，此关键字没有搜索到相关内容！
+                        </notempty>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 sidebar">
+            <div class="widget widget-posts">
+                <a href="#" target="_blank" rel="nofollow"><img src="http://7xsqlc.com1.z0.glb.clouddn.com/banner/small-5.jpg" class="full-img"></a>
+            </div>
+            <div class="widget widget-posts" >
+                <a href="#" target="_blank" rel="nofollow"><img src="http://7xsqlc.com1.z0.glb.clouddn.com/banner/small-1.jpg" class="full-img"></a>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<include file="Public:footer" />
+<include file="Public:js" />
+<script src="__JS__/search.js"></script>
+<script>
+    $("#Blog_index").addClass("active");
+</script>
+</body>
+</html>

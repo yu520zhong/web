@@ -1,0 +1,59 @@
+@charset "utf-8";
+/* CSS Document */
+
+.table_sign span {
+	color: #444;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.table_sign span:hover {
+	color: red;
+}
+
+/* tagscloud */
+#tagscloud {
+	width: 250px;
+	height: 210px;
+	position: relative;
+	font-size: 12px;
+	color: #333;
+	margin: 0px auto 0;
+	text-align: center;
+}
+
+#tagscloud span {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	color: #333;
+	font-family: Arial;
+	text-decoration: none;
+	margin: 0 10px 15px 0;
+	line-height: 18px;
+	text-align: center;
+	font-size: 12px;
+	padding: 1px 5px;
+	display: inline-block;
+	border-radius: 3px;
+}
+
+#tagscloud span.tagc1 {
+	background: #666;
+	color: #fff;
+}
+
+#tagscloud span.tagc2 {
+	background: #F16E50;
+	color: #fff;
+}
+
+#tagscloud span.tagc5 {
+	background: #006633;
+	color: #fff;
+}
+
+#tagscloud span:hover {
+	color: #fff;
+	background: #1d705f;
+}

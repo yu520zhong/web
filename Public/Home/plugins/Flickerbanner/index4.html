@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>jQuery幻灯片插件Flickerplate演示-深色主题_dowebok</title>
+<link href="css/flickerplate.css" rel="stylesheet">
+<style>
+.flicker-example { width: 100%; height: 300px; margin-left: auto; margin-right: auto;}
+</style>
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/modernizr-custom-v2.7.1.min.js"></script>
+<script src="js/jquery-finger-v0.1.0.min.js"></script>
+<script src="js/flickerplate.min.js"></script>
+<script>
+$(function(){
+	$('.flicker-example').flicker();
+});
+</script>
+<style>
+.flicker-example { width: 100%; height: 400px;}
+</style>
+</head>
+
+<body>
+
+
+		<div class="flicker-example">
+			<ul>
+				<li data-background="img/field.jpg">
+					<div class="flick-title">Flickerplate</div>
+					<div class="flick-sub-text">一些故事</div>
+				</li>
+				<li data-background="img/forest.jpg">
+					<div class="flick-title">可修改 Javascript 或 CSS</div>
+					<div class="flick-sub-text">查看参数，看看如何修改成你需要的效果</div>
+				</li>
+				<li data-background="img/frozen-water.jpg">
+					<div class="flick-title">触摸事件</div>
+					<div class="flick-sub-text">引入 jQuery Finger 插件可支持移动设备触摸事件</div>
+				</li>
+			</ul>
+		</div>
+
+
+</body>
+</html>

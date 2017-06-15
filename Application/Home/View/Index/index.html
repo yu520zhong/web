@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="renderer" content="webkit">
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta name="baidu-site-verification" content="2KooQz6oQx" />
+<title>觅友_有朋自远方来-web前端，php，javascript,jquery,记录生活学习开发的个人博客</title>
+<meta name="keywords" content="觅友，觅友网，觅友博客，觅友小站，前端，miuu，IT开发，css，css3，js，js特效，php，jquery，ajax，java">
+<meta name="description" content="觅友_有朋自远方来，分享网站开发学习以及工作和生活中的点点滴滴，希望通过此网站，与大家一起交流、成长、进步！">
+<include file="Public:css" />
+<link rel="stylesheet" type="text/css" href="__PLUGINS__/Flickerbanner/css/flickerplate.css">
+<link rel="stylesheet" href="__CSS__/index.css" />
+<include file="Public:aside_js" />
+{/* 
+<style type="text/css">
+    .weixin-tip img{max-width: 100%; height: auto;}
+    .weixin-tip{display: none; position: fixed; left:0; top:0; bottom:0; background: rgba(0,0,0,0.8); filter:alpha(opacity=80);  height: 100%; width: 100%; z-index: 9999;}
+    .weixin-tip p{text-align: center; margin-top: 10%; padding:0 5%;}
+</style>
+*/}
+</head>
+<body>
+<include file="Public:header" />
+
+
+<!--container start-->
+<div class="content">
+<div class="container space30">
+    <div class="row">
+        <!--feature start-->
+        <div class="col-md-8">
+            <div class="flicker-banner">
+                <ul>
+                    
+                    <li data-background="http://7xsqlc.com1.z0.glb.clouddn.com/9.jpg">
+                        <a href="{:U('Blog/index')}" target="_blank">
+                            <div class="flick-title">在技术的海洋里遨游</div>
+                            <div class="flick-sub-text">学习是对自己最好的投资</div>
+                        </a>
+                    </li>
+                    <li data-background="http://7xsqlc.com1.z0.glb.clouddn.com/1484646719_1832088484.jpg">
+                        <a href="{:U('Notes/index')}" target="_blank">
+                            <div class="flick-title">有一些往事酒品茶香</div>
+                            <div class="flick-sub-text">聆听生活的美丽</div>
+                        </a>
+                    </li>
+                    <li data-background="http://7xsqlc.com1.z0.glb.clouddn.com/10.jpg">
+                        <a href="{:U('Essay/index')}" target="_blank">
+                            <div class="flick-title">生活之美源于发现</div>
+                            <div class="flick-sub-text">品味经典，感悟人生</div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <ul class="beauty-list row">
+                <foreach name="tops.data" item="v">
+                <li class="top col-md-4" data-index="1">
+                    <div>
+                        <div class="img-cover">
+                            <a href="{:U('Blog/articles',array('id'=>$v['id']))}" target="_blank">
+                                <img src="{$v.thumb}" alt="{$v.name}">
+                                <div class="article-title">
+                                    <div class="article-wrapper">{$v.name}</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                </foreach>
+            </ul>
+            <section class="article">
+                    <h4 class="new-article-title">
+                        <span>最新文摘</span>
+                        <a href="{:U('Blog/index')}"><span class="more">浏览更多</span></a>
+                    </h4>
+                    <notempty name="articles.data">
+                        <foreach name="articles.data" item="v">
+                            <article class="excerpt excerpt-text">
+                                <div class="row">
+                                    <notempty name="v.thumb">
+                                        <div class="col-md-4">
+                                            <a href="{:U('Blog/articles',array('id'=>$v['id']))}" class="nail">
+                                                <img src="{$v.thumb}" alt="{$v.name}"  class="thumb">
+                                                <notempty name="v.category_name">
+                                                    <span class="cat">{$v.category_name}</span>
+                                                    <else/><span class="cat">未分类</span>
+                                                </notempty>
+                                            </a>
+
+                                        </div>
+                                        <else/>
+                                    </notempty>
+                                    <header class="col-md-8">
+                                        <div class="excerpt-content">
+                                            <h2 class="title">
+                                                <a href="{:U('Blog/articles',array('id'=>$v['id']))}" target="_blank" title="{$v.name}">{$v.name}</a>
+                                            </h2>
+                                            <ul class="meta list-inline">
+                                                <li><i class="miuu u-rili"></i> {$v.add_time}</li>
+                                                <li class="writer"><i class="miuu u-yonghu"></i> {$v.author}</li>
+                                                <li class="pv"><i class="miuu u-eyes"></i> 阅读({$v.click})</li>
+                                            </ul>
+                                            <p class="note">{$v.desc}</p>
+                                        </div>
+
+                                    </header>
+                                </div>
+                            </article>
+                        </foreach>
+                    </notempty>
+                </section>
+                <nav class="text-center">
+                    <div class="pagination">{$articles.pagelist}</div>
+                </nav>
+        </div>
+        <div class="col-md-4 sidebar">
+            <div class="widget widget-posts clearfix">
+                <div id="calendar"></div>
+            </div>
+            <div class="widget widget-posts" >
+                <div class="widget-banner">
+                    <a href="#" target="_blank" rel="nofollow"><img src="http://7xsqlc.com1.z0.glb.clouddn.com/banner/small-4.jpg" class="full-img"></a>
+                </div>
+            </div>
+
+            {/*
+            <div class="widget signboard">
+                <strong>会员中心</strong>
+                <p class="sign">
+                    <a href="javascript:;" class="btn btn-primary signin-loader">立即登录</a>
+                    <a href="javascript:;" class="btn btn-default signup-loader">现在注册</a>
+                </p>
+                <h4>需要登录才能进入会员中心</h4>
+            </div>
+            */}
+           
+
+            <div class="widget widget-posts">
+                <h3>我在路上</h3>
+                <ul>
+                    <foreach name="notes" item="v">
+                        <li class="widget-post-item">
+                            <a target="_blank" href="{:U('Notes/notes',array('id'=>$v['id']))}">
+                                <div class="img-box">
+                                    <notempty name="v.thumb">
+                                            <img class="thumb" src="{$v.thumb}" alt="{$v.name}">
+                                        <else/>
+                                    </notempty>
+                                </div>
+                                <div class="info-box">
+                                    <div class="info-box-inner">
+                                        <span class="text font15">
+                                            {$v.name}
+                                        </span>
+                                        <div class="tips">
+                                            <span class="muted left">{$v.add_time}</span>
+                                            <span class="muted right">阅读({$v.click})</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </foreach>
+                </ul>
+            </div>
+
+
+            <div class="widget widget-posts">
+                <h3>美文分享</h3>
+                <ul class="beauty-list">
+                    <foreach name="essay" item="v">
+                        <li class="top" data-index="1">
+                            <div>
+                                <div class="img-cover">
+                                    <a href="{:U('Essay/essay',array('id'=>$v['id']))}" target="_blank" >
+                                        <span class="">
+                                            <b>Hot</b>
+                                        </span>
+                                        <img src="{$v.thumb}" alt="{$v.name}"> 
+                                        <div class="article-title">
+                                            <div class="article-wrapper">{$v.name}
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                    </foreach>
+                </ul>
+            </div>
+
+            <div class="widget widget-posts">
+                <h3>热门软件</h3>
+                <ul class="beauty-list">
+                        <volist name="down.data" id="v">
+                        <li class="top">
+                            <div class="img-left-cover">
+                                <a href="{:U('Down/down',array('id'=>$v['id']))}" target="_blank" >
+                                    <span>{$i}</span>
+                                    <empty name="v.thumb">
+                                        <img src="http://7xsqlc.com1.z0.glb.clouddn.com/default.jpg" alt="">
+                                        <else/>
+                                        <img src="{$v.thumb}" class="img-responsive" alt="{$v.name}">
+                                    </empty>
+                                </a>
+                            </div>
+                            <div class="right-article">
+                                <h4><a href="{:U('Down/down',array('id'=>$v['id']))}" target="_blank">{$v.name}</a></h4>
+                                <div class="time_about" title="2017-04-27 11:23">
+                                    <span>下载（{$v.click}）</span></div>
+                            </div>
+                        </li>
+                    </volist>
+                </ul>
+            </div>
+
+        </div>
+        <!--feature end-->
+    </div>
+</div>
+</div>
+{/* 
+<div class="weixin-tip">
+    <p>
+        <img src="__IMG__/live_weixin.png" alt="微信打开"/>
+    </p>
+</div>
+*/}
+<include file="Public:footer_index" />
+<include file="Public:js" />
+<include file="Public:calendar" />
+
+
+<script src="__PLUGINS__/Flickerbanner/js/modernizr-custom-v2.7.1.min.js"></script>
+<script src="__PLUGINS__/Flickerbanner/js/jquery-finger-v0.1.0.min.js"></script>
+<script src="__PLUGINS__/Flickerbanner/js/flickerplate.min.js"></script>
+
+
+<script src="__JS__/search.js"></script>
+
+<script>
+    $("#Index_index").addClass("active");
+    {/*Flickerplate轮播*/}
+    $('.flicker-banner').flicker({
+         arrows: true,
+        arrows_constraint: false,
+        auto_flick: true,
+        auto_flick_delay: 10,
+        block_text: true,
+        dot_navigation: true,
+        dot_alignment: 'center',
+        flick_animation: 'transition-slide',
+        flick_position: 1,
+        inner_width: false,
+        theme: 'dark'
+    });
+
+    
+    {/* 
+    //微信端判断，提示使用浏览器打开
+    $(window).on("load",function(){
+        var winHeight = $(window).height();
+        function is_weixin() {
+            var ua = navigator.userAgent.toLowerCase();
+            if (ua.match(/MicroMessenger/i) == "micromessenger") {
+                return true;
+            } else {
+                return false;
+            }
+        }
+        var isWeixin = is_weixin();
+        if(isWeixin){
+            $(".weixin-tip").css("height",winHeight);
+            $(".weixin-tip").show();
+        }
+    })
+    */}
+</script>
+
+
+
+</body>
+</html>

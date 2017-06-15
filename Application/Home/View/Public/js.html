@@ -1,0 +1,82 @@
+<!-- JavaScript -->
+<!-- js placed at the end of the document so the pages load faster -->
+<script src="__JS__/jquery.js"></script>
+<script src="__JS__/bootstrap.min.js"></script>
+<script src="__JS__/hover-dropdown.js"></script>
+<script src="__JS__/common.js"></script>
+<script src="__JS__/main-scripts.js"></script>
+<script src="__JS__/scrollanim.min.js"></script>
+
+<script>
+{/*增加 MODULE 模版变量到 JS 中*/}
+var ThinkPHP = {
+    'MODULE' : '__MODULE__',
+    'ROOT' : '__ROOT__',
+    'IMG' : '__PUBLIC__/{:MODULE_NAME}/img',
+    'FACE' : '__PUBLIC__/{:MODULE_NAME}/face',
+    'PLUGINS' : '__PUBLIC__/{:MODULE_NAME}/plugins',
+    'JS' : '__JS__',
+    'UPLOADIFY' : '__UPLOADIFY__',
+    'UPLOADER' : '{:U("File/upload")}',
+    'INDEX' : '{:U("Index/index")}',
+    'SEARCH' : '{:U("Home/Other/search")}',
+};
+</script>
+<script type="text/javascript" src="__PLUGINS__/layui/layui.js"></script>
+<script type="text/javascript" src="__PLUGINS__/layui/lay/dest/layui.all.js"></script>
+{/*统计数据*/}
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?ba6f742ccf462cb7a9d6dca60a7a90ea";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+{/*自动推送工具代码*/}
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+
+
+(function(){
+    $(".swiper-container").mouseover(function (){
+        $(".swiper-button-prev").addClass('class_name');
+    }).mouseout(function (){
+        $(".swiper-button").hide();
+    });
+})();
+
+
+//自执行匿名函数
+(function(){
+    window.setTimeout(arguments.callee, 1000);
+    //建站时间
+    var BirthDay = new Date("12/31/2016 00:00:00");
+    //现在时刻
+    var today = new Date();
+    //运行时间 = 现在时刻 - 建站时间
+    timeover = (today.getTime() - BirthDay.getTime());
+    sectimeover = timeover / 1000;
+    secondsover = Math.floor(sectimeover);
+    msPerDay = 24 * 60 * 60 * 1000;
+    e_daysover = timeover / msPerDay;
+    daysover = Math.floor(e_daysover);
+    e_hrsover = (e_daysover - daysover) * 24;
+    hrsover = Math.floor(e_hrsover);
+    e_minsover = (e_hrsover - hrsover) * 60;
+    minsover = Math.floor((e_hrsover - hrsover) * 60);
+    seconds = Math.floor((e_minsover - minsover) * 60);
+    webTime.innerHTML = "·觅友博客已运行：" + daysover + "天" + hrsover + "小时" + minsover + "分" + seconds + "秒";
+})();
+document.getElementsByTagName('iframe')[0].width="500";
+</script>

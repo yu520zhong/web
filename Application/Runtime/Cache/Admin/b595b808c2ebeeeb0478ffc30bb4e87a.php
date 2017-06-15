@@ -16,10 +16,10 @@
     <![endif]-->
 
     <link rel="shortcut icon" href="favicon.ico">
-    <link href="/web/Public/Admin/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/web/Public/Admin/css/font-awesome.min93e3.css?v=4.4.0" rel="stylesheet">
-    <link href="/web/Public/Admin/css/animate.min.css" rel="stylesheet">
-    <link href="/web/Public/Admin/css/style.min.css" rel="stylesheet">
+    <link href="/Public/Admin/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/Public/Admin/css/font-awesome.min93e3.css?v=4.4.0" rel="stylesheet">
+    <link href="/Public/Admin/css/animate.min.css" rel="stylesheet">
+    <link href="/Public/Admin/css/style.min.css" rel="stylesheet">
 </head>
 
 <body class="fixed-sidebar full-height-layout gray-bg" style="overflow:hidden">
@@ -32,7 +32,7 @@
                 <ul class="nav" id="side-menu">
                     <li class="nav-header">
                         <div class="dropdown profile-element">
-                            <span><img alt="image" class="img-circle" src="/web/Public/Admin/img/profile_small.jpg" /></span>
+                            <span><img alt="image" class="img-circle" src="/Public/Admin/img/profile_small.jpg" /></span>
                             <a data-toggle="dropdown" class="dropdown-toggle" href="#">
                                 <span class="clear">
                                <span class="block m-t-xs"><strong class="font-bold"><?php echo ($admin_name); ?></strong><b class="caret"></b></span>
@@ -229,7 +229,7 @@
                     </div>
                     <ul class="nav navbar-top-links navbar-right">
                         <li class="hidden-xs">
-                            <a href="/web" class="J_menuItem" data-index="0"><i class="fa fa-desktop"></i> 回到前端首页</a>
+                            <a href="" class="J_menuItem" data-index="0"><i class="fa fa-desktop"></i> 回到前端首页</a>
                         </li>
                         <li class="dropdown hidden-xs">
                             <a class="right-sidebar-toggle" aria-expanded="false">
@@ -274,7 +274,7 @@
             <div class="footer">
                 <div class="pull-left"><strong>现在时刻: </strong><span id="TimeShow"></span>
                 </div>
-                <div class="pull-right">&copy; 2015-2016 <a href="/web" target="_blank">MacUu's blog</a>
+                <div class="pull-right">&copy; 2015-2016 <a href="" target="_blank">MacUu's blog</a>
                 </div>
             </div>
         </div>
@@ -363,14 +363,14 @@
         <!--右侧边栏结束-->
 
     </div>
-    <script src="/web/Public/Admin/js/jquery.min.js?v=2.1.4"></script>
-    <script src="/web/Public/Admin/js/bootstrap.min.js?v=3.3.6"></script>
-    <script src="/web/Public/Admin/js/plugins/metisMenu/jquery.metisMenu.js"></script>
-    <script src="/web/Public/Admin/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
-    <script src="/web/Public/Admin/js/plugins/layer/layer.min.js"></script>
-    <script src="/web/Public/Admin/js/hplus.min.js?v=4.1.0"></script>
-    <script src="/web/Public/Admin/js/plugins/pace/pace.min.js"></script>
-    <script src="/web/Public/Admin/js/newmend.js"></script>
+    <script src="/Public/Admin/js/jquery.min.js?v=2.1.4"></script>
+    <script src="/Public/Admin/js/bootstrap.min.js?v=3.3.6"></script>
+    <script src="/Public/Admin/js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="/Public/Admin/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+    <script src="/Public/Admin/js/plugins/layer/layer.min.js"></script>
+    <script src="/Public/Admin/js/hplus.min.js?v=4.1.0"></script>
+    <script src="/Public/Admin/js/plugins/pace/pace.min.js"></script>
+    <script src="/Public/Admin/js/newmend.js"></script>
     <script>
 
     </script>

@@ -8,11 +8,11 @@
     <title>米鱼（MIUu）博客后台 - 登录</title>
     <meta name="keywords" content="H+后台主题,后台bootstrap框架,会员中心主题,后台HTML,响应式后台">
     <meta name="description" content="H+是一个完全响应式，基于Bootstrap3最新版本开发的扁平化主题，她采用了主流的左右两栏式布局，使用了Html5+CSS3等现代技术">
-    <link href="/web/Public/Admin/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/web/Public/Admin/css/font-awesome.min93e3.css?v=4.4.0" rel="stylesheet">
-    <link href="/web/Public/Admin/css/animate.min.css" rel="stylesheet">
-    <link href="/web/Public/Admin/css/style.min.css" rel="stylesheet">
-    <link href="/web/Public/Admin/css/login.min.css" rel="stylesheet">
+    <link href="/Public/Admin/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/Public/Admin/css/font-awesome.min93e3.css?v=4.4.0" rel="stylesheet">
+    <link href="/Public/Admin/css/animate.min.css" rel="stylesheet">
+    <link href="/Public/Admin/css/style.min.css" rel="stylesheet">
+    <link href="/Public/Admin/css/login.min.css" rel="stylesheet">
     <!--[if lt IE 9]>
     <meta http-equiv="refresh" content="0;ie.html" />
     <![endif]-->
@@ -39,7 +39,7 @@
                         <li><i class="fa fa-arrow-circle-o-right m-r-xs"></i> 优势四</li>
                         <li><i class="fa fa-arrow-circle-o-right m-r-xs"></i> 优势五</li>
                     </ul>
-                    <strong><a href="/web">回到前台&raquo;</a></strong>
+                    <strong><a href="">回到前台&raquo;</a></strong>
                 </div>
             </div>
             <div class="col-sm-5">
@@ -61,8 +61,8 @@
         </div>
     </div>
 
-    <script src="/web/Public/Admin/js/jquery.min.js"></script>
-    <script src="/web/Public/Admin/js/bootstrap.min.js"></script>
+    <script src="/Public/Admin/js/jquery.min.js"></script>
+    <script src="/Public/Admin/js/bootstrap.min.js"></script>
     <script>
         //验证码点击刷新
         var img = $("#verify_img");

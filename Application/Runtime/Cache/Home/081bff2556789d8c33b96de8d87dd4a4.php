@@ -8,15 +8,15 @@
 <title>学习文档_觅友</title>
 <meta name="keywords" content="觅友，觅友网，觅友博客，觅友小站，前端，miuu,IT开发，css，css3，js，js特效，php，jquery，ajax，java">
 <meta name="description" content="觅友_有朋自远方来，分享自己网站开发学习以及工作和生活中的点点滴滴，希望通过此网站，与大家一起交流、成长、进步！">
-<link rel="stylesheet" href="/web/Public/Home/css/bootstrap.css" />
-<link rel="stylesheet" href="/web/Public/Home/css/style.css" />
-<link rel="stylesheet" href="/web/Public/home/iconfont/iconfont.css" />
+<link rel="stylesheet" href="/Public/Home/css/bootstrap.css" />
+<link rel="stylesheet" href="/Public/Home/css/style.css" />
+<link rel="stylesheet" href="/Public/home/iconfont/iconfont.css" />
 
-<link href="/web/Public/Home/plugins/mixitup/css/mixitup.css" rel="stylesheet" type="text/css" media="all" />
+<link href="/Public/Home/plugins/mixitup/css/mixitup.css" rel="stylesheet" type="text/css" media="all" />
 <!-- HTML5 shim and Respond.js IE8 support of HTML5 tooltipss and media queries -->
 <!--[if lt IE 9]>
-<script src="/web/Public/Home/js/html5shiv.js"></script>
-<script src="/web/Public/Home/js/respond.min.js"></script>
+<script src="/Public/Home/js/html5shiv.js"></script>
+<script src="/Public/Home/js/respond.min.js"></script>
 <![endif]-->
 <?php
 $IMG_URL = 'http://7xsqlc.com1.z0.glb.clouddn.com/'; $IMG_THUMB = '?imageView2/1/w/100/h/100'; $IMG_BIG_W = '?imageView2/2/w/840'; $IMG_BIG_H = '?imageView2/2/h/300'; $IMG_BIG_WI = '?imageView2/2/w/840/interlace/1'; $IMG_BIG_HI = '?imageView2/2/h/300/interlace/1'; $IMG_SMALL_165 = '?imageView2/2/w/165'; ?>
@@ -32,7 +32,7 @@ $IMG_URL = 'http://7xsqlc.com1.z0.glb.clouddn.com/'; $IMG_THUMB = '?imageView2/1
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="/web">MI<span>Uu</span></a>
+                <a class="navbar-brand" href="">MI<span>Uu</span></a>
             </div>
             <div class="navbar-collapse collapse ">
                 <ul class="nav navbar-nav" id="menu">
@@ -105,18 +105,18 @@ $IMG_URL = 'http://7xsqlc.com1.z0.glb.clouddn.com/'; $IMG_THUMB = '?imageView2/1
                     <div id="portfoliolist">
                     <div class="portfolio app mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="app" style="display: inline-block; opacity: 1;">
                         <div class="portfolio-wrapper grid_box">        
-                             <a href="<?php echo U('Document/java');?>" class="swipebox"  title="java文档"> <img src="/web/Public/Home/plugins/mixitup/images/pic-1.jpg" class="img-responsive" alt=""><span class="zoom-icon"> </span> </a> </a>
+                             <a href="<?php echo U('Document/java');?>" class="swipebox"  title="java文档"> <img src="/Public/Home/plugins/mixitup/images/pic-1.jpg" class="img-responsive" alt=""><span class="zoom-icon"> </span> </a> </a>
                         </div>
                     </div>              
                     <div class="portfolio app mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="app" style="display: inline-block; opacity: 1;">
                         <div class="portfolio-wrapper grid_box">        
-                             <a href="<?php echo U('Document/enumjava');?>" class="swipebox"  title="enumjava"> <img src="/web/Public/Home/plugins/mixitup/images/pic-2.jpg" class="img-responsive" alt=""><span class="zoom-icon"></span> </a>
+                             <a href="<?php echo U('Document/enumjava');?>" class="swipebox"  title="enumjava"> <img src="/Public/Home/plugins/mixitup/images/pic-2.jpg" class="img-responsive" alt=""><span class="zoom-icon"></span> </a>
 
                         </div>
                     </div>                  
                     <div class="portfolio icon mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="icon" style="display: inline-block; opacity: 1;">
                         <div class="portfolio-wrapper grid_box">        
-                             <a href="/web/Public/Home/plugins/mixitup/images/pic-3.jpg" class="swipebox"  title="Image Title"> <img src="/web/Public/Home/plugins/mixitup/images/pic-3.jpg" class="img-responsive" alt=""><span class="zoom-icon"></span> </a>
+                             <a href="/Public/Home/plugins/mixitup/images/pic-3.jpg" class="swipebox"  title="Image Title"> <img src="/Public/Home/plugins/mixitup/images/pic-3.jpg" class="img-responsive" alt=""><span class="zoom-icon"></span> </a>
 
                         </div>
 
@@ -124,54 +124,54 @@ $IMG_URL = 'http://7xsqlc.com1.z0.glb.clouddn.com/'; $IMG_THUMB = '?imageView2/1
                     
                     <div class="portfolio app mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="app" style="display: inline-block; opacity: 1;">
                         <div class="portfolio-wrapper grid_box">        
-                             <a href="/web/Public/Home/plugins/mixitup/images/pic-4.jpg" class="swipebox"  title="Image Title"> <img src="/web/Public/Home/plugins/mixitup/images/pic-4.jpg" class="img-responsive" alt=""><span class="zoom-icon"></span> </a>
+                             <a href="/Public/Home/plugins/mixitup/images/pic-4.jpg" class="swipebox"  title="Image Title"> <img src="/Public/Home/plugins/mixitup/images/pic-4.jpg" class="img-responsive" alt=""><span class="zoom-icon"></span> </a>
 
                         </div>
                     </div>          
                     <div class="portfolio card mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="card" style="display: inline-block; opacity: 1;">
                         <div class="portfolio-wrapper grid_box">        
-                             <a href="/web/Public/Home/plugins/mixitup/images/pic-5.jpg" class="swipebox"  title="Image Title"> <img src="/web/Public/Home/plugins/mixitup/images/pic-5.jpg" class="img-responsive" alt=""><span class="zoom-icon"></span> </a>
+                             <a href="/Public/Home/plugins/mixitup/images/pic-5.jpg" class="swipebox"  title="Image Title"> <img src="/Public/Home/plugins/mixitup/images/pic-5.jpg" class="img-responsive" alt=""><span class="zoom-icon"></span> </a>
 
                         </div>
                     </div>  
                     <div class="portfolio card mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="card" style="display: inline-block; opacity: 1;">
                         <div class="portfolio-wrapper grid_box">        
-                             <a href="/web/Public/Home/plugins/mixitup/images/pic-6.jpg" class="swipebox"  title="Image Title"> <img src="/web/Public/Home/plugins/mixitup/images/pic-6.jpg" class="img-responsive" alt=""><span class="zoom-icon"></span> </a>
+                             <a href="/Public/Home/plugins/mixitup/images/pic-6.jpg" class="swipebox"  title="Image Title"> <img src="/Public/Home/plugins/mixitup/images/pic-6.jpg" class="img-responsive" alt=""><span class="zoom-icon"></span> </a>
 
                         </div>
                     </div>  
                     <div class="portfolio icon mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="icon" style="display: inline-block; opacity: 1;">
                         <div class="portfolio-wrapper grid_box">        
-                             <a href="/web/Public/Home/plugins/mixitup/images/pic-7.jpg" class="swipebox"  title="Image Title"> <img src="/web/Public/Home/plugins/mixitup/images/pic-7.jpg" class="img-responsive" alt=""><span class="zoom-icon"></span> </a>
+                             <a href="/Public/Home/plugins/mixitup/images/pic-7.jpg" class="swipebox"  title="Image Title"> <img src="/Public/Home/plugins/mixitup/images/pic-7.jpg" class="img-responsive" alt=""><span class="zoom-icon"></span> </a>
 
                         </div>
                         </div>
                         <div class="portfolio logos mix_all wow bounceIn" data-wow-delay="0.4s" data-cat="logos" style="display: inline-block; opacity: 1;">
                         <div class="portfolio-wrapper grid_box">        
-                             <a href="/web/Public/Home/plugins/mixitup/images/pic-8.jpg" class="swipebox"  title="Image Title"> <img src="/web/Public/Home/plugins/mixitup/images/pic-8.jpg" class="img-responsive" alt=""><span class="zoom-icon"></span> </a>
+                             <a href="/Public/Home/plugins/mixitup/images/pic-8.jpg" class="swipebox"  title="Image Title"> <img src="/Public/Home/plugins/mixitup/images/pic-8.jpg" class="img-responsive" alt=""><span class="zoom-icon"></span> </a>
 
                         </div>
                     </div>
                         <div class="portfolio logos mix_all wow bounceIn" data-wow-delay="0.4s" data-cat="logos" style="display: inline-block; opacity: 1;">
                         <div class="portfolio-wrapper grid_box">        
-                             <a href="http"//baidu.com class="swipebox"  title="Image Title"> <img src="/web/Public/Home/plugins/mixitup/images/pic-9.jpg" class="img-responsive" alt=""><span class="zoom-icon"></span> </a>
+                             <a href="http"//baidu.com class="swipebox"  title="Image Title"> <img src="/Public/Home/plugins/mixitup/images/pic-9.jpg" class="img-responsive" alt=""><span class="zoom-icon"></span> </a>
                         </div>
                     </div>
                     <div class="portfolio app mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="app" style="display: inline-block; opacity: 1;">
                         <div class="portfolio-wrapper grid_box">        
-                             <a href="/web/Public/Home/plugins/mixitup/images/pic-10.jpg" class="swipebox"  title="Image Title"> <img src="/web/Public/Home/plugins/mixitup/images/pic-10.jpg" class="img-responsive" alt=""><span class="zoom-icon"></span> </a>
+                             <a href="/Public/Home/plugins/mixitup/images/pic-10.jpg" class="swipebox"  title="Image Title"> <img src="/Public/Home/plugins/mixitup/images/pic-10.jpg" class="img-responsive" alt=""><span class="zoom-icon"></span> </a>
 
                         </div>
                     </div>
                     <div class="portfolio icon mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="icon" style="display: inline-block; opacity: 1;">
                         <div class="portfolio-wrapper grid_box">        
-                             <a href="/web/Public/Home/plugins/mixitup/images/pic-11.jpg" class="swipebox"  title="Image Title"> <img src="/web/Public/Home/plugins/mixitup/images/pic-11.jpg" class="img-responsive" alt=""><span class="zoom-icon"></span> </a>
+                             <a href="/Public/Home/plugins/mixitup/images/pic-11.jpg" class="swipebox"  title="Image Title"> <img src="/Public/Home/plugins/mixitup/images/pic-11.jpg" class="img-responsive" alt=""><span class="zoom-icon"></span> </a>
 
                         </div>  
                         </div>
                     <div class="portfolio card mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="card" style="display: inline-block; opacity: 1;">
                         <div class="portfolio-wrapper grid_box">        
-                             <a href="/web/Public/Home/plugins/mixitup/images/pic-12.jpg" class="swipebox"  title="Image Title"> <img src="/web/Public/Home/plugins/mixitup/images/pic-12.jpg" class="img-responsive" alt=""><span class="zoom-icon"></span> </a>
+                             <a href="/Public/Home/plugins/mixitup/images/pic-12.jpg" class="swipebox"  title="Image Title"> <img src="/Public/Home/plugins/mixitup/images/pic-12.jpg" class="img-responsive" alt=""><span class="zoom-icon"></span> </a>
 
                         </div>
                     </div>                  
@@ -197,7 +197,7 @@ $IMG_URL = 'http://7xsqlc.com1.z0.glb.clouddn.com/'; $IMG_THUMB = '?imageView2/1
                 <li><a href="http://themebetter.com/" target="_blank">ThinkPHP</a></li>
                 <li><a href="<?php echo U("Tools/mergely");?>" target="_blank">代码对比工具</a></li>
             </ul>
-            <p class="text-muted text-center">©2016 <a href="<?php echo U("About/index");?>">Macyu</a><span id="webTime"></span></p>
+            <p class="text-muted text-center">©2016 <a href="<?php echo U("About/index");?>">Miuu</a><span id="webTime"></span></p>
             <p class="text-muted text-center">
                 <a class="mr10" href="tencent://message/?uin=2211735722&amp;与我交流&amp;Menu=yes" target="_blank">
                     <img border="0" src="http://wpa.qq.com/pa?p=1:2211735722:16" alt="点击我">
@@ -219,7 +219,7 @@ $IMG_URL = 'http://7xsqlc.com1.z0.glb.clouddn.com/'; $IMG_THUMB = '?imageView2/1
 <div class="footer-bottom">
     <div class="container">
         <div class="copyrights">
-            <p>Copyright &copy; 2017.Company name All rights reserved.<a href="<?php echo U('Index/index');?>">觅友网</a> - More <a href="<?php echo U('About/index');?>" target="_blank" title="关于我">-About Us</a></p>
+            <p class="text-center">Copyright &copy; 2017.Company name All rights reserved.<a href="<?php echo U('Index/index');?>">觅友网</a> - More <a href="<?php echo U('About/index');?>" target="_blank" title="关于我">-About Us</a></p>
         </div>
     </div>
 </div>
@@ -230,30 +230,30 @@ $IMG_URL = 'http://7xsqlc.com1.z0.glb.clouddn.com/'; $IMG_THUMB = '?imageView2/1
 
 <!-- JavaScript -->
 <!-- js placed at the end of the document so the pages load faster -->
-<script src="/web/Public/Home/js/jquery.js"></script>
-<script src="/web/Public/Home/js/bootstrap.min.js"></script>
-<script src="/web/Public/Home/js/hover-dropdown.js"></script>
-<script src="/web/Public/Home/js/common.js"></script>
-<script src="/web/Public/Home/js/main-scripts.js"></script>
-<script src="/web/Public/Home/js/scrollanim.min.js"></script>
+<script src="/Public/Home/js/jquery.js"></script>
+<script src="/Public/Home/js/bootstrap.min.js"></script>
+<script src="/Public/Home/js/hover-dropdown.js"></script>
+<script src="/Public/Home/js/common.js"></script>
+<script src="/Public/Home/js/main-scripts.js"></script>
+<script src="/Public/Home/js/scrollanim.min.js"></script>
 
 <script>
 
 var ThinkPHP = {
-    'MODULE' : '/web/Home',
-    'ROOT' : '/web',
-    'IMG' : '/web/Public/<?php echo MODULE_NAME;?>/img',
-    'FACE' : '/web/Public/<?php echo MODULE_NAME;?>/face',
-    'PLUGINS' : '/web/Public/<?php echo MODULE_NAME;?>/plugins',
-    'JS' : '/web/Public/Home/js',
-    'UPLOADIFY' : '/web/Public/Home/uploadify',
+    'MODULE' : '/Home',
+    'ROOT' : '',
+    'IMG' : '/Public/<?php echo MODULE_NAME;?>/img',
+    'FACE' : '/Public/<?php echo MODULE_NAME;?>/face',
+    'PLUGINS' : '/Public/<?php echo MODULE_NAME;?>/plugins',
+    'JS' : '/Public/Home/js',
+    'UPLOADIFY' : '/Public/Home/uploadify',
     'UPLOADER' : '<?php echo U("File/upload");?>',
     'INDEX' : '<?php echo U("Index/index");?>',
     'SEARCH' : '<?php echo U("Home/Other/search");?>',
 };
 </script>
-<script type="text/javascript" src="/web/Public/Home/plugins/layui/layui.js"></script>
-<script type="text/javascript" src="/web/Public/Home/plugins/layui/lay/dest/layui.all.js"></script>
+<script type="text/javascript" src="/Public/Home/plugins/layui/layui.js"></script>
+<script type="text/javascript" src="/Public/Home/plugins/layui/lay/dest/layui.all.js"></script>
 
 <script>
 var _hmt = _hmt || [];
@@ -286,6 +286,7 @@ var _hmt = _hmt || [];
     });
 })();
 
+
 //自执行匿名函数
 (function(){
     window.setTimeout(arguments.callee, 1000);
@@ -305,7 +306,7 @@ var _hmt = _hmt || [];
     e_minsover = (e_hrsover - hrsover) * 60;
     minsover = Math.floor((e_hrsover - hrsover) * 60);
     seconds = Math.floor((e_minsover - minsover) * 60);
-    webTime.innerHTML = "·米鱼博客已运行：" + daysover + "天" + hrsover + "小时" + minsover + "分" + seconds + "秒";
+    webTime.innerHTML = "·觅友博客已运行：" + daysover + "天" + hrsover + "小时" + minsover + "分" + seconds + "秒";
 })();
 document.getElementsByTagName('iframe')[0].width="500";
 </script>
@@ -320,8 +321,8 @@ document.getElementsByTagName('iframe')[0].width="500";
 </script>
 
 <!-- Script for gallery Here -->
-    <script type="text/javascript" src="/web/Public/Home/plugins/mixitup/js/jquery.mixitup.min.js"></script>
-    <script type="text/javascript" src="/web/Public/Home/plugins/mixitup/js/jquery.easing.min.js"></script>
+    <script type="text/javascript" src="/Public/Home/plugins/mixitup/js/jquery.mixitup.min.js"></script>
+    <script type="text/javascript" src="/Public/Home/plugins/mixitup/js/jquery.easing.min.js"></script>
 
     <script type="text/javascript">
     $(function () {

@@ -9,51 +9,46 @@
 <title>觅友_有朋自远方来-web前端，php，javascript,jquery,记录生活学习开发的个人博客</title>
 <meta name="keywords" content="觅友，觅友网，觅友博客，觅友小站，前端，miuu，IT开发，css，css3，js，js特效，php，jquery，ajax，java">
 <meta name="description" content="觅友_有朋自远方来，分享网站开发学习以及工作和生活中的点点滴滴，希望通过此网站，与大家一起交流、成长、进步！">
-<link rel="shortcut icon" href="/web/Public/Home/img/favicon.png">
+<link rel="shortcut icon" href="/Public/Home/img/favicon.png">
 
 <!-- Bootstrap core CSS -->
-<link rel="stylesheet" href="/web/Public/Home/css/bootstrap.css" />
-<link rel="stylesheet" href="/web/Public/Home/css/bootstrap-reset.css" />
+<link rel="stylesheet" href="/Public/Home/css/bootstrap.css" />
+<link rel="stylesheet" href="/Public/Home/css/bootstrap-reset.css" />
 
-<link rel="stylesheet" href="/web/Public/home/iconfont/iconfont.css" />
+<link rel="stylesheet" href="/Public/home/iconfont/iconfont.css" />
 
 <!--external css-->
-<link rel="stylesheet" href="/web/Public/home/assets/font-awesome/css/font-awesome.css" />
-<link rel="stylesheet" href="/web/Public/home/assets/bxslider/jquery.bxslider.css" />
+<link rel="stylesheet" href="/Public/home/assets/font-awesome/css/font-awesome.css" />
+<link rel="stylesheet" href="/Public/home/assets/bxslider/jquery.bxslider.css" />
 
-<link rel="stylesheet" href="/web/Public/home/assets/revolution_slider/css/rs-style.css" media="screen" />
-<link rel="stylesheet" href="/web/Public/home/assets/revolution_slider/rs-plugin/css/settings.css" media="screen" />
+<link rel="stylesheet" href="/Public/home/assets/revolution_slider/css/rs-style.css" media="screen" />
+<link rel="stylesheet" href="/Public/home/assets/revolution_slider/rs-plugin/css/settings.css" media="screen" />
 
 <!-- Custom styles for this template -->
-<link rel="stylesheet" href="/web/Public/Home/css/style.css" />
-<link rel="stylesheet" href="/web/Public/Home/css/style-responsive.css" />
+<link rel="stylesheet" href="/Public/Home/css/style.css" />
+<link rel="stylesheet" href="/Public/Home/css/style-responsive.css" />
 
-<link rel="stylesheet" href="/web/Public/Home/css/kissui.css" />
-<link rel="stylesheet" href="/web/Public/Home/css/scrollanim.min.css" />
+<link rel="stylesheet" href="/Public/Home/css/kissui.css" />
+<link rel="stylesheet" href="/Public/Home/css/scrollanim.min.css" />
 
-<link rel="stylesheet" href="/web/Public/Home/css/swiper.min.css" />
-<link rel="stylesheet" href="/web/Public/Home/css/animate.css" />
-
-
-<link rel="stylesheet" href="/web/Public/Home/plugins/layui/css/layui.css" />
-
-<link rel="stylesheet" type="text/css" href="/web/Public/Home/plugins/simple_calendar/css/simple-calendar.css">
+<link rel="stylesheet" href="/Public/Home/css/swiper.min.css" />
+<link rel="stylesheet" href="/Public/Home/css/animate.css" />
 
 
-<link rel="stylesheet" type="text/css" href="/web/Public/Home/plugins/Flickerbanner/css/flickerplate.css">
-<link rel="stylesheet" href="/web/Public/Home/css/index.css" />
+<link rel="stylesheet" href="/Public/Home/plugins/layui/css/layui.css" />
+
+<link rel="stylesheet" type="text/css" href="/Public/Home/plugins/simple_calendar/css/simple-calendar.css">
+
+
+<link rel="stylesheet" type="text/css" href="/Public/Home/plugins/Flickerbanner/css/flickerplate.css">
+<link rel="stylesheet" href="/Public/Home/css/index.css" />
 <!-- HTML5 shim and Respond.js IE8 support of HTML5 tooltipss and media queries -->
 <!--[if lt IE 9]>
-<script src="/web/Public/Home/js/html5shiv.js"></script>
-<script src="/web/Public/Home/js/respond.min.js"></script>
+<script src="/Public/Home/js/html5shiv.js"></script>
+<script src="/Public/Home/js/respond.min.js"></script>
 <![endif]-->
 <?php
 $IMG_URL = 'http://7xsqlc.com1.z0.glb.clouddn.com/'; $IMG_THUMB = '?imageView2/1/w/100/h/100'; $IMG_BIG_W = '?imageView2/2/w/840'; $IMG_BIG_H = '?imageView2/2/h/300'; $IMG_BIG_WI = '?imageView2/2/w/840/interlace/1'; $IMG_BIG_HI = '?imageView2/2/h/300/interlace/1'; $IMG_SMALL_165 = '?imageView2/2/w/165'; ?>
-<style type="text/css">
-    .weixin-tip img{max-width: 100%; height: auto;}
-    .weixin-tip{display: none; position: fixed; left:0; top:0; bottom:0; background: rgba(0,0,0,0.8); filter:alpha(opacity=80);  height: 100%; width: 100%; z-index: 9999;}
-    .weixin-tip p{text-align: center; margin-top: 10%; padding:0 5%;}
-</style>
 </head>
 <body>
 <!--header start-->
@@ -66,7 +61,7 @@ $IMG_URL = 'http://7xsqlc.com1.z0.glb.clouddn.com/'; $IMG_THUMB = '?imageView2/1
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="/web">MI<span>Uu</span></a>
+                <a class="navbar-brand" href="">MI<span>Uu</span></a>
             </div>
             <div class="navbar-collapse collapse ">
                 <ul class="nav navbar-nav" id="menu">
@@ -279,11 +274,7 @@ $IMG_URL = 'http://7xsqlc.com1.z0.glb.clouddn.com/'; $IMG_THUMB = '?imageView2/1
     </div>
 </div>
 </div>
-<div class="weixin-tip">
-    <p>
-        <img src="/web/Public/Home/img/live_weixin.png" alt="微信打开"/>
-    </p>
-</div>
+
 <!--footer start-->
 <footer>
 <div class="footer-top clearfix">
@@ -305,7 +296,7 @@ $IMG_URL = 'http://7xsqlc.com1.z0.glb.clouddn.com/'; $IMG_THUMB = '?imageView2/1
                 <li><a href="http://themebetter.com/" target="_blank">ThinkPHP</a></li>
                 <li><a href="<?php echo U("Tools/mergely");?>" target="_blank">代码对比工具</a></li>
             </ul>
-            <p class="text-muted text-center">©2016 <a href="<?php echo U("About/index");?>">Macyu</a><span id="webTime"></span></p>
+            <p class="text-muted text-center">©2016 <a href="<?php echo U("About/index");?>">Miuu</a><span id="webTime"></span></p>
             <p class="text-muted text-center">
                 <a class="mr10" href="tencent://message/?uin=2211735722&amp;与我交流&amp;Menu=yes" target="_blank">
                     <img border="0" src="http://wpa.qq.com/pa?p=1:2211735722:16" alt="点击我">
@@ -327,7 +318,7 @@ $IMG_URL = 'http://7xsqlc.com1.z0.glb.clouddn.com/'; $IMG_THUMB = '?imageView2/1
 <div class="footer-bottom">
     <div class="container">
         <div class="copyrights">
-            <p>Copyright &copy; 2017.Company name All rights reserved.<a href="<?php echo U('Index/index');?>">觅友网</a> - More <a href="<?php echo U('About/index');?>" target="_blank" title="关于我">-About Us</a></p>
+            <p class="text-center">Copyright &copy; 2017.Company name All rights reserved.<a href="<?php echo U('Index/index');?>">觅友网</a> - More <a href="<?php echo U('About/index');?>" target="_blank" title="关于我">-About Us</a></p>
         </div>
     </div>
 </div>
@@ -338,30 +329,30 @@ $IMG_URL = 'http://7xsqlc.com1.z0.glb.clouddn.com/'; $IMG_THUMB = '?imageView2/1
 
 <!-- JavaScript -->
 <!-- js placed at the end of the document so the pages load faster -->
-<script src="/web/Public/Home/js/jquery.js"></script>
-<script src="/web/Public/Home/js/bootstrap.min.js"></script>
-<script src="/web/Public/Home/js/hover-dropdown.js"></script>
-<script src="/web/Public/Home/js/common.js"></script>
-<script src="/web/Public/Home/js/main-scripts.js"></script>
-<script src="/web/Public/Home/js/scrollanim.min.js"></script>
+<script src="/Public/Home/js/jquery.js"></script>
+<script src="/Public/Home/js/bootstrap.min.js"></script>
+<script src="/Public/Home/js/hover-dropdown.js"></script>
+<script src="/Public/Home/js/common.js"></script>
+<script src="/Public/Home/js/main-scripts.js"></script>
+<script src="/Public/Home/js/scrollanim.min.js"></script>
 
 <script>
 
 var ThinkPHP = {
-    'MODULE' : '/web/Home',
-    'ROOT' : '/web',
-    'IMG' : '/web/Public/<?php echo MODULE_NAME;?>/img',
-    'FACE' : '/web/Public/<?php echo MODULE_NAME;?>/face',
-    'PLUGINS' : '/web/Public/<?php echo MODULE_NAME;?>/plugins',
-    'JS' : '/web/Public/Home/js',
-    'UPLOADIFY' : '/web/Public/Home/uploadify',
+    'MODULE' : '/Home',
+    'ROOT' : '',
+    'IMG' : '/Public/<?php echo MODULE_NAME;?>/img',
+    'FACE' : '/Public/<?php echo MODULE_NAME;?>/face',
+    'PLUGINS' : '/Public/<?php echo MODULE_NAME;?>/plugins',
+    'JS' : '/Public/Home/js',
+    'UPLOADIFY' : '/Public/Home/uploadify',
     'UPLOADER' : '<?php echo U("File/upload");?>',
     'INDEX' : '<?php echo U("Index/index");?>',
     'SEARCH' : '<?php echo U("Home/Other/search");?>',
 };
 </script>
-<script type="text/javascript" src="/web/Public/Home/plugins/layui/layui.js"></script>
-<script type="text/javascript" src="/web/Public/Home/plugins/layui/lay/dest/layui.all.js"></script>
+<script type="text/javascript" src="/Public/Home/plugins/layui/layui.js"></script>
+<script type="text/javascript" src="/Public/Home/plugins/layui/lay/dest/layui.all.js"></script>
 
 <script>
 var _hmt = _hmt || [];
@@ -394,6 +385,7 @@ var _hmt = _hmt || [];
     });
 })();
 
+
 //自执行匿名函数
 (function(){
     window.setTimeout(arguments.callee, 1000);
@@ -413,13 +405,13 @@ var _hmt = _hmt || [];
     e_minsover = (e_hrsover - hrsover) * 60;
     minsover = Math.floor((e_hrsover - hrsover) * 60);
     seconds = Math.floor((e_minsover - minsover) * 60);
-    webTime.innerHTML = "·米鱼博客已运行：" + daysover + "天" + hrsover + "小时" + minsover + "分" + seconds + "秒";
+    webTime.innerHTML = "·觅友博客已运行：" + daysover + "天" + hrsover + "小时" + minsover + "分" + seconds + "秒";
 })();
 document.getElementsByTagName('iframe')[0].width="500";
 </script>
 
 
-<script src="/web/Public/Home/plugins/simple_calendar/js/simple-calendar-es6.js"></script>
+<script src="/Public/Home/plugins/simple_calendar/js/simple-calendar-es6.js"></script>
 <script>
     var myoptions = {
         width: '100%',
@@ -476,12 +468,12 @@ document.getElementsByTagName('iframe')[0].width="500";
 </script>
 
 
-<script src="/web/Public/Home/plugins/Flickerbanner/js/modernizr-custom-v2.7.1.min.js"></script>
-<script src="/web/Public/Home/plugins/Flickerbanner/js/jquery-finger-v0.1.0.min.js"></script>
-<script src="/web/Public/Home/plugins/Flickerbanner/js/flickerplate.min.js"></script>
+<script src="/Public/Home/plugins/Flickerbanner/js/modernizr-custom-v2.7.1.min.js"></script>
+<script src="/Public/Home/plugins/Flickerbanner/js/jquery-finger-v0.1.0.min.js"></script>
+<script src="/Public/Home/plugins/Flickerbanner/js/flickerplate.min.js"></script>
 
 
-<script src="/web/Public/Home/js/search.js"></script>
+<script src="/Public/Home/js/search.js"></script>
 
 <script>
     $("#Index_index").addClass("active");
@@ -500,6 +492,8 @@ document.getElementsByTagName('iframe')[0].width="500";
         theme: 'dark'
     });
 
+    
+    {/* 
     //微信端判断，提示使用浏览器打开
     $(window).on("load",function(){
         var winHeight = $(window).height();
@@ -517,6 +511,7 @@ document.getElementsByTagName('iframe')[0].width="500";
             $(".weixin-tip").show();
         }
     })
+    */}
 </script>
 
 

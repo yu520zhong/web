@@ -1,0 +1,255 @@
+[ 2017-06-15T16:53:28+08:00 ] 116.228.21.187 /admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000218s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000313s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000338s ]
+
+[ 2017-06-15T16:53:28+08:00 ] 116.228.21.187 /Admin/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000196s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000298s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000321s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000069s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003482s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003503s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000136s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000207s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000369s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000328s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000345s ]
+
+[ 2017-06-15T16:53:28+08:00 ] 116.228.21.187 /Admin/Login/getVerify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000223s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000347s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000372s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000340s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000369s ]
+
+[ 2017-06-15T16:53:33+08:00 ] 116.228.21.187 /Admin/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000220s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000297s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000320s ]
+SQL: SHOW COLUMNS FROM `miuu_admin` [ RunTime:0.0185s ]
+SQL: SELECT `password`,`salt` FROM `miuu_admin` WHERE `username` = 'dudu' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-06-15T16:53:33+08:00 ] 116.228.21.187 /Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000197s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000304s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000327s ]
+SQL: select version() as ver [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000193s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000215s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006291s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006312s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000141s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000211s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000380s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000329s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000352s ]
+
+[ 2017-06-15T16:53:34+08:00 ] 116.228.21.187 /Admin/Index/favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000218s ]
+
+[ 2017-06-15T16:53:36+08:00 ] 116.228.21.187 /Admin/Notes/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000213s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000312s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000337s ]
+SQL: SHOW COLUMNS FROM `miuu_categorynote` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `miuu_notes` [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name`,`pid` FROM `miuu_categorynote`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000276s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000301s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007728s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007751s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000142s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000220s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000391s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000338s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000361s ]
+
+[ 2017-06-15T16:53:39+08:00 ] 116.228.21.187 /Admin/Notes/favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000383s ]
+
+[ 2017-06-15T16:53:41+08:00 ] 116.228.21.187 /Admin/Notes/add/cid/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000207s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000305s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000329s ]
+SQL: SHOW COLUMNS FROM `miuu_categorynote` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `miuu_notes` [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name`,`pid` FROM `miuu_categorynote`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000278s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000302s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006600s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006621s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000141s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000208s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000375s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000323s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000344s ]
+
+[ 2017-06-15T16:53:42+08:00 ] 116.228.21.187 /Admin/Notes/add/cid/favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000216s ]
+
+[ 2017-06-15T17:11:37+08:00 ] 116.228.21.187 /Admin/Notes/add/cid/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000205s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000299s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000323s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /www/wwwroot/miuu.club/web/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+NOTIC: [8] Undefined index: Expires /www/wwwroot/miuu.club/web/ThinkPHP/Library/Think/Upload/Driver/Qiniu/QiniuStorage.class.php 第 45 行.
+NOTIC: [8] Undefined index: saveName /www/wwwroot/miuu.club/web/ThinkPHP/Library/Think/Upload/Driver/Qiniu/QiniuStorage.class.php 第 80 行.
+NOTIC: [8] Undefined index: custom_fields /www/wwwroot/miuu.club/web/ThinkPHP/Library/Think/Upload/Driver/Qiniu/QiniuStorage.class.php 第 83 行.
+SQL: SHOW COLUMNS FROM `miuu_categorynote` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `miuu_notes` [ RunTime:0.0004s ]
+NOTIC: [2] parse_ini_file(&lt;p&gt;网站挂了有好久，昨天备案终于通过了。从5月25日提交备案到6月14日备案通过，将近20天，都说备案麻烦，其实程序上还可以，幕布都是免费邮寄的，到家才用了一天。阿里速度也很快，一系列审核都通过了，提交到管局，满以为管局也会马上通过，结果好事多磨，用了10天左右时间，其实10天也不算说，只是自己心里天天惦记着，就觉得备案太漫长了。总得来说，备案比之前预想得快，而且简单。之前怕备案麻烦，就买了香港的虚拟主机，不是太稳定，也用了一年多，算起来还有两年的使用期，可是自从3月份，网站就开始时不时地无法访问，找客服，也是今天好明天坏，后来客服说给我换台主机挂着，我想要是哪天真客服不管了，岂不是连网站都挂了。阿里云有句口头禅，“为了无法计算的价值”。说起来，当初也怕备案麻烦，贪图便宜，才买了香港虚拟主机，毕竟有的事情不经一事不长一智，有的事情不能将就。想想还是算啦，小马哥都用阿里云好久了，一直说体验很好，于是下定决心，终于拿出330元大洋买了一年的云服务器，之前记得要900多一年，可能配置不一样，反正个人网站，搞个入门配置就行了。记得下单后很是兴奋，心想这下子可不怕网站挂了，可是一下子就傻眼了，主机还不知道怎么配系统，毕竟之前用的虚拟主机，也没这方面的经验。好在别人有大哥，俺有小马哥，马上给小马哥打电话，回复很简单，一学就会，后来在马哥一步步指导下，终于搞定了。就单等备案了。于是就出现了开始的二十来天的煎熬。&lt;/p&gt;&lt;p&gt;记得昨天备案下来，又开始麻烦小马哥了，域名重新解析，服务器面板设置，git文件上传到服务器等等，总之自己会的、不会的，一股脑地请教了马哥。可是怕马哥忙，就QQ了一下那句经典的“在吗？”（附段子一则：别总问我在不在，在不在的，你要我怎么回答你？ 我说在，你问我借钱怎么办？！ 我说不在，你请我吃饭怎么办？！ 我说在，没好事怎么办？！ 我说不在，有好事落下了怎么办？！ 所以有事就直接说... 这样我好知道我在还是不在.....）还是马哥利凉，二话没说，把法宝发过来了，【链接】宝塔Linux面板-6月7日更新-4.4版https://www.bt.cn/bbs/thread-1186-1-1.html ，我心想这么厉害，宝塔什么的就用上了。于是开始了长达两个小时的请教和反复试错。中间来回试错，好在小马哥很耐心地教导，大有不搞定就不下班之势，我自己都不好意思了，终于快六点网站在阿里云上线了，离小马哥下班还有半个小时。很是哈皮，马哥最后发给我一句“你可以研究下那个面板 别搞坏了就行 功能挺强大的”，于是听马哥的，我就虚心研究了一下下，结果今天就直接搞坏了，哈哈，真是人才我。不过后来还是被我搞好了，就成了现在网站的模样。&lt;/p&gt;&lt;p&gt;从买阿里云、备案到网站重新上线，这段时间确实学到了许多东西，同样发现还许多东西还需要不断努力去学习去掌握，毕竟小马哥也很忙，俗话说，程序员的时间都是很宝贵的，解决问题还是要以自己主动为主，找方法，不断试错，直到所有的方法都不行了，再找高手来帮忙。再次，对马哥的无微不至的帮助，深表感谢，当然有空要搓一顿了。&lt;/p&gt;&lt;p&gt;网站终于备案并重新上线，还有许多事情等着自己来做，就要更加努力了，学如逆水行舟，继续吧，希望自己能走得更远。&lt;/p&gt;): failed to open stream: File name too long /www/wwwroot/miuu.club/web/ThinkPHP/Library/Vendor/htmlpurifier/HTMLPurifier.standalone.php 第 2542 行.
+NOTIC: [2] Invalid argument supplied for foreach() /www/wwwroot/miuu.club/web/ThinkPHP/Library/Vendor/htmlpurifier/HTMLPurifier.standalone.php 第 2390 行.
+SQL: INSERT INTO `miuu_notes` (`name`,`sn`,`desc`,`keywords`,`code`,`on_sale`,`recommend`,`links`,`category_id`,`thumb`,`content`,`recycle`,`add_time`) VALUES ('我的网站终于重新上线啦','blog003','从买阿里云、备案到网站重新上线，这段时间确实学到了许多东西，同样发现还许多东西还需要不断努力去学习去掌握','阿里云,备案,重新上线','','yes','yes','Notes/notes/id/num','5','http://7xsqlc.com1.z0.glb.clouddn.com/1497517897_1412606731.png','<p>网站挂了有好久，昨天备案终于通过了。从5月25日提交备案到6月14日备案通过，将近20天，都说备案麻烦，其实程序上还可以，幕布都是免费邮寄的，到家才用了一天。阿里速度也很快，一系列审核都通过了，提交到管局，满以为管局也会马上通过，结果好事多磨，用了10天左右时间，其实10天也不算说，只是自己心里天天惦记着，就觉得备案太漫长了。总得来说，备案比之前预想得快，而且简单。之前怕备案麻烦，就买了香港的虚拟主机，不是太稳定，也用了一年多，算起来还有两年的使用期，可是自从3月份，网站就开始时不时地无法访问，找客服，也是今天好明天坏，后来客服说给我换台主机挂着，我想要是哪天真客服不管了，岂不是连网站都挂了。阿里云有句口头禅，“为了无法计算的价值”。说起来，当初也怕备案麻烦，贪图便宜，才买了香港虚拟主机，毕竟有的事情不经一事不长一智，有的事情不能将就。想想还是算啦，小马哥都用阿里云好久了，一直说体验很好，于是下定决心，终于拿出330元大洋买了一年的云服务器，之前记得要900多一年，可能配置不一样，反正个人网站，搞个入门配置就行了。记得下单后很是兴奋，心想这下子可不怕网站挂了，可是一下子就傻眼了，主机还不知道怎么配系统，毕竟之前用的虚拟主机，也没这方面的经验。好在别人有大哥，俺有小马哥，马上给小马哥打电话，回复很简单，一学就会，后来在马哥一步步指导下，终于搞定了。就单等备案了。于是就出现了开始的二十来天的煎熬。</p><p>记得昨天备案下来，又开始麻烦小马哥了，域名重新解析，服务器面板设置，git文件上传到服务器等等，总之自己会的、不会的，一股脑地请教了马哥。可是怕马哥忙，就QQ了一下那句经典的“在吗？”（附段子一则：别总问我在不在，在不在的，你要我怎么回答你？ 我说在，你问我借钱怎么办？！ 我说不在，你请我吃饭怎么办？！ 我说在，没好事怎么办？！ 我说不在，有好事落下了怎么办？！ 所以有事就直接说... 这样我好知道我在还是不在.....）还是马哥利凉，二话没说，把法宝发过来了，【链接】宝塔Linux面板-6月7日更新-4.4版https://www.bt.cn/bbs/thread-1186-1-1.html ，我心想这么厉害，宝塔什么的就用上了。于是开始了长达两个小时的请教和反复试错。中间来回试错，好在小马哥很耐心地教导，大有不搞定就不下班之势，我自己都不好意思了，终于快六点网站在阿里云上线了，离小马哥下班还有半个小时。很是哈皮，马哥最后发给我一句“你可以研究下那个面板 别搞坏了就行 功能挺强大的”，于是听马哥的，我就虚心研究了一下下，结果今天就直接搞坏了，哈哈，真是人才我。不过后来还是被我搞好了，就成了现在网站的模样。</p><p>从买阿里云、备案到网站重新上线，这段时间确实学到了许多东西，同样发现还许多东西还需要不断努力去学习去掌握，毕竟小马哥也很忙，俗话说，程序员的时间都是很宝贵的，解决问题还是要以自己主动为主，找方法，不断试错，直到所有的方法都不行了，再找高手来帮忙。再次，对马哥的无微不至的帮助，深表感谢，当然有空要搓一顿了。</p><p>网站终于备案并重新上线，还有许多事情等着自己来做，就要更加努力了，学如逆水行舟，继续吧，希望自己能走得更远。</p>','no','2017-06-15 17:11:37') [ RunTime:0.0045s ]
+SQL: SELECT `id`,`name`,`pid` FROM `miuu_categorynote`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000270s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000293s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006645s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006667s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000139s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000226s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000392s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000373s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000419s ]
+
+[ 2017-06-15T17:11:40+08:00 ] 116.228.21.187 /Admin/Notes/index/cid/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000210s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000299s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000330s ]
+SQL: SHOW COLUMNS FROM `miuu_notes` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `miuu_categorynote` [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name`,`pid` FROM `miuu_categorynote`  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM miuu_notes n WHERE n.recycle = 'no' AND n.category_id IN (5) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT c.name as categorynote_name,n.category_id,n.id,n.name,n.desc,n.keywords,n.on_sale,n.recommend,n.add_time,n.code,n.links FROM miuu_notes n LEFT JOIN miuu_categorynote AS c ON c.id=n.category_id  WHERE n.recycle = 'no' AND n.category_id IN (5) ORDER BY n.id desc LIMIT 0,5   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000239s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000259s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007223s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007245s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000142s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000225s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000395s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000333s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000355s ]
+
+[ 2017-06-15T17:11:40+08:00 ] 116.228.21.187 /Admin/Notes/index/cid/favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000210s ]
+
+[ 2017-06-15T17:11:52+08:00 ] 116.228.21.187 /Admin/Notes/edit/id/58/cid/5/p/0.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000215s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000328s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000352s ]
+SQL: SHOW COLUMNS FROM `miuu_categorynote` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `miuu_notes` [ RunTime:0.0004s ]
+SQL: SELECT `id`,`category_id`,`sn`,`name`,`thumb`,`on_sale`,`recommend`,`desc`,`keywords`,`content`,`add_time`,`code`,`links` FROM `miuu_notes` WHERE `id` = 58 AND `recycle` = 'no' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`pid` FROM `miuu_categorynote`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000294s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000319s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007688s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007710s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000162s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000208s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000399s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000366s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000389s ]
+
+[ 2017-06-15T17:11:57+08:00 ] 116.228.21.187 /Admin/Notes/edit/id/58/cid/5/p/0.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000204s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000365s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000390s ]
+SQL: SHOW COLUMNS FROM `miuu_categorynote` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `miuu_notes` [ RunTime:0.0004s ]
+NOTIC: [2] parse_ini_file(&lt;p&gt;网站挂了有好久，昨天备案终于通过了。从5月25日提交备案到6月14日备案通过，将近20天，都说备案麻烦，其实程序上还可以，幕布都是免费邮寄的，到家才用了一天。阿里速度也很快，一系列审核都通过了，提交到管局，满以为管局也会马上通过，结果好事多磨，用了10天左右时间，其实10天也不算说，只是自己心里天天惦记着，就觉得备案太漫长了。总得来说，备案比之前预想得快，而且简单。之前怕备案麻烦，就买了香港的虚拟主机，不是太稳定，也用了一年多，算起来还有两年的使用期，可是自从3月份，网站就开始时不时地无法访问，找客服，也是今天好明天坏，后来客服说给我换台主机挂着，我想要是哪天真客服不管了，岂不是连网站都挂了。阿里云有句口头禅，“为了无法计算的价值”。说起来，当初也怕备案麻烦，贪图便宜，才买了香港虚拟主机，毕竟有的事情不经一事不长一智，有的事情不能将就。想想还是算啦，小马哥都用阿里云好久了，一直说体验很好，于是下定决心，终于拿出330元大洋买了一年的云服务器，之前记得要900多一年，可能配置不一样，反正个人网站，搞个入门配置就行了。记得下单后很是兴奋，心想这下子可不怕网站挂了，可是一下子就傻眼了，主机还不知道怎么配系统，毕竟之前用的虚拟主机，也没这方面的经验。好在别人有大哥，俺有小马哥，马上给小马哥打电话，回复很简单，一学就会，后来在马哥一步步指导下，终于搞定了。就单等备案了。于是就出现了开始的二十来天的煎熬。&lt;/p&gt;&lt;p&gt;记得昨天备案下来，又开始麻烦小马哥了，域名重新解析，服务器面板设置，git文件上传到服务器等等，总之自己会的、不会的，一股脑地请教了马哥。可是怕马哥忙，就QQ了一下那句经典的“在吗？”（附段子一则：别总问我在不在，在不在的，你要我怎么回答你？ 我说在，你问我借钱怎么办？！ 我说不在，你请我吃饭怎么办？！ 我说在，没好事怎么办？！ 我说不在，有好事落下了怎么办？！ 所以有事就直接说... 这样我好知道我在还是不在.....）还是马哥利凉，二话没说，把法宝发过来了，【链接】宝塔Linux面板-6月7日更新-4.4版https://www.bt.cn/bbs/thread-1186-1-1.html ，我心想这么厉害，宝塔什么的就用上了。于是开始了长达两个小时的请教和反复试错。中间来回试错，好在小马哥很耐心地教导，大有不搞定就不下班之势，我自己都不好意思了，终于快六点网站在阿里云上线了，离小马哥下班还有半个小时。很是哈皮，马哥最后发给我一句“你可以研究下那个面板 别搞坏了就行 功能挺强大的”，于是听马哥的，我就虚心研究了一下下，结果今天就直接搞坏了，哈哈，真是人才我。不过后来还是被我搞好了，就成了现在网站的模样。&lt;/p&gt;&lt;p&gt;从买阿里云、备案到网站重新上线，这段时间确实学到了许多东西，同样发现还许多东西还需要不断努力去学习去掌握，毕竟小马哥也很忙，俗话说，程序员的时间都是很宝贵的，解决问题还是要以自己主动为主，找方法，不断试错，直到所有的方法都不行了，再找高手来帮忙。再次，对马哥的无微不至的帮助，深表感谢，当然有空要搓一顿了。&lt;/p&gt;&lt;p&gt;网站终于备案并重新上线，还有许多事情等着自己来做，就要更加努力了，学如逆水行舟，继续吧，希望自己能走得更远。&lt;/p&gt;): failed to open stream: File name too long /www/wwwroot/miuu.club/web/ThinkPHP/Library/Vendor/htmlpurifier/HTMLPurifier.standalone.php 第 2542 行.
+NOTIC: [2] Invalid argument supplied for foreach() /www/wwwroot/miuu.club/web/ThinkPHP/Library/Vendor/htmlpurifier/HTMLPurifier.standalone.php 第 2390 行.
+SQL: UPDATE `miuu_notes` SET `name`='我的网站终于重新上线啦',`sn`='blog003',`desc`='从买阿里云、备案到网站重新上线，这段时间确实学到了许多东西，同样发现还许多东西还需要不断努力去学习去掌握',`keywords`='阿里云,备案,重新上线',`code`='',`on_sale`='yes',`recommend`='yes',`links`='Notes/notes/id/58',`category_id`='5',`content`='<p>网站挂了有好久，昨天备案终于通过了。从5月25日提交备案到6月14日备案通过，将近20天，都说备案麻烦，其实程序上还可以，幕布都是免费邮寄的，到家才用了一天。阿里速度也很快，一系列审核都通过了，提交到管局，满以为管局也会马上通过，结果好事多磨，用了10天左右时间，其实10天也不算说，只是自己心里天天惦记着，就觉得备案太漫长了。总得来说，备案比之前预想得快，而且简单。之前怕备案麻烦，就买了香港的虚拟主机，不是太稳定，也用了一年多，算起来还有两年的使用期，可是自从3月份，网站就开始时不时地无法访问，找客服，也是今天好明天坏，后来客服说给我换台主机挂着，我想要是哪天真客服不管了，岂不是连网站都挂了。阿里云有句口头禅，“为了无法计算的价值”。说起来，当初也怕备案麻烦，贪图便宜，才买了香港虚拟主机，毕竟有的事情不经一事不长一智，有的事情不能将就。想想还是算啦，小马哥都用阿里云好久了，一直说体验很好，于是下定决心，终于拿出330元大洋买了一年的云服务器，之前记得要900多一年，可能配置不一样，反正个人网站，搞个入门配置就行了。记得下单后很是兴奋，心想这下子可不怕网站挂了，可是一下子就傻眼了，主机还不知道怎么配系统，毕竟之前用的虚拟主机，也没这方面的经验。好在别人有大哥，俺有小马哥，马上给小马哥打电话，回复很简单，一学就会，后来在马哥一步步指导下，终于搞定了。就单等备案了。于是就出现了开始的二十来天的煎熬。</p><p>记得昨天备案下来，又开始麻烦小马哥了，域名重新解析，服务器面板设置，git文件上传到服务器等等，总之自己会的、不会的，一股脑地请教了马哥。可是怕马哥忙，就QQ了一下那句经典的“在吗？”（附段子一则：别总问我在不在，在不在的，你要我怎么回答你？ 我说在，你问我借钱怎么办？！ 我说不在，你请我吃饭怎么办？！ 我说在，没好事怎么办？！ 我说不在，有好事落下了怎么办？！ 所以有事就直接说... 这样我好知道我在还是不在.....）还是马哥利凉，二话没说，把法宝发过来了，【链接】宝塔Linux面板-6月7日更新-4.4版https://www.bt.cn/bbs/thread-1186-1-1.html ，我心想这么厉害，宝塔什么的就用上了。于是开始了长达两个小时的请教和反复试错。中间来回试错，好在小马哥很耐心地教导，大有不搞定就不下班之势，我自己都不好意思了，终于快六点网站在阿里云上线了，离小马哥下班还有半个小时。很是哈皮，马哥最后发给我一句“你可以研究下那个面板 别搞坏了就行 功能挺强大的”，于是听马哥的，我就虚心研究了一下下，结果今天就直接搞坏了，哈哈，真是人才我。不过后来还是被我搞好了，就成了现在网站的模样。</p><p>从买阿里云、备案到网站重新上线，这段时间确实学到了许多东西，同样发现还许多东西还需要不断努力去学习去掌握，毕竟小马哥也很忙，俗话说，程序员的时间都是很宝贵的，解决问题还是要以自己主动为主，找方法，不断试错，直到所有的方法都不行了，再找高手来帮忙。再次，对马哥的无微不至的帮助，深表感谢，当然有空要搓一顿了。</p><p>网站终于备案并重新上线，还有许多事情等着自己来做，就要更加努力了，学如逆水行舟，继续吧，希望自己能走得更远。</p>' WHERE `id` = 58 AND `recycle` = 'no' [ RunTime:0.0044s ]
+SQL: SELECT `id`,`category_id`,`sn`,`name`,`thumb`,`on_sale`,`recommend`,`desc`,`keywords`,`content`,`add_time`,`code`,`links` FROM `miuu_notes` WHERE `id` = 58 AND `recycle` = 'no' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`pid` FROM `miuu_categorynote`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000316s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000341s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007331s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007353s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000151s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000208s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000385s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000359s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000382s ]
+
+[ 2017-06-15T17:13:07+08:00 ] 116.228.21.187 /Admin/Notes/edit/id/58/cid/5/p/favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000228s ]
+

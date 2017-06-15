@@ -9,43 +9,43 @@
 <meta name="keywords" content="<?php echo ($articles["keywords"]); ?>">
 <meta name="description" content="<?php echo ($articles["desc"]); ?>">
 <!-- Bootstrap core CSS -->
-<link rel="shortcut icon" href="/web/Public/Home/img/favicon.png">
+<link rel="shortcut icon" href="/Public/Home/img/favicon.png">
 
 <!-- Bootstrap core CSS -->
-<link rel="stylesheet" href="/web/Public/Home/css/bootstrap.css" />
-<link rel="stylesheet" href="/web/Public/Home/css/bootstrap-reset.css" />
+<link rel="stylesheet" href="/Public/Home/css/bootstrap.css" />
+<link rel="stylesheet" href="/Public/Home/css/bootstrap-reset.css" />
 
-<link rel="stylesheet" href="/web/Public/home/iconfont/iconfont.css" />
+<link rel="stylesheet" href="/Public/home/iconfont/iconfont.css" />
 
 <!--external css-->
-<link rel="stylesheet" href="/web/Public/home/assets/font-awesome/css/font-awesome.css" />
-<link rel="stylesheet" href="/web/Public/home/assets/bxslider/jquery.bxslider.css" />
+<link rel="stylesheet" href="/Public/home/assets/font-awesome/css/font-awesome.css" />
+<link rel="stylesheet" href="/Public/home/assets/bxslider/jquery.bxslider.css" />
 
-<link rel="stylesheet" href="/web/Public/home/assets/revolution_slider/css/rs-style.css" media="screen" />
-<link rel="stylesheet" href="/web/Public/home/assets/revolution_slider/rs-plugin/css/settings.css" media="screen" />
+<link rel="stylesheet" href="/Public/home/assets/revolution_slider/css/rs-style.css" media="screen" />
+<link rel="stylesheet" href="/Public/home/assets/revolution_slider/rs-plugin/css/settings.css" media="screen" />
 
 <!-- Custom styles for this template -->
-<link rel="stylesheet" href="/web/Public/Home/css/style.css" />
-<link rel="stylesheet" href="/web/Public/Home/css/style-responsive.css" />
+<link rel="stylesheet" href="/Public/Home/css/style.css" />
+<link rel="stylesheet" href="/Public/Home/css/style-responsive.css" />
 
-<link rel="stylesheet" href="/web/Public/Home/css/kissui.css" />
-<link rel="stylesheet" href="/web/Public/Home/css/scrollanim.min.css" />
+<link rel="stylesheet" href="/Public/Home/css/kissui.css" />
+<link rel="stylesheet" href="/Public/Home/css/scrollanim.min.css" />
 
-<link rel="stylesheet" href="/web/Public/Home/css/swiper.min.css" />
-<link rel="stylesheet" href="/web/Public/Home/css/animate.css" />
-
-
-<link rel="stylesheet" href="/web/Public/Home/plugins/layui/css/layui.css" />
-
-<link rel="stylesheet" type="text/css" href="/web/Public/Home/plugins/simple_calendar/css/simple-calendar.css">
+<link rel="stylesheet" href="/Public/Home/css/swiper.min.css" />
+<link rel="stylesheet" href="/Public/Home/css/animate.css" />
 
 
-<link rel="stylesheet" href="/web/Public/Home/plugins/docs/docs.css" />
+<link rel="stylesheet" href="/Public/Home/plugins/layui/css/layui.css" />
+
+<link rel="stylesheet" type="text/css" href="/Public/Home/plugins/simple_calendar/css/simple-calendar.css">
+
+
+<link rel="stylesheet" href="/Public/Home/plugins/docs/docs.css" />
 
 <!-- HTML5 shim and Respond.js IE8 support of HTML5 tooltipss and media queries -->
 <!--[if lt IE 9]>
-<script src="/web/Public/Home/js/html5shiv.js"></script>
-<script src="/web/Public/Home/js/respond.min.js"></script>
+<script src="/Public/Home/js/html5shiv.js"></script>
+<script src="/Public/Home/js/respond.min.js"></script>
 <![endif]-->
 <?php
 $IMG_URL = 'http://7xsqlc.com1.z0.glb.clouddn.com/'; $IMG_THUMB = '?imageView2/1/w/100/h/100'; $IMG_BIG_W = '?imageView2/2/w/840'; $IMG_BIG_H = '?imageView2/2/h/300'; $IMG_BIG_WI = '?imageView2/2/w/840/interlace/1'; $IMG_BIG_HI = '?imageView2/2/h/300/interlace/1'; $IMG_SMALL_165 = '?imageView2/2/w/165'; ?>
@@ -61,7 +61,7 @@ $IMG_URL = 'http://7xsqlc.com1.z0.glb.clouddn.com/'; $IMG_THUMB = '?imageView2/1
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="/web">MI<span>Uu</span></a>
+                <a class="navbar-brand" href="">MI<span>Uu</span></a>
             </div>
             <div class="navbar-collapse collapse ">
                 <ul class="nav navbar-nav" id="menu">
@@ -221,7 +221,7 @@ $IMG_URL = 'http://7xsqlc.com1.z0.glb.clouddn.com/'; $IMG_THUMB = '?imageView2/1
                 <li><a href="http://themebetter.com/" target="_blank">ThinkPHP</a></li>
                 <li><a href="<?php echo U("Tools/mergely");?>" target="_blank">代码对比工具</a></li>
             </ul>
-            <p class="text-muted text-center">©2016 <a href="<?php echo U("About/index");?>">Macyu</a><span id="webTime"></span></p>
+            <p class="text-muted text-center">©2016 <a href="<?php echo U("About/index");?>">Miuu</a><span id="webTime"></span></p>
             <p class="text-muted text-center">
                 <a class="mr10" href="tencent://message/?uin=2211735722&amp;与我交流&amp;Menu=yes" target="_blank">
                     <img border="0" src="http://wpa.qq.com/pa?p=1:2211735722:16" alt="点击我">
@@ -243,7 +243,7 @@ $IMG_URL = 'http://7xsqlc.com1.z0.glb.clouddn.com/'; $IMG_THUMB = '?imageView2/1
 <div class="footer-bottom">
     <div class="container">
         <div class="copyrights">
-            <p>Copyright &copy; 2017.Company name All rights reserved.<a href="<?php echo U('Index/index');?>">觅友网</a> - More <a href="<?php echo U('About/index');?>" target="_blank" title="关于我">-About Us</a></p>
+            <p class="text-center">Copyright &copy; 2017.Company name All rights reserved.<a href="<?php echo U('Index/index');?>">觅友网</a> - More <a href="<?php echo U('About/index');?>" target="_blank" title="关于我">-About Us</a></p>
         </div>
     </div>
 </div>
@@ -252,15 +252,15 @@ $IMG_URL = 'http://7xsqlc.com1.z0.glb.clouddn.com/'; $IMG_THUMB = '?imageView2/1
 <!--footer end-->
 
 
-<script src="/web/Public/Home/js/jquery.js"></script>
-<script src="/web/Public/Home/js/bootstrap.min.js"></script>
-<script src="/web/Public/Home/js/common.js"></script>
+<script src="/Public/Home/js/jquery.js"></script>
+<script src="/Public/Home/js/bootstrap.min.js"></script>
+<script src="/Public/Home/js/common.js"></script>
 
-<script type="text/javascript" src="/web/Public/Home/plugins/layui/layui.js"></script>
-<script type="text/javascript" src="/web/Public/Home/plugins/layui/lay/dest/layui.all.js"></script>
+<script type="text/javascript" src="/Public/Home/plugins/layui/layui.js"></script>
+<script type="text/javascript" src="/Public/Home/plugins/layui/lay/dest/layui.all.js"></script>
 
-<script src="/web/Public/Home/plugins/docs/docs.min.js"></script>
-<script src="/web/Public/Home/plugins/zeroClipboard/ZeroClipboard.js"></script>
+<script src="/Public/Home/plugins/docs/docs.min.js"></script>
+<script src="/Public/Home/plugins/zeroClipboard/ZeroClipboard.js"></script>
 
 
 <script>

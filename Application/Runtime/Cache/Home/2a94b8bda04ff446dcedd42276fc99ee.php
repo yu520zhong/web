@@ -49,11 +49,6 @@
 <![endif]-->
 <?php
 $IMG_URL = 'http://7xsqlc.com1.z0.glb.clouddn.com/'; $IMG_THUMB = '?imageView2/1/w/100/h/100'; $IMG_BIG_W = '?imageView2/2/w/840'; $IMG_BIG_H = '?imageView2/2/h/300'; $IMG_BIG_WI = '?imageView2/2/w/840/interlace/1'; $IMG_BIG_HI = '?imageView2/2/h/300/interlace/1'; $IMG_SMALL_165 = '?imageView2/2/w/165'; ?>
-<style type="text/css">
-    .weixin-tip img{max-width: 100%; height: auto;}
-    .weixin-tip{display: none; position: fixed; left:0; top:0; bottom:0; background: rgba(0,0,0,0.8); filter:alpha(opacity=80);  height: 100%; width: 100%; z-index: 9999;}
-    .weixin-tip p{text-align: center; margin-top: 10%; padding:0 5%;}
-</style>
 </head>
 <body>
 <!--header start-->
@@ -279,11 +274,7 @@ $IMG_URL = 'http://7xsqlc.com1.z0.glb.clouddn.com/'; $IMG_THUMB = '?imageView2/1
     </div>
 </div>
 </div>
-<div class="weixin-tip">
-    <p>
-        <img src="/web/Public/Home/img/live_weixin.png" alt="微信打开"/>
-    </p>
-</div>
+
 <!--footer start-->
 <footer>
 <div class="footer-top clearfix">
@@ -305,7 +296,7 @@ $IMG_URL = 'http://7xsqlc.com1.z0.glb.clouddn.com/'; $IMG_THUMB = '?imageView2/1
                 <li><a href="http://themebetter.com/" target="_blank">ThinkPHP</a></li>
                 <li><a href="<?php echo U("Tools/mergely");?>" target="_blank">代码对比工具</a></li>
             </ul>
-            <p class="text-muted text-center">©2016 <a href="<?php echo U("About/index");?>">Macyu</a><span id="webTime"></span></p>
+            <p class="text-muted text-center">©2016 <a href="<?php echo U("About/index");?>">Miuu</a><span id="webTime"></span></p>
             <p class="text-muted text-center">
                 <a class="mr10" href="tencent://message/?uin=2211735722&amp;与我交流&amp;Menu=yes" target="_blank">
                     <img border="0" src="http://wpa.qq.com/pa?p=1:2211735722:16" alt="点击我">
@@ -327,7 +318,7 @@ $IMG_URL = 'http://7xsqlc.com1.z0.glb.clouddn.com/'; $IMG_THUMB = '?imageView2/1
 <div class="footer-bottom">
     <div class="container">
         <div class="copyrights">
-            <p>Copyright &copy; 2017.Company name All rights reserved.<a href="<?php echo U('Index/index');?>">觅友网</a> - More <a href="<?php echo U('About/index');?>" target="_blank" title="关于我">-About Us</a></p>
+            <p class="text-center">Copyright &copy; 2017.Company name All rights reserved.<a href="<?php echo U('Index/index');?>">觅友网</a> - More <a href="<?php echo U('About/index');?>" target="_blank" title="关于我">-About Us</a></p>
         </div>
     </div>
 </div>
@@ -394,6 +385,7 @@ var _hmt = _hmt || [];
     });
 })();
 
+
 //自执行匿名函数
 (function(){
     window.setTimeout(arguments.callee, 1000);
@@ -413,7 +405,7 @@ var _hmt = _hmt || [];
     e_minsover = (e_hrsover - hrsover) * 60;
     minsover = Math.floor((e_hrsover - hrsover) * 60);
     seconds = Math.floor((e_minsover - minsover) * 60);
-    webTime.innerHTML = "·米鱼博客已运行：" + daysover + "天" + hrsover + "小时" + minsover + "分" + seconds + "秒";
+    webTime.innerHTML = "·觅友博客已运行：" + daysover + "天" + hrsover + "小时" + minsover + "分" + seconds + "秒";
 })();
 document.getElementsByTagName('iframe')[0].width="500";
 </script>
@@ -500,6 +492,8 @@ document.getElementsByTagName('iframe')[0].width="500";
         theme: 'dark'
     });
 
+    
+    {/* 
     //微信端判断，提示使用浏览器打开
     $(window).on("load",function(){
         var winHeight = $(window).height();
@@ -517,6 +511,7 @@ document.getElementsByTagName('iframe')[0].width="500";
             $(".weixin-tip").show();
         }
     })
+    */}
 </script>
 
 

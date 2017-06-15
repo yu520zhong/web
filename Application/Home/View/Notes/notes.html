@@ -184,6 +184,37 @@
 <include file="Public:footer" />
 <include file="Public:js" />
 <include file="Public:calendar" />
+<include file="Public:layui_showcode" />
+
+<script src="__PLUGINS__/zeroclipboard/ZeroCilpdocs.js"></script>
+<script src="__PLUGINS__/zeroclipboard/ZeroClipboard.js"></script>
+<script>
+
+{/*复制剪贴板*/}
+$(function() {
+    var client = new ZeroClipboard( $(".btn-clipboard") );
+
+    client.on( "ready", function( readyEvent ) {
+    // alert( "ZeroClipboard SWF is ready!" );
+    client.on( 'copy', function(event) {
+            var code = $(event.target).parent().next().find('.layui-code-ol').text();
+          event.clipboardData.setData('text/plain',code);
+        } );
+    client.on( "aftercopy", function( event ) {
+    // `this` === `client`
+    // `event.target` === the element that was clicked
+        layer.msg('恭喜您，成功复制代码！', {time: 1000});
+      } );
+    } );
+    client.on( 'error', function(event) {
+        console.log( 'ZeroClipboard error of type "' + event.name + '": ' + event.message );
+        ZeroClipboard.destroy();
+    } );
+
+})
+
+</script>
+
 
 <script type="text/javascript" src="http://assets.changyan.sohu.com/upload/plugins/plugins.count.js">
 </script>
@@ -220,7 +251,6 @@ window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="tex
         TestWin.document.close();
     };
 </script>
-<include file="Public:layui_showcode" />
 </body>
 </html>
 

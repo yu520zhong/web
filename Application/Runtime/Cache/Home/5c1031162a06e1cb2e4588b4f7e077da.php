@@ -8,44 +8,44 @@
 <title><?php echo ($essay["name"]); ?>_觅友</title>
 <meta name="keywords" content="<?php echo ($essay["keywords"]); ?>">
 <meta name="description" content="<?php echo ($essay["desc"]); ?>">
-<link rel="shortcut icon" href="/web/Public/Home/img/favicon.png">
+<link rel="shortcut icon" href="/Public/Home/img/favicon.png">
 
 <!-- Bootstrap core CSS -->
-<link rel="stylesheet" href="/web/Public/Home/css/bootstrap.css" />
-<link rel="stylesheet" href="/web/Public/Home/css/bootstrap-reset.css" />
+<link rel="stylesheet" href="/Public/Home/css/bootstrap.css" />
+<link rel="stylesheet" href="/Public/Home/css/bootstrap-reset.css" />
 
-<link rel="stylesheet" href="/web/Public/home/iconfont/iconfont.css" />
+<link rel="stylesheet" href="/Public/home/iconfont/iconfont.css" />
 
 <!--external css-->
-<link rel="stylesheet" href="/web/Public/home/assets/font-awesome/css/font-awesome.css" />
-<link rel="stylesheet" href="/web/Public/home/assets/bxslider/jquery.bxslider.css" />
+<link rel="stylesheet" href="/Public/home/assets/font-awesome/css/font-awesome.css" />
+<link rel="stylesheet" href="/Public/home/assets/bxslider/jquery.bxslider.css" />
 
-<link rel="stylesheet" href="/web/Public/home/assets/revolution_slider/css/rs-style.css" media="screen" />
-<link rel="stylesheet" href="/web/Public/home/assets/revolution_slider/rs-plugin/css/settings.css" media="screen" />
+<link rel="stylesheet" href="/Public/home/assets/revolution_slider/css/rs-style.css" media="screen" />
+<link rel="stylesheet" href="/Public/home/assets/revolution_slider/rs-plugin/css/settings.css" media="screen" />
 
 <!-- Custom styles for this template -->
-<link rel="stylesheet" href="/web/Public/Home/css/style.css" />
-<link rel="stylesheet" href="/web/Public/Home/css/style-responsive.css" />
+<link rel="stylesheet" href="/Public/Home/css/style.css" />
+<link rel="stylesheet" href="/Public/Home/css/style-responsive.css" />
 
-<link rel="stylesheet" href="/web/Public/Home/css/kissui.css" />
-<link rel="stylesheet" href="/web/Public/Home/css/scrollanim.min.css" />
+<link rel="stylesheet" href="/Public/Home/css/kissui.css" />
+<link rel="stylesheet" href="/Public/Home/css/scrollanim.min.css" />
 
-<link rel="stylesheet" href="/web/Public/Home/css/swiper.min.css" />
-<link rel="stylesheet" href="/web/Public/Home/css/animate.css" />
-
-
-<link rel="stylesheet" href="/web/Public/Home/plugins/layui/css/layui.css" />
-
-<link rel="stylesheet" type="text/css" href="/web/Public/Home/plugins/simple_calendar/css/simple-calendar.css">
+<link rel="stylesheet" href="/Public/Home/css/swiper.min.css" />
+<link rel="stylesheet" href="/Public/Home/css/animate.css" />
 
 
-<link rel="stylesheet" href="/web/Public/Home/css/index.css" />
-<link rel="stylesheet" href="/web/Public/Home/plugins/codemirror/codemirror.css" />
-<link rel="stylesheet" href="/web/Public/Home/plugins/codemirror/ambiance.css" />
+<link rel="stylesheet" href="/Public/Home/plugins/layui/css/layui.css" />
+
+<link rel="stylesheet" type="text/css" href="/Public/Home/plugins/simple_calendar/css/simple-calendar.css">
+
+
+<link rel="stylesheet" href="/Public/Home/css/index.css" />
+<link rel="stylesheet" href="/Public/Home/plugins/codemirror/codemirror.css" />
+<link rel="stylesheet" href="/Public/Home/plugins/codemirror/ambiance.css" />
 <!-- HTML5 shim and Respond.js IE8 support of HTML5 tooltipss and media queries -->
 <!--[if lt IE 9]>
-<script src="/web/Public/Home/js/html5shiv.js"></script>
-<script src="/web/Public/Home/js/respond.min.js"></script>
+<script src="/Public/Home/js/html5shiv.js"></script>
+<script src="/Public/Home/js/respond.min.js"></script>
 <![endif]-->
 <?php
 $IMG_URL = 'http://7xsqlc.com1.z0.glb.clouddn.com/'; $IMG_THUMB = '?imageView2/1/w/100/h/100'; $IMG_BIG_W = '?imageView2/2/w/840'; $IMG_BIG_H = '?imageView2/2/h/300'; $IMG_BIG_WI = '?imageView2/2/w/840/interlace/1'; $IMG_BIG_HI = '?imageView2/2/h/300/interlace/1'; $IMG_SMALL_165 = '?imageView2/2/w/165'; ?>
@@ -61,7 +61,7 @@ $IMG_URL = 'http://7xsqlc.com1.z0.glb.clouddn.com/'; $IMG_THUMB = '?imageView2/1
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="/web">MI<span>Uu</span></a>
+                <a class="navbar-brand" href="">MI<span>Uu</span></a>
             </div>
             <div class="navbar-collapse collapse ">
                 <ul class="nav navbar-nav" id="menu">
@@ -314,33 +314,30 @@ $IMG_URL = 'http://7xsqlc.com1.z0.glb.clouddn.com/'; $IMG_THUMB = '?imageView2/1
 
 <!-- JavaScript -->
 <!-- js placed at the end of the document so the pages load faster -->
-<script src="/web/Public/Home/js/jquery.js"></script>
-<script src="/web/Public/Home/js/bootstrap.min.js"></script>
-<script src="/web/Public/Home/js/hover-dropdown.js"></script>
-<script src="/web/Public/Home/js/common.js"></script>
-<script src="/web/Public/Home/js/main-scripts.js"></script>
-<script src="/web/Public/Home/js/scrollanim.min.js"></script>
-<!-- swiper -->
-<script src="/web/Public/Home/js/swiper.min.js"></script>
-<script src="/web/Public/Home/js/swiper.animate.min.js"></script>
+<script src="/Public/Home/js/jquery.js"></script>
+<script src="/Public/Home/js/bootstrap.min.js"></script>
+<script src="/Public/Home/js/hover-dropdown.js"></script>
+<script src="/Public/Home/js/common.js"></script>
+<script src="/Public/Home/js/main-scripts.js"></script>
+<script src="/Public/Home/js/scrollanim.min.js"></script>
 
 <script>
 
 var ThinkPHP = {
-    'MODULE' : '/web/Home',
-    'ROOT' : '/web',
-    'IMG' : '/web/Public/<?php echo MODULE_NAME;?>/img',
-    'FACE' : '/web/Public/<?php echo MODULE_NAME;?>/face',
-    'PLUGINS' : '/web/Public/<?php echo MODULE_NAME;?>/plugins',
-    'JS' : '/web/Public/Home/js',
-    'UPLOADIFY' : '/web/Public/Home/uploadify',
+    'MODULE' : '/Home',
+    'ROOT' : '',
+    'IMG' : '/Public/<?php echo MODULE_NAME;?>/img',
+    'FACE' : '/Public/<?php echo MODULE_NAME;?>/face',
+    'PLUGINS' : '/Public/<?php echo MODULE_NAME;?>/plugins',
+    'JS' : '/Public/Home/js',
+    'UPLOADIFY' : '/Public/Home/uploadify',
     'UPLOADER' : '<?php echo U("File/upload");?>',
     'INDEX' : '<?php echo U("Index/index");?>',
     'SEARCH' : '<?php echo U("Home/Other/search");?>',
 };
 </script>
-<script type="text/javascript" src="/web/Public/Home/plugins/layui/layui.js"></script>
-<script type="text/javascript" src="/web/Public/Home/plugins/layui/lay/dest/layui.all.js"></script>
+<script type="text/javascript" src="/Public/Home/plugins/layui/layui.js"></script>
+<script type="text/javascript" src="/Public/Home/plugins/layui/lay/dest/layui.all.js"></script>
 
 <script>
 var _hmt = _hmt || [];
@@ -396,8 +393,8 @@ var _hmt = _hmt || [];
 })();
 document.getElementsByTagName('iframe')[0].width="500";
 </script>
-<script src="/web/Public/Home/plugins/codemirror/codemirror.js"></script>
-<script src="/web/Public/Home/plugins/codemirror/mode/javascript/javascript.js"></script>
+<script src="/Public/Home/plugins/codemirror/codemirror.js"></script>
+<script src="/Public/Home/plugins/codemirror/mode/javascript/javascript.js"></script>
 <!-- 畅言公共JS代码 start (一个网页只需插入一次) -->
 <script type="text/javascript">
     (function(){
@@ -444,16 +441,16 @@ function Preview(obj) {
 </script>
 
 <!-- //演示代码渲染，syntaxhighlighter太臃肿了，放弃不用，使用layui,简洁美观 -->
-<script type="text/javascript" src="/web/Public/Home/plugins/syntaxhighlighter/scripts/shCore.js"></script>
-<script type="text/javascript" src="/web/Public/Home/plugins/syntaxhighlighter/scripts/shBrushCss.js"></script>
-<script type="text/javascript" src="/web/Public/Home/plugins/syntaxhighlighter/scripts/shBrushJava.js"></script>
-<script type="text/javascript" src="/web/Public/Home/plugins/syntaxhighlighter/scripts/shBrushJScript.js"></script>
-<script type="text/javascript" src="/web/Public/Home/plugins/syntaxhighlighter/scripts/shBrushPhp.js"></script>
-<script type="text/javascript" src="/web/Public/Home/plugins/syntaxhighlighter/scripts/shBrushRuby.js"></script>
-<script type="text/javascript" src="/web/Public/Home/plugins/syntaxhighlighter/scripts/shBrushSql.js"></script>
-<script type="text/javascript" src="/web/Public/Home/plugins/syntaxhighlighter/scripts/shBrushXml.js"></script>
-<link type="text/css" rel="stylesheet" href="/web/Public/Home/plugins/syntaxhighlighter/styles/shCore.css"/>
-<link type="text/css" rel="stylesheet" href="/web/Public/Home/plugins/syntaxhighlighter/styles/shThemeRDark.css"/>
+<script type="text/javascript" src="/Public/Home/plugins/syntaxhighlighter/scripts/shCore.js"></script>
+<script type="text/javascript" src="/Public/Home/plugins/syntaxhighlighter/scripts/shBrushCss.js"></script>
+<script type="text/javascript" src="/Public/Home/plugins/syntaxhighlighter/scripts/shBrushJava.js"></script>
+<script type="text/javascript" src="/Public/Home/plugins/syntaxhighlighter/scripts/shBrushJScript.js"></script>
+<script type="text/javascript" src="/Public/Home/plugins/syntaxhighlighter/scripts/shBrushPhp.js"></script>
+<script type="text/javascript" src="/Public/Home/plugins/syntaxhighlighter/scripts/shBrushRuby.js"></script>
+<script type="text/javascript" src="/Public/Home/plugins/syntaxhighlighter/scripts/shBrushSql.js"></script>
+<script type="text/javascript" src="/Public/Home/plugins/syntaxhighlighter/scripts/shBrushXml.js"></script>
+<link type="text/css" rel="stylesheet" href="/Public/Home/plugins/syntaxhighlighter/styles/shCore.css"/>
+<link type="text/css" rel="stylesheet" href="/Public/Home/plugins/syntaxhighlighter/styles/shThemeRDark.css"/>
 <script type="text/javascript">
   SyntaxHighlighter.all();
 </script>

@@ -8,41 +8,41 @@
 <title><?php echo ($title); ?>_觅友</title>
 <meta name="keywords" content="开发工具，常用工具，觅友，觅友网，觅友博客，觅友小站，前端，miuu,IT开发，css，css3，js，js特效，php，jquery，ajax，java,休闲游戏">
 <meta name="description" content="觅友_有朋自远方来，分享自己网站开发学习以及工作和生活中的点点滴滴，希望通过此网站，与大家一起交流、成长、进步！">
-<link rel="shortcut icon" href="/web/Public/Home/img/favicon.png">
+<link rel="shortcut icon" href="/Public/Home/img/favicon.png">
 
 <!-- Bootstrap core CSS -->
-<link rel="stylesheet" href="/web/Public/Home/css/bootstrap.css" />
-<link rel="stylesheet" href="/web/Public/Home/css/bootstrap-reset.css" />
+<link rel="stylesheet" href="/Public/Home/css/bootstrap.css" />
+<link rel="stylesheet" href="/Public/Home/css/bootstrap-reset.css" />
 
-<link rel="stylesheet" href="/web/Public/home/iconfont/iconfont.css" />
+<link rel="stylesheet" href="/Public/home/iconfont/iconfont.css" />
 
 <!--external css-->
-<link rel="stylesheet" href="/web/Public/home/assets/font-awesome/css/font-awesome.css" />
-<link rel="stylesheet" href="/web/Public/home/assets/bxslider/jquery.bxslider.css" />
+<link rel="stylesheet" href="/Public/home/assets/font-awesome/css/font-awesome.css" />
+<link rel="stylesheet" href="/Public/home/assets/bxslider/jquery.bxslider.css" />
 
-<link rel="stylesheet" href="/web/Public/home/assets/revolution_slider/css/rs-style.css" media="screen" />
-<link rel="stylesheet" href="/web/Public/home/assets/revolution_slider/rs-plugin/css/settings.css" media="screen" />
+<link rel="stylesheet" href="/Public/home/assets/revolution_slider/css/rs-style.css" media="screen" />
+<link rel="stylesheet" href="/Public/home/assets/revolution_slider/rs-plugin/css/settings.css" media="screen" />
 
 <!-- Custom styles for this template -->
-<link rel="stylesheet" href="/web/Public/Home/css/style.css" />
-<link rel="stylesheet" href="/web/Public/Home/css/style-responsive.css" />
+<link rel="stylesheet" href="/Public/Home/css/style.css" />
+<link rel="stylesheet" href="/Public/Home/css/style-responsive.css" />
 
-<link rel="stylesheet" href="/web/Public/Home/css/kissui.css" />
-<link rel="stylesheet" href="/web/Public/Home/css/scrollanim.min.css" />
+<link rel="stylesheet" href="/Public/Home/css/kissui.css" />
+<link rel="stylesheet" href="/Public/Home/css/scrollanim.min.css" />
 
-<link rel="stylesheet" href="/web/Public/Home/css/swiper.min.css" />
-<link rel="stylesheet" href="/web/Public/Home/css/animate.css" />
+<link rel="stylesheet" href="/Public/Home/css/swiper.min.css" />
+<link rel="stylesheet" href="/Public/Home/css/animate.css" />
 
 
-<link rel="stylesheet" href="/web/Public/Home/plugins/layui/css/layui.css" />
+<link rel="stylesheet" href="/Public/Home/plugins/layui/css/layui.css" />
 
-<link rel="stylesheet" type="text/css" href="/web/Public/Home/plugins/simple_calendar/css/simple-calendar.css">
+<link rel="stylesheet" type="text/css" href="/Public/Home/plugins/simple_calendar/css/simple-calendar.css">
 
 
 <!-- HTML5 shim and Respond.js IE8 support of HTML5 tooltipss and media queries -->
 <!--[if lt IE 9]>
-<script src="/web/Public/Home/js/html5shiv.js"></script>
-<script src="/web/Public/Home/js/respond.min.js"></script>
+<script src="/Public/Home/js/html5shiv.js"></script>
+<script src="/Public/Home/js/respond.min.js"></script>
 <![endif]-->
 <?php
 $IMG_URL = 'http://7xsqlc.com1.z0.glb.clouddn.com/'; $IMG_THUMB = '?imageView2/1/w/100/h/100'; $IMG_BIG_W = '?imageView2/2/w/840'; $IMG_BIG_H = '?imageView2/2/h/300'; $IMG_BIG_WI = '?imageView2/2/w/840/interlace/1'; $IMG_BIG_HI = '?imageView2/2/h/300/interlace/1'; $IMG_SMALL_165 = '?imageView2/2/w/165'; ?>
@@ -58,7 +58,7 @@ $IMG_URL = 'http://7xsqlc.com1.z0.glb.clouddn.com/'; $IMG_THUMB = '?imageView2/1
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="/web">MI<span>Uu</span></a>
+                <a class="navbar-brand" href="">MI<span>Uu</span></a>
             </div>
             <div class="navbar-collapse collapse ">
                 <ul class="nav navbar-nav" id="menu">
@@ -145,56 +145,56 @@ $IMG_URL = 'http://7xsqlc.com1.z0.glb.clouddn.com/'; $IMG_THUMB = '?imageView2/1
                     <td>
                         <h4>中国象棋</h4>
                         <p>一款给力的jquery象棋游戏，闲时消遣</p>
-                        <a class="btn btn-sm btn-default" href="/web/Public/Home/game/chess/chess.html" target="_blank">查看演示</a>
+                        <a class="btn btn-sm btn-default" href="/Public/Home/game/chess/chess.html" target="_blank">查看演示</a>
                     </td>
                     <td>
                         <h4>打地鼠</h4>
                         <p>打地鼠啊打地鼠，一不小心打到小白兔。。。</p>
-                        <a class="btn btn-sm btn-default" href="/web/Public/Home/game/mouseHit/index.html" target="_blank">查看演示</a>
+                        <a class="btn btn-sm btn-default" href="/Public/Home/game/mouseHit/index.html" target="_blank">查看演示</a>
                     </td>
                     <td>
                         <h4>五子棋</h4>
                         <p>锻炼智力就靠它了！</p>
-                        <a class="btn btn-sm btn-default" href="/web/Public/Home/game/gobang/index.html" target="_blank">查看演示</a>
+                        <a class="btn btn-sm btn-default" href="/Public/Home/game/gobang/index.html" target="_blank">查看演示</a>
                     </td>
                     <td>
                         <h4>动物棋</h4>
                         <p>两只老鼠打架，两败俱伤啦</p>
-                        <a class="btn btn-sm btn-default" href="/web/Public/Home/game/animalchess/index.html" target="_blank">查看演示</a>
+                        <a class="btn btn-sm btn-default" href="/Public/Home/game/animalchess/index.html" target="_blank">查看演示</a>
                     </td>
                 </tr>
                 <tr>
                     <td>
                         <h4>水果忍者</h4>
                         <p>经典游戏模仿秀，小心炸弹！</p>
-                        <a class="btn btn-sm btn-default" href="/web/Public/Home/game/ninjia/index.html" target="_blank">查看演示</a>
+                        <a class="btn btn-sm btn-default" href="/Public/Home/game/ninjia/index.html" target="_blank">查看演示</a>
                     </td>
                     <td>
                         <h4>青苹果打字</h4>
                         <p>打字游戏，获取青苹果！</p>
-                        <a class="btn btn-sm btn-default" href="/web/Public/Home/game/typing/index.html" target="_blank">查看演示</a>
+                        <a class="btn btn-sm btn-default" href="/Public/Home/game/typing/index.html" target="_blank">查看演示</a>
                     </td>
                     <td>
                         <h4>2048军旗</h4>
                         <p>2048军旗游戏，很好玩的休闲游戏</p>
-                        <a class="btn btn-sm btn-default" href="/web/Public/Home/game/2048/index.html" target="_blank">查看演示</a>
+                        <a class="btn btn-sm btn-default" href="/Public/Home/game/2048/index.html" target="_blank">查看演示</a>
                     </td>
                     <td>
                         <h4>经典台球</h4>
                         <p>简单的台球小游戏，陶冶情操</p>
-                        <a class="btn btn-sm btn-default" href="/web/Public/Home/game/billiards/index.html" target="_blank">查看演示</a>
+                        <a class="btn btn-sm btn-default" href="/Public/Home/game/billiards/index.html" target="_blank">查看演示</a>
                     </td>
                 </tr>
                 <tr>
                     <td>
                         <h4>拼图</h4>
                         <p>12种模型的拼图，快来体验吧</p>
-                        <a class="btn btn-sm btn-default" href="/web/Public/Home/game/jigsaw/index.html" target="_blank">查看演示</a>
+                        <a class="btn btn-sm btn-default" href="/Public/Home/game/jigsaw/index.html" target="_blank">查看演示</a>
                     </td>
                     <td>
                         <h4>3D魔方</h4>
                         <p>锻炼空间思维能力,增强记忆能力和反应力</p>
-                        <a class="btn btn-sm btn-default" href="/web/Public/Home/game/cube/index.html" target="_blank">查看演示</a>
+                        <a class="btn btn-sm btn-default" href="/Public/Home/game/cube/index.html" target="_blank">查看演示</a>
                     </td>
                     <td>
                     </td>
@@ -267,30 +267,30 @@ $IMG_URL = 'http://7xsqlc.com1.z0.glb.clouddn.com/'; $IMG_THUMB = '?imageView2/1
 
 <!-- JavaScript -->
 <!-- js placed at the end of the document so the pages load faster -->
-<script src="/web/Public/Home/js/jquery.js"></script>
-<script src="/web/Public/Home/js/bootstrap.min.js"></script>
-<script src="/web/Public/Home/js/hover-dropdown.js"></script>
-<script src="/web/Public/Home/js/common.js"></script>
-<script src="/web/Public/Home/js/main-scripts.js"></script>
-<script src="/web/Public/Home/js/scrollanim.min.js"></script>
+<script src="/Public/Home/js/jquery.js"></script>
+<script src="/Public/Home/js/bootstrap.min.js"></script>
+<script src="/Public/Home/js/hover-dropdown.js"></script>
+<script src="/Public/Home/js/common.js"></script>
+<script src="/Public/Home/js/main-scripts.js"></script>
+<script src="/Public/Home/js/scrollanim.min.js"></script>
 
 <script>
 
 var ThinkPHP = {
-    'MODULE' : '/web/Home',
-    'ROOT' : '/web',
-    'IMG' : '/web/Public/<?php echo MODULE_NAME;?>/img',
-    'FACE' : '/web/Public/<?php echo MODULE_NAME;?>/face',
-    'PLUGINS' : '/web/Public/<?php echo MODULE_NAME;?>/plugins',
-    'JS' : '/web/Public/Home/js',
-    'UPLOADIFY' : '/web/Public/Home/uploadify',
+    'MODULE' : '/Home',
+    'ROOT' : '',
+    'IMG' : '/Public/<?php echo MODULE_NAME;?>/img',
+    'FACE' : '/Public/<?php echo MODULE_NAME;?>/face',
+    'PLUGINS' : '/Public/<?php echo MODULE_NAME;?>/plugins',
+    'JS' : '/Public/Home/js',
+    'UPLOADIFY' : '/Public/Home/uploadify',
     'UPLOADER' : '<?php echo U("File/upload");?>',
     'INDEX' : '<?php echo U("Index/index");?>',
     'SEARCH' : '<?php echo U("Home/Other/search");?>',
 };
 </script>
-<script type="text/javascript" src="/web/Public/Home/plugins/layui/layui.js"></script>
-<script type="text/javascript" src="/web/Public/Home/plugins/layui/lay/dest/layui.all.js"></script>
+<script type="text/javascript" src="/Public/Home/plugins/layui/layui.js"></script>
+<script type="text/javascript" src="/Public/Home/plugins/layui/lay/dest/layui.all.js"></script>
 
 <script>
 var _hmt = _hmt || [];
@@ -348,7 +348,7 @@ document.getElementsByTagName('iframe')[0].width="500";
 </script>
 
 
-<script src="/web/Public/Home/plugins/simple_calendar/js/simple-calendar-es6.js"></script>
+<script src="/Public/Home/plugins/simple_calendar/js/simple-calendar-es6.js"></script>
 <script>
     var myoptions = {
         width: '100%',

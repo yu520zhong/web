@@ -1,0 +1,337 @@
+[ 2017-06-16T15:58:57+08:00 ] 116.228.21.187 /admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000209s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000303s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000328s ]
+
+[ 2017-06-16T15:58:57+08:00 ] 116.228.21.187 /Admin/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000213s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000297s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000320s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000071s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003443s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003479s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000141s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000204s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000370s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000322s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000338s ]
+
+[ 2017-06-16T15:58:57+08:00 ] 116.228.21.187 /Admin/Login/getVerify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000222s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000298s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000322s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000354s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000396s ]
+
+[ 2017-06-16T15:59:01+08:00 ] 116.228.21.187 /Admin/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000223s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000293s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000318s ]
+SQL: SHOW COLUMNS FROM `miuu_admin` [ RunTime:0.0008s ]
+SQL: SELECT `password`,`salt` FROM `miuu_admin` WHERE `username` = 'dudu' LIMIT 1   [ RunTime:0.0009s ]
+
+[ 2017-06-16T15:59:01+08:00 ] 116.228.21.187 /Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000196s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000318s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000340s ]
+SQL: select version() as ver [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000199s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000222s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005985s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006006s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000148s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000194s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000369s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000315s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000337s ]
+
+[ 2017-06-16T15:59:02+08:00 ] 116.228.21.187 /Admin/Index/favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000211s ]
+
+[ 2017-06-16T15:59:05+08:00 ] 116.228.21.187 /Admin/Articles/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000209s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000298s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000322s ]
+SQL: SHOW COLUMNS FROM `miuu_articles` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `miuu_categoryart` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM miuu_articles a WHERE a.recycle = 'no' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT c.name as categoryart_name,a.category_id,a.id,a.name,a.on_sale,a.author,a.desc,a.keywords,a.recommend,a.source,a.url,a.code,a.links FROM miuu_articles a LEFT JOIN miuu_categoryart AS c ON c.id=a.category_id  WHERE a.recycle = 'no' ORDER BY a.id desc LIMIT 0,5   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`pid` FROM `miuu_categoryart`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000239s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000260s ]
+NOTIC: [8] Undefined index: add_time /www/wwwroot/miuu.club/web/Application/Runtime/Cache/Admin/0b2a703ce5bb92d2208fe0b1bd0d8a79.php 第 279 行.
+NOTIC: [8] Undefined index: add_time /www/wwwroot/miuu.club/web/Application/Runtime/Cache/Admin/0b2a703ce5bb92d2208fe0b1bd0d8a79.php 第 279 行.
+NOTIC: [8] Undefined index: add_time /www/wwwroot/miuu.club/web/Application/Runtime/Cache/Admin/0b2a703ce5bb92d2208fe0b1bd0d8a79.php 第 279 行.
+NOTIC: [8] Undefined index: add_time /www/wwwroot/miuu.club/web/Application/Runtime/Cache/Admin/0b2a703ce5bb92d2208fe0b1bd0d8a79.php 第 279 行.
+NOTIC: [8] Undefined index: add_time /www/wwwroot/miuu.club/web/Application/Runtime/Cache/Admin/0b2a703ce5bb92d2208fe0b1bd0d8a79.php 第 279 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008135s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008155s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000141s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000198s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000366s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000333s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000355s ]
+
+[ 2017-06-16T15:59:06+08:00 ] 116.228.21.187 /Admin/Articles/favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000207s ]
+
+[ 2017-06-16T15:59:10+08:00 ] 116.228.21.187 /Admin/Articles/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000207s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000309s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000332s ]
+SQL: SHOW COLUMNS FROM `miuu_categoryart` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `miuu_articles` [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name`,`pid` FROM `miuu_categoryart`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000281s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000303s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007339s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007363s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000138s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000198s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000362s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000331s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000367s ]
+
+[ 2017-06-16T15:59:36+08:00 ] 116.228.21.187 /Admin/Articles/add/cid/54.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000222s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000294s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000317s ]
+SQL: SHOW COLUMNS FROM `miuu_categoryart` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `miuu_articles` [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name`,`pid` FROM `miuu_categoryart`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000280s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000302s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006844s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006864s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000140s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000212s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000379s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000328s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000350s ]
+
+[ 2017-06-16T15:59:37+08:00 ] 116.228.21.187 /Admin/Articles/add/cid/favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000211s ]
+
+[ 2017-06-16T16:01:51+08:00 ] 116.228.21.187 /Admin/Articles/add/cid/54.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000221s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000300s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000325s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /www/wwwroot/miuu.club/web/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+NOTIC: [8] Undefined index: Expires /www/wwwroot/miuu.club/web/ThinkPHP/Library/Think/Upload/Driver/Qiniu/QiniuStorage.class.php 第 45 行.
+NOTIC: [8] Undefined index: saveName /www/wwwroot/miuu.club/web/ThinkPHP/Library/Think/Upload/Driver/Qiniu/QiniuStorage.class.php 第 80 行.
+NOTIC: [8] Undefined index: custom_fields /www/wwwroot/miuu.club/web/ThinkPHP/Library/Think/Upload/Driver/Qiniu/QiniuStorage.class.php 第 83 行.
+SQL: SHOW COLUMNS FROM `miuu_categoryart` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `miuu_articles` [ RunTime:0.0004s ]
+NOTIC: [2] parse_ini_file(&lt;p&gt;&lt;!--?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?--&gt;&lt;/p&gt;&lt;p&gt;在正则操作之中，使用一系列的标记符号是一件非常重要的任务，想要操作于正则有关的方法，就必须掌握正则标记。不光是Java，只要是支持正则操作的程序，例如，JavaScript、php等，其正则标记都是统一的。在Java中，所有的标记都由java.util.regex.Pattern类提供，下面列出一些核心的正则标记，便于对正则表达式的掌握和熟练使用。&lt;/p&gt;&lt;p&gt;1）字符：表示单个字符，只能出现1位。&lt;/p&gt;&lt;p&gt;X：表示是一个指定的一位字符，例如：编写一个a,表示是字母a;&lt;/p&gt;&lt;p&gt;\\：表示是一个字符“\”，但是由于“\”有个数含义，所以使用“\\”表示一位“\”;&lt;/p&gt;&lt;p&gt;\n：匹配换行；&lt;/p&gt;&lt;p&gt;2）字符范围：在指定的字符范围之中选1位，只能出现1位。&lt;/p&gt;&lt;p&gt;[abc]：表示可以是a、b、c中的任意一位；&lt;/p&gt;&lt;p&gt;[^abc]：表示不是a、b、c中的任意一位；&lt;/p&gt;&lt;p&gt;[a-zA-Z]：表示是任意一位字母（大写或小写）；&lt;/p&gt;&lt;p&gt;[0-9]：表示是任意一位数字。&lt;/p&gt;&lt;p&gt;3) 简洁表达式，表示1位。&lt;/p&gt;&lt;p&gt;.：表示任意的一位字符；&lt;/p&gt;&lt;p&gt;\d：表示一位数字，等价于“[0-9]”；&lt;/p&gt;&lt;p&gt;\D：表示一位非数字，等价于“[^0-9]”；&lt;/p&gt;&lt;p&gt;\s：表示一位空格，等价于“[\t\n\x0B\f\r]”；&lt;/p&gt;&lt;p&gt;\S：表示一位非空格，等价于“[......\t\n\x0B\f\r]”；&lt;/p&gt;&lt;p&gt;\w：表示一位字母、数字、、_，等价于“[a-zA-Z0-9]”；&lt;/p&gt;&lt;p&gt;\W：表示一位非字母、数字、_，等价于“[^a-zA-Z0-9]”；&lt;/p&gt;&lt;p&gt;4) 边界匹配，java用不上。&lt;/p&gt;&lt;p&gt;^：表示正则的开头；&lt;/p&gt;&lt;p&gt;$：表示正则的结尾。&lt;/p&gt;&lt;p&gt;5)数量表示，之前的正则每个符号只表示一位，如果要表示多位，则必须使用以下的数量关系。&lt;/p&gt;&lt;p&gt;正则?：表示此正则可以出现0次或1次；&lt;/p&gt;&lt;p&gt;正则+：表示此正则可以出现1次或多次；&lt;/p&gt;&lt;p&gt;正则*：表示此正则可以出现0次、1次或多次；&lt;/p&gt;&lt;p&gt;正则{n}：表示此正则出现正好n次；&lt;/p&gt;&lt;p&gt;正则{n,}：表示此正则出现n次以上；&lt;/p&gt;&lt;p&gt;正则{n,m}：表示自正则出现n~m次。&lt;/p&gt;&lt;p&gt;6)逻辑操作。&lt;/p&gt;&lt;p&gt;正则1正则2：正则1之后紧跟正则2操作；&lt;/p&gt;&lt;p&gt;正则1|正则2：表示或的关系，有一套正则标记匹配即可；&lt;/p&gt;&lt;p&gt;（正则）：表示按照一组来使用。&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;): failed to open stream: No such file or directory /www/wwwroot/miuu.club/web/ThinkPHP/Library/Vendor/htmlpurifier/HTMLPurifier.standalone.php 第 2542 行.
+NOTIC: [2] Invalid argument supplied for foreach() /www/wwwroot/miuu.club/web/ThinkPHP/Library/Vendor/htmlpurifier/HTMLPurifier.standalone.php 第 2390 行.
+SQL: INSERT INTO `miuu_articles` (`name`,`sn`,`author`,`desc`,`source`,`url`,`keywords`,`code`,`on_sale`,`recommend`,`links`,`category_id`,`thumb`,`content`,`recycle`,`add_time`) VALUES ('正则表达式·核心正则标记','java0001','miuu','不光是Java，只要是支持正则操作的程序，例如，JavaScript、php等，其正则标记都是统一的。','miuu学习','http://miuu.club/Tools/nav.html','正则表达式,正则标记','','yes','yes','Blog/articles/id/num','54','http://7xsqlc.com1.z0.glb.clouddn.com/1497600110_155340514.png','<p></p><p>在正则操作之中，使用一系列的标记符号是一件非常重要的任务，想要操作于正则有关的方法，就必须掌握正则标记。不光是Java，只要是支持正则操作的程序，例如，JavaScript、php等，其正则标记都是统一的。在Java中，所有的标记都由java.util.regex.Pattern类提供，下面列出一些核心的正则标记，便于对正则表达式的掌握和熟练使用。</p><p>1）字符：表示单个字符，只能出现1位。</p><p>X：表示是一个指定的一位字符，例如：编写一个a,表示是字母a;</p><p>\\\\：表示是一个字符“\\”，但是由于“\\”有个数含义，所以使用“\\\\”表示一位“\\”;</p><p>\\n：匹配换行；</p><p>2）字符范围：在指定的字符范围之中选1位，只能出现1位。</p><p>[abc]：表示可以是a、b、c中的任意一位；</p><p>[^abc]：表示不是a、b、c中的任意一位；</p><p>[a-zA-Z]：表示是任意一位字母（大写或小写）；</p><p>[0-9]：表示是任意一位数字。</p><p>3) 简洁表达式，表示1位。</p><p>.：表示任意的一位字符；</p><p>\\d：表示一位数字，等价于“[0-9]”；</p><p>\\D：表示一位非数字，等价于“[^0-9]”；</p><p>\\s：表示一位空格，等价于“[\\t\\n\\x0B\\f\\r]”；</p><p>\\S：表示一位非空格，等价于“[......\\t\\n\\x0B\\f\\r]”；</p><p>\\w：表示一位字母、数字、、_，等价于“[a-zA-Z0-9]”；</p><p>\\W：表示一位非字母、数字、_，等价于“[^a-zA-Z0-9]”；</p><p>4) 边界匹配，java用不上。</p><p>^：表示正则的开头；</p><p>$：表示正则的结尾。</p><p>5)数量表示，之前的正则每个符号只表示一位，如果要表示多位，则必须使用以下的数量关系。</p><p>正则?：表示此正则可以出现0次或1次；</p><p>正则+：表示此正则可以出现1次或多次；</p><p>正则*：表示此正则可以出现0次、1次或多次；</p><p>正则{n}：表示此正则出现正好n次；</p><p>正则{n,}：表示此正则出现n次以上；</p><p>正则{n,m}：表示自正则出现n~m次。</p><p>6)逻辑操作。</p><p>正则1正则2：正则1之后紧跟正则2操作；</p><p>正则1|正则2：表示或的关系，有一套正则标记匹配即可；</p><p>（正则）：表示按照一组来使用。 </p><p><br /></p>','no','2017-06-16 16:01:51') [ RunTime:0.0167s ]
+SQL: SELECT `id`,`name`,`pid` FROM `miuu_categoryart`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000293s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000316s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006726s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006748s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000153s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000209s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000389s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000320s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000342s ]
+
+[ 2017-06-16T16:01:53+08:00 ] 116.228.21.187 /Admin/Articles/index/cid/54.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000205s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000306s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000330s ]
+SQL: SHOW COLUMNS FROM `miuu_articles` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `miuu_categoryart` [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name`,`pid` FROM `miuu_categoryart`  [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM miuu_articles a WHERE a.recycle = 'no' AND a.category_id IN (54) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT c.name as categoryart_name,a.category_id,a.id,a.name,a.on_sale,a.author,a.desc,a.keywords,a.recommend,a.source,a.url,a.code,a.links FROM miuu_articles a LEFT JOIN miuu_categoryart AS c ON c.id=a.category_id  WHERE a.recycle = 'no' AND a.category_id IN (54) ORDER BY a.id desc LIMIT 0,5   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000245s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000268s ]
+NOTIC: [8] Undefined index: add_time /www/wwwroot/miuu.club/web/Application/Runtime/Cache/Admin/0b2a703ce5bb92d2208fe0b1bd0d8a79.php 第 279 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006873s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006892s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000142s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000197s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000365s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000333s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000366s ]
+
+[ 2017-06-16T16:01:54+08:00 ] 116.228.21.187 /Admin/Articles/index/cid/favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000205s ]
+
+[ 2017-06-16T16:02:13+08:00 ] 116.228.21.187 /Admin/Articles/edit/id/56/cid/54/p/0.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000223s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000310s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000334s ]
+SQL: SHOW COLUMNS FROM `miuu_categoryart` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `miuu_articles` [ RunTime:0.0004s ]
+SQL: SELECT `id`,`category_id`,`sn`,`name`,`thumb`,`on_sale`,`recommend`,`desc`,`recycle`,`content`,`add_time`,`author`,`keywords`,`source`,`url`,`code`,`links` FROM `miuu_articles` WHERE `id` = 56 AND `recycle` = 'no' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`pid` FROM `miuu_categoryart`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000311s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000334s ]
+NOTIC: [8] Undefined variable: notes /www/wwwroot/miuu.club/web/Application/Runtime/Cache/Admin/ae151db7146e8b25416eded37676dbf0.php 第 329 行.
+NOTIC: [8] Undefined variable: notes /www/wwwroot/miuu.club/web/Application/Runtime/Cache/Admin/ae151db7146e8b25416eded37676dbf0.php 第 330 行.
+NOTIC: [8] Undefined variable: notes /www/wwwroot/miuu.club/web/Application/Runtime/Cache/Admin/ae151db7146e8b25416eded37676dbf0.php 第 339 行.
+NOTIC: [8] Undefined variable: notes /www/wwwroot/miuu.club/web/Application/Runtime/Cache/Admin/ae151db7146e8b25416eded37676dbf0.php 第 340 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007893s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007912s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000142s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000201s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000369s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000334s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000356s ]
+
+[ 2017-06-16T16:02:14+08:00 ] 116.228.21.187 /Admin/Articles/edit/id/56/cid/54/p/favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000221s ]
+
+[ 2017-06-16T16:03:40+08:00 ] 116.228.21.187 /Admin/Articles/edit/id/56/cid/54/p/0.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000223s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000318s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000344s ]
+SQL: SHOW COLUMNS FROM `miuu_categoryart` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `miuu_articles` [ RunTime:0.0004s ]
+NOTIC: [2] parse_ini_file(&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;在正则操作之中，使用一系列的标记符号是一件非常重要的任务，想要操作于正则有关的方法，就必须掌握正则标记。不光是Java，只要是支持正则操作的程序，例如，JavaScript、php等，其正则标记都是统一的。在Java中，所有的标记都由java.util.regex.Pattern类提供，下面列出一些核心的正则标记，便于对正则表达式的掌握和熟练使用。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;1）字符：表示单个字符，只能出现1位。&lt;/strong&gt;&lt;/p&gt;&lt;pre class=&quot;brush:java;toolbar:false&quot;&gt;X：表示是一个指定的一位字符，例如：编写一个a,表示是字母a;
+\\：表示是一个字符“\”，但是由于“\”有个数含义，所以使用“\\”表示一位“\”;
+\n：匹配换行；&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;2）字符范围：在指定的字符范围之中选1位，只能出现1位。&lt;/strong&gt;&lt;/p&gt;&lt;pre class=&quot;brush:java;toolbar:false&quot;&gt;[abc]：表示可以是a、b、c中的任意一位；
+[^abc]：表示不是a、b、c中的任意一位；
+[a-zA-Z]：表示是任意一位字母（大写或小写）；
+[0-9]：表示是任意一位数字。&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;3) 简洁表达式，表示1位。&lt;/strong&gt;&lt;/p&gt;&lt;pre class=&quot;brush:java;toolbar:false&quot;&gt;.：表示任意的一位字符；
+\d：表示一位数字，等价于“[0-9]”；
+\D：表示一位非数字，等价于“[^0-9]”；
+\s：表示一位空格，等价于“[\t\n\x0B\f\r]”；
+\S：表示一位非空格，等价于“[......\t\n\x0B\f\r]”；
+\w：表示一位字母、数字、、_，等价于“[a-zA-Z0-9]”；
+\W：表示一位非字母、数字、_，等价于“[^a-zA-Z0-9]”；&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;4) 边界匹配，java用不上。&lt;/strong&gt;&lt;/p&gt;&lt;pre class=&quot;brush:java;toolbar:false&quot;&gt;^：表示正则的开头；
+$：表示正则的结尾。&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;5)数量表示，之前的正则每个符号只表示一位，如果要表示多位，则必须使用以下的数量关系。&lt;/strong&gt;&lt;/p&gt;&lt;pre class=&quot;brush:java;toolbar:false&quot;&gt;正则?：表示此正则可以出现0次或1次；
+正则+：表示此正则可以出现1次或多次；
+正则*：表示此正则可以出现0次、1次或多次；
+正则{n}：表示此正则出现正好n次；
+正则{n,}：表示此正则出现n次以上；
+正则{n,m}：表示自正则出现n~m次。
+6)逻辑操作。
+正则1正则2：正则1之后紧跟正则2操作；
+正则1|正则2：表示或的关系，有一套正则标记匹配即可；
+（正则）：表示按照一组来使用。&lt;/pre&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;): failed to open stream: No such file or directory /www/wwwroot/miuu.club/web/ThinkPHP/Library/Vendor/htmlpurifier/HTMLPurifier.standalone.php 第 2542 行.
+NOTIC: [2] Invalid argument supplied for foreach() /www/wwwroot/miuu.club/web/ThinkPHP/Library/Vendor/htmlpurifier/HTMLPurifier.standalone.php 第 2390 行.
+SQL: UPDATE `miuu_articles` SET `name`='正则表达式·核心正则标记',`sn`='java0001',`author`='miuu',`desc`='不光是Java，只要是支持正则操作的程序，例如，JavaScript、php等，其正则标记都是统一的。',`source`='miuu学习',`url`='http://miuu.club/Blog/articles/id/56.html',`keywords`='正则表达式,正则标记',`code`='',`on_sale`='yes',`recommend`='yes',`links`='Blog/articles/id/56',`category_id`='54',`content`='<p><br /></p><p>在正则操作之中，使用一系列的标记符号是一件非常重要的任务，想要操作于正则有关的方法，就必须掌握正则标记。不光是Java，只要是支持正则操作的程序，例如，JavaScript、php等，其正则标记都是统一的。在Java中，所有的标记都由java.util.regex.Pattern类提供，下面列出一些核心的正则标记，便于对正则表达式的掌握和熟练使用。</p><p><strong>1）字符：表示单个字符，只能出现1位。</strong></p><pre class=\"brush:java;toolbar:false\">X：表示是一个指定的一位字符，例如：编写一个a,表示是字母a;
+\\\\：表示是一个字符“\\”，但是由于“\\”有个数含义，所以使用“\\\\”表示一位“\\”;
+\\n：匹配换行；</pre><p><strong>2）字符范围：在指定的字符范围之中选1位，只能出现1位。</strong></p><pre class=\"brush:java;toolbar:false\">[abc]：表示可以是a、b、c中的任意一位；
+[^abc]：表示不是a、b、c中的任意一位；
+[a-zA-Z]：表示是任意一位字母（大写或小写）；
+[0-9]：表示是任意一位数字。</pre><p><strong>3) 简洁表达式，表示1位。</strong></p><pre class=\"brush:java;toolbar:false\">.：表示任意的一位字符；
+\\d：表示一位数字，等价于“[0-9]”；
+\\D：表示一位非数字，等价于“[^0-9]”；
+\\s：表示一位空格，等价于“[\\t\\n\\x0B\\f\\r]”；
+\\S：表示一位非空格，等价于“[......\\t\\n\\x0B\\f\\r]”；
+\\w：表示一位字母、数字、、_，等价于“[a-zA-Z0-9]”；
+\\W：表示一位非字母、数字、_，等价于“[^a-zA-Z0-9]”；</pre><p><strong>4) 边界匹配，java用不上。</strong></p><pre class=\"brush:java;toolbar:false\">^：表示正则的开头；
+$：表示正则的结尾。</pre><p><strong>5)数量表示，之前的正则每个符号只表示一位，如果要表示多位，则必须使用以下的数量关系。</strong></p><pre class=\"brush:java;toolbar:false\">正则?：表示此正则可以出现0次或1次；
+正则+：表示此正则可以出现1次或多次；
+正则*：表示此正则可以出现0次、1次或多次；
+正则{n}：表示此正则出现正好n次；
+正则{n,}：表示此正则出现n次以上；
+正则{n,m}：表示自正则出现n~m次。
+6)逻辑操作。
+正则1正则2：正则1之后紧跟正则2操作；
+正则1|正则2：表示或的关系，有一套正则标记匹配即可；
+（正则）：表示按照一组来使用。</pre><p><br /></p>' WHERE `id` = 56 AND `recycle` = 'no' [ RunTime:0.0047s ]
+SQL: SELECT `id`,`category_id`,`sn`,`name`,`thumb`,`on_sale`,`recommend`,`desc`,`recycle`,`content`,`add_time`,`author`,`keywords`,`source`,`url`,`code`,`links` FROM `miuu_articles` WHERE `id` = 56 AND `recycle` = 'no' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`pid` FROM `miuu_categoryart`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000304s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000327s ]
+NOTIC: [8] Undefined variable: notes /www/wwwroot/miuu.club/web/Application/Runtime/Cache/Admin/ae151db7146e8b25416eded37676dbf0.php 第 329 行.
+NOTIC: [8] Undefined variable: notes /www/wwwroot/miuu.club/web/Application/Runtime/Cache/Admin/ae151db7146e8b25416eded37676dbf0.php 第 330 行.
+NOTIC: [8] Undefined variable: notes /www/wwwroot/miuu.club/web/Application/Runtime/Cache/Admin/ae151db7146e8b25416eded37676dbf0.php 第 339 行.
+NOTIC: [8] Undefined variable: notes /www/wwwroot/miuu.club/web/Application/Runtime/Cache/Admin/ae151db7146e8b25416eded37676dbf0.php 第 340 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007258s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007278s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000157s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000223s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000409s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000322s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000344s ]
+

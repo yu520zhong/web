@@ -1,0 +1,370 @@
+[ 2017-06-19T11:47:50+08:00 ] 116.228.21.187 /admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000224s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000297s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000321s ]
+
+[ 2017-06-19T11:47:50+08:00 ] 116.228.21.187 /Admin/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000201s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000313s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000337s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000070s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003103s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003123s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000155s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000194s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000383s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000322s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000340s ]
+
+[ 2017-06-19T11:47:50+08:00 ] 116.228.21.187 /Admin/Login/getVerify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000210s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000312s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000336s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000391s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000420s ]
+
+[ 2017-06-19T11:47:56+08:00 ] 116.228.21.187 /Admin/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000207s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000305s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000329s ]
+SQL: SHOW COLUMNS FROM `miuu_admin` [ RunTime:0.0016s ]
+SQL: SELECT `password`,`salt` FROM `miuu_admin` WHERE `username` = 'dudu' LIMIT 1   [ RunTime:0.0011s ]
+
+[ 2017-06-19T11:47:56+08:00 ] 116.228.21.187 /Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000214s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000312s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000335s ]
+SQL: select version() as ver [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000201s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000224s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005996s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006018s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000147s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000194s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000369s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000335s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000357s ]
+
+[ 2017-06-19T11:47:57+08:00 ] 116.228.21.187 /Admin/Index/favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000211s ]
+
+[ 2017-06-19T11:48:01+08:00 ] 116.228.21.187 /Admin/Articles/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000211s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000313s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000337s ]
+SQL: SHOW COLUMNS FROM `miuu_categoryart` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `miuu_articles` [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name`,`pid` FROM `miuu_categoryart`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000283s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000306s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007033s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007056s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000143s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000218s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000390s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000337s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000361s ]
+
+[ 2017-06-19T11:48:03+08:00 ] 116.228.21.187 /Admin/Articles/favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000212s ]
+
+[ 2017-06-19T11:48:21+08:00 ] 116.228.21.187 /Admin/Articles/add/cid/47.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000208s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000310s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000334s ]
+SQL: SHOW COLUMNS FROM `miuu_categoryart` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `miuu_articles` [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name`,`pid` FROM `miuu_categoryart`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000290s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000313s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006813s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006835s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000139s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000207s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000376s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000319s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000341s ]
+
+[ 2017-06-19T11:48:22+08:00 ] 116.228.21.187 /Admin/Articles/add/cid/favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000225s ]
+
+[ 2017-06-19T11:55:18+08:00 ] 116.228.21.187 /Admin/Articles/add/cid/47.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000210s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000313s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000339s ]
+SQL: SHOW COLUMNS FROM `miuu_categoryart` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `miuu_articles` [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000025s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000046s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002861s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002883s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000135s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000188s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000348s ]
+
+[ 2017-06-19T11:55:21+08:00 ] 116.228.21.187 /Admin/Articles/add/cid/47.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000221s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000309s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000333s ]
+SQL: SHOW COLUMNS FROM `miuu_categoryart` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `miuu_articles` [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name`,`pid` FROM `miuu_categoryart`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000281s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000304s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006863s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006885s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000139s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000215s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000381s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000325s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000346s ]
+
+[ 2017-06-19T11:56:58+08:00 ] 116.228.21.187 /Admin/Articles/add/cid/47.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000227s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000320s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000345s ]
+SQL: SHOW COLUMNS FROM `miuu_categoryart` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `miuu_articles` [ RunTime:0.0004s ]
+NOTIC: [2] parse_ini_file(&lt;p&gt;这几天php网线改版上线，今天传到服务器，发现url出错，显示找不到页面，除了首页以外，一切都不正常了。搞了半天没有搞定，问了朋友是因为url问题，没有包含index.php，奇怪了，之前用的THINKPHP框架，都没有这个问题，怎么会出现这种问题呢。百思不得其解，突然想起，好像之前做这个项目，只为了url简洁，就把里面的index.php 隐藏了。于是想起属于URL重写的问题。检查服务器上的文件，发现.htaccess文件没有上传到服务器了，不知什么原因，FTP中这个本地文件被忽略上传了。具体解决方法如下：&lt;/p&gt;&lt;p&gt;&lt;strong&gt;URL重写&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;一般来说，URL重写是支持会话的非常健壮的方法。通常的URL里面含有index.php，为了达到更好的SEO和简洁效果，毕竟搜索引擎喜欢静态页面，就需要去掉URL里面的index.php ，通过URL重写的方式可以达到这种效果，通常需要服务器开启URL_REWRITE模块才能支持。&lt;/p&gt;&lt;p&gt;此处列出Apache的配置过程：&lt;/p&gt;&lt;p&gt;1、httpd.conf配置文件中加载了mod_rewrite.so模块；&lt;/p&gt;&lt;p&gt;2、AllowOverride None 将None改为 All；&lt;/p&gt;&lt;p&gt;3、确保URL_MODEL设置为2；&lt;/p&gt;&lt;p&gt;4、把下面的内容保存为.htaccess文件放到入口文件的同级目录下：&lt;/p&gt;&lt;pre class=&quot;brush:js;toolbar:false&quot;&gt;&amp;lt;IfModule&amp;nbsp;mod_rewrite.c&amp;gt;
+RewriteEngine&amp;nbsp;on
+RewriteCond&amp;nbsp;%{REQUEST_FILENAME}&amp;nbsp;!-d
+RewriteCond&amp;nbsp;%{REQUEST_FILENAME}&amp;nbsp;!-f
+RewriteRule&amp;nbsp;^(.*)$&amp;nbsp;index.php/$1&amp;nbsp;[QSA,PT,L]
+&amp;lt;/IfModule&amp;gt;&lt;/pre&gt;&lt;p&gt;重启Apache之后，原来的&lt;/p&gt;&lt;p&gt;http://www.miuu.club/index.php/Blog/articles/id/40&lt;/p&gt;&lt;p&gt;就可以通过来访问&lt;/p&gt;&lt;p&gt;http://www.miuu.club/Blog/articles/id/40&lt;/p&gt;&lt;p&gt;从而简化了URL地址。&lt;/p&gt;&lt;p&gt;于是问题解决了，有时候问题就是一些小地方由于疏忽出错的。记下此篇，避免再出现类似错误。&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;): failed to open stream: File name too long /www/wwwroot/miuu.club/web/ThinkPHP/Library/Vendor/htmlpurifier/HTMLPurifier.standalone.php 第 2542 行.
+NOTIC: [2] Invalid argument supplied for foreach() /www/wwwroot/miuu.club/web/ThinkPHP/Library/Vendor/htmlpurifier/HTMLPurifier.standalone.php 第 2390 行.
+SQL: INSERT INTO `miuu_articles` (`name`,`sn`,`author`,`desc`,`source`,`url`,`keywords`,`code`,`on_sale`,`recommend`,`links`,`category_id`,`thumb`,`content`,`recycle`,`add_time`) VALUES ('URL重写隐藏index.php的实现方法','php001','觅友','为了达到更好的SEO和简洁效果，毕竟搜索引擎喜欢静态页面，就需要去掉URL里面的index.php ，通过URL重写的方式可以达到这种效果，通常需要服务器开启URL_REWRITE模块才能支持。','觅友博客','Blog/articles/id/num','URL重写,隐藏index.php','','yes','yes','Blog/articles/id/num','47','','<p>这几天php网线改版上线，今天传到服务器，发现url出错，显示找不到页面，除了首页以外，一切都不正常了。搞了半天没有搞定，问了朋友是因为url问题，没有包含index.php，奇怪了，之前用的THINKPHP框架，都没有这个问题，怎么会出现这种问题呢。百思不得其解，突然想起，好像之前做这个项目，只为了url简洁，就把里面的index.php 隐藏了。于是想起属于URL重写的问题。检查服务器上的文件，发现.htaccess文件没有上传到服务器了，不知什么原因，FTP中这个本地文件被忽略上传了。具体解决方法如下：</p><p><strong>URL重写</strong></p><p>一般来说，URL重写是支持会话的非常健壮的方法。通常的URL里面含有index.php，为了达到更好的SEO和简洁效果，毕竟搜索引擎喜欢静态页面，就需要去掉URL里面的index.php ，通过URL重写的方式可以达到这种效果，通常需要服务器开启URL_REWRITE模块才能支持。</p><p>此处列出Apache的配置过程：</p><p>1、httpd.conf配置文件中加载了mod_rewrite.so模块；</p><p>2、AllowOverride None 将None改为 All；</p><p>3、确保URL_MODEL设置为2；</p><p>4、把下面的内容保存为.htaccess文件放到入口文件的同级目录下：</p><pre class=\"brush:js;toolbar:false\">&lt;IfModule mod_rewrite.c&gt;
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$ index.php/$1 [QSA,PT,L]
+&lt;/IfModule&gt;</pre><p>重启Apache之后，原来的</p><p>http://www.miuu.club/index.php/Blog/articles/id/40</p><p>就可以通过来访问</p><p>http://www.miuu.club/Blog/articles/id/40</p><p>从而简化了URL地址。</p><p>于是问题解决了，有时候问题就是一些小地方由于疏忽出错的。记下此篇，避免再出现类似错误。</p><p><br /></p>','no','2017-06-19 11:56:58') [ RunTime:0.0152s ]
+SQL: SELECT `id`,`name`,`pid` FROM `miuu_categoryart`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000291s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000315s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007018s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007039s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000151s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000203s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000379s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000347s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000368s ]
+
+[ 2017-06-19T11:57:01+08:00 ] 116.228.21.187 /Admin/Articles/index/cid/47.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000208s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000318s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000341s ]
+SQL: SHOW COLUMNS FROM `miuu_articles` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `miuu_categoryart` [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name`,`pid` FROM `miuu_categoryart`  [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM miuu_articles a WHERE a.recycle = 'no' AND a.category_id IN (47) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT c.name as categoryart_name,a.category_id,a.id,a.name,a.on_sale,a.author,a.desc,a.keywords,a.recommend,a.source,a.url,a.code,a.links FROM miuu_articles a LEFT JOIN miuu_categoryart AS c ON c.id=a.category_id  WHERE a.recycle = 'no' AND a.category_id IN (47) ORDER BY a.id desc LIMIT 0,5   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000245s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000275s ]
+NOTIC: [8] Undefined index: add_time /www/wwwroot/miuu.club/web/Application/Runtime/Cache/Admin/0b2a703ce5bb92d2208fe0b1bd0d8a79.php 第 279 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006867s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006887s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000141s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000196s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000364s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000340s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000361s ]
+
+[ 2017-06-19T11:57:01+08:00 ] 116.228.21.187 /Admin/Articles/index/cid/favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000216s ]
+
+[ 2017-06-19T11:57:07+08:00 ] 116.228.21.187 /Admin/Articles/edit/id/57/cid/47/p/0.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000218s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000314s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000338s ]
+SQL: SHOW COLUMNS FROM `miuu_categoryart` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `miuu_articles` [ RunTime:0.0004s ]
+SQL: SELECT `id`,`category_id`,`sn`,`name`,`thumb`,`on_sale`,`recommend`,`desc`,`recycle`,`content`,`add_time`,`author`,`keywords`,`source`,`url`,`code`,`links` FROM `miuu_articles` WHERE `id` = 57 AND `recycle` = 'no' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`pid` FROM `miuu_categoryart`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000302s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000323s ]
+NOTIC: [8] Undefined variable: notes /www/wwwroot/miuu.club/web/Application/Runtime/Cache/Admin/ae151db7146e8b25416eded37676dbf0.php 第 329 行.
+NOTIC: [8] Undefined variable: notes /www/wwwroot/miuu.club/web/Application/Runtime/Cache/Admin/ae151db7146e8b25416eded37676dbf0.php 第 330 行.
+NOTIC: [8] Undefined variable: notes /www/wwwroot/miuu.club/web/Application/Runtime/Cache/Admin/ae151db7146e8b25416eded37676dbf0.php 第 339 行.
+NOTIC: [8] Undefined variable: notes /www/wwwroot/miuu.club/web/Application/Runtime/Cache/Admin/ae151db7146e8b25416eded37676dbf0.php 第 340 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007220s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007239s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000139s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000216s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000381s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000331s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000352s ]
+
+[ 2017-06-19T11:57:07+08:00 ] 116.228.21.187 /Admin/Articles/edit/id/57/cid/47/p/favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000217s ]
+
+[ 2017-06-19T11:58:25+08:00 ] 116.228.21.187 /Admin/Articles/edit/id/57/cid/47/p/0.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000209s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000302s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000326s ]
+SQL: SHOW COLUMNS FROM `miuu_categoryart` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `miuu_articles` [ RunTime:0.0004s ]
+NOTIC: [2] parse_ini_file(&lt;p&gt;这几天php网线改版上线，今天传到服务器，发现url出错，显示找不到页面，除了首页以外，一切都不正常了。搞了半天没有搞定，问了朋友是因为url问题，没有包含index.php，奇怪了，之前用的THINKPHP框架，都没有这个问题，怎么会出现这种问题呢。百思不得其解，突然想起，好像之前做这个项目，只为了url简洁，就把里面的index.php 隐藏了。于是想起属于URL重写的问题。检查服务器上的文件，发现.htaccess文件没有上传到服务器了，不知什么原因，FTP中这个本地文件被忽略上传了。具体解决方法如下：&lt;/p&gt;&lt;p&gt;&lt;strong&gt;URL重写&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;一般来说，URL重写是支持会话的非常健壮的方法。通常的URL里面含有index.php，为了达到更好的SEO和简洁效果，毕竟搜索引擎喜欢静态页面，就需要去掉URL里面的index.php ，通过URL重写的方式可以达到这种效果，通常需要服务器开启URL_REWRITE模块才能支持。&lt;/p&gt;&lt;p&gt;此处列出Apache的配置过程：&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;text-decoration: underline;&quot;&gt;1、httpd.conf配置文件中加载了mod_rewrite.so模块；&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;text-decoration: underline;&quot;&gt;2、AllowOverride None 将None改为 All；&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;text-decoration: underline;&quot;&gt;3、确保URL_MODEL设置为2；&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;text-decoration: underline;&quot;&gt;4、把下面的内容保存为.htaccess文件放到入口文件的同级目录下：&lt;/span&gt;&lt;/p&gt;&lt;pre class=&quot;brush:js;toolbar:false&quot;&gt;&amp;lt;IfModule&amp;nbsp;mod_rewrite.c&amp;gt;
+RewriteEngine&amp;nbsp;on
+RewriteCond&amp;nbsp;%{REQUEST_FILENAME}&amp;nbsp;!-d
+RewriteCond&amp;nbsp;%{REQUEST_FILENAME}&amp;nbsp;!-f
+RewriteRule&amp;nbsp;^(.*)$&amp;nbsp;index.php/$1&amp;nbsp;[QSA,PT,L]
+&amp;lt;/IfModule&amp;gt;&lt;/pre&gt;&lt;p&gt;重启Apache之后，原来的&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;http://www.miuu.club/index.php/Blog/articles/id/57&quot; target=&quot;_blank&quot;&gt;http://www.miuu.club/index.php/Blog/articles/id/57&lt;/a&gt;&lt;/p&gt;&lt;p&gt;就可以通过来访问&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;http://www.miuu.club/Blog/articles/id/57&quot; target=&quot;_blank&quot;&gt;http://www.miuu.club/Blog/articles/id/57&lt;/a&gt;&lt;/p&gt;&lt;p&gt;从而简化了URL地址。&lt;/p&gt;&lt;p&gt;于是问题解决了，有时候问题就是一些小地方由于疏忽出错的。记下此篇，避免再出现类似错误。&lt;/p&gt;): failed to open stream: File name too long /www/wwwroot/miuu.club/web/ThinkPHP/Library/Vendor/htmlpurifier/HTMLPurifier.standalone.php 第 2542 行.
+NOTIC: [2] Invalid argument supplied for foreach() /www/wwwroot/miuu.club/web/ThinkPHP/Library/Vendor/htmlpurifier/HTMLPurifier.standalone.php 第 2390 行.
+SQL: UPDATE `miuu_articles` SET `name`='URL重写隐藏index.php的实现方法',`sn`='php001',`author`='觅友',`desc`='为了达到更好的SEO和简洁效果，毕竟搜索引擎喜欢静态页面，就需要去掉URL里面的index.php ，通过URL重写的方式可以达到这种效果，通常需要服务器开启URL_REWRITE模块才能支持。',`source`='觅友博客',`url`='http://www.miuu.club/Blog/articles/id/57',`keywords`='URL重写,隐藏index.php',`code`='',`on_sale`='yes',`recommend`='yes',`links`='Blog/articles/id/57',`category_id`='47',`content`='<p>这几天php网线改版上线，今天传到服务器，发现url出错，显示找不到页面，除了首页以外，一切都不正常了。搞了半天没有搞定，问了朋友是因为url问题，没有包含index.php，奇怪了，之前用的THINKPHP框架，都没有这个问题，怎么会出现这种问题呢。百思不得其解，突然想起，好像之前做这个项目，只为了url简洁，就把里面的index.php 隐藏了。于是想起属于URL重写的问题。检查服务器上的文件，发现.htaccess文件没有上传到服务器了，不知什么原因，FTP中这个本地文件被忽略上传了。具体解决方法如下：</p><p><strong>URL重写</strong></p><p>一般来说，URL重写是支持会话的非常健壮的方法。通常的URL里面含有index.php，为了达到更好的SEO和简洁效果，毕竟搜索引擎喜欢静态页面，就需要去掉URL里面的index.php ，通过URL重写的方式可以达到这种效果，通常需要服务器开启URL_REWRITE模块才能支持。</p><p>此处列出Apache的配置过程：</p><p><span style=\"text-decoration:underline;\">1、httpd.conf配置文件中加载了mod_rewrite.so模块；</span></p><p><span style=\"text-decoration:underline;\">2、AllowOverride None 将None改为 All；</span></p><p><span style=\"text-decoration:underline;\">3、确保URL_MODEL设置为2；</span></p><p><span style=\"text-decoration:underline;\">4、把下面的内容保存为.htaccess文件放到入口文件的同级目录下：</span></p><pre class=\"brush:js;toolbar:false\">&lt;IfModule mod_rewrite.c&gt;
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$ index.php/$1 [QSA,PT,L]
+&lt;/IfModule&gt;</pre><p>重启Apache之后，原来的</p><p><a href=\"http://www.miuu.club/index.php/Blog/articles/id/57\">http://www.miuu.club/index.php/Blog/articles/id/57</a></p><p>就可以通过来访问</p><p><a href=\"http://www.miuu.club/Blog/articles/id/57\">http://www.miuu.club/Blog/articles/id/57</a></p><p>从而简化了URL地址。</p><p>于是问题解决了，有时候问题就是一些小地方由于疏忽出错的。记下此篇，避免再出现类似错误。</p>' WHERE `id` = 57 AND `recycle` = 'no' [ RunTime:0.0125s ]
+SQL: SELECT `id`,`category_id`,`sn`,`name`,`thumb`,`on_sale`,`recommend`,`desc`,`recycle`,`content`,`add_time`,`author`,`keywords`,`source`,`url`,`code`,`links` FROM `miuu_articles` WHERE `id` = 57 AND `recycle` = 'no' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`pid` FROM `miuu_categoryart`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000304s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000327s ]
+NOTIC: [8] Undefined variable: notes /www/wwwroot/miuu.club/web/Application/Runtime/Cache/Admin/ae151db7146e8b25416eded37676dbf0.php 第 329 行.
+NOTIC: [8] Undefined variable: notes /www/wwwroot/miuu.club/web/Application/Runtime/Cache/Admin/ae151db7146e8b25416eded37676dbf0.php 第 330 行.
+NOTIC: [8] Undefined variable: notes /www/wwwroot/miuu.club/web/Application/Runtime/Cache/Admin/ae151db7146e8b25416eded37676dbf0.php 第 339 行.
+NOTIC: [8] Undefined variable: notes /www/wwwroot/miuu.club/web/Application/Runtime/Cache/Admin/ae151db7146e8b25416eded37676dbf0.php 第 340 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007340s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007360s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000145s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000225s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000397s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000325s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000350s ]
+
+[ 2017-06-19T11:59:49+08:00 ] 116.228.21.187 /Admin/Articles/edit/id/57/cid/47/p/0.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000231s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000308s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000331s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /www/wwwroot/miuu.club/web/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+NOTIC: [8] Undefined index: Expires /www/wwwroot/miuu.club/web/ThinkPHP/Library/Think/Upload/Driver/Qiniu/QiniuStorage.class.php 第 45 行.
+NOTIC: [8] Undefined index: saveName /www/wwwroot/miuu.club/web/ThinkPHP/Library/Think/Upload/Driver/Qiniu/QiniuStorage.class.php 第 80 行.
+NOTIC: [8] Undefined index: custom_fields /www/wwwroot/miuu.club/web/ThinkPHP/Library/Think/Upload/Driver/Qiniu/QiniuStorage.class.php 第 83 行.
+SQL: SHOW COLUMNS FROM `miuu_categoryart` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `miuu_articles` [ RunTime:0.0004s ]
+NOTIC: [2] parse_ini_file(&lt;p&gt;这几天php网线改版上线，今天传到服务器，发现url出错，显示找不到页面，除了首页以外，一切都不正常了。搞了半天没有搞定，问了朋友是因为url问题，没有包含index.php，奇怪了，之前用的THINKPHP框架，都没有这个问题，怎么会出现这种问题呢。百思不得其解，突然想起，好像之前做这个项目，只为了url简洁，就把里面的index.php 隐藏了。于是想起属于URL重写的问题。检查服务器上的文件，发现.htaccess文件没有上传到服务器了，不知什么原因，FTP中这个本地文件被忽略上传了。具体解决方法如下：&lt;/p&gt;&lt;p&gt;&lt;strong&gt;URL重写&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;一般来说，URL重写是支持会话的非常健壮的方法。通常的URL里面含有index.php，为了达到更好的SEO和简洁效果，毕竟搜索引擎喜欢静态页面，就需要去掉URL里面的index.php ，通过URL重写的方式可以达到这种效果，通常需要服务器开启URL_REWRITE模块才能支持。&lt;/p&gt;&lt;p&gt;此处列出Apache的配置过程：&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;text-decoration:underline;&quot;&gt;1、httpd.conf配置文件中加载了mod_rewrite.so模块；&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;text-decoration:underline;&quot;&gt;2、AllowOverride None 将None改为 All；&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;text-decoration:underline;&quot;&gt;3、确保URL_MODEL设置为2；&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;text-decoration:underline;&quot;&gt;4、把下面的内容保存为.htaccess文件放到入口文件的同级目录下：&lt;/span&gt;&lt;/p&gt;&lt;pre class=&quot;brush:js;toolbar:false&quot;&gt;&amp;lt;IfModule&amp;nbsp;mod_rewrite.c&amp;gt;
+RewriteEngine&amp;nbsp;on
+RewriteCond&amp;nbsp;%{REQUEST_FILENAME}&amp;nbsp;!-d
+RewriteCond&amp;nbsp;%{REQUEST_FILENAME}&amp;nbsp;!-f
+RewriteRule&amp;nbsp;^(.*)$&amp;nbsp;index.php/$1&amp;nbsp;[QSA,PT,L]
+&amp;lt;/IfModule&amp;gt;&lt;/pre&gt;&lt;p&gt;&lt;img src=&quot;http://7xsqlc.com1.z0.glb.clouddn.com/14978447870.png&quot; title=&quot;1497844776.png&quot; alt=&quot;AB933147-1CD5-4180-B6F1-00030FE7D434.png&quot; style=&quot;white-space: normal;&quot;/&gt;&lt;/p&gt;&lt;p&gt;重启Apache之后，原来的&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;http://www.miuu.club/index.php/Blog/articles/id/57&quot;&gt;http://www.miuu.club/index.php/Blog/articles/id/57&lt;/a&gt;&lt;/p&gt;&lt;p&gt;就可以通过来访问&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;http://www.miuu.club/Blog/articles/id/57&quot;&gt;http://www.miuu.club/Blog/articles/id/57&lt;/a&gt;&lt;/p&gt;&lt;p&gt;从而简化了URL地址。&lt;/p&gt;&lt;p&gt;于是问题解决了，有时候问题就是一些小地方由于疏忽出错的。记下此篇，避免再出现类似错误。&lt;/p&gt;): failed to open stream: File name too long /www/wwwroot/miuu.club/web/ThinkPHP/Library/Vendor/htmlpurifier/HTMLPurifier.standalone.php 第 2542 行.
+NOTIC: [2] Invalid argument supplied for foreach() /www/wwwroot/miuu.club/web/ThinkPHP/Library/Vendor/htmlpurifier/HTMLPurifier.standalone.php 第 2390 行.
+SQL: UPDATE `miuu_articles` SET `name`='URL重写隐藏index.php的实现方法',`sn`='php001',`author`='觅友',`desc`='为了达到更好的SEO和简洁效果，毕竟搜索引擎喜欢静态页面，就需要去掉URL里面的index.php ，通过URL重写的方式可以达到这种效果',`source`='觅友博客',`url`='http://www.miuu.club/Blog/articles/id/57',`keywords`='URL重写,隐藏index.php',`code`='',`on_sale`='yes',`recommend`='yes',`links`='Blog/articles/id/57',`category_id`='47',`content`='<p>这几天php网线改版上线，今天传到服务器，发现url出错，显示找不到页面，除了首页以外，一切都不正常了。搞了半天没有搞定，问了朋友是因为url问题，没有包含index.php，奇怪了，之前用的THINKPHP框架，都没有这个问题，怎么会出现这种问题呢。百思不得其解，突然想起，好像之前做这个项目，只为了url简洁，就把里面的index.php 隐藏了。于是想起属于URL重写的问题。检查服务器上的文件，发现.htaccess文件没有上传到服务器了，不知什么原因，FTP中这个本地文件被忽略上传了。具体解决方法如下：</p><p><strong>URL重写</strong></p><p>一般来说，URL重写是支持会话的非常健壮的方法。通常的URL里面含有index.php，为了达到更好的SEO和简洁效果，毕竟搜索引擎喜欢静态页面，就需要去掉URL里面的index.php ，通过URL重写的方式可以达到这种效果，通常需要服务器开启URL_REWRITE模块才能支持。</p><p>此处列出Apache的配置过程：</p><p><span style=\"text-decoration:underline;\">1、httpd.conf配置文件中加载了mod_rewrite.so模块；</span></p><p><span style=\"text-decoration:underline;\">2、AllowOverride None 将None改为 All；</span></p><p><span style=\"text-decoration:underline;\">3、确保URL_MODEL设置为2；</span></p><p><span style=\"text-decoration:underline;\">4、把下面的内容保存为.htaccess文件放到入口文件的同级目录下：</span></p><pre class=\"brush:js;toolbar:false\">&lt;IfModule mod_rewrite.c&gt;
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$ index.php/$1 [QSA,PT,L]
+&lt;/IfModule&gt;</pre><p><img src=\"http://7xsqlc.com1.z0.glb.clouddn.com/14978447870.png\" title=\"1497844776.png\" alt=\"AB933147-1CD5-4180-B6F1-00030FE7D434.png\" style=\"white-space:normal;\" /></p><p>重启Apache之后，原来的</p><p><a href=\"http://www.miuu.club/index.php/Blog/articles/id/57\">http://www.miuu.club/index.php/Blog/articles/id/57</a></p><p>就可以通过来访问</p><p><a href=\"http://www.miuu.club/Blog/articles/id/57\">http://www.miuu.club/Blog/articles/id/57</a></p><p>从而简化了URL地址。</p><p>于是问题解决了，有时候问题就是一些小地方由于疏忽出错的。记下此篇，避免再出现类似错误。</p>',`thumb`='http://7xsqlc.com1.z0.glb.clouddn.com/1497844789_1081231234.jpg' WHERE `id` = 57 AND `recycle` = 'no' [ RunTime:0.0058s ]
+SQL: SELECT `id`,`category_id`,`sn`,`name`,`thumb`,`on_sale`,`recommend`,`desc`,`recycle`,`content`,`add_time`,`author`,`keywords`,`source`,`url`,`code`,`links` FROM `miuu_articles` WHERE `id` = 57 AND `recycle` = 'no' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`pid` FROM `miuu_categoryart`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000319s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000341s ]
+NOTIC: [8] Undefined variable: notes /www/wwwroot/miuu.club/web/Application/Runtime/Cache/Admin/ae151db7146e8b25416eded37676dbf0.php 第 329 行.
+NOTIC: [8] Undefined variable: notes /www/wwwroot/miuu.club/web/Application/Runtime/Cache/Admin/ae151db7146e8b25416eded37676dbf0.php 第 330 行.
+NOTIC: [8] Undefined variable: notes /www/wwwroot/miuu.club/web/Application/Runtime/Cache/Admin/ae151db7146e8b25416eded37676dbf0.php 第 339 行.
+NOTIC: [8] Undefined variable: notes /www/wwwroot/miuu.club/web/Application/Runtime/Cache/Admin/ae151db7146e8b25416eded37676dbf0.php 第 340 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007156s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007174s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000142s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000200s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000368s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000340s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000363s ]
+

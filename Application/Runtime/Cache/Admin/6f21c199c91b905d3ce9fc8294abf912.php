@@ -10,7 +10,6 @@
 
     <meta name="keywords" content="个人博客，米鱼博客，网站开发，学习分享，CSS，js，jquery，PHP，MIUU博客">
     <meta name="description" content="米鱼（Miuu）个人博客，一个基于web前端的程序员个人网站，关注于互联网网站开发技术和行业最新资讯，希望与大家一起学习交流。">
-
     <!--[if lt IE 9]>
     <meta http-equiv="refresh" content="0;ie.html" />
     <![endif]-->
@@ -20,6 +19,8 @@
     <link href="/Public/Admin/css/font-awesome.min93e3.css?v=4.4.0" rel="stylesheet">
     <link href="/Public/Admin/css/animate.min.css" rel="stylesheet">
     <link href="/Public/Admin/css/style.min.css" rel="stylesheet">
+    <link href="/Public/Admin/css/plugins/codemirror/ambiance.css" rel="stylesheet">
+    <link href="/Public/Admin/css/plugins/codemirror/codemirror.css" rel="stylesheet">
 </head>
 
 <body class="fixed-sidebar full-height-layout gray-bg" style="overflow:hidden">
@@ -240,57 +241,146 @@
                 </nav>
             </div>
 
-            <div class="row  border-bottom  dashboard-header min-ht-550">
-                <div class="col-sm-12">
+            <div class="row  border-bottom  dashboard-header">
+                <div class="col-sm-12 clearfix">
                     <div class="ibox float-e-margins">
                         <div class="ibox-title">
-                            <h5>文摘列表</h5>
+                            <h5>文摘添加</h5>
                             <div class="ibox-tools">
-                            <a class="collapse-link">
-                                <i class="fa fa-chevron-up"></i>
-                            </a>
-                            <a class="close-link">
-                                <i class="fa fa-times"></i>
-                            </a>
+                                <a class="collapse-link">
+                                    <i class="fa fa-chevron-up"></i>
+                                </a>
+                                <a class="close-link">
+                                    <i class="fa fa-times"></i>
+                                </a>
                             </div>
                         </div>
                         <div class="ibox-content">
-                            <div class="top-button">
-                                <h5>选择文摘分类：</h5><select id="category" class="form-control">
-                                    <option value="-1" >全部</option>
-                                    <option value="0" <?php if(($cid) == "0"): ?>selected<?php endif; ?>>未分类</option>
+                            <div class="top-button clearfix">
+                                <h4 class="pull-left">选择文摘分类：</h4>
+                                <h4 class="pull-right">
+                                    <a href="<?php echo U('Articles/index',array('cid'=>$cid));?>" class="light">文摘列表</a>
+                                    <a href="<?php echo U('Categoryart/add');?>">添加分类</a>
+                                </h4>
+                                <select id="category" class="form-control">
+                                    <option value="0">未分类</option>
                                     <?php if(is_array($categoryart)): foreach($categoryart as $key=>$v): ?><option value="<?php echo ($v["id"]); ?>" <?php if(($v["id"]) == $cid): ?>selected<?php endif; ?>><?php echo str_repeat('— ',$v['level']); echo ($v["name"]); ?></option><?php endforeach; endif; ?>
                                 </select>
-                                <div><h4>
-                                <a href="<?php echo U('Articles/add',array('cid'=>$cid));?>" class="light">添加博客</a>
-                                <a href="<?php echo U('Categoryart/add');?>">添加分类</a>
-                                </h4></div>
+
                             </div>
-                            <div class="list full">
-                                <table class="table">
-                                    <tr><th>ID</th><th class="t1">博客分类</th><th>博客名称</th><th>来源</th><th>链接</th><th >发布日期</th><th >上架</th><th>推荐</th><th>操作</th></tr>
-                                    <?php if(is_array($articles["data"])): foreach($articles["data"] as $key=>$v): ?><tr>
-                                        <td><?php echo ($v["id"]); ?></td>
-                                        <td class="t1">
-                                            <?php if(empty($v["category_id"])): ?><a href="<?php echo U('Articles/index','cid=0');?>">未分类</a>
-                                            <?php else: ?>
-                                                <a href="<?php echo U('Articles/index',array('cid'=>$v['category_id']));?>"><?php echo ($v["categoryart_name"]); ?></a><?php endif; ?>
-                                        </td>
-                                        <td><?php echo ($v["name"]); ?></td><td><?php echo ($v["source"]); ?></td><td><?php echo ($v["url"]); ?></td><td><?php echo ($v["add_time"]); ?></td>
-                                        <td><a href="#" class="act-onsale" data-id="<?php echo ($v["id"]); ?>" data-status="<?php echo ($v["on_sale"]); ?>"><?php if(($v["on_sale"]) == "yes"): ?>是<?php else: ?>否<?php endif; ?></a></td>
-                                        <td><a href="#" class="act-recommend" data-id="<?php echo ($v["id"]); ?>" data-status="<?php echo ($v["recommend"]); ?>"><?php if(($v["recommend"]) == "yes"): ?>是<?php else: ?>否<?php endif; ?></a></td><td>
-                                        <a href="<?php echo U('Articles/edit',array('id'=>$v['id'],'cid'=>$v['category_id'],'p'=>$p));?>">修改</a>　<a href="#" class="act-del" data-id="<?php echo ($v["id"]); ?>">删除</a></td></tr><?php endforeach; endif; ?>
-                                </table>
-                            </div>
-                            <div class="pagelist"><?php echo ($articles["pagelist"]); ?></div>
+                            <?php if(isset($success)): ?><div class="mssage">添加成功。</div><?php endif; ?>
+                            <div class="hr-line-dashed"></div>
+                            <form method="post" class="form-horizontal " enctype="multipart/form-data">
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">文摘名称：</label>
+                                    <div class="col-sm-7">
+                                        <input type="text" name="name" class="form-control" >
+                                    </div>
+                                </div>
+                                <div class="hr-line-dashed"></div>
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">文摘编号：</label>
+                                    <div class="col-sm-3">
+                                        <input type="text" name="sn" class="form-control" >
+                                    </div>
+                                </div>
+                                <div class="hr-line-dashed"></div>
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">文摘作者：</label>
+                                    <div class="col-sm-3">
+                                        <input type="text" name="author" class="form-control">
+                                        <span class="help-block m-b-none">帮助文本，可能会超过一行，以块级元素显示</span>
+                                    </div>
+                                </div>
+                                <div class="hr-line-dashed"></div>
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">导语：</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" name="desc" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="hr-line-dashed"></div>
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">来源：</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" name="source" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="hr-line-dashed"></div>
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">链接：</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" name="url" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="hr-line-dashed"></div>
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">标签：</label>
+                                    <div class="col-sm-4">
+                                        <input type="text" name="keywords" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="hr-line-dashed"></div>
+                                <div>
+                                    <textarea name="code" id="code" class="codeshow"></textarea>
+                                </div>
+                                <div class="hr-line-dashed"></div>
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">是否上架：</label>
+                                    <div class="col-sm-10">
+                                        <select name="on_sale" class="form-control">
+                                        <option value="yes" selected>是</option><option value="no">否</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="hr-line-dashed"></div>
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">首页推荐：</label>
+                                    <div class="col-sm-10">
+                                        <select name="recommend" class="form-control">
+                                        <option value="yes">是</option><option value="no" selected>否</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="hr-line-dashed"></div>
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">上传图片：</label>
+                                    <div class="col-sm-10">
+                                        <input type="file" name="thumb" />
+                                    </div>
+                                </div>
+                                <div class="hr-line-dashed"></div>
+                                <div class="editor" >
+                                    <script src="/Public/Admin/js/plugins/ueditor/ueditor.config.js"></script>
+<script src="/Public/Admin/js/plugins/ueditor/ueditor.all.min.js"></script>
+<script src="/Public/Admin/js/plugins/ueditor/lang/zh-cn/zh-cn.js" charset="utf-8"></script>
+<script>
+    //载入在线编辑器
+    UE.getEditor("myEditor",{
+    "initialFrameWidth":"100%" //初始化选项
+    });
+</script>
+                                    <script type="text/plain" id="myEditor" name="content"><p>请在此处输入文摘内容。</p></script>
+                                </div>
+                                <div class="hr-line-dashed"></div>
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">站内链接：</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" name="links" class="form-control">
+                                        <span class="help-block m-b-none">格式如：“Blog/articles/id/num”</span>
+                                    </div>
+                                </div>
+                                <div class="hr-line-dashed"></div>
+                                <div class="form-group">
+                                    <div class="col-sm-4 col-sm-offset-2">
+                                        <button class="btn btn-primary" type="submit" value="添加文摘">保存内容</button>
+                                        <button class="btn btn-white" type="submit" value="添加并返回" name="return">添加并返回</button>
+                                    </div>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
-                <form method="post" id="form">
-                    <input type="hidden" name="id" id="target_id">
-                    <input type="hidden" name="field" id="target_field">
-                    <input type="hidden" name="status" id="target_status">
-                </form>
             </div>
             <div class="footer">
                 <div class="pull-left"><strong>现在时刻: </strong><span id="TimeShow"></span>
@@ -393,35 +483,26 @@
 	<script src="/Public/Admin/js/hplus.min.js?v=4.1.0"></script>
 	<script src="/Public/Admin/js/plugins/pace/pace.min.js"></script>
 	<script src="/Public/Admin/js/newmend.js"></script>
+    <script src="/Public/Admin/js/plugins/codemirror/codemirror.js"></script>
+    <script src="/Public/Admin/js/plugins/codemirror/mode/javascript/javascript.js"></script>
+
     <script>
         //下拉菜单跳转
         $("#category").change(function(){
-            var url = "<?php echo U('Articles/index',array('cid'=>'_ID_'));?>";
+            var url = "<?php echo U('Articles/add',array('cid'=>'_ID_'));?>";
             location.href = url.replace("_ID_",$(this).val());
         });
-        //快捷操作
-        function change_status(obj,field){
-            $("#target_id").val(obj.attr("data-id"));
-            $("#target_field").attr("value",field)
-            $("#target_status").attr("value",(obj.attr("data-status")=="yes") ? "no" : "yes");
-            $("#form").attr("action","<?php echo U('Articles/change',array('p'=>$p,'cid'=>$cid));?>").submit();
-        }
-        //快捷操作-推荐
-        $(".act-recommend").click(function(){
-            change_status($(this),'recommend');
-        });
-        //快捷操作-上架
-        $(".act-onsale").click(function(){
-            change_status($(this),'on_sale');
-        });
-        //快捷操作-删除
-        $(".act-del").click(function(){
-            if(confirm('确定要删除吗？')){
-                $("#target_id").val($(this).attr("data-id"));
-                $("#form").attr("action","<?php echo U('Articles/del',array('p'=>$p,'cid'=>$cid));?>").submit();
-            }
+
+        $(document).ready(function () {
+            var editor_one = CodeMirror.fromTextArea(document.getElementById("code"), {
+                lineNumbers: true,
+                matchBrackets: true,
+                styleActiveLine: true,
+                theme: "ambiance"
+            });
         });
     </script>
+
 </body>
 
 </html>

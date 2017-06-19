@@ -9,49 +9,49 @@
 <title>关于我_觅友</title>
 <meta name="keywords" content="觅友，觅友网，觅友博客，觅友小站，前端，miuu,IT开发，css，css3，js，js特效，php，jquery，ajax，java">
 <meta name="description" content="觅友,将来的你,一定会感谢现在拼命的自己！">
-<link rel="shortcut icon" href="/web/Public/Home/img/favicon.png">
+<link rel="shortcut icon" href="/Public/Home/img/favicon.png">
 
 <!-- Bootstrap core CSS -->
-<link rel="stylesheet" href="/web/Public/Home/css/bootstrap.css" />
-<link rel="stylesheet" href="/web/Public/Home/css/bootstrap-reset.css" />
+<link rel="stylesheet" href="/Public/Home/css/bootstrap.css" />
+<link rel="stylesheet" href="/Public/Home/css/bootstrap-reset.css" />
 
-<link rel="stylesheet" href="/web/Public/home/iconfont/iconfont.css" />
+<link rel="stylesheet" href="/Public/Home/iconfont/iconfont.css" />
 
 <!--external css-->
-<link rel="stylesheet" href="/web/Public/home/assets/font-awesome/css/font-awesome.css" />
-<link rel="stylesheet" href="/web/Public/home/assets/bxslider/jquery.bxslider.css" />
+<link rel="stylesheet" href="/Public/Home/assets/font-awesome/css/font-awesome.css" />
+<link rel="stylesheet" href="/Public/Home/assets/bxslider/jquery.bxslider.css" />
 
-<link rel="stylesheet" href="/web/Public/home/assets/revolution_slider/css/rs-style.css" media="screen" />
-<link rel="stylesheet" href="/web/Public/home/assets/revolution_slider/rs-plugin/css/settings.css" media="screen" />
+<link rel="stylesheet" href="/Public/Home/assets/revolution_slider/css/rs-style.css" media="screen" />
+<link rel="stylesheet" href="/Public/Home/assets/revolution_slider/rs-plugin/css/settings.css" media="screen" />
 
 <!-- Custom styles for this template -->
-<link rel="stylesheet" href="/web/Public/Home/css/style.css" />
-<link rel="stylesheet" href="/web/Public/Home/css/style-responsive.css" />
+<link rel="stylesheet" href="/Public/Home/css/style.css" />
+<link rel="stylesheet" href="/Public/Home/css/style-responsive.css" />
 
-<link rel="stylesheet" href="/web/Public/Home/css/kissui.css" />
-<link rel="stylesheet" href="/web/Public/Home/css/scrollanim.min.css" />
+<link rel="stylesheet" href="/Public/Home/css/kissui.css" />
+<link rel="stylesheet" href="/Public/Home/css/scrollanim.min.css" />
 
-<link rel="stylesheet" href="/web/Public/Home/css/swiper.min.css" />
-<link rel="stylesheet" href="/web/Public/Home/css/animate.css" />
-
-
-<link rel="stylesheet" href="/web/Public/Home/plugins/layui/css/layui.css" />
-
-<link rel="stylesheet" type="text/css" href="/web/Public/Home/plugins/simple_calendar/css/simple-calendar.css">
+<link rel="stylesheet" href="/Public/Home/css/swiper.min.css" />
+<link rel="stylesheet" href="/Public/Home/css/animate.css" />
 
 
-<link rel="stylesheet" href="/web/Public/Home/plugins/resume/css/about.css">
-<link rel="stylesheet" href="/web/Public/Home/plugins/resume/css/work.css">
+<link rel="stylesheet" href="/Public/Home/plugins/layui/css/layui.css" />
+
+<link rel="stylesheet" type="text/css" href="/Public/Home/plugins/simple_calendar/css/simple-calendar.css">
+
+
+<link rel="stylesheet" href="/Public/Home/plugins/resume/css/about.css">
+<link rel="stylesheet" href="/Public/Home/plugins/resume/css/work.css">
 <!-- Owl Carousel -->
-<link rel="stylesheet" href="/web/Public/Home/plugins/resume/css/owl.carousel.min.css">
-<link rel="stylesheet" href="/web/Public/Home/plugins/resume/css/owl.theme.default.min.css">
+<link rel="stylesheet" href="/Public/Home/plugins/resume/css/owl.carousel.min.css">
+<link rel="stylesheet" href="/Public/Home/plugins/resume/css/owl.theme.default.min.css">
 <!-- Theme Style -->
-<link rel="stylesheet" href="/web/Public/Home/plugins/resume/css/hero.css">
+<link rel="stylesheet" href="/Public/Home/plugins/resume/css/hero.css">
 
 <!-- HTML5 shim and Respond.js IE8 support of HTML5 tooltipss and media queries -->
 <!--[if lt IE 9]>
-<script src="/web/Public/Home/js/html5shiv.js"></script>
-<script src="/web/Public/Home/js/respond.min.js"></script>
+<script src="/Public/Home/js/html5shiv.js"></script>
+<script src="/Public/Home/js/respond.min.js"></script>
 <![endif]-->
 <?php
 $IMG_URL = 'http://7xsqlc.com1.z0.glb.clouddn.com/'; $IMG_THUMB = '?imageView2/1/w/100/h/100'; $IMG_BIG_W = '?imageView2/2/w/840'; $IMG_BIG_H = '?imageView2/2/h/300'; $IMG_BIG_WI = '?imageView2/2/w/840/interlace/1'; $IMG_BIG_HI = '?imageView2/2/h/300/interlace/1'; $IMG_SMALL_165 = '?imageView2/2/w/165'; ?>
@@ -67,7 +67,7 @@ $IMG_URL = 'http://7xsqlc.com1.z0.glb.clouddn.com/'; $IMG_THUMB = '?imageView2/1
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="/web">MI<span>Uu</span></a>
+                <a class="navbar-brand" href="">MI<span>Uu</span></a>
             </div>
             <div class="navbar-collapse collapse ">
                 <ul class="nav navbar-nav" id="menu">
@@ -111,7 +111,7 @@ $IMG_URL = 'http://7xsqlc.com1.z0.glb.clouddn.com/'; $IMG_THUMB = '?imageView2/1
 
 
 
-    <aside id="fh5co-hero" style="background-image: url(/web/Public/Home/plugins/resume/img/hero4.jpg);">
+    <aside id="fh5co-hero" style="background-image: url(/Public/Home/plugins/resume/img/hero4.jpg);">
         <div class="container">
             <div class="row">
                 <div class="col-md-8 col-md-offset-2">
@@ -163,7 +163,7 @@ $IMG_URL = 'http://7xsqlc.com1.z0.glb.clouddn.com/'; $IMG_THUMB = '?imageView2/1
                                 <a href="http://www.aibbk.com/" class="boxer">
                                     <div class="inner_content clearfix">
                                         <div class="product_image">
-                                            <img src="/web/Public/Home/plugins/resume/img/case/img1.jpg" class="img-responsive of-my" alt="" />
+                                            <img src="/Public/Home/plugins/resume/img/case/img1.jpg" class="img-responsive of-my" alt="" />
                                             <div class="mask">
                                                 <h4>
                                                     背包客户外网
@@ -180,7 +180,7 @@ $IMG_URL = 'http://7xsqlc.com1.z0.glb.clouddn.com/'; $IMG_THUMB = '?imageView2/1
                                 <a href="http://www.chengmei.com/" class="boxer">
                                     <div class="inner_content clearfix">
                                         <div class="product_image">
-                                            <img src="/web/Public/Home/plugins/resume/img/case/img2.jpg" class="img-responsive of-my" alt="" />
+                                            <img src="/Public/Home/plugins/resume/img/case/img2.jpg" class="img-responsive of-my" alt="" />
                                             <div class="mask">
                                                 <h4>
                                                     上海诚美
@@ -199,7 +199,7 @@ $IMG_URL = 'http://7xsqlc.com1.z0.glb.clouddn.com/'; $IMG_THUMB = '?imageView2/1
                                 <a href="http://aiduitu.com/test/index.html" class="boxer">
                                     <div class="inner_content clearfix">
                                         <div class="product_image">
-                                            <img src="/web/Public/Home/plugins/resume/img/case/img3.jpg" class="img-responsive of-my" alt="" />
+                                            <img src="/Public/Home/plugins/resume/img/case/img3.jpg" class="img-responsive of-my" alt="" />
                                             <div class="mask">
                                                 <h4>
                                                     背包客手机站
@@ -218,7 +218,7 @@ $IMG_URL = 'http://7xsqlc.com1.z0.glb.clouddn.com/'; $IMG_THUMB = '?imageView2/1
                                 <a href="http://zhi.aibbk.com/" class="boxer">
                                     <div class="inner_content clearfix">
                                         <div class="product_image">
-                                            <img src="/web/Public/Home/plugins/resume/img/case/img4.jpg" class="img-responsive of-my" alt="" />
+                                            <img src="/Public/Home/plugins/resume/img/case/img4.jpg" class="img-responsive of-my" alt="" />
                                             <div class="mask">
                                                 <h4>
                                                     陟·拓展
@@ -237,7 +237,7 @@ $IMG_URL = 'http://7xsqlc.com1.z0.glb.clouddn.com/'; $IMG_THUMB = '?imageView2/1
                                 <a href="http://www.sdcianet.com" class="boxer">
                                     <div class="inner_content clearfix">
                                         <div class="product_image">
-                                            <img src="/web/Public/Home/plugins/resume/img/case/img5.jpg" class="img-responsive of-my" alt="" />
+                                            <img src="/Public/Home/plugins/resume/img/case/img5.jpg" class="img-responsive of-my" alt="" />
                                             <div class="mask">
                                                 <h4>
                                                     山东省涂料行业协会
@@ -256,7 +256,7 @@ $IMG_URL = 'http://7xsqlc.com1.z0.glb.clouddn.com/'; $IMG_THUMB = '?imageView2/1
                                 <a href="http://www.51shangyi.com/" class="boxer">
                                     <div class="inner_content clearfix">
                                         <div class="product_image">
-                                            <img src="/web/Public/Home/plugins/resume/img/case/img6.jpg" class="img-responsive of-my" alt="" />
+                                            <img src="/Public/Home/plugins/resume/img/case/img6.jpg" class="img-responsive of-my" alt="" />
                                             <div class="mask">
                                                 <h4>
                                                     上医网
@@ -273,7 +273,7 @@ $IMG_URL = 'http://7xsqlc.com1.z0.glb.clouddn.com/'; $IMG_THUMB = '?imageView2/1
                                <a href="https://www.lu.com/" class="boxer">
                                     <div class="inner_content clearfix">
                                         <div class="product_image">
-                                            <img src="/web/Public/Home/plugins/resume/img/case/img7.jpg" class="img-responsive of-my" alt="" />
+                                            <img src="/Public/Home/plugins/resume/img/case/img7.jpg" class="img-responsive of-my" alt="" />
                                             <div class="mask">
                                                 <h4>
                                                     陆金所
@@ -292,7 +292,7 @@ $IMG_URL = 'http://7xsqlc.com1.z0.glb.clouddn.com/'; $IMG_THUMB = '?imageView2/1
                                 <a href="http://www.licron.com/" class="boxer">
                                     <div class="inner_content clearfix">
                                         <div class="product_image">
-                                            <img src="/web/Public/Home/plugins/resume/img/case/img8.jpg" class="img-responsive of-my" alt="" />
+                                            <img src="/Public/Home/plugins/resume/img/case/img8.jpg" class="img-responsive of-my" alt="" />
                                             <div class="mask">
                                                 <h4>
                                                     礼众信息
@@ -311,7 +311,7 @@ $IMG_URL = 'http://7xsqlc.com1.z0.glb.clouddn.com/'; $IMG_THUMB = '?imageView2/1
                                 <a href="http://www.ys-capital.com/" class="boxer">
                                     <div class="inner_content clearfix">
                                         <div class="product_image">
-                                            <img src="/web/Public/Home/plugins/resume/img/case/img9.jpg" class="img-responsive of-my" alt="" />
+                                            <img src="/Public/Home/plugins/resume/img/case/img9.jpg" class="img-responsive of-my" alt="" />
                                             <div class="mask">
                                                 <h4>
                                                     银树资本
@@ -350,25 +350,25 @@ $IMG_URL = 'http://7xsqlc.com1.z0.glb.clouddn.com/'; $IMG_THUMB = '?imageView2/1
             <div class="block-content text-center">
                 <div class="container">
                     <div class="col-sm-3 col-xs-6 skill_item">
-                        <img src="/web/Public/Home/plugins/resume/img/html.png" alt="">
+                        <img src="/Public/Home/plugins/resume/img/html.png" alt="">
                         <h3>
                             HTML5/CSS3
                         </h3>
                     </div>
                     <div class="col-sm-3 col-xs-6 skill_item">
-                        <img src="/web/Public/Home/plugins/resume/img/css.png" alt="">
+                        <img src="/Public/Home/plugins/resume/img/css.png" alt="">
                         <h3>
                             SCSS
                         </h3>
                     </div>
                     <div class="col-sm-3 col-xs-6 skill_item">
-                        <img src="/web/Public/Home/plugins/resume/img/js.png" alt="">
+                        <img src="/Public/Home/plugins/resume/img/js.png" alt="">
                         <h3>
                             JS/jQuery
                         </h3>
                     </div>
                     <div class="col-sm-3 col-xs-6 skill_item">
-                        <img src="/web/Public/Home/plugins/resume/img/node.png" alt="">
+                        <img src="/Public/Home/plugins/resume/img/node.png" alt="">
                         <h3>
                             React/Redux
                         </h3>
@@ -515,7 +515,7 @@ $IMG_URL = 'http://7xsqlc.com1.z0.glb.clouddn.com/'; $IMG_THUMB = '?imageView2/1
 
                             <div class="item">
                                 <div class="col-md-6 col-sm-6 col-xs-6 col-xxs-12 fh5co-item-slide-img">
-                                    <img src="/web/Public/Home/plugins/resume/img/owl1.png" alt="Images" class="img-responsive">
+                                    <img src="/Public/Home/plugins/resume/img/owl1.png" alt="Images" class="img-responsive">
                                 </div>
                                 <div class="col-md-6 col-sm-6 col-xs-6 col-xxs-12 fh5co-item-slide-text">
                                     <h2>
@@ -554,7 +554,7 @@ $IMG_URL = 'http://7xsqlc.com1.z0.glb.clouddn.com/'; $IMG_THUMB = '?imageView2/1
                             </div>
                             <div class="item">
                                 <div class="col-md-6 col-sm-6 col-xs-6 col-xxs-12 fh5co-item-slide-img">
-                                    <img src="/web/Public/Home/plugins/resume/img/macbook_3.png" alt="Images" class="img-responsive">
+                                    <img src="/Public/Home/plugins/resume/img/macbook_3.png" alt="Images" class="img-responsive">
                                 </div>
                                 <div class="col-md-6 col-sm-6 col-xs-6 col-xxs-12 fh5co-item-slide-text">
                                     <h2>
@@ -593,7 +593,7 @@ $IMG_URL = 'http://7xsqlc.com1.z0.glb.clouddn.com/'; $IMG_THUMB = '?imageView2/1
                             </div>
                             <div class="item">
                                 <div class="col-md-6 col-sm-6 col-xs-6 col-xxs-12 fh5co-item-slide-img">
-                                    <img src="/web/Public/Home/plugins/resume/img/macbook_3.png" alt="Images" class="img-responsive">
+                                    <img src="/Public/Home/plugins/resume/img/macbook_3.png" alt="Images" class="img-responsive">
                                 </div>
                                 <div class="col-md-6 col-sm-6 col-xs-6 col-xxs-12 fh5co-item-slide-text">
                                     <h2>
@@ -633,7 +633,7 @@ $IMG_URL = 'http://7xsqlc.com1.z0.glb.clouddn.com/'; $IMG_THUMB = '?imageView2/1
                             </div>
                             <div class="item">
                                 <div class="col-md-6 col-sm-6 col-xs-6 col-xxs-12 fh5co-item-slide-img">
-                                    <img src="/web/Public/Home/plugins/resume/img/macbook_3.png" alt="Images" class="img-responsive">
+                                    <img src="/Public/Home/plugins/resume/img/macbook_3.png" alt="Images" class="img-responsive">
                                 </div>
                                 <div class="col-md-6 col-sm-6 col-xs-6 col-xxs-12 fh5co-item-slide-text">
                                     <h2>
@@ -690,7 +690,7 @@ $IMG_URL = 'http://7xsqlc.com1.z0.glb.clouddn.com/'; $IMG_THUMB = '?imageView2/1
                 <li><a href="http://themebetter.com/" target="_blank">ThinkPHP</a></li>
                 <li><a href="<?php echo U("Tools/mergely");?>" target="_blank">代码对比工具</a></li>
             </ul>
-            <p class="text-muted text-center">©2016 <a href="<?php echo U("About/index");?>">Macyu</a><span id="webTime"></span></p>
+            <p class="text-muted text-center">©2016 <a href="<?php echo U("About/index");?>">Miuu</a><span id="webTime"></span></p>
             <p class="text-muted text-center">
                 <a class="mr10" href="tencent://message/?uin=2211735722&amp;与我交流&amp;Menu=yes" target="_blank">
                     <img border="0" src="http://wpa.qq.com/pa?p=1:2211735722:16" alt="点击我">
@@ -712,7 +712,7 @@ $IMG_URL = 'http://7xsqlc.com1.z0.glb.clouddn.com/'; $IMG_THUMB = '?imageView2/1
 <div class="footer-bottom">
     <div class="container">
         <div class="copyrights">
-            <p>Copyright &copy; 2017.Company name All rights reserved.<a href="<?php echo U('Index/index');?>">觅友网</a> - More <a href="<?php echo U('About/index');?>" target="_blank" title="关于我">-About Us</a></p>
+            <p class="text-center">Copyright &copy; 2017.Company name All rights reserved.<a href="<?php echo U('Index/index');?>">觅友网</a> - More <a href="<?php echo U('About/index');?>" target="_blank" title="关于我">-About Us</a></p>
         </div>
     </div>
 </div>
@@ -723,30 +723,30 @@ $IMG_URL = 'http://7xsqlc.com1.z0.glb.clouddn.com/'; $IMG_THUMB = '?imageView2/1
 
 <!-- JavaScript -->
 <!-- js placed at the end of the document so the pages load faster -->
-<script src="/web/Public/Home/js/jquery.js"></script>
-<script src="/web/Public/Home/js/bootstrap.min.js"></script>
-<script src="/web/Public/Home/js/hover-dropdown.js"></script>
-<script src="/web/Public/Home/js/common.js"></script>
-<script src="/web/Public/Home/js/main-scripts.js"></script>
-<script src="/web/Public/Home/js/scrollanim.min.js"></script>
+<script src="/Public/Home/js/jquery.js"></script>
+<script src="/Public/Home/js/bootstrap.min.js"></script>
+<script src="/Public/Home/js/hover-dropdown.js"></script>
+<script src="/Public/Home/js/common.js"></script>
+<script src="/Public/Home/js/main-scripts.js"></script>
+<script src="/Public/Home/js/scrollanim.min.js"></script>
 
 <script>
 
 var ThinkPHP = {
-    'MODULE' : '/web/Home',
-    'ROOT' : '/web',
-    'IMG' : '/web/Public/<?php echo MODULE_NAME;?>/img',
-    'FACE' : '/web/Public/<?php echo MODULE_NAME;?>/face',
-    'PLUGINS' : '/web/Public/<?php echo MODULE_NAME;?>/plugins',
-    'JS' : '/web/Public/Home/js',
-    'UPLOADIFY' : '/web/Public/Home/uploadify',
+    'MODULE' : '/Home',
+    'ROOT' : '',
+    'IMG' : '/Public/<?php echo MODULE_NAME;?>/img',
+    'FACE' : '/Public/<?php echo MODULE_NAME;?>/face',
+    'PLUGINS' : '/Public/<?php echo MODULE_NAME;?>/plugins',
+    'JS' : '/Public/Home/js',
+    'UPLOADIFY' : '/Public/Home/uploadify',
     'UPLOADER' : '<?php echo U("File/upload");?>',
     'INDEX' : '<?php echo U("Index/index");?>',
     'SEARCH' : '<?php echo U("Home/Other/search");?>',
 };
 </script>
-<script type="text/javascript" src="/web/Public/Home/plugins/layui/layui.js"></script>
-<script type="text/javascript" src="/web/Public/Home/plugins/layui/lay/dest/layui.all.js"></script>
+<script type="text/javascript" src="/Public/Home/plugins/layui/layui.js"></script>
+<script type="text/javascript" src="/Public/Home/plugins/layui/lay/dest/layui.all.js"></script>
 
 <script>
 var _hmt = _hmt || [];
@@ -779,6 +779,7 @@ var _hmt = _hmt || [];
     });
 })();
 
+
 //自执行匿名函数
 (function(){
     window.setTimeout(arguments.callee, 1000);
@@ -798,26 +799,26 @@ var _hmt = _hmt || [];
     e_minsover = (e_hrsover - hrsover) * 60;
     minsover = Math.floor((e_hrsover - hrsover) * 60);
     seconds = Math.floor((e_minsover - minsover) * 60);
-    webTime.innerHTML = "·米鱼博客已运行：" + daysover + "天" + hrsover + "小时" + minsover + "分" + seconds + "秒";
+    webTime.innerHTML = "·觅友博客已运行：" + daysover + "天" + hrsover + "小时" + minsover + "分" + seconds + "秒";
 })();
 document.getElementsByTagName('iframe')[0].width="500";
 </script>
 
 <!-- Owl carousel -->
-<script src="/web/Public/Home/plugins/resume/js/owl.carousel.min.js"></script>
+<script src="/Public/Home/plugins/resume/js/owl.carousel.min.js"></script>
 <!-- Magnific Popup -->
-<script src="/web/Public/Home/plugins/resume/js/jquery.magnific-popup.min.js"></script>
+<script src="/Public/Home/plugins/resume/js/jquery.magnific-popup.min.js"></script>
 <!-- Superfish -->
-<script src="/web/Public/Home/plugins/resume/js/superfish.js"></script>
+<script src="/Public/Home/plugins/resume/js/superfish.js"></script>
 <!-- Easy Responsive Tabs -->
-<script src="/web/Public/Home/plugins/resume/js/easyResponsiveTabs.js"></script>
+<script src="/Public/Home/plugins/resume/js/easyResponsiveTabs.js"></script>
 <!-- FastClick for Mobile/Tablets -->
 <!-- Main JS -->
-<script src="/web/Public/Home/plugins/resume/js/menu.js"></script>
+<script src="/Public/Home/plugins/resume/js/menu.js"></script>
 
 <!-- timer isonscreen -->
-<script src="/web/Public/Home/plugins/resume/js/jquery.isonscreen.js"></script>
-<script src="/web/Public/Home/plugins/resume/js/timercount.js"></script>
+<script src="/Public/Home/plugins/resume/js/jquery.isonscreen.js"></script>
+<script src="/Public/Home/plugins/resume/js/timercount.js"></script>
 <script>
     $("#About_index").addClass("active");
 </script>

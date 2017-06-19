@@ -14,14 +14,14 @@
 <link rel="stylesheet" href="/Public/Home/css/bootstrap.css" />
 <link rel="stylesheet" href="/Public/Home/css/bootstrap-reset.css" />
 
-<link rel="stylesheet" href="/Public/home/iconfont/iconfont.css" />
+<link rel="stylesheet" href="/Public/Home/iconfont/iconfont.css" />
 
 <!--external css-->
-<link rel="stylesheet" href="/Public/home/assets/font-awesome/css/font-awesome.css" />
-<link rel="stylesheet" href="/Public/home/assets/bxslider/jquery.bxslider.css" />
+<link rel="stylesheet" href="/Public/Home/assets/font-awesome/css/font-awesome.css" />
+<link rel="stylesheet" href="/Public/Home/assets/bxslider/jquery.bxslider.css" />
 
-<link rel="stylesheet" href="/Public/home/assets/revolution_slider/css/rs-style.css" media="screen" />
-<link rel="stylesheet" href="/Public/home/assets/revolution_slider/rs-plugin/css/settings.css" media="screen" />
+<link rel="stylesheet" href="/Public/Home/assets/revolution_slider/css/rs-style.css" media="screen" />
+<link rel="stylesheet" href="/Public/Home/assets/revolution_slider/rs-plugin/css/settings.css" media="screen" />
 
 <!-- Custom styles for this template -->
 <link rel="stylesheet" href="/Public/Home/css/style.css" />

@@ -5,9 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="renderer" content="webkit">
 <meta http-equiv="Cache-Control" content="no-siteapp" />
-<title>美文分享_觅友</title>
-<meta name="keywords" content="觅友，觅友网，觅友博客，觅友小站，前端，miuu,IT开发，css，css3，js，js特效，php，jquery，ajax，java">
-<meta name="description" content="觅友_有朋自远方来，分享自己网站开发学习以及工作和生活中的点点滴滴，希望通过此网站，与大家一起交流、进步与成长！">
+<title><?php echo ($title); ?>_觅友</title>
+<meta name="keywords" content="<?php echo ($news["keywords"]); ?>--小段子，觅友">
+<meta name="description" content="<?php echo ($news["desc"]); ?>">
 <link rel="shortcut icon" href="/Public/Home/img/favicon.png">
 
 <!-- Bootstrap core CSS -->
@@ -39,6 +39,7 @@
 <link rel="stylesheet" type="text/css" href="/Public/Home/plugins/simple_calendar/css/simple-calendar.css">
 
 
+<link rel="stylesheet" href="/Public/Home/css/index.css" />
 <!-- HTML5 shim and Respond.js IE8 support of HTML5 tooltipss and media queries -->
 <!--[if lt IE 9]>
 <script src="/Public/Home/js/html5shiv.js"></script>
@@ -102,75 +103,61 @@ $IMG_URL = 'http://7xsqlc.com1.z0.glb.clouddn.com/'; $IMG_THUMB = '?imageView2/1
 
 
 
-    <!-- revolution slider start -->
-    <div class="focusbox">
-        <div class="container"><h1 class="focusbox-title">美文分享</h1>
-            <div class="focusbox-text">品味经典，感悟人生的文章故事,我的人生我感触！</div>
-        </div>
+<!-- revolution slider start -->
+<section class="focusbox">
+    <div class="container">
+        <h1 class="focusbox-title">小段子</h1>
+        <div class="focusbox-text">生活处处皆段子，人生百态，冷暖是非！</div>
     </div>
-    <!--container start-->
-    <div class="content">
-    <div class="container space30">
+</section>
+<!--container start-->
+<div class="content">
+    <div class="container container-no-sidebar space30">
         <div class="row">
             <div class="col-md-8">
-                <section class="article">
-                    <ul class="filter">
-                        <li class="filter-title">美文列表</li>
-                        <?php if(!empty($categoryessay["parent"])): if(is_array($categoryessay["parent"])): $i = 0; $__LIST__ = $categoryessay["parent"];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i;?><li>
-                                <p class="cateline">
-                                    <?php switch($i): case "1": ?>Ⅰ<?php break;?>
-                                        <?php case "2": ?>Ⅱ<?php break;?>
-                                        <?php case "3": ?>Ⅲ<?php break;?>
-                                        <?php case "4": ?>Ⅳ<?php break;?>
-                                        <?php default: endswitch;?>
-                                    级分类
-                                </p>
-                                <?php if(is_array($v)): foreach($v as $key=>$vv): ?><a href="<?php echo essaymkFilterURL('cid',$vv['id']);?>" class="cid-<?php echo ($vv["id"]); ?>" ><?php echo ($vv["name"]); ?></a><?php endforeach; endif; ?></li>
-                            </li><?php endforeach; endif; else: echo "" ;endif; endif; ?>
+                <div class="content single">
+                    <header class="article-header">
+                       <h1 class="article-title"><a href="#"><?php echo ($news["name"]); ?></a></h1>
+                       <div class="article-meta">
+                           <span class="item"><?php echo ($news["add_time"]); ?></span>
+                           <span class="item">来源：<a href="<?php echo ($news["url"]); ?>" target="_blank"><?php echo ($news["source"]); ?></a></span>
+                           <span class="item post-views">阅读(<?php echo ($news["click"]); ?>)</span>
+                       </div>
+                    </header>
+                    <article class="article-content">
+                    <?php if(!empty($news["thumb"])): ?><p class="text-center">
+                            <img class="alignnone size-full wp-image-74" src="<?php echo ($news["thumb"]); ?>" />
+                        </p>
+                        <?php else: endif; ?>
+                       <?php echo ($news["content"]); ?>
+                    </article>
+                    <ul class="pager clearfix">
+                        <?php if(empty($prev)): else: ?>
+                            <li class="previous">
+                                <a title="<?php echo ($prev["name"]); ?>" href="<?php echo U('News/news',array('id'=>$prev['id']));?>" data-toggle="tooltip" data-original-title="<?php echo ($prev["name"]); ?>">上一篇</a>
+                            </li><?php endif; ?>
+                        <?php if(empty($next)): else: ?>
+                            <li class="next">
+                                <a title="<?php echo ($next["name"]); ?>" href="<?php echo U('News/news',array('id'=>$next['id']));?>" data-toggle="tooltip" data-original-title="<?php echo ($next["name"]); ?>">下一篇</a>
+                            </li><?php endif; ?>
                     </ul>
-                    <?php if(empty($essay["data"])): ?><p class="no_find">很抱歉，没有找到您需要的文摘!</p><?php else: ?>
-                        <?php if(is_array($essay["data"])): foreach($essay["data"] as $key=>$v): ?><article class="excerpt excerpt-text">
-                                <div class="row">
-                                    <?php if(!empty($v["thumb"])): ?><div class="col-md-4">
-                                            <a href="<?php echo U('Essay/essay',array('id'=>$v['id']));?>" class="nail">
-                                                <img src="<?php echo ($v["thumb"]); ?>" alt="<?php echo ($v["name"]); ?>"  class="thumb">
-                                                <?php if(!empty($v["category_name"])): ?><span class="cat"><?php echo ($v["category_name"]); ?></span>
-                                                    <?php else: ?><span class="cat">未分类</span><?php endif; ?>
-                                            </a>
-                                        </div>
-                                        <?php else: endif; ?>
-                                    <header class="col-md-8">
-                                        <div class="excerpt-content">
-                                            <h2 class="title">
-                                                <a href="<?php echo U('Essay/essay',array('id'=>$v['id']));?>" target="_blank" title="<?php echo ($v["name"]); ?>"><?php echo ($v["name"]); ?></a>
-                                            </h2>
-                                            <ul class="meta list-inline">
-                                                <li><i class="miuu u-rili"></i> <?php echo ($v["add_time"]); ?></li>
-                                                <li class="writer"><i class="miuu u-yonghu"></i> <?php echo ($v["author"]); ?></li>
-                                                <li class="pv"><i class="miuu u-eyes"></i> 阅读(<?php echo ($v["click"]); ?>)</li>
-                                            </ul>
-                                            <p class="note"><?php echo ($v["desc"]); ?></p>
-                                        </div>
-
-                                    </header>
-                                </div>
-                            </article><?php endforeach; endif; endif; ?>
-
-                </section>
-                <nav class="text-center">
-                    <div class="pagination"><?php echo ($essay["pagelist"]); ?></div>
-                </nav>
+                    <div class="relates"><div class="title"><h3>相关推荐</h3></div>
+                        <ul>
+                            <?php if(is_array($recommend)): foreach($recommend as $key=>$v): ?><li>
+                                    <a href="<?php echo U('News/news',array('id'=>$v['id']));?>"><?php echo ($v["name"]); ?></a>
+                                </li><?php endforeach; endif; ?>
+                        </ul>
+                    </div>
+                </div>
             </div>
-
             <div class="col-md-4 sidebar">
-
                 <div class="widget widget-posts">
-                    <h3>热门推荐</h3>
+                    <h3>最新推荐</h3>
                     <ul>
-                        <?php if(is_array($recommend)): foreach($recommend as $key=>$v): ?><li class="widget-post-item">
-                                <a target="_blank" href="<?php echo U('Essay/essay',array('id'=>$v['id']));?>">
+                        <?php if(is_array($latest["data"])): foreach($latest["data"] as $key=>$v): ?><li class="widget-post-item">
+                                <a target="_blank" href="<?php echo U('News/news',array('id'=>$v['id']));?>">
                                     <div class="img-box">
-                                        <?php if(!empty($v["thumb"])): ?><img class="thumb" src="<?php echo ($v["thumb"]); ?>" alt="<?php echo ($v["name"]); ?>" >
+                                        <?php if(!empty($v["thumb"])): ?><img class="thumb" src="<?php echo ($v["thumb"]); ?>" >
                                             <?php else: endif; ?>
                                     </div>
                                     <div class="info-box">
@@ -180,8 +167,7 @@ $IMG_URL = 'http://7xsqlc.com1.z0.glb.clouddn.com/'; $IMG_THUMB = '?imageView2/1
                                             </span>
                                             <div class="tips">
                                                 <span class="muted left"><?php echo ($v["add_time"]); ?></span>
-                                                <?php if(empty($v["click"])): else: ?>
-                                                <span class="muted right"><?php echo ($v["click"]); ?></span><?php endif; ?>
+                                                <span class="muted right">阅读（<?php echo ($v["click"]); ?>）</span>
                                             </div>
                                         </div>
                                     </div>
@@ -189,22 +175,16 @@ $IMG_URL = 'http://7xsqlc.com1.z0.glb.clouddn.com/'; $IMG_THUMB = '?imageView2/1
                             </li><?php endforeach; endif; ?>
                     </ul>
                 </div>
-
                 <div class="widget widget-posts">
                     <a href="#" target="_blank" rel="nofollow"><img src="http://7xsqlc.com1.z0.glb.clouddn.com/banner/small-2.png" class="full-img"></a>
                 </div>
-
-                <div class="widget widget-posts">
-                    <div id="calendar"></div>
-                </div>
-
                 <div class="widget widget-posts" >
-                   <a href="#" target="_blank" rel="nofollow"><img src="http://7xsqlc.com1.z0.glb.clouddn.com/banner/small-5.jpg" class="full-img"></a>
+                    <a href="#" target="_blank" rel="nofollow"><img src="http://7xsqlc.com1.z0.glb.clouddn.com/banner/small-1.jpg" class="full-img"></a>
                 </div>
-            </div>
-            <!--feature end-->
+           </div>
         </div>
-    </div></div>
+    </div>
+</div>
 <!--footer start-->
 <footer>
 <div class="footer-top clearfix">
@@ -332,77 +312,8 @@ var _hmt = _hmt || [];
 })();
 document.getElementsByTagName('iframe')[0].width="500";
 </script>
-
-
-<script src="/Public/Home/plugins/simple_calendar/js/simple-calendar-es6.js"></script>
 <script>
-    var myoptions = {
-        width: '100%',
-        height: '300px',
-        language: 'CH', //语言
-        showLunarCalendar: true, //阴历
-        showHoliday: true, //休假
-        showFestival: true, //节日
-        showLunarFestival: true, //农历节日
-        showSolarTerm: true, //节气
-        showMark: true, //标记
-        timeRange: {
-        startYear: 1949,
-        endYear: 2068
-    },
-    mark: {
-        '2017-6-1': '陪宝宝出去玩',
-        '2017-6-17': '去陆家玩并看房子',
-        '2018-4-16': '而立之年',
-    },
-    theme: {
-        changeAble: false,
-        weeks: {
-          backgroundColor: '#FBEC9C',
-          fontColor: '#4A4A4A',
-          fontSize: '20px',
-        },
-        days: {
-          backgroundColor: '#ffffff',
-          fontColor: '#565555',
-          fontSize: '24px'
-        },
-        todaycolor: 'orange',
-        activeSelectColor: 'orange',
-    }
-    }
-    var myCalendar = new SimpleCalendar('#calendar',myoptions); 
-
-    $(function() {
-
-        $(document).on('click','.sc-festival',function() { //天数格添加点击事件。
-            var holiday = $(this).children('.lunar-day').text();
-            layer.msg('今日「' + holiday + '」!', {time: 1500});
-        });
-         $(document).on('click','.sc-mark',function() { //天数格添加点击事件。
-            var year = $(".sc-select-year").val(); //获取当前选择年份。
-            var month = $(".sc-select-month").val(); //获取当前选择月份。
-            var day = $(this).children(".day").html(); //获取当前选择天数。
-            var date = year + "-" + month + "-" + day;
-            layer.msg('"' + date + '":今天要记得『' + this.title + '』!', {time: 1500});
-        });
-    
-    });
-</script>
-
-<script>
-    // js跳转到搜索结果页面
-    $('.search').blur(function() {
-        location.href = ThinkPHP['MODULE'] + '/other/search?keywords=' + $(this).text();
-    });
-    //导航条选中效果
-    //筛选列表，分类的当前选中效果
-    <?php if(is_array($categoryessay["pids"])): foreach($categoryessay["pids"] as $key=>$v): ?>$(".cid-<?php echo ($v); ?>").addClass("curr");<?php endforeach; endif; ?>
-//文章排序的选中效果
-    <?php if(isset($_GET['order'])): ?>$(".order-<?php echo ($_GET['order']); ?>").addClass("curr");
-    <?php else: ?>
-    $(".order-0").addClass("curr");<?php endif; ?>
-$("#Essay_index").addClass("active");
+$("#News_index").addClass("active");
 </script>
 </body>
 </html>

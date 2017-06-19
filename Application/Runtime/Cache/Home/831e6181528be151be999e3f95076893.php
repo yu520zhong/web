@@ -14,14 +14,14 @@
 <link rel="stylesheet" href="/Public/Home/css/bootstrap.css" />
 <link rel="stylesheet" href="/Public/Home/css/bootstrap-reset.css" />
 
-<link rel="stylesheet" href="/Public/home/iconfont/iconfont.css" />
+<link rel="stylesheet" href="/Public/Home/iconfont/iconfont.css" />
 
 <!--external css-->
-<link rel="stylesheet" href="/Public/home/assets/font-awesome/css/font-awesome.css" />
-<link rel="stylesheet" href="/Public/home/assets/bxslider/jquery.bxslider.css" />
+<link rel="stylesheet" href="/Public/Home/assets/font-awesome/css/font-awesome.css" />
+<link rel="stylesheet" href="/Public/Home/assets/bxslider/jquery.bxslider.css" />
 
-<link rel="stylesheet" href="/Public/home/assets/revolution_slider/css/rs-style.css" media="screen" />
-<link rel="stylesheet" href="/Public/home/assets/revolution_slider/rs-plugin/css/settings.css" media="screen" />
+<link rel="stylesheet" href="/Public/Home/assets/revolution_slider/css/rs-style.css" media="screen" />
+<link rel="stylesheet" href="/Public/Home/assets/revolution_slider/rs-plugin/css/settings.css" media="screen" />
 
 <!-- Custom styles for this template -->
 <link rel="stylesheet" href="/Public/Home/css/style.css" />
@@ -438,6 +438,47 @@ document.getElementsByTagName('iframe')[0].width="500";
     
     });
 </script>
+<script>
+layui.use('code', function(){ //加载code模块
+  layui.code({
+    elem: 'pre',
+     title: 'show_Miuu',
+     encode: true,
+     height: 550,
+     about: false
+  });
+});
+</script>
+
+<script src="/Public/Home/plugins/zeroclipboard/ZeroCilpdocs.js"></script>
+<script src="/Public/Home/plugins/zeroclipboard/ZeroClipboard.js"></script>
+<script>
+
+
+$(function() {
+    var client = new ZeroClipboard( $(".btn-clipboard") );
+
+    client.on( "ready", function( readyEvent ) {
+    // alert( "ZeroClipboard SWF is ready!" );
+    client.on( 'copy', function(event) {
+            var code = $(event.target).parent().next().find('.layui-code-ol').text();
+          event.clipboardData.setData('text/plain',code);
+        } );
+    client.on( "aftercopy", function( event ) {
+    // `this` === `client`
+    // `event.target` === the element that was clicked
+        layer.msg('恭喜您，成功复制代码！', {time: 1000});
+      } );
+    } );
+    client.on( 'error', function(event) {
+        console.log( 'ZeroClipboard error of type "' + event.name + '": ' + event.message );
+        ZeroClipboard.destroy();
+    } );
+
+})
+
+</script>
+
 
 <script type="text/javascript" src="http://assets.changyan.sohu.com/upload/plugins/plugins.count.js">
 </script>
@@ -473,17 +514,6 @@ window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="tex
         TestWin.document.write(obj.value); //向这个打开的窗口中写入代码code，这样就实现了运行代码功能。
         TestWin.document.close();
     };
-</script>
-<script>
-layui.use('code', function(){ //加载code模块
-  layui.code({
-    elem: 'pre',
-     title: 'show_Miuu',
-     encode: true,
-     height: 550,
-     about: false
-  });
-});
 </script>
 </body>
 </html>

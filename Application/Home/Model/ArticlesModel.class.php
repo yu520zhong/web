@@ -71,7 +71,7 @@ class ArticlesModel extends Model {
 		}
 
 		//处理排序条件
-		$order = 'a.click desc';
+		$order = 'rand()';
 		$input_order = I('get.order');
 		if(isset($allow_order[$input_order])) $order = $allow_order[$input_order];
 		//准备分页查询

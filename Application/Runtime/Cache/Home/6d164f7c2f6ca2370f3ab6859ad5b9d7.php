@@ -8,41 +8,41 @@
 <title>技术文摘_觅友</title>
 <meta name="keywords" content="觅友，觅友网，觅友博客，觅友小站，前端，miuu,IT开发，css，css3，js，js特效，php，jquery，ajax，java">
 <meta name="description" content="觅友_有朋自远方来，分享自己网站开发学习以及工作和生活中的点点滴滴，希望通过此网站，与大家一起交流、成长、进步！">
-<link rel="shortcut icon" href="/Public/Home/img/favicon.png">
+<link rel="shortcut icon" href="/web/Public/Home/img/favicon.png">
 
 <!-- Bootstrap core CSS -->
-<link rel="stylesheet" href="/Public/Home/css/bootstrap.css" />
-<link rel="stylesheet" href="/Public/Home/css/bootstrap-reset.css" />
+<link rel="stylesheet" href="/web/Public/Home/css/bootstrap.css" />
+<link rel="stylesheet" href="/web/Public/Home/css/bootstrap-reset.css" />
 
-<link rel="stylesheet" href="/Public/Home/iconfont/iconfont.css" />
+<link rel="stylesheet" href="/web/Public/Home/iconfont/iconfont.css" />
 
 <!--external css-->
-<link rel="stylesheet" href="/Public/Home/assets/font-awesome/css/font-awesome.css" />
-<link rel="stylesheet" href="/Public/Home/assets/bxslider/jquery.bxslider.css" />
+<link rel="stylesheet" href="/web/Public/Home/assets/font-awesome/css/font-awesome.css" />
+<link rel="stylesheet" href="/web/Public/Home/assets/bxslider/jquery.bxslider.css" />
 
-<link rel="stylesheet" href="/Public/Home/assets/revolution_slider/css/rs-style.css" media="screen" />
-<link rel="stylesheet" href="/Public/Home/assets/revolution_slider/rs-plugin/css/settings.css" media="screen" />
+<link rel="stylesheet" href="/web/Public/Home/assets/revolution_slider/css/rs-style.css" media="screen" />
+<link rel="stylesheet" href="/web/Public/Home/assets/revolution_slider/rs-plugin/css/settings.css" media="screen" />
 
 <!-- Custom styles for this template -->
-<link rel="stylesheet" href="/Public/Home/css/style.css" />
-<link rel="stylesheet" href="/Public/Home/css/style-responsive.css" />
+<link rel="stylesheet" href="/web/Public/Home/css/style.css" />
+<link rel="stylesheet" href="/web/Public/Home/css/style-responsive.css" />
 
-<link rel="stylesheet" href="/Public/Home/css/kissui.css" />
-<link rel="stylesheet" href="/Public/Home/css/scrollanim.min.css" />
+<link rel="stylesheet" href="/web/Public/Home/css/kissui.css" />
+<link rel="stylesheet" href="/web/Public/Home/css/scrollanim.min.css" />
 
-<link rel="stylesheet" href="/Public/Home/css/swiper.min.css" />
-<link rel="stylesheet" href="/Public/Home/css/animate.css" />
+<link rel="stylesheet" href="/web/Public/Home/css/swiper.min.css" />
+<link rel="stylesheet" href="/web/Public/Home/css/animate.css" />
 
 
-<link rel="stylesheet" href="/Public/Home/plugins/layui/css/layui.css" />
+<link rel="stylesheet" href="/web/Public/Home/plugins/layui/css/layui.css" />
 
-<link rel="stylesheet" type="text/css" href="/Public/Home/plugins/simple_calendar/css/simple-calendar.css">
+<link rel="stylesheet" type="text/css" href="/web/Public/Home/plugins/simple_calendar/css/simple-calendar.css">
 
 
 <!-- HTML5 shim and Respond.js IE8 support of HTML5 tooltipss and media queries -->
 <!--[if lt IE 9]>
-<script src="/Public/Home/js/html5shiv.js"></script>
-<script src="/Public/Home/js/respond.min.js"></script>
+<script src="/web/Public/Home/js/html5shiv.js"></script>
+<script src="/web/Public/Home/js/respond.min.js"></script>
 <![endif]-->
 <?php
 $IMG_URL = 'http://7xsqlc.com1.z0.glb.clouddn.com/'; $IMG_THUMB = '?imageView2/1/w/100/h/100'; $IMG_BIG_W = '?imageView2/2/w/840'; $IMG_BIG_H = '?imageView2/2/h/300'; $IMG_BIG_WI = '?imageView2/2/w/840/interlace/1'; $IMG_BIG_HI = '?imageView2/2/h/300/interlace/1'; $IMG_SMALL_165 = '?imageView2/2/w/165'; ?>
@@ -58,7 +58,7 @@ $IMG_URL = 'http://7xsqlc.com1.z0.glb.clouddn.com/'; $IMG_THUMB = '?imageView2/1
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="">MI<span>Uu</span></a>
+                <a class="navbar-brand" href="/web">MI<span>Uu</span></a>
             </div>
             <div class="navbar-collapse collapse ">
                 <ul class="nav navbar-nav" id="menu">
@@ -195,11 +195,11 @@ $IMG_URL = 'http://7xsqlc.com1.z0.glb.clouddn.com/'; $IMG_THUMB = '?imageView2/1
                     <a href="#" target="_blank" rel="nofollow"><img src="http://7xsqlc.com1.z0.glb.clouddn.com/banner/small-2.png" class="full-img"></a>
                 </div>
 
-                <div class="widget widget-posts">
+                <div class="widget widget-posts clearfix">
                     <div id="calendar"></div>
                 </div>
 
-                <div class="widget widget-posts" >
+                <div class="widget widget-posts " >
                    <a href="#" target="_blank" rel="nofollow"><img src="http://7xsqlc.com1.z0.glb.clouddn.com/banner/small-5.jpg" class="full-img"></a>
                 </div>
             </div>
@@ -254,30 +254,30 @@ $IMG_URL = 'http://7xsqlc.com1.z0.glb.clouddn.com/'; $IMG_THUMB = '?imageView2/1
 
 <!-- JavaScript -->
 <!-- js placed at the end of the document so the pages load faster -->
-<script src="/Public/Home/js/jquery.js"></script>
-<script src="/Public/Home/js/bootstrap.min.js"></script>
-<script src="/Public/Home/js/hover-dropdown.js"></script>
-<script src="/Public/Home/js/common.js"></script>
-<script src="/Public/Home/js/main-scripts.js"></script>
-<script src="/Public/Home/js/scrollanim.min.js"></script>
+<script src="/web/Public/Home/js/jquery.js"></script>
+<script src="/web/Public/Home/js/bootstrap.min.js"></script>
+<script src="/web/Public/Home/js/hover-dropdown.js"></script>
+<script src="/web/Public/Home/js/common.js"></script>
+<script src="/web/Public/Home/js/main-scripts.js"></script>
+<script src="/web/Public/Home/js/scrollanim.min.js"></script>
 
 <script>
 
 var ThinkPHP = {
-    'MODULE' : '/Home',
-    'ROOT' : '',
-    'IMG' : '/Public/<?php echo MODULE_NAME;?>/img',
-    'FACE' : '/Public/<?php echo MODULE_NAME;?>/face',
-    'PLUGINS' : '/Public/<?php echo MODULE_NAME;?>/plugins',
-    'JS' : '/Public/Home/js',
-    'UPLOADIFY' : '/Public/Home/uploadify',
+    'MODULE' : '/web/Home',
+    'ROOT' : '/web',
+    'IMG' : '/web/Public/<?php echo MODULE_NAME;?>/img',
+    'FACE' : '/web/Public/<?php echo MODULE_NAME;?>/face',
+    'PLUGINS' : '/web/Public/<?php echo MODULE_NAME;?>/plugins',
+    'JS' : '/web/Public/Home/js',
+    'UPLOADIFY' : '/web/Public/Home/uploadify',
     'UPLOADER' : '<?php echo U("File/upload");?>',
     'INDEX' : '<?php echo U("Index/index");?>',
     'SEARCH' : '<?php echo U("Home/Other/search");?>',
 };
 </script>
-<script type="text/javascript" src="/Public/Home/plugins/layui/layui.js"></script>
-<script type="text/javascript" src="/Public/Home/plugins/layui/lay/dest/layui.all.js"></script>
+<script type="text/javascript" src="/web/Public/Home/plugins/layui/layui.js"></script>
+<script type="text/javascript" src="/web/Public/Home/plugins/layui/lay/dest/layui.all.js"></script>
 
 <script>
 var _hmt = _hmt || [];
@@ -335,62 +335,8 @@ var _hmt = _hmt || [];
 document.getElementsByTagName('iframe')[0].width="500";
 </script>
 
-
-<script src="/Public/Home/plugins/simple_calendar/js/simple-calendar-es6.js"></script>
-<script>
-    var myoptions = {
-        width: '100%',
-        height: '300px',
-        language: 'CH', //语言
-        showLunarCalendar: true, //阴历
-        showHoliday: true, //休假
-        showFestival: true, //节日
-        showLunarFestival: true, //农历节日
-        showSolarTerm: true, //节气
-        showMark: true, //标记
-        timeRange: {
-        startYear: 1949,
-        endYear: 2068
-    },
-    mark: {
-        '2017-6-1': '陪宝宝出去玩',
-        '2017-6-17': '去陆家玩并看房子',
-        '2018-4-16': '而立之年',
-    },
-    theme: {
-        changeAble: false,
-        weeks: {
-          backgroundColor: '#FBEC9C',
-          fontColor: '#4A4A4A',
-          fontSize: '20px',
-        },
-        days: {
-          backgroundColor: '#ffffff',
-          fontColor: '#565555',
-          fontSize: '24px'
-        },
-        todaycolor: 'orange',
-        activeSelectColor: 'orange',
-    }
-    }
-    var myCalendar = new SimpleCalendar('#calendar',myoptions); 
-
-    $(function() {
-
-        $(document).on('click','.sc-festival',function() { //天数格添加点击事件。
-            var holiday = $(this).children('.lunar-day').text();
-            layer.msg('今日「' + holiday + '」!', {time: 1500});
-        });
-         $(document).on('click','.sc-mark',function() { //天数格添加点击事件。
-            var year = $(".sc-select-year").val(); //获取当前选择年份。
-            var month = $(".sc-select-month").val(); //获取当前选择月份。
-            var day = $(this).children(".day").html(); //获取当前选择天数。
-            var date = year + "-" + month + "-" + day;
-            layer.msg('"' + date + '":今天要记得『' + this.title + '』!', {time: 1500});
-        });
-    
-    });
-</script>
+<script src="/web/Public/Home/plugins/simple_calendar/js/simple-calendar-es6.js"></script>
+<script src="/web/Public/Home/plugins/simple_calendar/js/simple-calendar-options.js"></script>
 
 <script>
     // js跳转到搜索结果页面

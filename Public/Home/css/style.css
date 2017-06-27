@@ -2360,8 +2360,8 @@ ul#filters > .active > span {
 }
 
 .article-meta {
-    font-size: 12px;
-    color: #999;
+    font-size: 14px;
+    color: #666;
 }
 
 .article-meta .item {
@@ -2370,7 +2370,7 @@ ul#filters > .active > span {
 
 .article-content {
     font-size: 1.5rem;
-    line-height: 2.0;
+    line-height: 1.8;
     word-wrap: break-word;
 }
 
@@ -2498,7 +2498,7 @@ ul#filters > .active > span {
 }
 
 .article-content p {
-    margin-bottom: 18px;
+    margin-bottom: 15px;
     word-wrap: break-word;
 }
 
@@ -2510,7 +2510,7 @@ ul#filters > .active > span {
     border-top: solid 1px #ddd;
     border-left: solid 1px #ddd;
     width: 100%;
-    margin-bottom: 18px;
+    margin-bottom: 15px;
 }
 
 .article-content table th {
@@ -3228,13 +3228,14 @@ ul#filters > .active > span {
     margin-right: 20px;
     font-family: "Microsoft Yahei";
     font-size: 14px;
+  	color: #666;
 }
 
 .detail-desc {
     margin: 0px -30px 30px -30px;
     padding: 15px 30px;
     font-size: 13px;
-    color: #999;
+    color: #666;
     background-color: #FAFAFA;
     border: 1px dashed #eee;
     border-left: none;

@@ -6,6 +6,7 @@
 <meta name="renderer" content="webkit">
 <meta http-equiv="Cache-Control" content="no-siteapp" />
 <meta name="baidu-site-verification" content="2KooQz6oQx" />
+<meta name="baidu_union_verify" content="e1abcb85c53a47607d7b9f47b7a1451a">
 <title>觅友_有朋自远方来-web前端，php，javascript,jquery,记录生活学习开发的个人博客</title>
 <meta name="keywords" content="觅友，觅友网，觅友博客，觅友小站，前端，miuu，IT开发，css，css3，js，js特效，php，jquery，ajax，java">
 <meta name="description" content="觅友_有朋自远方来，分享网站开发学习以及工作和生活中的点点滴滴，希望通过此网站，与大家一起交流、成长、进步！">

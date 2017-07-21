@@ -3684,6 +3684,7 @@ ul#filters > .active > span {
 .beauty-list li .img-cover {
     position: relative;
     width: 100%;
+    height: 142px;
     border-radius: 4px;
     overflow: hidden;
 }
@@ -4875,7 +4876,3 @@ ul#filters > .active > span {
         margin: 0 auto 35px;
     }
 }
-
-
-
-

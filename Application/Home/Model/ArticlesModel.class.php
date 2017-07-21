@@ -224,7 +224,7 @@ class ArticlesModel extends Model {
 
 	public function getTops(){
 		//准备查询条件
-		$order = 'click desc';
+		$order = 'rand()';
 		//where条件
 		$where = array('recycle' => 'no','on_sale'=>'yes','recommend'=>'yes');
 		$field = 'id,name,thumb,author,add_time';

@@ -27,7 +27,6 @@
         <div class="col-md-8">
             <div class="flicker-banner">
                 <ul>
-                    
                     <li data-background="http://7xsqlc.com1.z0.glb.clouddn.com/9.jpg">
                         <a href="{:U('Blog/index')}" target="_blank">
                             <div class="flick-title">在技术的海洋里遨游</div>
@@ -52,7 +51,7 @@
                 <foreach name="tops.data" item="v">
                 <li class="top col-md-4" data-index="1">
                     <div>
-                        <div class="img-cover">
+                        <div class="img-cover img-banner">
                             <a href="{:U('Blog/articles',array('id'=>$v['id']))}" target="_blank">
                                 <img src="{$v.thumb}" alt="{$v.name}">
                                 <div class="article-title">
@@ -129,7 +128,7 @@
                 <h4>需要登录才能进入会员中心</h4>
             </div>
             */}
-           
+
 
             <div class="widget widget-posts">
                 <h3>我在路上</h3>
@@ -172,7 +171,7 @@
                                         <span class="">
                                             <b>Hot</b>
                                         </span>
-                                        <img src="{$v.thumb}" alt="{$v.name}"> 
+                                        <img src="{$v.thumb}" alt="{$v.name}">
                                         <div class="article-title">
                                             <div class="article-wrapper">{$v.name}
                                             </div>
@@ -215,7 +214,7 @@
     </div>
 </div>
 </div>
-{/* 
+{/*
 <div class="weixin-tip">
     <p>
         <img src="__IMG__/live_weixin.png" alt="微信打开"/>
@@ -253,8 +252,8 @@
         theme: 'dark'
     });
 
-    
-    {/* 
+
+    {/*
     //微信端判断，提示使用浏览器打开
     $(window).on("load",function(){
         var winHeight = $(window).height();

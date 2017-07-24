@@ -3681,10 +3681,13 @@ ul#filters > .active > span {
     min-height: 70px;
 }
 
+.img-banner {
+    height: 142px;
+}
+
 .beauty-list li .img-cover {
     position: relative;
     width: 100%;
-    height: 142px;
     border-radius: 4px;
     overflow: hidden;
 }

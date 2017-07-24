@@ -116,7 +116,6 @@ $IMG_URL = 'http://7xsqlc.com1.z0.glb.clouddn.com/'; $IMG_THUMB = '?imageView2/1
         <div class="col-md-8">
             <div class="flicker-banner">
                 <ul>
-                    
                     <li data-background="http://7xsqlc.com1.z0.glb.clouddn.com/9.jpg">
                         <a href="<?php echo U('Blog/index');?>" target="_blank">
                             <div class="flick-title">在技术的海洋里遨游</div>
@@ -140,7 +139,7 @@ $IMG_URL = 'http://7xsqlc.com1.z0.glb.clouddn.com/'; $IMG_THUMB = '?imageView2/1
             <ul class="beauty-list row">
                 <?php if(is_array($tops["data"])): foreach($tops["data"] as $key=>$v): ?><li class="top col-md-4" data-index="1">
                     <div>
-                        <div class="img-cover">
+                        <div class="img-cover img-banner">
                             <a href="<?php echo U('Blog/articles',array('id'=>$v['id']));?>" target="_blank">
                                 <img src="<?php echo ($v["thumb"]); ?>" alt="<?php echo ($v["name"]); ?>">
                                 <div class="article-title">
@@ -199,7 +198,7 @@ $IMG_URL = 'http://7xsqlc.com1.z0.glb.clouddn.com/'; $IMG_THUMB = '?imageView2/1
             </div>
 
             
-           
+
 
             <div class="widget widget-posts">
                 <h3>我在路上</h3>
@@ -237,7 +236,7 @@ $IMG_URL = 'http://7xsqlc.com1.z0.glb.clouddn.com/'; $IMG_THUMB = '?imageView2/1
                                         <span class="">
                                             <b>Hot</b>
                                         </span>
-                                        <img src="<?php echo ($v["thumb"]); ?>" alt="<?php echo ($v["name"]); ?>"> 
+                                        <img src="<?php echo ($v["thumb"]); ?>" alt="<?php echo ($v["name"]); ?>">
                                         <div class="article-title">
                                             <div class="article-wrapper"><?php echo ($v["name"]); ?>
                                             </div>
@@ -439,8 +438,8 @@ document.getElementsByTagName('iframe')[0].width="500";
         theme: 'dark'
     });
 
-    
-    {/* 
+
+    {/*
     //微信端判断，提示使用浏览器打开
     $(window).on("load",function(){
         var winHeight = $(window).height();

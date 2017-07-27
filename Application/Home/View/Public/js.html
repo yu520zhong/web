@@ -6,8 +6,35 @@
 <script src="__JS__/common.js"></script>
 <script src="__JS__/main-scripts.js"></script>
 <script src="__JS__/scrollanim.min.js"></script>
+<script src="__JS__/music.js"></script>
+
 
 <script>
+window.onload = function(){
+	MC.music({
+		hasAjax:false,
+		left:'50%',
+		bottom:'50%',
+		musicChanged:function(ret){
+			// alert(ret.url);
+			// getMusic_buffer(ret.url);
+			// return;
+			// var data = ret.data;
+			// var index = ret.index;
+			// var imageUrl = data[index].img_url;
+			// var music_bg = document.getElementById('music-bg');
+			// music_bg.style.background = 'url('+imageUrl+')no-repeat';
+
+		},
+		getMusicInfo:function(data){
+
+		},
+
+		musicPlayByWebAudio:function(ret){
+
+		},
+	});
+}
 {/*增加 MODULE 模版变量到 JS 中*/}
 var ThinkPHP = {
     'MODULE' : '__MODULE__',

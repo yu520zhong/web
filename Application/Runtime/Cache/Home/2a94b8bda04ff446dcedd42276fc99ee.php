@@ -15,6 +15,7 @@
 <!-- Bootstrap core CSS -->
 <link rel="stylesheet" href="/web/Public/Home/css/bootstrap.css" />
 <link rel="stylesheet" href="/web/Public/Home/css/bootstrap-reset.css" />
+<link rel="stylesheet" href="/web/Public/Home/fonts_music/fontCss.css" />
 
 <link rel="stylesheet" href="/web/Public/Home/iconfont/iconfont.css" />
 
@@ -34,12 +35,11 @@
 
 <link rel="stylesheet" href="/web/Public/Home/css/swiper.min.css" />
 <link rel="stylesheet" href="/web/Public/Home/css/animate.css" />
-
+<link rel="stylesheet" href="/web/Public/Home/css/music.css" />
 
 <link rel="stylesheet" href="/web/Public/Home/plugins/layui/css/layui.css" />
 
 <link rel="stylesheet" type="text/css" href="/web/Public/Home/plugins/simple_calendar/css/simple-calendar.css">
-
 
 <link rel="stylesheet" type="text/css" href="/web/Public/Home/plugins/Flickerbanner/css/flickerplate.css">
 <link rel="stylesheet" href="/web/Public/Home/css/index.css" />
@@ -311,7 +311,8 @@ $IMG_URL = 'http://7xsqlc.com1.z0.glb.clouddn.com/'; $IMG_THUMB = '?imageView2/1
             <p class="text-muted text-center weather-content">
                 <iframe src="//www.seniverse.com/weather/weather.aspx?uid=U1E8D42C92&cid=CHBJ000000&l=zh-CHS&p=SMART&a=1&u=C&s=4&m=2&x=0&d=3&fc=C6C6C6&bgc=&bc=&ti=0&in=0&li=" frameborder="0" scrolling="no" width="300" height="27" allowTransparency="true"></iframe>
             </p>
-
+            <div class="music-bg" id="music-bg">
+            </div>
          </div>
     </div>
 </div>
@@ -326,7 +327,6 @@ $IMG_URL = 'http://7xsqlc.com1.z0.glb.clouddn.com/'; $IMG_THUMB = '?imageView2/1
 </footer>
 <!--footer end-->
 
-
 <!-- JavaScript -->
 <!-- js placed at the end of the document so the pages load faster -->
 <script src="/web/Public/Home/js/jquery.js"></script>
@@ -335,8 +335,35 @@ $IMG_URL = 'http://7xsqlc.com1.z0.glb.clouddn.com/'; $IMG_THUMB = '?imageView2/1
 <script src="/web/Public/Home/js/common.js"></script>
 <script src="/web/Public/Home/js/main-scripts.js"></script>
 <script src="/web/Public/Home/js/scrollanim.min.js"></script>
+<script src="/web/Public/Home/js/music.js"></script>
+
 
 <script>
+window.onload = function(){
+	MC.music({
+		hasAjax:false,
+		left:'50%',
+		bottom:'50%',
+		musicChanged:function(ret){
+			// alert(ret.url);
+			// getMusic_buffer(ret.url);
+			// return;
+			// var data = ret.data;
+			// var index = ret.index;
+			// var imageUrl = data[index].img_url;
+			// var music_bg = document.getElementById('music-bg');
+			// music_bg.style.background = 'url('+imageUrl+')no-repeat';
+
+		},
+		getMusicInfo:function(data){
+
+		},
+
+		musicPlayByWebAudio:function(ret){
+
+		},
+	});
+}
 
 var ThinkPHP = {
     'MODULE' : '/web/Home',
@@ -409,6 +436,7 @@ var _hmt = _hmt || [];
 })();
 document.getElementsByTagName('iframe')[0].width="500";
 </script>
+
 
 
 <script src="/web/Public/Home/plugins/simple_calendar/js/simple-calendar-es6.js"></script>

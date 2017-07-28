@@ -13,6 +13,7 @@
 <!-- Bootstrap core CSS -->
 <link rel="stylesheet" href="/Public/Home/css/bootstrap.css" />
 <link rel="stylesheet" href="/Public/Home/css/bootstrap-reset.css" />
+<link rel="stylesheet" href="/Public/Home/fonts_music/fontCss.css" />
 
 <link rel="stylesheet" href="/Public/Home/iconfont/iconfont.css" />
 
@@ -32,12 +33,11 @@
 
 <link rel="stylesheet" href="/Public/Home/css/swiper.min.css" />
 <link rel="stylesheet" href="/Public/Home/css/animate.css" />
-
+<link rel="stylesheet" href="/Public/Home/css/music.css" />
 
 <link rel="stylesheet" href="/Public/Home/plugins/layui/css/layui.css" />
 
 <link rel="stylesheet" type="text/css" href="/Public/Home/plugins/simple_calendar/css/simple-calendar.css">
-
 
 <!-- HTML5 shim and Respond.js IE8 support of HTML5 tooltipss and media queries -->
 <!--[if lt IE 9]>
@@ -226,7 +226,7 @@ $IMG_URL = 'http://7xsqlc.com1.z0.glb.clouddn.com/'; $IMG_THUMB = '?imageView2/1
             <p class="text-muted text-center weather-content">
                 <iframe src="//www.seniverse.com/weather/weather.aspx?uid=U1E8D42C92&cid=CHBJ000000&l=zh-CHS&p=SMART&a=1&u=C&s=4&m=2&x=0&d=3&fc=C6C6C6&bgc=&bc=&ti=0&in=0&li=" frameborder="0" scrolling="no" width="500" height="27" allowTransparency="true"></iframe>
             </p>
-
+            <div class="music-bg" id="music-bg">
          </div>
     </div>
 </div>
@@ -241,7 +241,6 @@ $IMG_URL = 'http://7xsqlc.com1.z0.glb.clouddn.com/'; $IMG_THUMB = '?imageView2/1
 </footer>
 <!--footer end-->
 
-
 <!-- JavaScript -->
 <!-- js placed at the end of the document so the pages load faster -->
 <script src="/Public/Home/js/jquery.js"></script>
@@ -250,8 +249,35 @@ $IMG_URL = 'http://7xsqlc.com1.z0.glb.clouddn.com/'; $IMG_THUMB = '?imageView2/1
 <script src="/Public/Home/js/common.js"></script>
 <script src="/Public/Home/js/main-scripts.js"></script>
 <script src="/Public/Home/js/scrollanim.min.js"></script>
+<script src="/Public/Home/js/music.js"></script>
+
 
 <script>
+window.onload = function(){
+	MC.music({
+		hasAjax:false,
+		left:'50%',
+		bottom:'50%',
+		musicChanged:function(ret){
+			// alert(ret.url);
+			// getMusic_buffer(ret.url);
+			// return;
+			// var data = ret.data;
+			// var index = ret.index;
+			// var imageUrl = data[index].img_url;
+			// var music_bg = document.getElementById('music-bg');
+			// music_bg.style.background = 'url('+imageUrl+')no-repeat';
+
+		},
+		getMusicInfo:function(data){
+
+		},
+
+		musicPlayByWebAudio:function(ret){
+
+		},
+	});
+}
 
 var ThinkPHP = {
     'MODULE' : '/Home',
@@ -324,6 +350,7 @@ var _hmt = _hmt || [];
 })();
 document.getElementsByTagName('iframe')[0].width="500";
 </script>
+
 
 <script src="/Public/Home/plugins/simple_calendar/js/simple-calendar-es6.js"></script>
 <script src="/Public/Home/plugins/simple_calendar/js/simple-calendar-options.js"></script>

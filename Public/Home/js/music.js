@@ -51,7 +51,7 @@
                                         },{
                                             name:'如果有来生',
                                             singer:'谭维维',
-                                            url:'http://7xsqlc.com1.z0.glb.clouddn.com/music/ruguoyoulaisheng.mp3',
+                                            url:'http://7xsqlc.com1.z0.glb.clouddn.com/music/ruguolaisheng.mp3',
                                             img_url:'http://7xsqlc.com1.z0.glb.clouddn.com/music/tanmoumou.jpg'
                                         },{
                                             name:'生活不止眼前的苟且',

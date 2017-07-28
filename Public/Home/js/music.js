@@ -29,20 +29,40 @@
                                             url:'http://7xsqlc.com1.z0.glb.clouddn.com/music/menglishuixiang.mp3',
                                             img_url:'http://7xsqlc.com1.z0.glb.clouddn.com/music/menglishuixiang.jpg',
                                         },{
-                                            name:'Fade',
-                                            singer:'Alan Walker',
-                                            url:'http://oiq8j9er1.bkt.clouddn.com/Alan Walker - Faded.mp3',
-                                            img_url:'http://www.daiwei.org/index/music/musicImg/Faded.jpg',
+                                            name:'冬至',
+                                            singer:'筠子',
+                                            url:'http://7xsqlc.com1.z0.glb.clouddn.com/music/dongzhi.mp3',
+                                            img_url:'http://7xsqlc.com1.z0.glb.clouddn.com/music/junzi.jpg',
                                         },{
-                                            name:'你的爱',
-                                            singer:'王力宏',
-                                            url:'http://oiq8j9er1.bkt.clouddn.com/王力宏 - 你的爱.mp3',
-                                            img_url:'http://www.daiwei.org/index/music/musicImg/%E7%8E%8B%E5%8A%9B%E5%AE%8F-%E4%BD%A0%E7%9A%84%E7%88%B1.jpg'
+                                            name:'平凡之路',
+                                            singer:'朴树',
+                                            url:'http://7xsqlc.com1.z0.glb.clouddn.com/music/pingfanzhilu.mp3',
+                                            img_url:'http://7xsqlc.com1.z0.glb.clouddn.com/music/houhuiwuqi.jpg'
                                         },{
-                                            name:'Such',
-                                            singer:'姜贤敏,赵贤雅',
-                                            url:'http://oiq8j9er1.bkt.clouddn.com/姜贤敏,赵贤雅 - Such.mp3',
-                                            img_url:'http://www.daiwei.org/index/music/musicImg/such.jpg'
+                                            name:'风吹麦浪',
+                                            singer:'李健',
+                                            url:'http://7xsqlc.com1.z0.glb.clouddn.com/music/fengchuimailang.mp3',
+                                            img_url:'http://7xsqlc.com1.z0.glb.clouddn.com/music/lijian.png'
+                                        },{
+                                            name:'曾经的你',
+                                            singer:'许巍',
+                                            url:'http://7xsqlc.com1.z0.glb.clouddn.com/music/cengjingdeni.mp3',
+                                            img_url:'http://7xsqlc.com1.z0.glb.clouddn.com/music/xuwei.jpg'
+                                        },{
+                                            name:'如果有来生',
+                                            singer:'谭维维',
+                                            url:'http://7xsqlc.com1.z0.glb.clouddn.com/music/ruguoyoulaisheng.mp3',
+                                            img_url:'http://7xsqlc.com1.z0.glb.clouddn.com/music/tanmoumou.jpg'
+                                        },{
+                                            name:'生活不止眼前的苟且',
+                                            singer:'许巍',
+                                            url:'http://7xsqlc.com1.z0.glb.clouddn.com/music/shenghuobuzhi.mp3',
+                                            img_url:'http://7xsqlc.com1.z0.glb.clouddn.com/music/shenghuobuzhi.jpg'
+                                        },{
+                                            name:'如果当时',
+                                            singer:'许嵩',
+                                            url:'http://7xsqlc.com1.z0.glb.clouddn.com/music/ruguodangshi.mp3',
+                                            img_url:'http://7xsqlc.com1.z0.glb.clouddn.com/music/xusong.jpg'
                                         }
                                     ],
 

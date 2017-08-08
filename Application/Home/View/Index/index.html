@@ -121,10 +121,10 @@
                                     <img alt="" src="http://7xsqlc.com1.z0.glb.clouddn.com/1494899853_910859139.jpg">
                                 </div>
                                 <a class="about-testimonial-author" href="#">Miuu</a>
-                                <span class="about-testimonial-company">菜鸟站长</span>
+                                <span class="about-testimonial-company">业余站长</span>
                                 <div class="about-testimonial-content">
                                     <p class="about-testimonial-quote">
-                                        耶稣在星期五被钉死在十字架上，那是全世界最绝望的一天。可是三天后就是复活节——所以，人在困境中应学会，至少再等三天！
+                                        耶稣在星期五被钉死在十字架上，那是西方世界最绝望的一天。可是三天后就是复活节——所以，人在困境中应学会，至少再等三天！
                                     </p>
                                 </div>
                             </div>
@@ -148,7 +148,7 @@
                             <p><a class="bds_mail" data-cmd="mail" title="分享到邮件分享"></a></p>
                         </div>
                     </div>
-                    <p class="share-dot-text">关注我</p>
+                    <p class="share-dot-text font13">欢迎关注我的觅友博客网!</p>
                     <script>
                         window._bd_share_config = {
                             common: {
@@ -235,33 +235,20 @@
                     <header class="panel-heading tab-bg-dark-navy-blue">
                         <ul class="nav nav-tabs nav-justified ">
                             <li class="active">
-                                <a data-toggle="tab" href="#news">
-                                    每日一笑
+                                <a data-toggle="tab" href="#events">
+                                    热门软件
                                 </a>
                             </li>
                             <li>
-                                <a data-toggle="tab" href="#events">
-                                    热门软件
+                                <a data-toggle="tab" href="#news">
+                                    每日一笑
                                 </a>
                             </li>
                         </ul>
                     </header>
                     <div class="panel-body">
                         <div class="tab-content tasi-tab">
-                            <div id="news" class="tab-pane active">
-                                <volist name="result.data" id="v">
-                                <article class="media">
-                                    <a href="{$v.url}" href="{$v.url}"  class="fancybox pull-left thumb p-thumb">
-                                        <img src="{$v.url}" alt="">
-                                    </a>
-                                    <div class="media-body">
-                                        <p><a href="{$v.url}" class="cmt-head fancybox">{$v.content}</a></p>
-                                        <p> <i class="icon-time"></i> {$v.updatetime}</p>
-                                    </div>
-                                </article>
-                                </volist>
-                            </div>
-                            <div id="events" class="tab-pane">
+                            <div id="events" class="tab-pane active">
                                 <article class="media">
                                     <ul class="beauty-list">
                                             <volist name="down.data" id="v">
@@ -285,7 +272,19 @@
                                         </volist>
                                     </ul>
                                 </article>
-
+                            </div>
+                            <div id="news" class="tab-pane">
+                                <volist name="result.data" id="v">
+                                <article class="media">
+                                    <a href="{$v.url}" href="{$v.url}"  class="fancybox pull-left thumb p-thumb">
+                                        <img src="{$v.url}" alt="">
+                                    </a>
+                                    <div class="media-body">
+                                        <p><a href="{$v.url}" class="cmt-head fancybox">{$v.content}</a></p>
+                                        <p> <i class="icon-time"></i> {$v.updatetime}</p>
+                                    </div>
+                                </article>
+                                </volist>
                             </div>
                         </div>
                     </div>

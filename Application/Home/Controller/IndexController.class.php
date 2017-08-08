@@ -56,10 +56,10 @@ class IndexController extends CommonController {
 		    if($result['error_code']=='0'){
 		        return $data['result'] =  $result[result];
 		    }else{
-		        echo $result['error_code'].":".$result['reason'];
+		        echo "";
 		    }
 		}else{
-		    echo "请求失败";
+		    echo "";
 		}
 	}
 

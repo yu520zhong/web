@@ -34,7 +34,6 @@
 <link rel="stylesheet" href="/web/Public/Home/css/swiper.min.css" />
 <link rel="stylesheet" href="/web/Public/Home/css/animate.css" />
 <link rel="stylesheet" href="/web/Public/Home/css/music.css" />
-<link rel="stylesheet" href="/web/Public/Home/plugins/templatemo/css/templatemo-style.css" />
 <link rel="stylesheet" href="/web/Public/Home/plugins/layui/css/layui.css" />
 
 <link rel="stylesheet" type="text/css" href="/web/Public/Home/plugins/simple_calendar/css/simple-calendar.css">
@@ -66,13 +65,16 @@ $IMG_URL = 'http://7xsqlc.com1.z0.glb.clouddn.com/'; $IMG_THUMB = '?imageView2/1
                     <div class="horn"><i class="miuu u-shengyin"></i></div>
                     <ul class="newsticker-list">
                         <li class="newsticker-item">
-                            换了阿里云服务器,网站整体速度快多了
+                            本站内容纯属虚构，如有雷同，算我抄你!
                         </li>
                         <li class="newsticker-item">
-                            觅友博客V2.0开始开发中,希望大家喜欢
+                            觅友博客V2.0.2进行时，希望大家喜欢。
                         </li>
                         <li class="newsticker-item">
-                            内容如有侵犯，请立即联系管理员删除
+                            换了阿里云服务器，网站整体速度快多了。
+                        </li>
+                        <li class="newsticker-item">
+                            文章内容如有侵权，请联系站长删除！
                         </li>
                     </ul>
                 </div>
@@ -130,7 +132,7 @@ $IMG_URL = 'http://7xsqlc.com1.z0.glb.clouddn.com/'; $IMG_THUMB = '?imageView2/1
     <div class="content">
     <div class="container space30">
         <div class="row">
-            <div class="col-md-8">
+            <div class="col-md-8 wow fadeInLeft animated animated">
                 <section class="article">
                     <ul class="filter">
                         <li class="filter-title">资源列表</li>
@@ -173,7 +175,7 @@ $IMG_URL = 'http://7xsqlc.com1.z0.glb.clouddn.com/'; $IMG_THUMB = '?imageView2/1
                 </nav>
             </div>
 
-            <div class="col-md-4 sidebar">
+            <div class="col-md-4 sidebar wow fadeInRight animated animated">
 
                 <div class="widget widget-posts">
                     <h3>热门推荐</h3>
@@ -271,8 +273,7 @@ $IMG_URL = 'http://7xsqlc.com1.z0.glb.clouddn.com/'; $IMG_THUMB = '?imageView2/1
 <script src="/web/Public/Home/js/jquery.newsticker.js"></script>
 <script src="/web/Public/Home/js/wow.min.js"></script>
 
-<script src="/web/Public/Home/plugins/templatemo/js/jquery.magnific-popup.min.js"></script>
-<script src="/web/Public/Home/plugins/templatemo/js/jquery.adjustHeightOfPage.js"></script>
+
 
 <script>
 new WOW().init();

@@ -42,6 +42,7 @@
 
 <link rel="stylesheet" type="text/css" href="/web/Public/Home/plugins/Flickerbanner/css/flickerplate.css">
 <link rel="stylesheet" href="/web/Public/Home/css/index.css" />
+<link rel="stylesheet" href="/web/Public/Home/plugins/fancybox/source/jquery.fancybox.css" />
 <link rel="stylesheet" href="/web/Public/Home/plugins/templatemo/css/templatemo-style.css" />
 <!-- HTML5 shim and Respond.js IE8 support of HTML5 tooltipss and media queries -->
 <!--[if lt IE 9]>
@@ -70,13 +71,16 @@ $IMG_URL = 'http://7xsqlc.com1.z0.glb.clouddn.com/'; $IMG_THUMB = '?imageView2/1
                     <div class="horn"><i class="miuu u-shengyin"></i></div>
                     <ul class="newsticker-list">
                         <li class="newsticker-item">
-                            换了阿里云服务器,网站整体速度快多了
+                            本站内容纯属虚构，如有雷同，算我抄你!
                         </li>
                         <li class="newsticker-item">
-                            觅友博客V2.0开始开发中,希望大家喜欢
+                            觅友博客V2.0.2进行时，希望大家喜欢。
                         </li>
                         <li class="newsticker-item">
-                            内容如有侵犯，请立即联系管理员删除
+                            换了阿里云服务器，网站整体速度快多了。
+                        </li>
+                        <li class="newsticker-item">
+                            文章内容如有侵权，请联系站长删除！
                         </li>
                     </ul>
                 </div>
@@ -211,18 +215,18 @@ $IMG_URL = 'http://7xsqlc.com1.z0.glb.clouddn.com/'; $IMG_THUMB = '?imageView2/1
                     <section class="slider">
                         <div class="flexslider">
                         <div class="flex-viewport" style="overflow: hidden; position: relative;"><ul class="slides about-flex-slides" >
-                                <div class="flex-active-slide" style="float: left; display: block;">
-                                    <div class="about-testimonial-image about-circle">
-                                        <img alt="" src="http://7xsqlc.com1.z0.glb.clouddn.com/1494899853_910859139.jpg">
-                                    </div>
-                                    <a class="about-testimonial-author" href="#">Miuu</a>
-                                    <span class="about-testimonial-company">菜鸟站长</span>
-                                    <div class="about-testimonial-content">
-                                        <p class="about-testimonial-quote">
-                                            分享网站开发学习以及工作和生活中的点点滴滴，希望通过此网站，与大家一起交流、成长、进步！
-                                        </p>
-                                    </div>
+                            <div class="flex-active-slide" style="float: left; display: block;">
+                                <div class="about-testimonial-image about-circle">
+                                    <img alt="" src="http://7xsqlc.com1.z0.glb.clouddn.com/1494899853_910859139.jpg">
                                 </div>
+                                <a class="about-testimonial-author" href="#">Miuu</a>
+                                <span class="about-testimonial-company">菜鸟站长</span>
+                                <div class="about-testimonial-content">
+                                    <p class="about-testimonial-quote">
+                                        耶稣在星期五被钉死在十字架上，那是全世界最绝望的一天。可是三天后就是复活节——所以，人在困境中应学会，至少再等三天！
+                                    </p>
+                                </div>
+                            </div>
                     </section>
                 </div>
                 <div class="share-single share-index">
@@ -298,11 +302,14 @@ $IMG_URL = 'http://7xsqlc.com1.z0.glb.clouddn.com/'; $IMG_THUMB = '?imageView2/1
                         <ul class="list-unstyled tag">
                             <li><a href="#">jQuery</a></li>
                             <li><a href="#">React</a></li>
-                            <li><a href="#">js</a></li>
+                            <li><a href="#">前端</a></li>
+                            <li><a href="#">JS</a></li>
                             <li><a href="#">UI</a></li>
                             <li><a href="#">css</a></li>
+                            <li><a href="#">Sublime text</a></li>
                             <li><a href="#">Web</a></li>
                             <li><a href="#">php</a></li>
+                            <li><a href="#">命令行</a></li>
                             <li><a href="#">Java</a></li>
                             <li><a href="#">Git</a></li>
                             <li><a href="#">匿名函数</a></li>
@@ -316,7 +323,7 @@ $IMG_URL = 'http://7xsqlc.com1.z0.glb.clouddn.com/'; $IMG_THUMB = '?imageView2/1
                         <ul class="nav nav-tabs nav-justified ">
                             <li class="active">
                                 <a data-toggle="tab" href="#news">
-                                    最新评论
+                                    每日一笑
                                 </a>
                             </li>
                             <li>
@@ -329,34 +336,15 @@ $IMG_URL = 'http://7xsqlc.com1.z0.glb.clouddn.com/'; $IMG_THUMB = '?imageView2/1
                     <div class="panel-body">
                         <div class="tab-content tasi-tab">
                             <div id="news" class="tab-pane active">
-                                <article class="media">
-                                    <a class="pull-left thumb p-thumb">
-                                        <!--可以放图片-->
+                                <?php if(is_array($result["data"])): $i = 0; $__LIST__ = $result["data"];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i;?><article class="media">
+                                    <a href="<?php echo ($v["url"]); ?>" href="<?php echo ($v["url"]); ?>"  class="fancybox pull-left thumb p-thumb">
+                                        <img src="<?php echo ($v["url"]); ?>" alt="">
                                     </a>
                                     <div class="media-body">
-                                        <p><a href="#" class="cmt-head">大家注意了,我要从畅言拿评论列表了!</a></p>
-                                        <p> <i class="icon-time"></i> 15 分钟前</p>
+                                        <p><a href="<?php echo ($v["url"]); ?>" class="cmt-head fancybox"><?php echo ($v["content"]); ?></a></p>
+                                        <p> <i class="icon-time"></i> <?php echo ($v["updatetime"]); ?></p>
                                     </div>
-                                </article>
-                                <article class="media">
-                                    <a class="pull-left thumb p-thumb">
-                                        <!--可以放图片-->
-                                    </a>
-                                    <div class="media-body">
-                                        <p><a href="#" class="cmt-head">大家注意了,我要从畅言拿评论列表了!</a></p>
-                                        <p> <i class="icon-time"></i>  15 分钟前</p>
-                                    </div>
-                                </article>
-                                <article class="media">
-                                    <a class="pull-left thumb p-thumb">
-                                        <!--可以放图片-->
-                                    </a>
-                                    <div class="media-body">
-                                        <p><a href="#" class="cmt-head">大家注意了,我要从畅言拿评论列表了! </a></p>
-                                        <p> <i class="icon-time"></i> 15 分钟前</p>
-                                    </div>
-                                </article>
-
+                                </article><?php endforeach; endif; else: echo "" ;endif; ?>
                             </div>
                             <div id="events" class="tab-pane">
                                 <article class="media">
@@ -424,7 +412,7 @@ $IMG_URL = 'http://7xsqlc.com1.z0.glb.clouddn.com/'; $IMG_THUMB = '?imageView2/1
 <div class="footer-top clearfix">
     <div class="container">
         <div class="row">
-            <div class="search-index">
+            <div class="search-index wow fadeInUpBig animated">
                 <div>
                     <input type="text" id="word" placeholder="搜索从这里开始..." autocomplete="off">
                     <button type="submit" id="home"></button>
@@ -585,7 +573,8 @@ var _hmt = _hmt || [];
 document.getElementsByTagName('iframe')[0].width="500";
 </script>
 
-
+<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="/web/Public/Home/plugins/fancybox/source/jquery.fancybox.pack.js"></script>
 
 <script src="/web/Public/Home/plugins/simple_calendar/js/simple-calendar-es6.js"></script>
 <script src="/web/Public/Home/plugins/simple_calendar/js/simple-calendar-options.js"></script>
@@ -600,6 +589,7 @@ document.getElementsByTagName('iframe')[0].width="500";
 <script src="/web/Public/Home/js/search.js"></script>
 
 <script>
+    jQuery(".fancybox").fancybox();
     $("#Index_index").addClass("active");
     
     $('.flicker-banner').flicker({

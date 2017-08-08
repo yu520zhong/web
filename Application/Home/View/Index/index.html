@@ -13,6 +13,7 @@
 <include file="Public:css" />
 <link rel="stylesheet" type="text/css" href="__PLUGINS__/Flickerbanner/css/flickerplate.css">
 <link rel="stylesheet" href="__CSS__/index.css" />
+<link rel="stylesheet" href="__PLUGINS__/fancybox/source/jquery.fancybox.css" />
 <link rel="stylesheet" href="__PLUGINS__/templatemo/css/templatemo-style.css" />
 <include file="Public:aside_js" />
 </head>
@@ -115,18 +116,18 @@
                     <section class="slider">
                         <div class="flexslider">
                         <div class="flex-viewport" style="overflow: hidden; position: relative;"><ul class="slides about-flex-slides" >
-                                <div class="flex-active-slide" style="float: left; display: block;">
-                                    <div class="about-testimonial-image about-circle">
-                                        <img alt="" src="http://7xsqlc.com1.z0.glb.clouddn.com/1494899853_910859139.jpg">
-                                    </div>
-                                    <a class="about-testimonial-author" href="#">Miuu</a>
-                                    <span class="about-testimonial-company">菜鸟站长</span>
-                                    <div class="about-testimonial-content">
-                                        <p class="about-testimonial-quote">
-                                            分享网站开发学习以及工作和生活中的点点滴滴，希望通过此网站，与大家一起交流、成长、进步！
-                                        </p>
-                                    </div>
+                            <div class="flex-active-slide" style="float: left; display: block;">
+                                <div class="about-testimonial-image about-circle">
+                                    <img alt="" src="http://7xsqlc.com1.z0.glb.clouddn.com/1494899853_910859139.jpg">
                                 </div>
+                                <a class="about-testimonial-author" href="#">Miuu</a>
+                                <span class="about-testimonial-company">菜鸟站长</span>
+                                <div class="about-testimonial-content">
+                                    <p class="about-testimonial-quote">
+                                        耶稣在星期五被钉死在十字架上，那是全世界最绝望的一天。可是三天后就是复活节——所以，人在困境中应学会，至少再等三天！
+                                    </p>
+                                </div>
+                            </div>
                     </section>
                 </div>
                 <div class="share-single share-index">
@@ -214,11 +215,14 @@
                         <ul class="list-unstyled tag">
                             <li><a href="#">jQuery</a></li>
                             <li><a href="#">React</a></li>
-                            <li><a href="#">js</a></li>
+                            <li><a href="#">前端</a></li>
+                            <li><a href="#">JS</a></li>
                             <li><a href="#">UI</a></li>
                             <li><a href="#">css</a></li>
+                            <li><a href="#">Sublime text</a></li>
                             <li><a href="#">Web</a></li>
                             <li><a href="#">php</a></li>
+                            <li><a href="#">命令行</a></li>
                             <li><a href="#">Java</a></li>
                             <li><a href="#">Git</a></li>
                             <li><a href="#">匿名函数</a></li>
@@ -232,7 +236,7 @@
                         <ul class="nav nav-tabs nav-justified ">
                             <li class="active">
                                 <a data-toggle="tab" href="#news">
-                                    最新评论
+                                    每日一笑
                                 </a>
                             </li>
                             <li>
@@ -245,34 +249,17 @@
                     <div class="panel-body">
                         <div class="tab-content tasi-tab">
                             <div id="news" class="tab-pane active">
+                                <volist name="result.data" id="v">
                                 <article class="media">
-                                    <a class="pull-left thumb p-thumb">
-                                        <!--可以放图片-->
+                                    <a href="{$v.url}" href="{$v.url}"  class="fancybox pull-left thumb p-thumb">
+                                        <img src="{$v.url}" alt="">
                                     </a>
                                     <div class="media-body">
-                                        <p><a href="#" class="cmt-head">大家注意了,我要从畅言拿评论列表了!</a></p>
-                                        <p> <i class="icon-time"></i> 15 分钟前</p>
+                                        <p><a href="{$v.url}" class="cmt-head fancybox">{$v.content}</a></p>
+                                        <p> <i class="icon-time"></i> {$v.updatetime}</p>
                                     </div>
                                 </article>
-                                <article class="media">
-                                    <a class="pull-left thumb p-thumb">
-                                        <!--可以放图片-->
-                                    </a>
-                                    <div class="media-body">
-                                        <p><a href="#" class="cmt-head">大家注意了,我要从畅言拿评论列表了!</a></p>
-                                        <p> <i class="icon-time"></i>  15 分钟前</p>
-                                    </div>
-                                </article>
-                                <article class="media">
-                                    <a class="pull-left thumb p-thumb">
-                                        <!--可以放图片-->
-                                    </a>
-                                    <div class="media-body">
-                                        <p><a href="#" class="cmt-head">大家注意了,我要从畅言拿评论列表了! </a></p>
-                                        <p> <i class="icon-time"></i> 15 分钟前</p>
-                                    </div>
-                                </article>
-
+                                </volist>
                             </div>
                             <div id="events" class="tab-pane">
                                 <article class="media">
@@ -351,7 +338,8 @@
 */}
 <include file="Public:footer_index" />
 <include file="Public:js" />
-
+<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="__PLUGINS__/fancybox/source/jquery.fancybox.pack.js"></script>
 {/*日历*/}
 <script src="__PLUGINS__/simple_calendar/js/simple-calendar-es6.js"></script>
 <script src="__PLUGINS__/simple_calendar/js/simple-calendar-options.js"></script>
@@ -366,6 +354,7 @@
 <script src="__JS__/search.js"></script>
 
 <script>
+    jQuery(".fancybox").fancybox();
     $("#Index_index").addClass("active");
     {/*Flickerplate轮播*/}
     $('.flicker-banner').flicker({

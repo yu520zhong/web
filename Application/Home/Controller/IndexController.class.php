@@ -34,18 +34,18 @@ class IndexController extends CommonController {
 		$data['categoryart'] = $Categoryart->getFamily($cid);
 		$data['cid'] = $cid;
 		$data['p'] = $p;
-		// $data['result'] = $this->joke();
+		$data['result'] = $this->joke();
 		$this->assign($data);
 		$this->display();
 	}
 
 	//joke 每日一笑
 	public function joke() {
-		$url = "http://japi.juhe.cn/joke/content/list.from";
+		$url = "http://japi.juhe.cn/joke/img/text.from";
 		$params = array(
 		      "sort" => "desc",//类型，desc:指定时间之前发布的，asc:指定时间之后发布的
 		      "page" => "2",//当前页数,默认1
-		      "pagesize" => "20",//每次返回条数,默认1,最大20
+		      "pagesize" => "6",//每次返回条数,默认1,最大20
 		      "time" => NOW_TIME,//时间戳（10位），如：1418816972
 		      "key" => "e15b07f065f904c18673c0504d77a9f1",//您申请的key
 		);

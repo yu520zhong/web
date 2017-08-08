@@ -65,13 +65,16 @@ $IMG_URL = 'http://7xsqlc.com1.z0.glb.clouddn.com/'; $IMG_THUMB = '?imageView2/1
                     <div class="horn"><i class="miuu u-shengyin"></i></div>
                     <ul class="newsticker-list">
                         <li class="newsticker-item">
-                            换了阿里云服务器,网站整体速度快多了
+                            本站内容纯属虚构，如有雷同,算我抄你!
                         </li>
                         <li class="newsticker-item">
-                            觅友博客V2.0开始开发中,希望大家喜欢
+                            换了阿里云服务器，网站整体速度快多了。
                         </li>
                         <li class="newsticker-item">
-                            内容如有侵犯，请立即联系管理员删除
+                            觅友博客V2.0.2开始开发中，希望大家喜欢。
+                        </li>
+                        <li class="newsticker-item">
+                            本站内容如有侵权，请联系站长删除！
                         </li>
                     </ul>
                 </div>
@@ -130,7 +133,7 @@ $IMG_URL = 'http://7xsqlc.com1.z0.glb.clouddn.com/'; $IMG_THUMB = '?imageView2/1
 <div class="container space30">
     <div class="row">
         <!--feature start-->
-        <div class="col-md-8">
+        <div class="col-md-8 wow fadeInLeft animated animated">
             <div class="blog-comments">
                 <!-- 如果您配置过sourceid，建议在div标签中配置sourceid、cid(分类id)，没有请忽略  -->
                 <div id="cyEmoji" role="cylabs" data-use="emoji" sid="007"></div>
@@ -142,7 +145,7 @@ $IMG_URL = 'http://7xsqlc.com1.z0.glb.clouddn.com/'; $IMG_THUMB = '?imageView2/1
                 <!-- 畅言评论框 end -->
             </div>
         </div>
-        <div class="col-md-4 sidebar">
+        <div class="col-md-4 sidebar wow fadeInRight animated animated">
             <div class="widget widget-posts" >
                 <h3>给我留言</h3>
                 <div>

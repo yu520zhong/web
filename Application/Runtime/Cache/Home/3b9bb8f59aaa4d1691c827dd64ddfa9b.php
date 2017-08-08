@@ -46,7 +46,6 @@
 <link rel="stylesheet" href="/web/Public/Home/plugins/resume/css/owl.theme.default.min.css">
 <!-- Theme Style -->
 <link rel="stylesheet" href="/web/Public/Home/plugins/resume/css/hero.css">
-<link rel="stylesheet" href="/web/Public/Home/plugins/templatemo/css/templatemo-style.css" />
 <!-- HTML5 shim and Respond.js IE8 support of HTML5 tooltipss and media queries -->
 <!--[if lt IE 9]>
 <script src="/web/Public/Home/js/html5shiv.js"></script>
@@ -74,13 +73,16 @@ $IMG_URL = 'http://7xsqlc.com1.z0.glb.clouddn.com/'; $IMG_THUMB = '?imageView2/1
                     <div class="horn"><i class="miuu u-shengyin"></i></div>
                     <ul class="newsticker-list">
                         <li class="newsticker-item">
-                            换了阿里云服务器,网站整体速度快多了
+                            本站内容纯属虚构，如有雷同，算我抄你!
                         </li>
                         <li class="newsticker-item">
-                            觅友博客V2.0开始开发中,希望大家喜欢
+                            觅友博客V2.0.2进行时，希望大家喜欢。
                         </li>
                         <li class="newsticker-item">
-                            内容如有侵犯，请立即联系管理员删除
+                            换了阿里云服务器，网站整体速度快多了。
+                        </li>
+                        <li class="newsticker-item">
+                            文章内容如有侵权，请联系站长删除！
                         </li>
                     </ul>
                 </div>
@@ -154,7 +156,7 @@ $IMG_URL = 'http://7xsqlc.com1.z0.glb.clouddn.com/'; $IMG_THUMB = '?imageView2/1
             <div class="block-content text-center">
                 <div class="container">
                     <div class="ch-grid about-circle">
-                        <div class="ch-item ch-img-1  wow bounceInDown animated">
+                        <div class="ch-item ch-img-1 wow bounceInDown animated">
                             <div class="ch-info">
                                 <h4>
                                     MIUu<br>29
@@ -530,7 +532,7 @@ $IMG_URL = 'http://7xsqlc.com1.z0.glb.clouddn.com/'; $IMG_THUMB = '?imageView2/1
                     <div class="col-md-12">
                         <div class="owl-carousel-fullwidth owl-carousel-2">
 
-                            <div class="item">
+                            <div class="item wow fadeInUpBig animated">
                                 <div class="col-md-6 col-sm-6 col-xs-6 col-xxs-12 fh5co-item-slide-img">
                                     <img src="/web/Public/Home/plugins/resume/img/owl1.png" alt="Images" class="img-responsive">
                                 </div>
@@ -863,8 +865,7 @@ document.getElementsByTagName('iframe')[0].width="500";
 <!-- FastClick for Mobile/Tablets -->
 <!-- Main JS -->
 <script src="/web/Public/Home/plugins/resume/js/menu.js"></script>
-<script src="/web/Public/Home/plugins/templatemo/js/jquery.magnific-popup.min.js"></script>
-<script src="/web/Public/Home/plugins/templatemo/js/jquery.adjustHeightOfPage.js"></script>
+
 <!-- timer isonscreen -->
 <script src="/web/Public/Home/plugins/resume/js/jquery.isonscreen.js"></script>
 <script src="/web/Public/Home/plugins/resume/js/timercount.js"></script>

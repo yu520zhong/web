@@ -12,8 +12,11 @@
 <link rel="stylesheet" href="__CSS__/bootstrap-reset.css" />
 <link rel="stylesheet" href="__CSS__/style.css" />
 <link rel="stylesheet" href="__CSS__/style-responsive.css" />
-<link rel="stylesheet" href="__PUBLIC__/home/iconfont/iconfont.css" />
+<link rel="stylesheet" href="__PUBLIC__/Home/fonts_music/fontCss.css" />
+<link rel="stylesheet" href="__PUBLIC__/Home/iconfont/iconfont.css" />
 <link href="__PLUGINS__/mixitup/css/mixitup.css" rel="stylesheet" type="text/css" media="all" />
+<link rel="stylesheet" href="__CSS__/music.css" />
+
 <include file="Public:aside_js" />
 </head>
 <body>
@@ -37,20 +40,20 @@
                         <span> </span>
                     </div>
                     <!-- /head-section -->
-                 <ul id="filters" class="clearfix">
+                    <ul id="filters" class="clearfix">
                         <li><span class="filter active" data-filter="app card icon logos web">全部</span></li>
                         <li><span class="filter" data-filter="app">JAVA</span></li>
                         <li><span class="filter" data-filter="card">JS</span></li>
                         <li><span class="filter" data-filter="icon">CSS</span></li>
                         <li><span class="filter" data-filter="logos">HTML</span></li>
-                        </ul>
+                    </ul>
                     <div id="portfoliolist">
                     <div class="portfolio app mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="app" style="display: inline-block; opacity: 1;">
                         <div class="portfolio-wrapper grid_box">
                              <a href="{:U('Document/java')}" class="swipebox"  title="java文档"> <img src="__PLUGINS__/mixitup/images/pic-1.jpg" class="img-responsive" alt=""><span class="zoom-icon"> </span> </a> </a>
                         </div>
                     </div>
-                    <div class="portfolio app mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="app" style="display: inline-block; opacity: 1;">
+                    <div class="portfolio app mix_all wow bounceIn" data-wow-delay="0.4s" data-cat="app" style="display: inline-block; opacity: 1;">
                         <div class="portfolio-wrapper grid_box">
                              <a href="{:U('Document/enumjava')}" class="swipebox"  title="enumjava"> <img src="__PLUGINS__/mixitup/images/pic-2.jpg" class="img-responsive" alt=""><span class="zoom-icon"></span> </a>
 
@@ -128,11 +131,6 @@
 <include file="Public:footer" />
 <include file="Public:js" />
 <script>
-    // js跳转到搜索结果页面
-    $('.search').blur(function() {
-        location.href = ThinkPHP['MODULE'] + '/other/search?keywords=' + $(this).text();
-    });
-
     $("#document_index").addClass("active");
     $("#Function_index").addClass("active");
 </script>

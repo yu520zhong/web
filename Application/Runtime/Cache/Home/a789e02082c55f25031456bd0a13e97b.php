@@ -65,13 +65,16 @@ $IMG_URL = 'http://7xsqlc.com1.z0.glb.clouddn.com/'; $IMG_THUMB = '?imageView2/1
                     <div class="horn"><i class="miuu u-shengyin"></i></div>
                     <ul class="newsticker-list">
                         <li class="newsticker-item">
-                            换了阿里云服务器,网站整体速度快多了
+                            本站内容纯属虚构，如有雷同，算我抄你!
                         </li>
                         <li class="newsticker-item">
-                            觅友博客V2.0开始开发中,希望大家喜欢
+                            觅友博客V2.0.2进行时，希望大家喜欢。
                         </li>
                         <li class="newsticker-item">
-                            内容如有侵犯，请立即联系管理员删除
+                            换了阿里云服务器，网站整体速度快多了。
+                        </li>
+                        <li class="newsticker-item">
+                            文章内容如有侵权，请联系站长删除！
                         </li>
                     </ul>
                 </div>
@@ -130,7 +133,7 @@ $IMG_URL = 'http://7xsqlc.com1.z0.glb.clouddn.com/'; $IMG_THUMB = '?imageView2/1
 <div class="content">
 <div class="container space30">
     <div class="row">
-        <div class="col-md-8">
+        <div class="col-md-8 wow fadeInLeft animated animated">
             <section class="article">
                 
                 <?php if(empty($notes["data"])): ?><p class="no_find">很抱歉，没有找到您需要的文摘!</p><?php else: ?>
@@ -165,7 +168,7 @@ $IMG_URL = 'http://7xsqlc.com1.z0.glb.clouddn.com/'; $IMG_THUMB = '?imageView2/1
             </nav>
         </div>
 
-        <div class="col-md-4 sidebar ">
+        <div class="col-md-4 sidebar wow fadeInRight animated animated">
             <div class="widget widget-posts">
                 <div class="blog-side-item category">
                     <h3 style="margin:0;">文章分类</h3>
@@ -187,40 +190,17 @@ $IMG_URL = 'http://7xsqlc.com1.z0.glb.clouddn.com/'; $IMG_THUMB = '?imageView2/1
                                 </div>
                                 <div class="info-box">
                                     <div class="info-box-inner">
-                                        <span class="text font15">
-                                            <?php echo ($v["name"]); ?>
+                                        <span class="text font14">
+                                            <?php echo ($v["add_time"]); ?>
                                         </span>
-                                        <div class="tips">
-                                            <span class="muted left"><?php echo ($v["add_time"]); ?></span>
-                                            <span class="muted right">阅读（<?php echo ($v["click"]); ?>）</span>
+                                        <div>
+                                            <span class="article-meta"><?php echo ($v["name"]); ?></span>
                                         </div>
                                     </div>
                                 </div>
                             </a>
                         </li><?php endforeach; endif; ?>
                 </ul>
-            </div>
-            <div class="widget widget-posts">
-                <div class="blog-side-item category">
-                    <h3>文章归档</h3>
-                    <ul class="list-unstyled">
-                        <li>
-                            <a href="" ><i class="  icon-angle-right"></i>2017年01月</a>
-                        </li>
-                        <li>
-                            <a href="" ><i class="  icon-angle-right"></i>2017年02月</a>
-                        </li>
-                        <li>
-                            <a href="" ><i class="  icon-angle-right"></i>2017年03月</a>
-                        </li>
-                        <li>
-                            <a href="" ><i class="  icon-angle-right"></i>2017年04月</a>
-                        </li>
-                        <li>
-                            <a href="" ><i class="  icon-angle-right"></i>2017年05月</a>
-                        </li>
-                    </ul>
-                </div>
             </div>
             <div class="widget widget-posts clearfix">
                 <div id="calendar"></div>

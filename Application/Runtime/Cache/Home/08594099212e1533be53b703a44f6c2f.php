@@ -66,13 +66,16 @@ $IMG_URL = 'http://7xsqlc.com1.z0.glb.clouddn.com/'; $IMG_THUMB = '?imageView2/1
                     <div class="horn"><i class="miuu u-shengyin"></i></div>
                     <ul class="newsticker-list">
                         <li class="newsticker-item">
-                            换了阿里云服务器,网站整体速度快多了
+                            本站内容纯属虚构，如有雷同，算我抄你!
                         </li>
                         <li class="newsticker-item">
-                            觅友博客V2.0开始开发中,希望大家喜欢
+                            觅友博客V2.0.2进行时，希望大家喜欢。
                         </li>
                         <li class="newsticker-item">
-                            内容如有侵犯，请立即联系管理员删除
+                            换了阿里云服务器，网站整体速度快多了。
+                        </li>
+                        <li class="newsticker-item">
+                            文章内容如有侵权，请联系站长删除！
                         </li>
                     </ul>
                 </div>
@@ -131,7 +134,7 @@ $IMG_URL = 'http://7xsqlc.com1.z0.glb.clouddn.com/'; $IMG_THUMB = '?imageView2/1
 <div class="container space30">
     <div class="row">
         <!--feature start-->
-        <div class="col-md-8">
+        <div class="col-md-8 wow fadeInLeft animated animated">
             <div class="content-wrap">
                 <div class="content">
                     <?php if(is_array($navs)): $i = 0; $__LIST__ = $navs;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i;?><div class="navs-box"><h2><a href="/blogs/0"><?php echo ($v["name"]); ?></a></h2>
@@ -142,7 +145,7 @@ $IMG_URL = 'http://7xsqlc.com1.z0.glb.clouddn.com/'; $IMG_THUMB = '?imageView2/1
                 </div>
             </div>
         </div>
-        <div class="col-md-4 sidebar">
+        <div class="col-md-4 sidebar wow fadeInRight animated animated">
             <div class="navs-widget widget-b-list">
                 <?php if(is_array($tools)): $i = 0; $__LIST__ = $tools;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i;?><h4><?php echo ($v["name"]); ?></h4>
                     <ul>
@@ -327,7 +330,7 @@ var _hmt = _hmt || [];
 document.getElementsByTagName('iframe')[0].width="500";
 </script>
 
-            
+
 <script>
 $("#nav_index").addClass("active");
 $("#Function_index").addClass("active");

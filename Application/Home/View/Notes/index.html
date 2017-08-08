@@ -24,7 +24,7 @@
 <div class="content">
 <div class="container space30">
     <div class="row">
-        <div class="col-md-8">
+        <div class="col-md-8 wow fadeInLeft animated animated">
             <section class="article">
                 {/*
                     <ul id="filters" class="list-unstyled news-filter clearfix">
@@ -79,7 +79,7 @@
             </nav>
         </div>
 
-        <div class="col-md-4 sidebar ">
+        <div class="col-md-4 sidebar wow fadeInRight animated animated">
             <div class="widget widget-posts">
                 <div class="blog-side-item category">
                     <h3 style="margin:0;">文章分类</h3>
@@ -110,12 +110,11 @@
                                 </div>
                                 <div class="info-box">
                                     <div class="info-box-inner">
-                                        <span class="text font15">
-                                            {$v.name}
+                                        <span class="text font14">
+                                            {$v.add_time}
                                         </span>
-                                        <div class="tips">
-                                            <span class="muted left">{$v.add_time}</span>
-                                            <span class="muted right">阅读（{$v.click}）</span>
+                                        <div>
+                                            <span class="article-meta">{$v.name}</span>
                                         </div>
                                     </div>
                                 </div>
@@ -123,28 +122,6 @@
                         </li>
                     </foreach>
                 </ul>
-            </div>
-            <div class="widget widget-posts">
-                <div class="blog-side-item category">
-                    <h3>文章归档</h3>
-                    <ul class="list-unstyled">
-                        <li>
-                            <a href="" ><i class="  icon-angle-right"></i>2017年01月</a>
-                        </li>
-                        <li>
-                            <a href="" ><i class="  icon-angle-right"></i>2017年02月</a>
-                        </li>
-                        <li>
-                            <a href="" ><i class="  icon-angle-right"></i>2017年03月</a>
-                        </li>
-                        <li>
-                            <a href="" ><i class="  icon-angle-right"></i>2017年04月</a>
-                        </li>
-                        <li>
-                            <a href="" ><i class="  icon-angle-right"></i>2017年05月</a>
-                        </li>
-                    </ul>
-                </div>
             </div>
             <div class="widget widget-posts clearfix">
                 <div id="calendar"></div>

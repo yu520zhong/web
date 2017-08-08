@@ -9,43 +9,43 @@
 <meta name="keywords" content="<?php echo ($articles["keywords"]); ?>">
 <meta name="description" content="<?php echo ($articles["desc"]); ?>">
 <!-- Bootstrap core CSS -->
-<link rel="shortcut icon" href="/Public/Home/img/favicon.png">
+<link rel="shortcut icon" href="/web/Public/Home/img/favicon.png">
 
 <!-- Bootstrap core CSS -->
-<link rel="stylesheet" href="/Public/Home/css/bootstrap.css" />
-<link rel="stylesheet" href="/Public/Home/css/bootstrap-reset.css" />
+<link rel="stylesheet" href="/web/Public/Home/css/bootstrap.css" />
+<link rel="stylesheet" href="/web/Public/Home/css/bootstrap-reset.css" />
+<link rel="stylesheet" href="/web/Public/Home/fonts_music/fontCss.css" />
 
-<link rel="stylesheet" href="/Public/Home/iconfont/iconfont.css" />
+<link rel="stylesheet" href="/web/Public/Home/iconfont/iconfont.css" />
 
 <!--external css-->
-<link rel="stylesheet" href="/Public/Home/assets/font-awesome/css/font-awesome.css" />
-<link rel="stylesheet" href="/Public/Home/assets/bxslider/jquery.bxslider.css" />
+<link rel="stylesheet" href="/web/Public/Home/assets/font-awesome/css/font-awesome.css" />
+<link rel="stylesheet" href="/web/Public/Home/assets/bxslider/jquery.bxslider.css" />
 
-<link rel="stylesheet" href="/Public/Home/assets/revolution_slider/css/rs-style.css" media="screen" />
-<link rel="stylesheet" href="/Public/Home/assets/revolution_slider/rs-plugin/css/settings.css" media="screen" />
+<link rel="stylesheet" href="/web/Public/Home/assets/revolution_slider/css/rs-style.css" media="screen" />
+<link rel="stylesheet" href="/web/Public/Home/assets/revolution_slider/rs-plugin/css/settings.css" media="screen" />
 
 <!-- Custom styles for this template -->
-<link rel="stylesheet" href="/Public/Home/css/style.css" />
-<link rel="stylesheet" href="/Public/Home/css/style-responsive.css" />
+<link rel="stylesheet" href="/web/Public/Home/css/style.css" />
+<link rel="stylesheet" href="/web/Public/Home/css/style-responsive.css" />
 
-<link rel="stylesheet" href="/Public/Home/css/kissui.css" />
-<link rel="stylesheet" href="/Public/Home/css/scrollanim.min.css" />
+<link rel="stylesheet" href="/web/Public/Home/css/kissui.css" />
+<link rel="stylesheet" href="/web/Public/Home/css/scrollanim.min.css" />
 
-<link rel="stylesheet" href="/Public/Home/css/swiper.min.css" />
-<link rel="stylesheet" href="/Public/Home/css/animate.css" />
+<link rel="stylesheet" href="/web/Public/Home/css/swiper.min.css" />
+<link rel="stylesheet" href="/web/Public/Home/css/animate.css" />
+<link rel="stylesheet" href="/web/Public/Home/css/music.css" />
+<link rel="stylesheet" href="/web/Public/Home/plugins/templatemo/css/templatemo-style.css" />
+<link rel="stylesheet" href="/web/Public/Home/plugins/layui/css/layui.css" />
 
+<link rel="stylesheet" type="text/css" href="/web/Public/Home/plugins/simple_calendar/css/simple-calendar.css">
 
-<link rel="stylesheet" href="/Public/Home/plugins/layui/css/layui.css" />
-
-<link rel="stylesheet" type="text/css" href="/Public/Home/plugins/simple_calendar/css/simple-calendar.css">
-
-
-<link rel="stylesheet" href="/Public/Home/plugins/docs/docs.css" />
+<link rel="stylesheet" href="/web/Public/Home/plugins/docs/docs.css" />
 
 <!-- HTML5 shim and Respond.js IE8 support of HTML5 tooltipss and media queries -->
 <!--[if lt IE 9]>
-<script src="/Public/Home/js/html5shiv.js"></script>
-<script src="/Public/Home/js/respond.min.js"></script>
+<script src="/web/Public/Home/js/html5shiv.js"></script>
+<script src="/web/Public/Home/js/respond.min.js"></script>
 <![endif]-->
 <?php
 $IMG_URL = 'http://7xsqlc.com1.z0.glb.clouddn.com/'; $IMG_THUMB = '?imageView2/1/w/100/h/100'; $IMG_BIG_W = '?imageView2/2/w/840'; $IMG_BIG_H = '?imageView2/2/h/300'; $IMG_BIG_WI = '?imageView2/2/w/840/interlace/1'; $IMG_BIG_HI = '?imageView2/2/h/300/interlace/1'; $IMG_SMALL_165 = '?imageView2/2/w/165'; ?>
@@ -61,9 +61,24 @@ $IMG_URL = 'http://7xsqlc.com1.z0.glb.clouddn.com/'; $IMG_THUMB = '?imageView2/1
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="">MI<span>Uu</span></a>
+                <a class="navbar-brand" href="/web">MI<span>Uu</span></a>
             </div>
+
             <div class="navbar-collapse collapse ">
+                <div class="newsticker">
+                    <div class="horn"><i class="miuu u-shengyin"></i></div>
+                    <ul class="newsticker-list">
+                        <li class="newsticker-item">
+                            换了阿里云服务器,网站整体速度快多了
+                        </li>
+                        <li class="newsticker-item">
+                            觅友博客V2.0开始开发中,希望大家喜欢
+                        </li>
+                        <li class="newsticker-item">
+                            内容如有侵犯，请立即联系管理员删除
+                        </li>
+                    </ul>
+                </div>
                 <ul class="nav navbar-nav" id="menu">
                     <li id="Index_index"><a href="<?php echo U('Index/index');?>">首页</a></li>
                     <li id="Blog_index"><a href="<?php echo U('Blog/index');?>">技术文摘</a></li>
@@ -100,10 +115,13 @@ $IMG_URL = 'http://7xsqlc.com1.z0.glb.clouddn.com/'; $IMG_THUMB = '?imageView2/1
             </div>
         </div>
     </div>
+    <div id="loader-wrapper">
+            <div id="loader"></div>
+            <div class="loader-section section-left"></div>
+            <div class="loader-section section-right"></div>
+        </div>
 </header>
 <!--header end-->
-
-
 
 <!-- revolution slider start -->
     <div class="focusbox">
@@ -236,14 +254,14 @@ $IMG_URL = 'http://7xsqlc.com1.z0.glb.clouddn.com/'; $IMG_THUMB = '?imageView2/1
             <p class="text-muted text-center weather-content">
                 <iframe src="//www.seniverse.com/weather/weather.aspx?uid=U1E8D42C92&cid=CHBJ000000&l=zh-CHS&p=SMART&a=1&u=C&s=4&m=2&x=0&d=3&fc=C6C6C6&bgc=&bc=&ti=0&in=0&li=" frameborder="0" scrolling="no" width="500" height="27" allowTransparency="true"></iframe>
             </p>
-
+            <div class="music-bg" id="music-bg">
          </div>
     </div>
 </div>
 <div class="footer-bottom">
     <div class="container">
         <div class="copyrights">
-            <p class="text-center">Copyright &copy; 2017.Company name All rights reserved.<a href="<?php echo U('Index/index');?>">觅友网</a> - More <a href="<?php echo U('About/index');?>" target="_blank" title="关于我">-About Us</a></p>
+            <p class="text-center">Copyright &copy; 2017.Company name All rights reserved.<a href="<?php echo U('Other/webstate');?>">觅友网</a>_V2.0.1_苏ICP备17033567号-1 - More <a href="<?php echo U('About/index');?>" target="_blank" title="关于我">-About Us</a></p>
         </div>
     </div>
 </div>
@@ -251,16 +269,15 @@ $IMG_URL = 'http://7xsqlc.com1.z0.glb.clouddn.com/'; $IMG_THUMB = '?imageView2/1
 </footer>
 <!--footer end-->
 
+<script src="/web/Public/Home/js/jquery.js"></script>
+<script src="/web/Public/Home/js/bootstrap.min.js"></script>
+<script src="/web/Public/Home/js/common.js"></script>
 
-<script src="/Public/Home/js/jquery.js"></script>
-<script src="/Public/Home/js/bootstrap.min.js"></script>
-<script src="/Public/Home/js/common.js"></script>
+<script type="text/javascript" src="/web/Public/Home/plugins/layui/layui.js"></script>
+<script type="text/javascript" src="/web/Public/Home/plugins/layui/lay/dest/layui.all.js"></script>
 
-<script type="text/javascript" src="/Public/Home/plugins/layui/layui.js"></script>
-<script type="text/javascript" src="/Public/Home/plugins/layui/lay/dest/layui.all.js"></script>
-
-<script src="/Public/Home/plugins/docs/docs.min.js"></script>
-<script src="/Public/Home/plugins/zeroClipboard/ZeroClipboard.js"></script>
+<script src="/web/Public/Home/plugins/docs/docs.min.js"></script>
+<script src="/web/Public/Home/plugins/zeroClipboard/ZeroClipboard.js"></script>
 
 
 <script>

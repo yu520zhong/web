@@ -62,5 +62,72 @@ class NotesController extends CommonController {
 		$this->display();
 	}
 
+	public function files() {
+		$Notes = D('Notes');
+		$moon = array(
+            0 => array(
+                'name' => "一月",
+                'chilrenList' => array()
+            ),
+            1 => array(
+                'name' => "二月",
+                'chilrenList' => array()
+            ),
+            2 => array(
+                'name' => "三月",
+                'chilrenList' => array()
+            ),
+            3 => array(
+                'name' => "四月",
+                'chilrenList' => array()
+            ),
+            4 => array(
+                'name' => "五月",
+                'chilrenList' => array()
+            ),
+            5 => array(
+                'name' => "六月",
+                'chilrenList' => array()
+            ),
+            6 => array(
+                'name' => "七月",
+                'chilrenList' => array()
+            ),
+            7 => array(
+                'name' => "八月",
+                'chilrenList' => []
+            ),
+            8 => array(
+                'name' => "九月",
+                'chilrenList' => []
+            ),
+            9 => array(
+                'name' => "十月",
+                'chilrenList' => []
+            ),
+            10 => array(
+                'name' => "十一月",
+                'chilrenList' => []
+            ),
+            11=> array(
+                'name' => "十二月",
+                'chilrenList' => []
+            ),
+        );
+        $list = $Notes->findAll();
+
+        foreach ($list as $k => $v) {
+            $create_time = $v['add_time']; // 2017-03-04
+
+            $moonNum = date('m', strtotime($create_time));  //取月份
+            if ($moonNum > 0) {
+                $key = count($moon[$moonNum]['chilrenList'][$k]);		//总数
+               	$moon[$moonNum]['chilrenList'][$key] = $v;		//键值对
+            }
+        }
+
+		$this->display();
+	}
+
 
 }

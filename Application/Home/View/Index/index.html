@@ -13,6 +13,7 @@
 <include file="Public:css" />
 <link rel="stylesheet" type="text/css" href="__PLUGINS__/Flickerbanner/css/flickerplate.css">
 <link rel="stylesheet" href="__CSS__/index.css" />
+<link rel="stylesheet" href="__PLUGINS__/templatemo/css/templatemo-style.css" />
 <include file="Public:aside_js" />
 </head>
 <body>
@@ -27,10 +28,10 @@
         <div class="col-md-8">
             <div class="flicker-banner">
                 <ul>
-                    <li data-background="http://7xsqlc.com1.z0.glb.clouddn.com/9.jpg">
-                        <a href="{:U('Blog/index')}" target="_blank">
+                    <li   data-background="http://7xsqlc.com1.z0.glb.clouddn.com/9.jpg">
+                        <a  href="{:U('Blog/index')}" target="_blank">
                             <div class="flick-title">在技术的海洋里遨游</div>
-                            <div class="flick-sub-text">学习是对自己最好的投资</div>
+                            <div class="flick-sub-text"  data-wow-duration="1s" data-wow-delay="1s">学习是对自己最好的投资</div>
                         </a>
                     </li>
                     <li data-background="http://7xsqlc.com1.z0.glb.clouddn.com/1484646719_1832088484.jpg">
@@ -70,7 +71,7 @@
                     </h4>
                     <notempty name="articles.data">
                         <foreach name="articles.data" item="v">
-                            <article class="excerpt excerpt-text">
+                            <article class="excerpt excerpt-text wow fadeInLeft animated animated">
                                 <div class="row">
                                     <notempty name="v.thumb">
                                         <div class="col-md-4">
@@ -109,15 +110,64 @@
                 </nav>
         </div>
         <div class="col-md-4 sidebar">
+            <div class="widget widget-posts">
+                <div class="about-testimonial boxed-style about-flexslider ">
+                    <section class="slider">
+                        <div class="flexslider">
+                        <div class="flex-viewport" style="overflow: hidden; position: relative;"><ul class="slides about-flex-slides" >
+                                <div class="flex-active-slide" style="float: left; display: block;">
+                                    <div class="about-testimonial-image about-circle">
+                                        <img alt="" src="http://7xsqlc.com1.z0.glb.clouddn.com/1494899853_910859139.jpg">
+                                    </div>
+                                    <a class="about-testimonial-author" href="#">Miuu</a>
+                                    <span class="about-testimonial-company">菜鸟站长</span>
+                                    <div class="about-testimonial-content">
+                                        <p class="about-testimonial-quote">
+                                            分享网站开发学习以及工作和生活中的点点滴滴，希望通过此网站，与大家一起交流、成长、进步！
+                                        </p>
+                                    </div>
+                                </div>
+                    </section>
+                </div>
+                <div class="share-single share-index">
+                    <div class="action-share bdsharebuttonbox bdshare-button-style0-16" data-bd-bind="1473947264016">
+                        <div class="share-dot">
+                            <p><a class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a></p>
+                        </div>
+                        <div class="share-dot">
+                            <p><a class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a></p>
+                        </div>
+                        <div class="share-dot">
+                            <p><a class="bds_weixin" data-cmd="weixin" title="分享到微信"></a></p>
+                        </div>
+                        <div class="share-dot">
+                            <p><a class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a></p>
+                        </div>
+                        <div class="share-dot">
+                            <p><a class="bds_mail" data-cmd="mail" title="分享到邮件分享"></a></p>
+                        </div>
+                    </div>
+                    <p class="share-dot-text">关注我</p>
+                    <script>
+                        window._bd_share_config = {
+                            common: {
+                                "bdText": "",
+                                "bdMini": "2",
+                                "bdMiniList": false,
+                                "bdPic": "",
+                                "bdStyle": "0"
+                            },
+                            share: [{
+                                bdCustomStyle: "http://7xsqlc.com1.z0.glb.clouddn.com/css/share.css"
+                            }]
+                        }
+                        with(document) 0[(getElementsByTagName("head")[0] || body).appendChild(createElement("script")).src = "http://bdimg.share.baidu.com/static/api/js/share.js?cdnversion=" + ~(-new Date() / 36e5)];
+                    </script>
+                </div>
+            </div>
             <div class="widget widget-posts clearfix">
                 <div id="calendar"></div>
             </div>
-            <div class="widget widget-posts" >
-                <div class="widget-banner">
-                    <a href="#" target="_blank" rel="nofollow"><img src="http://7xsqlc.com1.z0.glb.clouddn.com/banner/small-4.jpg" class="full-img"></a>
-                </div>
-            </div>
-
             {/*
             <div class="widget signboard">
                 <strong>会员中心</strong>
@@ -129,7 +179,131 @@
             </div>
             */}
 
+            <div class="widget widget-posts">
+                <div class="about-carousel">
+                    <div id="myCarousel" class="carousel slide">
+                        <!-- Carousel items -->
+                        <div class="carousel-inner">
+                            <volist name="essay" id="v">
+                                <if condition="$key eq 0"><div class="item active">
+                                    <else /><div class="item">
+                                </if>
+                                <a href="{:U('Essay/essay',array('id'=>$v['id']))}" target="_blank" >
+                                    <img src="{$v.thumb}" alt="{$v.name}">
+                                </a>
+                                    <div class="carousel-caption">
+                                        <p>{$v.name}</p>
+                                    </div>
+                                </div>
+                            </volist>
+                        </div>
+                        <!-- Carousel nav -->
+                        <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+                            <i class="icon-angle-left"></i>
+                        </a>
+                        <a class="carousel-control right" href="#myCarousel" data-slide="next">
+                            <i class="icon-angle-right"></i>
+                        </a>
+                    </div>
+                </div>
 
+            </div>
+            <div class="widget widget-posts blog-side-item">
+                <div class="tags">
+                        <h3>热门标签</h3>
+                        <ul class="list-unstyled tag">
+                            <li><a href="#">jQuery</a></li>
+                            <li><a href="#">React</a></li>
+                            <li><a href="#">js</a></li>
+                            <li><a href="#">UI</a></li>
+                            <li><a href="#">css</a></li>
+                            <li><a href="#">Web</a></li>
+                            <li><a href="#">php</a></li>
+                            <li><a href="#">Java</a></li>
+                            <li><a href="#">Git</a></li>
+                            <li><a href="#">匿名函数</a></li>
+                        </ul>
+                    </div>
+            </div>
+
+            <div class="widget widget-posts">
+                <section class="panel tab">
+                    <header class="panel-heading tab-bg-dark-navy-blue">
+                        <ul class="nav nav-tabs nav-justified ">
+                            <li class="active">
+                                <a data-toggle="tab" href="#news">
+                                    最新评论
+                                </a>
+                            </li>
+                            <li>
+                                <a data-toggle="tab" href="#events">
+                                    热门软件
+                                </a>
+                            </li>
+                        </ul>
+                    </header>
+                    <div class="panel-body">
+                        <div class="tab-content tasi-tab">
+                            <div id="news" class="tab-pane active">
+                                <article class="media">
+                                    <a class="pull-left thumb p-thumb">
+                                        <!--可以放图片-->
+                                    </a>
+                                    <div class="media-body">
+                                        <p><a href="#" class="cmt-head">大家注意了,我要从畅言拿评论列表了!</a></p>
+                                        <p> <i class="icon-time"></i> 15 分钟前</p>
+                                    </div>
+                                </article>
+                                <article class="media">
+                                    <a class="pull-left thumb p-thumb">
+                                        <!--可以放图片-->
+                                    </a>
+                                    <div class="media-body">
+                                        <p><a href="#" class="cmt-head">大家注意了,我要从畅言拿评论列表了!</a></p>
+                                        <p> <i class="icon-time"></i>  15 分钟前</p>
+                                    </div>
+                                </article>
+                                <article class="media">
+                                    <a class="pull-left thumb p-thumb">
+                                        <!--可以放图片-->
+                                    </a>
+                                    <div class="media-body">
+                                        <p><a href="#" class="cmt-head">大家注意了,我要从畅言拿评论列表了! </a></p>
+                                        <p> <i class="icon-time"></i> 15 分钟前</p>
+                                    </div>
+                                </article>
+
+                            </div>
+                            <div id="events" class="tab-pane">
+                                <article class="media">
+                                    <ul class="beauty-list">
+                                            <volist name="down.data" id="v">
+                                            <li class="top">
+                                                <div class="img-left-cover">
+                                                    <a href="{:U('Down/down',array('id'=>$v['id']))}" target="_blank" >
+                                                        <span>{$i}</span>
+                                                        <empty name="v.thumb">
+                                                            <img src="http://7xsqlc.com1.z0.glb.clouddn.com/default.jpg" alt="">
+                                                            <else/>
+                                                            <img src="{$v.thumb}" class="img-responsive" alt="{$v.name}">
+                                                        </empty>
+                                                    </a>
+                                                </div>
+                                                <div class="right-article">
+                                                    <h4><a href="{:U('Down/down',array('id'=>$v['id']))}" target="_blank">{$v.name}</a></h4>
+                                                    <div class="time_about" title="2017-04-27 11:23">
+                                                        <span>下载（{$v.click}）</span></div>
+                                                </div>
+                                            </li>
+                                        </volist>
+                                    </ul>
+                                </article>
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
             <div class="widget widget-posts">
                 <h3>我在路上</h3>
                 <ul>
@@ -158,57 +332,11 @@
                     </foreach>
                 </ul>
             </div>
-
-
-            <div class="widget widget-posts">
-                <h3>美文分享</h3>
-                <ul class="beauty-list">
-                    <foreach name="essay" item="v">
-                        <li class="top" data-index="1">
-                            <div>
-                                <div class="img-cover">
-                                    <a href="{:U('Essay/essay',array('id'=>$v['id']))}" target="_blank" >
-                                        <span class="">
-                                            <b>Hot</b>
-                                        </span>
-                                        <img src="{$v.thumb}" alt="{$v.name}">
-                                        <div class="article-title">
-                                            <div class="article-wrapper">{$v.name}
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </li>
-                    </foreach>
-                </ul>
+            <div class="widget widget-posts" >
+                <div class="widget-banner">
+                    <a href="#" target="_blank" rel="nofollow"><img src="http://7xsqlc.com1.z0.glb.clouddn.com/banner/small-4.jpg" class="full-img"></a>
+                </div>
             </div>
-
-            <div class="widget widget-posts">
-                <h3>热门软件</h3>
-                <ul class="beauty-list">
-                        <volist name="down.data" id="v">
-                        <li class="top">
-                            <div class="img-left-cover">
-                                <a href="{:U('Down/down',array('id'=>$v['id']))}" target="_blank" >
-                                    <span>{$i}</span>
-                                    <empty name="v.thumb">
-                                        <img src="http://7xsqlc.com1.z0.glb.clouddn.com/default.jpg" alt="">
-                                        <else/>
-                                        <img src="{$v.thumb}" class="img-responsive" alt="{$v.name}">
-                                    </empty>
-                                </a>
-                            </div>
-                            <div class="right-article">
-                                <h4><a href="{:U('Down/down',array('id'=>$v['id']))}" target="_blank">{$v.name}</a></h4>
-                                <div class="time_about" title="2017-04-27 11:23">
-                                    <span>下载（{$v.click}）</span></div>
-                            </div>
-                        </li>
-                    </volist>
-                </ul>
-            </div>
-
         </div>
         <!--feature end-->
     </div>
@@ -232,6 +360,8 @@
 <script src="__PLUGINS__/Flickerbanner/js/jquery-finger-v0.1.0.min.js"></script>
 <script src="__PLUGINS__/Flickerbanner/js/flickerplate.min.js"></script>
 
+<script src="__PLUGINS__/templatemo/js/jquery.magnific-popup.min.js"></script>
+<script src="__PLUGINS__/templatemo/js/jquery.adjustHeightOfPage.js"></script>
 
 <script src="__JS__/search.js"></script>
 

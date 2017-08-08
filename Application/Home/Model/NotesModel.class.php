@@ -170,4 +170,9 @@ class NotesModel extends Model {
 		);
 	}
 
+    public function findAll(){
+		$field = 'id,add_time';
+		return $this->field($field)->select();
+    }
+
 }

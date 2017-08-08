@@ -6,7 +6,7 @@
 <meta name="renderer" content="webkit">
 <meta http-equiv="Cache-Control" content="no-siteapp" />
 <meta name="baidu-site-verification" content="UcNs3IHDX2" />
-<title>全站搜索_觅友</title>
+<title>{$keyword}_觅友</title>
 <meta name="keywords" content="觅友，觅友网，觅友博客，觅友小站，前端，miuu,IT开发，css，css3，js，js特效，php，jquery，ajax，java">
 <meta name="description" content="觅友_有朋自远方来，分享自己网站开发学习以及工作和生活中的点点滴滴，希望通过此网站，与大家一起交流、成长、进步！">
 <include file="Public:css" />
@@ -23,7 +23,7 @@
     <div class="row clearfix">
         <div class="col-md-8">
             <div class="demo">
-                <div class="mb10">
+                <div class="mb20">
                     <div class="row clearfix">
                         <div class="col-md-8">
                             <div class="search-pre" id="search">
@@ -50,42 +50,33 @@
                         <notempty name="articles.data">
                             <foreach name="articles.data" item="v">
                                 <article class="excerpt excerpt-text">
-                                    <div class="row">
-                                        <header class="col-md-8">
-                                            <a href="{:U('Blog/articles',array('id'=>$v['id']))}">
-                                                <h2 class="blog-title">
-                                                    {$v.name}
-                                                </h2>
-                                            </a>
-                                            <ul class="meta list-inline">
-                                                <li>
-                                                    {$v.add_time}
-                                                </li>
-                                                <li class="pv">
-                                                    阅读({$v.click})
-                                                </li>
-                                                <li class="pv">
-                                                    作者：{$v.author}
-                                                </li>
-                                            </ul>
-                                            <div class="blog-desc">
-                                                {$v.content|truncate_cn=160,'...',0}
-                                            </div>
-                                        </header>
-                                        <div class="col-md-4">
-                                            <a href="#" class="nail">
-                                                <img src="{$v.thumb}"
-                                                alt="" class="thumb">
-                                            </a>
-                                        </div>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <a href="{:U('Blog/articles',array('id'=>$v['id']))}" class="nail">
+                                            <img src="{$v.thumb}" alt="入手React+Redux开发，是应该先写逻辑，还是先写UI呢?" class="thumb">
+                                        </a>
                                     </div>
-                                </article>
+                                    <header class="col-md-8">
+                                        <div class="excerpt-content">
+                                            <h2 class="title">
+                                                <a href="{:U('Blog/articles',array('id'=>$v['id']))}" target="_blank" title="入手React+Redux开发，是应该先写逻辑，还是先写UI呢?">{$v.name}</a>
+                                            </h2>
+                                            <ul class="meta list-inline">
+                                                <li><i class="miuu u-rili"></i> {$v.add_time}</li>
+                                                <li class="writer"><i class="miuu u-yonghu"></i>{$v.author}</li>
+                                                <li class="pv"><i class="miuu u-eyes"></i> 阅读({$v.click})</li>
+                                            </ul>
+                                            <p class="note">{$v.content|truncate_cn=160,'...',0}</p>
+                                        </div>
+                                    </header>
+                                </div>
+                            </article>
                             </foreach>
                             <nav class="text-center">
                                 <div class="pagination">{$articles.pagelist}</div>
                             </nav>
                             <else/>
-                            对不起，此关键字没有搜索到相关内容！
+                            对不起，您搜索的<strong class="red">{$keyword}</strong>没有相关内容！
                         </notempty>
                     </section>
                 </div>

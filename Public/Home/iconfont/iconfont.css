@@ -1,17 +1,16 @@
 
 @font-face {font-family: "miuu";
-  src: url('iconfont.eot?t=1486612298430'); /* IE9*/
-  src: url('iconfont.eot?t=1486612298430#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url('iconfont.woff?t=1486612298430') format('woff'), /* chrome, firefox */
-  url('iconfont.ttf?t=1486612298430') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
-  url('iconfont.svg?t=1486612298430#miuu') format('svg'); /* iOS 4.1- */
+  src: url('iconfont.eot?t=1501576448196'); /* IE9*/
+  src: url('iconfont.eot?t=1501576448196#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('iconfont.woff?t=1501576448196') format('woff'), /* chrome, firefox */
+  url('iconfont.ttf?t=1501576448196') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('iconfont.svg?t=1501576448196#miuu') format('svg'); /* iOS 4.1- */
 }
 
 .miuu {
   font-family:"miuu" !important;
   font-size:16px;
   font-style:normal;
-  vertical-align: -2px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -27,6 +26,8 @@
 .u-ordersearch:before { content: "\e660"; }
 
 .u-display:before { content: "\e600"; }
+
+.u-notification:before { content: "\e644"; }
 
 .u-dianhua:before { content: "\e606"; }
 

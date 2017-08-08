@@ -23,6 +23,7 @@ class OtherController extends CommonController {
 		$Articles = D('Articles');
 		$keyword = $_GET['keywords'];
 		//获取搜索结果
+		$data['keyword'] = $keyword;
 		$data['articles'] = $Articles->getSearch($p,$keyword);
 		/*if (!empty($keyword)) {
 			//判断之后，获取搜索结果
@@ -71,6 +72,10 @@ class OtherController extends CommonController {
 
 	}
 
+	public function webstate() {
+		$this->display();
+	}
+
 	/*public function orders() {
 		$keyword = trim(I('get.keyword'));
 		$Articles = D('Articles');
@@ -107,7 +112,3 @@ class OtherController extends CommonController {
 		$this->display();
 	}*/
 }
-
-
-
-

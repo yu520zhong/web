@@ -206,7 +206,14 @@
 <include file="Public:footer" />
 <include file="Public:js" />
 <include file="Public:layui_showcode" />
-
+<script>
+    $(function() {
+        //点击关键词跳转
+        $('.article-tags a').click(function() {
+            window.open( ThinkPHP['MODULE'] + '/other/search?keywords=' + $(this).text());
+        });
+    })
+</script>
 
 <script src="__PLUGINS__/zeroclipboard/ZeroCilpdocs.js"></script>
 <script src="__PLUGINS__/zeroclipboard/ZeroClipboard.js"></script>
@@ -285,6 +292,3 @@ function Preview(obj) {
 
 </body>
 </html>
-
-
-

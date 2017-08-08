@@ -10,43 +10,43 @@
 <title>觅友_有朋自远方来-web前端，php，javascript,jquery,记录生活学习开发的个人博客</title>
 <meta name="keywords" content="觅友，觅友网，觅友博客，觅友小站，前端，miuu，IT开发，css，css3，js，js特效，php，jquery，ajax，java">
 <meta name="description" content="觅友_有朋自远方来，分享网站开发学习以及工作和生活中的点点滴滴，希望通过此网站，与大家一起交流、成长、进步！">
-<link rel="shortcut icon" href="/Public/Home/img/favicon.png">
+<link rel="shortcut icon" href="/web/Public/Home/img/favicon.png">
 
 <!-- Bootstrap core CSS -->
-<link rel="stylesheet" href="/Public/Home/css/bootstrap.css" />
-<link rel="stylesheet" href="/Public/Home/css/bootstrap-reset.css" />
-<link rel="stylesheet" href="/Public/Home/fonts_music/fontCss.css" />
+<link rel="stylesheet" href="/web/Public/Home/css/bootstrap.css" />
+<link rel="stylesheet" href="/web/Public/Home/css/bootstrap-reset.css" />
+<link rel="stylesheet" href="/web/Public/Home/fonts_music/fontCss.css" />
 
-<link rel="stylesheet" href="/Public/Home/iconfont/iconfont.css" />
+<link rel="stylesheet" href="/web/Public/Home/iconfont/iconfont.css" />
 
 <!--external css-->
-<link rel="stylesheet" href="/Public/Home/assets/font-awesome/css/font-awesome.css" />
-<link rel="stylesheet" href="/Public/Home/assets/bxslider/jquery.bxslider.css" />
+<link rel="stylesheet" href="/web/Public/Home/assets/font-awesome/css/font-awesome.css" />
+<link rel="stylesheet" href="/web/Public/Home/assets/bxslider/jquery.bxslider.css" />
 
-<link rel="stylesheet" href="/Public/Home/assets/revolution_slider/css/rs-style.css" media="screen" />
-<link rel="stylesheet" href="/Public/Home/assets/revolution_slider/rs-plugin/css/settings.css" media="screen" />
+<link rel="stylesheet" href="/web/Public/Home/assets/revolution_slider/css/rs-style.css" media="screen" />
+<link rel="stylesheet" href="/web/Public/Home/assets/revolution_slider/rs-plugin/css/settings.css" media="screen" />
 
 <!-- Custom styles for this template -->
-<link rel="stylesheet" href="/Public/Home/css/style.css" />
-<link rel="stylesheet" href="/Public/Home/css/style-responsive.css" />
+<link rel="stylesheet" href="/web/Public/Home/css/style.css" />
+<link rel="stylesheet" href="/web/Public/Home/css/style-responsive.css" />
 
-<link rel="stylesheet" href="/Public/Home/css/kissui.css" />
-<link rel="stylesheet" href="/Public/Home/css/scrollanim.min.css" />
+<link rel="stylesheet" href="/web/Public/Home/css/kissui.css" />
+<link rel="stylesheet" href="/web/Public/Home/css/scrollanim.min.css" />
 
-<link rel="stylesheet" href="/Public/Home/css/swiper.min.css" />
-<link rel="stylesheet" href="/Public/Home/css/animate.css" />
-<link rel="stylesheet" href="/Public/Home/css/music.css" />
+<link rel="stylesheet" href="/web/Public/Home/css/swiper.min.css" />
+<link rel="stylesheet" href="/web/Public/Home/css/animate.css" />
+<link rel="stylesheet" href="/web/Public/Home/css/music.css" />
+<link rel="stylesheet" href="/web/Public/Home/plugins/layui/css/layui.css" />
 
-<link rel="stylesheet" href="/Public/Home/plugins/layui/css/layui.css" />
+<link rel="stylesheet" type="text/css" href="/web/Public/Home/plugins/simple_calendar/css/simple-calendar.css">
 
-<link rel="stylesheet" type="text/css" href="/Public/Home/plugins/simple_calendar/css/simple-calendar.css">
-
-<link rel="stylesheet" type="text/css" href="/Public/Home/plugins/Flickerbanner/css/flickerplate.css">
-<link rel="stylesheet" href="/Public/Home/css/index.css" />
+<link rel="stylesheet" type="text/css" href="/web/Public/Home/plugins/Flickerbanner/css/flickerplate.css">
+<link rel="stylesheet" href="/web/Public/Home/css/index.css" />
+<link rel="stylesheet" href="/web/Public/Home/plugins/templatemo/css/templatemo-style.css" />
 <!-- HTML5 shim and Respond.js IE8 support of HTML5 tooltipss and media queries -->
 <!--[if lt IE 9]>
-<script src="/Public/Home/js/html5shiv.js"></script>
-<script src="/Public/Home/js/respond.min.js"></script>
+<script src="/web/Public/Home/js/html5shiv.js"></script>
+<script src="/web/Public/Home/js/respond.min.js"></script>
 <![endif]-->
 <?php
 $IMG_URL = 'http://7xsqlc.com1.z0.glb.clouddn.com/'; $IMG_THUMB = '?imageView2/1/w/100/h/100'; $IMG_BIG_W = '?imageView2/2/w/840'; $IMG_BIG_H = '?imageView2/2/h/300'; $IMG_BIG_WI = '?imageView2/2/w/840/interlace/1'; $IMG_BIG_HI = '?imageView2/2/h/300/interlace/1'; $IMG_SMALL_165 = '?imageView2/2/w/165'; ?>
@@ -62,9 +62,24 @@ $IMG_URL = 'http://7xsqlc.com1.z0.glb.clouddn.com/'; $IMG_THUMB = '?imageView2/1
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="">MI<span>Uu</span></a>
+                <a class="navbar-brand" href="/web">MI<span>Uu</span></a>
             </div>
+
             <div class="navbar-collapse collapse ">
+                <div class="newsticker">
+                    <div class="horn"><i class="miuu u-shengyin"></i></div>
+                    <ul class="newsticker-list">
+                        <li class="newsticker-item">
+                            换了阿里云服务器,网站整体速度快多了
+                        </li>
+                        <li class="newsticker-item">
+                            觅友博客V2.0开始开发中,希望大家喜欢
+                        </li>
+                        <li class="newsticker-item">
+                            内容如有侵犯，请立即联系管理员删除
+                        </li>
+                    </ul>
+                </div>
                 <ul class="nav navbar-nav" id="menu">
                     <li id="Index_index"><a href="<?php echo U('Index/index');?>">首页</a></li>
                     <li id="Blog_index"><a href="<?php echo U('Blog/index');?>">技术文摘</a></li>
@@ -101,10 +116,13 @@ $IMG_URL = 'http://7xsqlc.com1.z0.glb.clouddn.com/'; $IMG_THUMB = '?imageView2/1
             </div>
         </div>
     </div>
+    <div id="loader-wrapper">
+            <div id="loader"></div>
+            <div class="loader-section section-left"></div>
+            <div class="loader-section section-right"></div>
+        </div>
 </header>
 <!--header end-->
-
-
 
 
 
@@ -116,10 +134,10 @@ $IMG_URL = 'http://7xsqlc.com1.z0.glb.clouddn.com/'; $IMG_THUMB = '?imageView2/1
         <div class="col-md-8">
             <div class="flicker-banner">
                 <ul>
-                    <li data-background="http://7xsqlc.com1.z0.glb.clouddn.com/9.jpg">
-                        <a href="<?php echo U('Blog/index');?>" target="_blank">
+                    <li   data-background="http://7xsqlc.com1.z0.glb.clouddn.com/9.jpg">
+                        <a  href="<?php echo U('Blog/index');?>" target="_blank">
                             <div class="flick-title">在技术的海洋里遨游</div>
-                            <div class="flick-sub-text">学习是对自己最好的投资</div>
+                            <div class="flick-sub-text"  data-wow-duration="1s" data-wow-delay="1s">学习是对自己最好的投资</div>
                         </a>
                     </li>
                     <li data-background="http://7xsqlc.com1.z0.glb.clouddn.com/1484646719_1832088484.jpg">
@@ -155,7 +173,7 @@ $IMG_URL = 'http://7xsqlc.com1.z0.glb.clouddn.com/'; $IMG_THUMB = '?imageView2/1
                         <span>最新文摘</span>
                         <a href="<?php echo U('Blog/index');?>"><span class="more">浏览更多</span></a>
                     </h4>
-                    <?php if(!empty($articles["data"])): if(is_array($articles["data"])): foreach($articles["data"] as $key=>$v): ?><article class="excerpt excerpt-text">
+                    <?php if(!empty($articles["data"])): if(is_array($articles["data"])): foreach($articles["data"] as $key=>$v): ?><article class="excerpt excerpt-text wow fadeInLeft animated animated">
                                 <div class="row">
                                     <?php if(!empty($v["thumb"])): ?><div class="col-md-4">
                                             <a href="<?php echo U('Blog/articles',array('id'=>$v['id']));?>" class="nail">
@@ -188,18 +206,184 @@ $IMG_URL = 'http://7xsqlc.com1.z0.glb.clouddn.com/'; $IMG_THUMB = '?imageView2/1
                 </nav>
         </div>
         <div class="col-md-4 sidebar">
+            <div class="widget widget-posts">
+                <div class="about-testimonial boxed-style about-flexslider ">
+                    <section class="slider">
+                        <div class="flexslider">
+                        <div class="flex-viewport" style="overflow: hidden; position: relative;"><ul class="slides about-flex-slides" >
+                                <div class="flex-active-slide" style="float: left; display: block;">
+                                    <div class="about-testimonial-image about-circle">
+                                        <img alt="" src="http://7xsqlc.com1.z0.glb.clouddn.com/1494899853_910859139.jpg">
+                                    </div>
+                                    <a class="about-testimonial-author" href="#">Miuu</a>
+                                    <span class="about-testimonial-company">菜鸟站长</span>
+                                    <div class="about-testimonial-content">
+                                        <p class="about-testimonial-quote">
+                                            分享网站开发学习以及工作和生活中的点点滴滴，希望通过此网站，与大家一起交流、成长、进步！
+                                        </p>
+                                    </div>
+                                </div>
+                    </section>
+                </div>
+                <div class="share-single share-index">
+                    <div class="action-share bdsharebuttonbox bdshare-button-style0-16" data-bd-bind="1473947264016">
+                        <div class="share-dot">
+                            <p><a class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a></p>
+                        </div>
+                        <div class="share-dot">
+                            <p><a class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a></p>
+                        </div>
+                        <div class="share-dot">
+                            <p><a class="bds_weixin" data-cmd="weixin" title="分享到微信"></a></p>
+                        </div>
+                        <div class="share-dot">
+                            <p><a class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a></p>
+                        </div>
+                        <div class="share-dot">
+                            <p><a class="bds_mail" data-cmd="mail" title="分享到邮件分享"></a></p>
+                        </div>
+                    </div>
+                    <p class="share-dot-text">关注我</p>
+                    <script>
+                        window._bd_share_config = {
+                            common: {
+                                "bdText": "",
+                                "bdMini": "2",
+                                "bdMiniList": false,
+                                "bdPic": "",
+                                "bdStyle": "0"
+                            },
+                            share: [{
+                                bdCustomStyle: "http://7xsqlc.com1.z0.glb.clouddn.com/css/share.css"
+                            }]
+                        }
+                        with(document) 0[(getElementsByTagName("head")[0] || body).appendChild(createElement("script")).src = "http://bdimg.share.baidu.com/static/api/js/share.js?cdnversion=" + ~(-new Date() / 36e5)];
+                    </script>
+                </div>
+            </div>
             <div class="widget widget-posts clearfix">
                 <div id="calendar"></div>
             </div>
-            <div class="widget widget-posts" >
-                <div class="widget-banner">
-                    <a href="#" target="_blank" rel="nofollow"><img src="http://7xsqlc.com1.z0.glb.clouddn.com/banner/small-4.jpg" class="full-img"></a>
-                </div>
-            </div>
-
             
 
+            <div class="widget widget-posts">
+                <div class="about-carousel">
+                    <div id="myCarousel" class="carousel slide">
+                        <!-- Carousel items -->
+                        <div class="carousel-inner">
+                            <?php if(is_array($essay)): $i = 0; $__LIST__ = $essay;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i; if($key == 0): ?><div class="item active">
+                                    <?php else: ?><div class="item"><?php endif; ?>
+                                <a href="<?php echo U('Essay/essay',array('id'=>$v['id']));?>" target="_blank" >
+                                    <img src="<?php echo ($v["thumb"]); ?>" alt="<?php echo ($v["name"]); ?>">
+                                </a>
+                                    <div class="carousel-caption">
+                                        <p><?php echo ($v["name"]); ?></p>
+                                    </div>
+                                </div><?php endforeach; endif; else: echo "" ;endif; ?>
+                        </div>
+                        <!-- Carousel nav -->
+                        <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+                            <i class="icon-angle-left"></i>
+                        </a>
+                        <a class="carousel-control right" href="#myCarousel" data-slide="next">
+                            <i class="icon-angle-right"></i>
+                        </a>
+                    </div>
+                </div>
 
+            </div>
+            <div class="widget widget-posts blog-side-item">
+                <div class="tags">
+                        <h3>热门标签</h3>
+                        <ul class="list-unstyled tag">
+                            <li><a href="#">jQuery</a></li>
+                            <li><a href="#">React</a></li>
+                            <li><a href="#">js</a></li>
+                            <li><a href="#">UI</a></li>
+                            <li><a href="#">css</a></li>
+                            <li><a href="#">Web</a></li>
+                            <li><a href="#">php</a></li>
+                            <li><a href="#">Java</a></li>
+                            <li><a href="#">Git</a></li>
+                            <li><a href="#">匿名函数</a></li>
+                        </ul>
+                    </div>
+            </div>
+
+            <div class="widget widget-posts">
+                <section class="panel tab">
+                    <header class="panel-heading tab-bg-dark-navy-blue">
+                        <ul class="nav nav-tabs nav-justified ">
+                            <li class="active">
+                                <a data-toggle="tab" href="#news">
+                                    最新评论
+                                </a>
+                            </li>
+                            <li>
+                                <a data-toggle="tab" href="#events">
+                                    热门软件
+                                </a>
+                            </li>
+                        </ul>
+                    </header>
+                    <div class="panel-body">
+                        <div class="tab-content tasi-tab">
+                            <div id="news" class="tab-pane active">
+                                <article class="media">
+                                    <a class="pull-left thumb p-thumb">
+                                        <!--可以放图片-->
+                                    </a>
+                                    <div class="media-body">
+                                        <p><a href="#" class="cmt-head">大家注意了,我要从畅言拿评论列表了!</a></p>
+                                        <p> <i class="icon-time"></i> 15 分钟前</p>
+                                    </div>
+                                </article>
+                                <article class="media">
+                                    <a class="pull-left thumb p-thumb">
+                                        <!--可以放图片-->
+                                    </a>
+                                    <div class="media-body">
+                                        <p><a href="#" class="cmt-head">大家注意了,我要从畅言拿评论列表了!</a></p>
+                                        <p> <i class="icon-time"></i>  15 分钟前</p>
+                                    </div>
+                                </article>
+                                <article class="media">
+                                    <a class="pull-left thumb p-thumb">
+                                        <!--可以放图片-->
+                                    </a>
+                                    <div class="media-body">
+                                        <p><a href="#" class="cmt-head">大家注意了,我要从畅言拿评论列表了! </a></p>
+                                        <p> <i class="icon-time"></i> 15 分钟前</p>
+                                    </div>
+                                </article>
+
+                            </div>
+                            <div id="events" class="tab-pane">
+                                <article class="media">
+                                    <ul class="beauty-list">
+                                            <?php if(is_array($down["data"])): $i = 0; $__LIST__ = $down["data"];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i;?><li class="top">
+                                                <div class="img-left-cover">
+                                                    <a href="<?php echo U('Down/down',array('id'=>$v['id']));?>" target="_blank" >
+                                                        <span><?php echo ($i); ?></span>
+                                                        <?php if(empty($v["thumb"])): ?><img src="http://7xsqlc.com1.z0.glb.clouddn.com/default.jpg" alt="">
+                                                            <?php else: ?>
+                                                            <img src="<?php echo ($v["thumb"]); ?>" class="img-responsive" alt="<?php echo ($v["name"]); ?>"><?php endif; ?>
+                                                    </a>
+                                                </div>
+                                                <div class="right-article">
+                                                    <h4><a href="<?php echo U('Down/down',array('id'=>$v['id']));?>" target="_blank"><?php echo ($v["name"]); ?></a></h4>
+                                                    <div class="time_about" title="2017-04-27 11:23">
+                                                        <span>下载（<?php echo ($v["click"]); ?>）</span></div>
+                                                </div>
+                                            </li><?php endforeach; endif; else: echo "" ;endif; ?>
+                                    </ul>
+                                </article>
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
             <div class="widget widget-posts">
                 <h3>我在路上</h3>
                 <ul>
@@ -224,51 +408,11 @@ $IMG_URL = 'http://7xsqlc.com1.z0.glb.clouddn.com/'; $IMG_THUMB = '?imageView2/1
                         </li><?php endforeach; endif; ?>
                 </ul>
             </div>
-
-
-            <div class="widget widget-posts">
-                <h3>美文分享</h3>
-                <ul class="beauty-list">
-                    <?php if(is_array($essay)): foreach($essay as $key=>$v): ?><li class="top" data-index="1">
-                            <div>
-                                <div class="img-cover">
-                                    <a href="<?php echo U('Essay/essay',array('id'=>$v['id']));?>" target="_blank" >
-                                        <span class="">
-                                            <b>Hot</b>
-                                        </span>
-                                        <img src="<?php echo ($v["thumb"]); ?>" alt="<?php echo ($v["name"]); ?>">
-                                        <div class="article-title">
-                                            <div class="article-wrapper"><?php echo ($v["name"]); ?>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </li><?php endforeach; endif; ?>
-                </ul>
+            <div class="widget widget-posts" >
+                <div class="widget-banner">
+                    <a href="#" target="_blank" rel="nofollow"><img src="http://7xsqlc.com1.z0.glb.clouddn.com/banner/small-4.jpg" class="full-img"></a>
+                </div>
             </div>
-
-            <div class="widget widget-posts">
-                <h3>热门软件</h3>
-                <ul class="beauty-list">
-                        <?php if(is_array($down["data"])): $i = 0; $__LIST__ = $down["data"];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i;?><li class="top">
-                            <div class="img-left-cover">
-                                <a href="<?php echo U('Down/down',array('id'=>$v['id']));?>" target="_blank" >
-                                    <span><?php echo ($i); ?></span>
-                                    <?php if(empty($v["thumb"])): ?><img src="http://7xsqlc.com1.z0.glb.clouddn.com/default.jpg" alt="">
-                                        <?php else: ?>
-                                        <img src="<?php echo ($v["thumb"]); ?>" class="img-responsive" alt="<?php echo ($v["name"]); ?>"><?php endif; ?>
-                                </a>
-                            </div>
-                            <div class="right-article">
-                                <h4><a href="<?php echo U('Down/down',array('id'=>$v['id']));?>" target="_blank"><?php echo ($v["name"]); ?></a></h4>
-                                <div class="time_about" title="2017-04-27 11:23">
-                                    <span>下载（<?php echo ($v["click"]); ?>）</span></div>
-                            </div>
-                        </li><?php endforeach; endif; else: echo "" ;endif; ?>
-                </ul>
-            </div>
-
         </div>
         <!--feature end-->
     </div>
@@ -319,7 +463,7 @@ $IMG_URL = 'http://7xsqlc.com1.z0.glb.clouddn.com/'; $IMG_THUMB = '?imageView2/1
 <div class="footer-bottom">
     <div class="container">
         <div class="copyrights">
-            <p class="text-center">Copyright &copy; 2017.Company name All rights reserved.<a href="<?php echo U('Index/index');?>">觅友网</a> - More <a href="<?php echo U('About/index');?>" target="_blank" title="关于我">-About Us</a></p>
+            <p class="text-center">Copyright &copy; 2017.Company name All rights reserved.<a href="<?php echo U('Other/webstate');?>">觅友网</a>_V2.0.1_苏ICP备17033567号-1 - More <a href="<?php echo U('About/index');?>" target="_blank" title="关于我">-About Us</a></p>
         </div>
     </div>
 </div>
@@ -329,16 +473,20 @@ $IMG_URL = 'http://7xsqlc.com1.z0.glb.clouddn.com/'; $IMG_THUMB = '?imageView2/1
 
 <!-- JavaScript -->
 <!-- js placed at the end of the document so the pages load faster -->
-<script src="/Public/Home/js/jquery.js"></script>
-<script src="/Public/Home/js/bootstrap.min.js"></script>
-<script src="/Public/Home/js/hover-dropdown.js"></script>
-<script src="/Public/Home/js/common.js"></script>
-<script src="/Public/Home/js/main-scripts.js"></script>
-<script src="/Public/Home/js/scrollanim.min.js"></script>
-<script src="/Public/Home/js/music.js"></script>
+<script src="/web/Public/Home/js/jquery.js"></script>
+<script src="/web/Public/Home/js/bootstrap.min.js"></script>
+<script src="/web/Public/Home/js/hover-dropdown.js"></script>
+<script src="/web/Public/Home/js/common.js"></script>
+<script src="/web/Public/Home/js/main-scripts.js"></script>
+<script src="/web/Public/Home/js/scrollanim.min.js"></script>
+<script src="/web/Public/Home/js/music.js"></script>
+<script src="/web/Public/Home/js/jquery.newsticker.js"></script>
+<script src="/web/Public/Home/js/wow.min.js"></script>
+
 
 
 <script>
+new WOW().init();
 window.onload = function(){
 	MC.music({
 		hasAjax:false,
@@ -366,20 +514,20 @@ window.onload = function(){
 }
 
 var ThinkPHP = {
-    'MODULE' : '/Home',
-    'ROOT' : '',
-    'IMG' : '/Public/<?php echo MODULE_NAME;?>/img',
-    'FACE' : '/Public/<?php echo MODULE_NAME;?>/face',
-    'PLUGINS' : '/Public/<?php echo MODULE_NAME;?>/plugins',
-    'JS' : '/Public/Home/js',
-    'UPLOADIFY' : '/Public/Home/uploadify',
+    'MODULE' : '/web/Home',
+    'ROOT' : '/web',
+    'IMG' : '/web/Public/<?php echo MODULE_NAME;?>/img',
+    'FACE' : '/web/Public/<?php echo MODULE_NAME;?>/face',
+    'PLUGINS' : '/web/Public/<?php echo MODULE_NAME;?>/plugins',
+    'JS' : '/web/Public/Home/js',
+    'UPLOADIFY' : '/web/Public/Home/uploadify',
     'UPLOADER' : '<?php echo U("File/upload");?>',
     'INDEX' : '<?php echo U("Index/index");?>',
     'SEARCH' : '<?php echo U("Home/Other/search");?>',
 };
 </script>
-<script type="text/javascript" src="/Public/Home/plugins/layui/layui.js"></script>
-<script type="text/javascript" src="/Public/Home/plugins/layui/lay/dest/layui.all.js"></script>
+<script type="text/javascript" src="/web/Public/Home/plugins/layui/layui.js"></script>
+<script type="text/javascript" src="/web/Public/Home/plugins/layui/lay/dest/layui.all.js"></script>
 
 <script>
 var _hmt = _hmt || [];
@@ -439,15 +587,17 @@ document.getElementsByTagName('iframe')[0].width="500";
 
 
 
-<script src="/Public/Home/plugins/simple_calendar/js/simple-calendar-es6.js"></script>
-<script src="/Public/Home/plugins/simple_calendar/js/simple-calendar-options.js"></script>
+<script src="/web/Public/Home/plugins/simple_calendar/js/simple-calendar-es6.js"></script>
+<script src="/web/Public/Home/plugins/simple_calendar/js/simple-calendar-options.js"></script>
 
-<script src="/Public/Home/plugins/Flickerbanner/js/modernizr-custom-v2.7.1.min.js"></script>
-<script src="/Public/Home/plugins/Flickerbanner/js/jquery-finger-v0.1.0.min.js"></script>
-<script src="/Public/Home/plugins/Flickerbanner/js/flickerplate.min.js"></script>
+<script src="/web/Public/Home/plugins/Flickerbanner/js/modernizr-custom-v2.7.1.min.js"></script>
+<script src="/web/Public/Home/plugins/Flickerbanner/js/jquery-finger-v0.1.0.min.js"></script>
+<script src="/web/Public/Home/plugins/Flickerbanner/js/flickerplate.min.js"></script>
 
+<script src="/web/Public/Home/plugins/templatemo/js/jquery.magnific-popup.min.js"></script>
+<script src="/web/Public/Home/plugins/templatemo/js/jquery.adjustHeightOfPage.js"></script>
 
-<script src="/Public/Home/js/search.js"></script>
+<script src="/web/Public/Home/js/search.js"></script>
 
 <script>
     $("#Index_index").addClass("active");

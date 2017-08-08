@@ -24,8 +24,8 @@
     }
 
     $(function(){
-        var word = $("#word").val();
         $("#netWork").click(function() {
+            var word = $("#word").val();
             var item = "http://www.baidu.com/s?word="+word;
             window.open(item);
             return false;
@@ -34,6 +34,11 @@
         //点击关键词跳转
         $('#home').click(function() {
             location.href = ThinkPHP['MODULE'] + '/other/search?keywords=' + $("#word").val();
+        });
+
+        //点击关键词跳转
+        $('.tag li a').click(function() {
+            window.open( ThinkPHP['MODULE'] + '/other/search?keywords=' + $(this).text());
         });
 
         //搜索框回车跳转

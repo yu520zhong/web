@@ -43,7 +43,7 @@
 <link rel="stylesheet" type="text/css" href="/web/Public/Home/plugins/Flickerbanner/css/flickerplate.css">
 <link rel="stylesheet" href="/web/Public/Home/css/index.css" />
 <link rel="stylesheet" href="/web/Public/Home/plugins/fancybox/source/jquery.fancybox.css" />
-<link rel="stylesheet" href="/web/Public/Home/plugins/templatemo/css/templatemo-style.css" />
+<!-- <link rel="stylesheet" href="/web/Public/Home/plugins/templatemo/css/templatemo-style.css" /> -->
 <!-- HTML5 shim and Respond.js IE8 support of HTML5 tooltipss and media queries -->
 <!--[if lt IE 9]>
 <script src="/web/Public/Home/js/html5shiv.js"></script>
@@ -64,9 +64,6 @@ $IMG_URL = 'http://7xsqlc.com1.z0.glb.clouddn.com/'; $IMG_THUMB = '?imageView2/1
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" href="/web">MI<span>Uu</span></a>
-            </div>
-
-            <div class="navbar-collapse collapse ">
                 <div class="newsticker">
                     <div class="horn"><i class="miuu u-shengyin"></i></div>
                     <ul class="newsticker-list">
@@ -84,6 +81,10 @@ $IMG_URL = 'http://7xsqlc.com1.z0.glb.clouddn.com/'; $IMG_THUMB = '?imageView2/1
                         </li>
                     </ul>
                 </div>
+            </div>
+
+            <div class="navbar-collapse collapse ">
+
                 <ul class="nav navbar-nav" id="menu">
                     <li id="Index_index"><a href="<?php echo U('Index/index');?>">首页</a></li>
                     <li id="Blog_index"><a href="<?php echo U('Blog/index');?>">技术文摘</a></li>

@@ -11,6 +11,12 @@
         margin-bottom: 2%;
     }
 }
+@media (max-width: 1200px) {
+    .newsticker {
+        display: none;
+    }
+
+}
 @media (max-width: 1024px) {
     .sidebar, .sticky, #focusslide {
         display: none;
@@ -19,6 +25,7 @@
         width: 100%;
         height: auto!important;
     }
+
 }
 
 
@@ -161,7 +168,3 @@
 
 
 }
-
-
-
-

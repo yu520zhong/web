@@ -543,13 +543,16 @@ body > .content {
 }
 
 /*newsticker*/
+.navbar-header {
+    position: relative;
+}
 .newsticker {
     position: absolute;
     overflow: hidden;
-    width: 100%;
+    width: 260px;
     height: 30px;
     top: 15px;
-    left: 200px;
+    left: 90px;
     padding: 0 10px 0 0px;
     font-size: 13px;
     line-height: 16px;

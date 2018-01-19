@@ -67,8 +67,8 @@
     var url_ajax = "__APP__/Other/orders";
     var host = '__APP__/';
     $(function() {
-        var keyword = $("#keyword").val();
         $("#home").on("click", function() {
+            var keyword = $("#keyword").val();
             $.ajax({
                 type:"GET",
                 url:url_ajax,

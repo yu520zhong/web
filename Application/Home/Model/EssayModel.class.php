@@ -129,7 +129,7 @@ class EssayModel extends Model {
 		$Page->setConfig('next','下一页');
 		$Page->setConfig('first','首页');
 		$Page->setConfig('last','尾页');
-		$Page->setConfig('theme',"<ul class='pagination'></li><li>%FIRST%</li><li>%UP_PAGE%</li><li>%LINK_PAGE%</li><li>%DOWN_PAGE%</li><li>%END%</li><li><a> %HEADER%  %NOW_PAGE%/%TOTAL_PAGE% 页</a></ul>");
+		$Page->setConfig('theme',"<ul class='pagination'><li>%FIRST%</li><li>%UP_PAGE%</li><li>%LINK_PAGE%</li><li>%DOWN_PAGE%</li><li>%END%</li><li><a> %HEADER%  %NOW_PAGE%/%TOTAL_PAGE% 页</a></li></ul>");
 	}
 	//根据$where条件查询美文数据
 	public function getGoods($where){

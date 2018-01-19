@@ -63,26 +63,27 @@ $IMG_URL = 'http://7xsqlc.com1.z0.glb.clouddn.com/'; $IMG_THUMB = '?imageView2/1
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" href="/web">MI<span>Uu</span></a>
-            </div>
-
-            <div class="navbar-collapse collapse ">
                 <div class="newsticker">
                     <div class="horn"><i class="miuu u-shengyin"></i></div>
                     <ul class="newsticker-list">
                         <li class="newsticker-item">
-                            本站内容纯属虚构，如有雷同，算我抄你!
+                            本站内容纯属虚构，如有雷同，算我抄你
                         </li>
                         <li class="newsticker-item">
-                            觅友博客V2.0.2进行时，希望大家喜欢。
+                            觅友博客V2.0.2进行时，希望大家喜欢
                         </li>
                         <li class="newsticker-item">
-                            换了阿里云服务器，网站整体速度快多了。
+                            换了阿里云服务器，网站整体速度快多了
                         </li>
                         <li class="newsticker-item">
-                            文章内容如有侵权，请联系站长删除！
+                            文章内容如有侵权，请联系站长删除
                         </li>
                     </ul>
                 </div>
+            </div>
+
+            <div class="navbar-collapse collapse ">
+
                 <ul class="nav navbar-nav" id="menu">
                     <li id="Index_index"><a href="<?php echo U('Index/index');?>">首页</a></li>
                     <li id="Blog_index"><a href="<?php echo U('Blog/index');?>">技术文摘</a></li>
@@ -332,8 +333,8 @@ document.getElementsByTagName('iframe')[0].width="500";
     var url_ajax = "/web/Other/orders";
     var host = '/web/';
     $(function() {
-        var keyword = $("#keyword").val();
         $("#home").on("click", function() {
+            var keyword = $("#keyword").val();
             $.ajax({
                 type:"GET",
                 url:url_ajax,

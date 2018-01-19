@@ -7,7 +7,7 @@
 <meta http-equiv="Cache-Control" content="no-siteapp" />
 <meta name="baidu-site-verification" content="2KooQz6oQx" />
 <meta name="baidu_union_verify" content="e1abcb85c53a47607d7b9f47b7a1451a">
-<title>觅友_有朋自远方来-web前端，php，javascript,jquery,记录生活学习开发的个人博客</title>
+<title>觅友_有朋自远方来-web前端，php，javascript,jquery,记录学习生活开发的个人博客</title>
 <meta name="keywords" content="觅友，觅友网，觅友博客，觅友小站，前端，miuu，IT开发，css，css3，js，js特效，php，jquery，ajax，java">
 <meta name="description" content="觅友_有朋自远方来，分享网站开发学习以及工作和生活中的点点滴滴，希望通过此网站，与大家一起交流、成长、进步！">
 <link rel="shortcut icon" href="/web/Public/Home/img/favicon.png">
@@ -221,10 +221,10 @@ $IMG_URL = 'http://7xsqlc.com1.z0.glb.clouddn.com/'; $IMG_THUMB = '?imageView2/1
                                     <img alt="" src="http://7xsqlc.com1.z0.glb.clouddn.com/1494899853_910859139.jpg">
                                 </div>
                                 <a class="about-testimonial-author" href="#">Miuu</a>
-                                <span class="about-testimonial-company">业余站长</span>
+                                <span class="about-testimonial-company">客此</span>
                                 <div class="about-testimonial-content">
                                     <p class="about-testimonial-quote">
-                                        耶稣在星期五被钉死在十字架上，那是西方世界最绝望的一天。可是三天后就是复活节——所以，人在困境中应学会，至少再等三天！
+                                        没有新的衣服能让你爱恋，总有一种天气让我怀念<br/>醒来或者吃饱又是一年，相遇然后分别就在一天！<br/>——李志《热河》
                                     </p>
                                 </div>
                             </div>
@@ -426,7 +426,7 @@ $IMG_URL = 'http://7xsqlc.com1.z0.glb.clouddn.com/'; $IMG_THUMB = '?imageView2/1
                 <li><a href="http://layer.layui.com/" target="_blank">LayUI</a></li>
                 <li><a href="http://themebetter.com/" target="_blank">themebetter</a></li>
                 <li><a href="http://themebetter.com/" target="_blank">ThinkPHP</a></li>
-                <li><a href="<?php echo U("Tools/mergely");?>" target="_blank">代码对比工具</a></li>
+                <li><a href="http://blog.miuu.club/" target="_blank">觅友个人博客</a></li>
             </ul>
             <p class="text-muted text-center">©2016 <a href="<?php echo U("About/index");?>">Miuu</a><span id="webTime"></span></p>
             <p class="text-muted text-center">

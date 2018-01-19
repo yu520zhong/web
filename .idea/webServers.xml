@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="8cadcfa5-b12d-4350-8bb4-8751870bd661" name="miuu" url="http://www.miuu.club">
+        <fileTransfer host="106.14.148.186" port="22" rootFolder="/www/wwwroot/miuu.club/web" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

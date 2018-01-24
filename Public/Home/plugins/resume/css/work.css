@@ -153,6 +153,10 @@
 .work-grid {
 	padding: 1em;
 }
+.block-content {
+   margin-top: 25px;
+}
+
 @media(max-width: 768px) {
    .view .mask {
     padding: 0.2em 0;

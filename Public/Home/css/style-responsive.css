@@ -134,7 +134,7 @@
     }
 
     .navbar-toggle {
-        margin-right: -10px;
+        margin-right: 0px;
     }
 
     .header-frontend .nav li .dropdown-menu li a:hover {

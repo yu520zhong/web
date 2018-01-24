@@ -1,5 +1,5 @@
 var Script = function () {
-
+/*
 //  window.scroll
     var nt = !1;
     $(window).bind("scroll",function() {
@@ -14,7 +14,7 @@ var Script = function () {
             sel.removeClass("nav_fixed");
         }
     });
-
+*/
 // js跳转到搜索结果页面
 $('.table_sign span').click(function() {
     location.href = ThinkPHP['MODULE'] + '/other/search?keywords=' + $(this).text();
@@ -56,5 +56,8 @@ $('.table_sign span').click(function() {
         sScrollTop();
     });
 }());
+
+
+
 
 

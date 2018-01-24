@@ -24,7 +24,7 @@
 <div class="content">
 <div class="container space30">
     <div class="row">
-        <div class="col-md-8 wow fadeInLeft animated animated">
+        <div class="col-md-17 wow fadeInLeft animated animated">
             <section class="article">
                 {/*
                     <ul id="filters" class="list-unstyled news-filter clearfix">
@@ -45,7 +45,7 @@
                         <article class="excerpt excerpt-text">
                             <div class="row">
                                 <notempty name="v.thumb">
-                                    <div class="col-md-4">
+                                    <div class="col-md-8">
                                         <a href="{:U('Notes/notes',array('id'=>$v['id']))}" class="nail">
                                             <img src="{$v.thumb}" alt="{$v.name}"  class="thumb">
                                             <notempty name="v.category_name">
@@ -56,7 +56,7 @@
                                     </div>
                                     <else/>
                                 </notempty>
-                                <header class="col-md-8">
+                                <header class="col-md-16">
                                     <div class="excerpt-content">
                                         <h2 class="title">
                                             <a href="{:U('Notes/notes',array('id'=>$v['id']))}" target="_blank" title="{$v.name}">{$v.name}</a>
@@ -79,7 +79,7 @@
             </nav>
         </div>
 
-        <div class="col-md-4 sidebar wow fadeInRight animated animated">
+        <div class="col-md-7 sidebar wow fadeInRight animated animated">
             <div class="widget widget-posts">
                 <div class="blog-side-item category">
                     <h3 style="margin:0;">文章分类</h3>

@@ -25,9 +25,8 @@
 <div class="content">
     <div class="container space30">
         <div class="row">
-            <!--feature start-->
-            <div class="col-md-8 wow fadeInLeft animated animated">
-                <ul id="filters" class="list-unstyled news-filter col-md-12">
+            <div class="col-md-24 wow fadeInLeft animated animated">
+                <ul id="filters" class="list-unstyled news-filter col-md-24">
                     <notempty name="categorynews.parent">
                         <volist name="categorynews.parent" id="v">
                             <foreach name="v" item="vv">
@@ -38,19 +37,16 @@
                         </volist>
                     </notempty>
                 </ul>
-                <div class="col-md-12">
+                <div class="clearfix">
                     <empty name="news.data">
                         <p class="no_find">很抱歉，此分类暂无文章!</p><else/>
                         <foreach name="news.data" item="v">
-                            <article class="excerpt excerpt-text">
+                            <article class="excerpt excerpt-text col-md-6 col-xs-24">
                                 <div class="excerpt-news">
                                     <h2 class="title">
                                         <a href="javascript:void(0)" target="_blank" title="{$v.name}">{$v.name}</a>
                                     </h2>
                                     <div class="news-content">{$v.content}</div>
-                                    <ul class="list-inline news-tips mt15">
-                                        <li><i class="miuu u-rili"></i> {$v.add_time}</li>
-                                    </ul>
                                 </div>
                             </article>
                         </foreach>
@@ -60,17 +56,7 @@
                     <div class="pagination">{$news.pagelist}</div>
                 </nav>
            </div>
-           <div class="col-md-4 sidebar wow fadeInRight animated animated">
-                <div class="widget widget-posts">
-                    <a href="#" target="_blank" rel="nofollow"><img src="http://7xsqlc.com1.z0.glb.clouddn.com/banner/small-2.png" class="full-img"></a>
-                </div>
-
-                <div class="widget widget-posts" >
-                    <a href="#" target="_blank" rel="nofollow"><img src="http://7xsqlc.com1.z0.glb.clouddn.com/banner/small-1.jpg" class="full-img"></a>
-                </div>
-
-           </div>
-            <!--feature end-->
+           
         </div>
     </div>
 </div>
